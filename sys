@@ -1,0 +1,120 @@
+1️⃣ Basic Computer & Networking Fundamentals
+
+Topics
+Computer fundamentals
+Operating System basics (Linux important)
+Networking basics
+IP Address
+DNS
+HTTP / HTTPS
+Client–Server Architecture
+
+
+Google Compute Engine
+PaaS (Platform as a Service)
+Developer ko platform milta hai.
+Example
+Google App Engine
+
+Heroku
+SaaS (Software as a Service)
+Software internet par milta hai.
+Example
+Gmail
+
+Google Docs
+Microsoft Office 365
+
+
+
+6️⃣ Linux for Cloud Engineers
+Cloud engineers ko Linux strong aana chahiye.
+
+Topics
+Linux commands
+File system
+User management
+Package management
+Shell scripting
+Example commands
+ls
+cd
+mkdir
+rm
+chmod
+
+7️⃣ Cloud Platforms 
+3 biggest cloud platforms:
+
+AWS (Amazon Web Services)
+Topics
+EC2 (Virtual Server)
+S3 (Storage)
+RDS (Database)
+VPC (Networking)
+IAM (Security)
+
+Microsoft Azure
+Topics
+Virtual Machines
+Azure Storage
+Azure SQL
+Azure networking
+
+Google Cloud
+Topics
+Compute Engine
+Cloud Storage
+BigQuery
+
+8️⃣ Cloud Storage
+Object Storage
+Block Storage
+File Storage
+Storage Virtualization
+Data Replication
+Backup and Restore
+Distributed Storage
+Data Lifecycle Management
+
+9️⃣ Cloud Networking
+Virtual Private Cloud (VPC)
+Subnet
+Internet Gateway
+NAT Gateway
+VPN
+DNS
+IP Addressing
+Network Security Groups
+Routing Tables
+
+🔟 Containers
+Modern cloud me containers use hote hain.
+
+Topics
+Docker basics
+Container vs Virtual Machine
+Docker images
+Docker containers
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+1️⃣4️⃣ Monitoring and Logging
+Topics
+CloudWatch (AWS)
+Monitoring tools
+Logging systems
+Performance monitoring
+
+1️⃣5️⃣ Advanced Cloud Topics
+Topics
+Serverless computing
+Microservices architecture
+Infrastructure as Code
+Terraform
+Auto scaling
+Disaster recovery

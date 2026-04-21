@@ -1,0 +1,61 @@
+🐳 Docker — Architecture (Only Topics)
+🟢 Core Architecture Components
+Docker Client
+Docker Daemon (dockerd)
+Docker Engine
+Docker Registry
+Docker Objects
+
+
+🟢 Communication Layer
+Client–Server Architecture
+REST API
+
+
+🟢 Docker Objects
+Image
+Container
+Volume
+Network
+
+
+🟢 Image Management
+Image Build
+Image Layers
+Image Tagging
+
+
+🟢 Container Lifecycle
+Create
+Start
+Stop
+Restart
+Delete
+
+
+🟢 Networking Architecture
+Bridge Network
+Host Network
+Overlay Network
+
+
+🟢 Storage Architecture
+Volumes
+Bind Mounts
+
+
+🟢 Execution Flow
+Client → Daemon Communication
+Dockerfile → Image
+Image → Container
+
+
+🟢 Registry Concepts
+Public Registry (Docker Hub)
+Private Registry
+Push / Pull
+
+
+🟢 Security Basics
+Namespaces
+Control Groups (cgroups)

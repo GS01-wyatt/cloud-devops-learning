@@ -1,0 +1,144 @@
+# Docker Tutorial
+🟢 1. Docker Introduction
+What is Docker
+Why Docker
+Containers vs Virtual Machines
+Containerization Concept
+Use Cases of Docker
+
+🟢 2. Docker Installation
+Install Docker on Ubuntu
+Install Docker on Windows
+Install Docker on Mac
+Verify Installation
+Run Hello World Container
+
+🟢 3. Docker Architecture
+Docker Client
+Docker Server (Daemon)
+Docker Engine
+Docker Registry
+Docker Objects
+
+🟡 4. Docker Commands
+docker run
+docker pull
+docker pusz
+docker ps
+docker stop
+docker start
+docker rm
+docker images
+docker exec
+docker logs
+
+🟡 5. Running Commands Inside Container
+docker exec
+Interactive Mode (-it)
+Bash inside containez
+Running processes inside container
+
+🟡 6. Dockerfile & Images
+What is Dockerfile
+Dockerfile Syntax
+Docker Instructions (FROM, RUN, CMD, COPY, ENTRYPOINT)
+What is Docker Image
+Image Layers
+Build Image (docker build)
+Optimize Docker Image
+Multi-stage Build
+Build Web Server Dockerfile
+
+🟡 7. Docker Hub
+What is Docker Hub
+Public Repositories
+Private Repositories
+Login to Docker Hub
+Pull Images
+Push Images
+Publish Image
+
+🟠 8. Docker Compose
+Introduction to Docker Compose
+docker-compose.yml Syntax
+Multi-container Applications
+docker-compose up
+docker-compose down
+Service Configuration
+
+🟠 9. Docker Engine & Storage
+Docker Engine
+Docker Daemon
+Docker Storage Drivers
+Docker Data Storage
+Backup Containers
+Manage Storage
+
+🟠 10. Docker Networking
+Docker Networking Basics
+Docker Ports
+Bridge Network
+Host Network
+Overlay Network
+Create Network
+Connect Containers
+Container Communication
+Default Bridge Network
+
+🔵 11. Docker Registry
+What is Docker Registry
+Public Registry
+Private Registry
+Create Private Repository
+Push Image to Registry
+Use Public Repository
+
+🔵 12. Docker Volumes
+What is Docker Volumes
+Volume Creation
+Mount Volume
+Bind Mount
+Volume vs Bind Mount
+Share Data Between Containers
+Persistent Storage
+
+🔴 13. Docker Swarm
+What is Docker Swarm
+Swarm Cluster
+Manager Node
+Worker Node
+Services in Swarm
+Scaling Containers
+
+🔴 14. Docker Security
+Security Best Practices
+Image Scanning
+Secure Containers
+Secrets Management
+Least Privilege
+
+🔴 15. Docker vs Kubernetes
+Docker Basics
+Kubernetes Basics
+Container vs Orchestration
+Scaling & Management
+Use Cases
+
+🔴 16. Advanced Topics (Cloud Ready 🚀)
+CI/CD with Docker
+Docker with AWS
+Docker with Azure
+Docker with Google Cloud
+Docker + Kubernetes Integration
+
+🎯 Final Structure (Short)
+Basics
+Commands
+Dockerfile
+Networking + Volumes
+Compose
+Registry
+Swarm
+Security
+Kubernetes
+

@@ -1,0 +1,164 @@
+🔹 1. Image Commands
+👉 docker pull <image>
+➡️ Downloads an image from Docker Hub
+👉 Example: docker pull nginx
+
+👉 docker images
+➡️ Shows all downloaded images
+
+👉 docker rmi <image_id>
+➡️ Deletes an image from system
+
+🔹 2. Run Container
+👉 docker run <image>
+➡️ Runs a container from image
+
+👉 docker run -d <image>
+➡️ Runs container in background
+
+👉 docker run -it <image> bash
+➡️ Runs container in interactive terminal
+
+👉 docker run --name mycontainer <image>
+➡️ Runs container with custom name
+
+🔹 3. Container Management
+👉 docker ps
+➡️ Shows running containers
+
+👉 docker ps -a
+➡️ Shows all containers (running + stopped)
+
+👉 docker stop <id>
+➡️ Stops a running container
+
+👉 docker start <id>
+➡️ Starts a stopped container
+
+👉 docker restart <id>
+➡️ Restarts container
+
+👉 docker rm <id>
+➡️ Deletes a container
+
+🔹 4. Logs & Info
+👉 docker logs <id>
+➡️ Shows container output/logs
+
+👉 docker inspect <id>
+➡️ Shows detailed info (IP, config, etc.)
+
+👉 docker stats
+➡️ Shows CPU & memory usage
+
+🔹 5. Execute Inside Container
+👉 docker exec -it <id> bash
+➡️ Run commands inside container
+
+🔹 6. Build & Push (Important 🔥)
+👉 docker build -t myimage .
+➡️ Creates image from Dockerfile
+
+👉 docker tag myimage repo/name
+➡️ Tags image for Docker Hub
+
+👉 docker push repo/name
+➡️ Uploads image to Docker Hub
+
+🔹 7. Ports
+👉 docker run -p 3000:3000 <image>
+➡️ Connects container port to local machine
+
+🔹 8. Volumes
+👉 docker volume create myvolume
+➡️ Creates storage volume
+
+👉 docker run -v myvolume:/data <image>
+➡️ Mounts volume to container
+
+🔹 9. Docker Compose
+👉 docker-compose up
+➡️ Starts multiple containers
+
+👉 docker-compose down
+➡️ Stops all containers
+
+
+🔥 Super Important (Interview Focus)
+commands:
+docker pull → download
+docker run → run container
+docker ps → check running
+docker build → create image
+docker exec → access container
+
+🚀 One-line Summary 
+Docker commands help to create, run, manage, and deploy containers efficiently.
+
+# 🐳 Docker Commands
+🟢 1. docker pull IMAGE_NAME:version
+📖 Meaning
+👉 Downloads image from Docker registry (Docker Hub)
+
+🧠 Example
+docker pull nginx:latest
+👉 Downloads nginx image
+
+🟢 2. docker run -d IMAGE_NAME
+📖 Meaning
+👉 Runs a container in detached mode (background)
+
+🧠 Example
+docker run -d nginx
+👉 Container runs in background
+
+🟢 3. docker run --name CONT_NAME -d IMAGE_NAME
+📖 Meaning
+👉 Runs container with a custom name
+
+🧠 Example
+docker run --name mynginx -d nginx
+👉 Container name = mynginx
+
+🎯 Quick Revision
+pull → download image
+run -d → run in background
+--name → give custom name
+
+
+# Docker — Troubleshoot Commands
+🟢 1. docker logs CONT_ID
+📖 Meaning
+👉 Shows logs/output of a container
+🧠 Use
+Check errors
+Debug issues
+🧾 Example
+docker logs mycontainer
+
+🟢 2. docker exec -it CONT_ID /bin/bash
+📖 Meaning
+👉 Open interactive terminal (bash) inside container
+
+🧠 Use
+Debug inside container
+Check files, run commands
+🧾 Example
+docker exec -it mycontainer /bin/bash
+
+🟢 3. docker exec -it CONT_ID /bin/sh
+📖 Meaning
+👉 Open sh shell (lightweight terminal)
+
+🧠 Use
+When bash is not available
+Minimal containers (like Alpine)
+🧾 Example
+docker exec -it mycontainer /bin/sh
+
+🎯 Quick Difference
+logs → view output
+exec bash → full terminal
+exec sh → basic terminal
+
+

@@ -1,0 +1,152 @@
+Q why do we actually need cloud.
+Q how Amazon web services has scattered it data centers or
+  how it is managing its data cemter in differnt part of the world.
+
+Q how you understand its global infrastructure of AW players.
+Q How the network work
+
+1. video
+https://www.youtube.com/watch?v=dmGybCohHsw&list=PLxCzCOWd7aiHRHVUtR-O52MsrdUSrzuy4
+
+2. video
+https://www.youtube.com/results?search_query=cloud+computing+full+course
+
+
+<!-- 
+what?
+what purpose?
+how setup
+what how use -->
+
+🔥 1 Real Git + GitHub + AWS Project (step-by-step)
+⚙️ 2. CI/CD Pipeline Project (Intermediate)
+
+01-04-2026
+month 1:
+- cloud computing
+- cloud provider-(AWS)
+
+01-05-2026
+month - 2:
+foundamental and basic
+- networking
+- window linux
+- program
+- OS
+- database(SQL or Nosql)
+
+01-06-2026
+month - 3
+- vertualization
+- Terraform
+- project
+
+
+
+
+𝐀𝐖𝐒 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐨𝐤𝐢𝐧𝐠 𝐥𝐢𝐧𝐤 : https://aws.amazon.com/certification/
+𝐀𝐖𝐒 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐨𝐤𝐢𝐧𝐠 𝐥𝐢𝐧𝐤 : https://aws.amazon.com/certification/
+
+
+𝐈𝐀𝐂 (𝐓𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 Free):   https://www.youtube.com/watch?v=fgp-t5SqQmM&list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf&index=1
+𝐈𝐀𝐂 (𝐓𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 Paid): https://www.udemy.com/course/terrafor...
+
+1. networking:
+https://www.youtube.com/watch?v=iSOfkw_YyOU
+
+2. linux
+https://www.youtube.com/watch?v=e01GGTKmtpc&t=3160s
+
+3. GitHub
+
+
+4. docker min project
+1 https://www.youtube.com/watch?v=Uf6PXnagtsg
+
+2 https://www.youtube.com/watch?v=9bSbNNH4Nqw&list=PLlfy9GnSVerQjeoYfoYKEMS1yKl89NOvL&index=3
+
+6. kubernates
+https://www.youtube.com/watch?v=W04brGNgxN4&list=PLlfy9GnSVerQjeoYfoYKEMS1yKl89NOvL&index=2
+
+7. ArgoCD or CICD
+CI/CD
+https://www.youtube.com/watch?v=y4RcDlfYKB8&t=1482s
+
+8. AWS 
+https://www.youtube.com/watch?v=N4sJj-SxX00&t=1703s
+
+
+9. terraform
+https://www.youtube.com/watch?v=S9mohJI_R34&list=PLlfy9GnSVerQjeoYfoYKEMS1yKl89NOvL&index=5
+
+10. Ansible
+
+
+
+
+
+
+
+
+
+1
+Project Name:
+Professional-Level Cloud Web Application
+
+What is it (short):
+It is a full-stack cloud-based application architecture that includes all major components needed to run a modern web app:
+
+Frontend → User interface (what users see)
+Backend API → Handles logic & requests
+Database → Stores data
+Load Balancer → Distributes traffic
+Networking → Connects services securely
+Infrastructure (Infra) → Cloud resources (servers, storage, etc.)
+
+Special Part:
+Terraform (Infrastructure as Code) → A tool used to automate and manage cloud infrastructure using code instead of manual setup.
+
+👉 In short:
+A complete real-world cloud app setup where everything (servers, network, etc.) is created and managed using code.
+
+2.
+Project Name:
+Smart Serverless Automation Pipeline
+
+What is it (short):
+It is a serverless cloud workflow where tasks are automated without managing servers.
+
+Flow:
+
+S3 / Blob Storage → Stores files/data
+Lambda / Azure Functions → Runs code automatically (no server needed)
+Data Processing → Processes uploaded data
+DynamoDB / Cosmos DB → Stores processed data
+CloudWatch / Azure Monitor → Tracks system & sends alerts
+
+👉 In short:
+An automated, serverless system that processes data and sends alerts when errors happen — no server management required.
+
+
+
+3.
+Project Name:
+Enterprise-Grade Kubernetes Deployment
+
+What is it (short):
+It is a production-level deployment system where applications are run using containers and managed automatically at scale.
+
+Main Components:
+
+Docker → Packages app into containers
+Kubernetes → Manages and runs containers
+Terraform → Creates infrastructure using code
+Auto-scaling → Automatically increases/decreases resources
+
+Extra Features:
+
+HTTPS → Secure communication
+Monitoring → Tracks app performance
+
+👉 In short:
+A scalable, secure, and automated system to deploy and manage applications using Kubernetes in real-world enterprise environments.

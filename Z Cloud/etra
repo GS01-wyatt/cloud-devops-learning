@@ -1,0 +1,105 @@
+🏢 On-Premises vs Hosted vs Cloud
+
+# 1. Azure storage service
+
+Azure Storage Service is a cloud storage solution from Microsoft Azure that lets you store and manage data in different formats—scalable, secure, and highly available.
+
+🔹 Main Types of Azure Storage
+>Blob Storage (Object storage)
+Stores unstructured data like images, videos, backups, logs
+Common use: media files, data lakes
+Example: storing user-uploaded photos in an app
+
+>File Storage (Azure Files)
+Managed file shares accessible via SMB/NFS
+Works like a network drive in the cloud
+Example: shared folders for applications or teams
+
+>Queue Storage
+Stores messages for communication between services
+Useful for decoupling components in distributed systems
+Example: background job processing
+
+>Table Storage (NoSQL key-value store)
+Stores structured data with flexible schema
+Fast and cost-effective for large datasets
+Example: user profiles, metadata
+
+>Disk Storage
+Managed disks for Azure Virtual Machines
+Example: OS disks, data disks for VMs
+
+🔹 Key Features
+Scalability – Automatically scales to handle massive data
+High Availability – Replication options (LRS, GRS, ZRS)
+Security – Encryption at rest & in transit, RBAC, SAS tokens
+Cost-effective – Pay-as-you-go pricing
+Integration – Works with Azure services like VMs, Functions, Databricks
+
+🔹 Storage Account
+All storage services are grouped under a Storage Account, which acts as a container for your data.
+
+🔹 Simple Architecture Example
+App → Azure Blob Storage → Data stored → Access via API/SDK
+
+
+# 2. OS Virtualization (Operating System Virtualization)
+🔹 What is OS Virtualization?
+
+OS Virtualization is a technique where multiple isolated environments (virtual systems) run on a single physical machine using the same operating system kernel.
+
+👉 In simple words:
+1 computer → multiple virtual environments → each behaves like its own system
+
+🔹 How it Works
+There are two main approaches:
+
+1. Hypervisor-based Virtualization (VMs)
+A hypervisor creates full virtual machines
+Each VM has its own OS
+Examples:
+VMware
+VirtualBox
+Microsoft Hyper-V
+
+👉 Structure:
+Hardware → Hypervisor → Multiple VMs → Each VM has OS + Apps
+
+2. OS-level Virtualization (Containers)
+Uses the same OS kernel
+Lightweight and fast
+Examples:
+Docker
+Kubernetes
+
+👉 Structure:
+Hardware → Host OS → Containers → Apps only (no separate OS)
+
+# Type 1 vs Type 2 Virtualization
+
+# a. Virtualization
+What is it:
+Running multiple virtual machines (VMs) on one physical system using a hypervisor.
+
+Key Points:
+Each app runs inside a separate OS (Guest OS)
+Heavy → needs more memory & resources
+More isolation (secure but slower)
+
+👉 Example: Running Windows, Linux, Mac all on one server
+
+
+# b. Containerization
+What is it:
+Running multiple apps in containers using a container engine (like Docker), sharing the same OS.
+
+Key Points:
+No separate OS → uses Host OS
+Lightweight & fast
+Easy to scale and deploy
+
+👉 Example: Running multiple apps using Docker containers
+
+⚡ Final Difference (Simple):
+Virtualization = Full OS per app (Heavy)
+Containerization = Shared OS (Lightweight & Fast)

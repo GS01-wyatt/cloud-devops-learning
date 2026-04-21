@@ -1,0 +1,50 @@
+full topic (component od AWS)
+☁️ Components of AWS
+🖥️ Compute
+Amazon EC2
+AWS Lambda
+AWS Elastic Beanstalk
+Amazon ECS
+Amazon EKS
+AWS Fargate
+💾 Storage
+Amazon S3
+Amazon EBS
+Amazon EFS
+S3 Glacier
+🗄️ Database
+Amazon RDS
+Amazon DynamoDB
+Amazon Aurora
+Amazon Redshift
+🌐 Networking & Content Delivery
+Amazon VPC
+Elastic Load Balancing
+Amazon Route 53
+Amazon CloudFront
+AWS Direct Connect
+🔐 Security & Identity
+AWS IAM
+AWS Shield
+AWS WAF
+AWS KMS
+AWS Cognito
+📊 Monitoring & Management
+Amazon CloudWatch
+AWS CloudTrail
+AWS Config
+AWS Trusted Advisor
+⚙️ DevOps & Deployment
+AWS CodeCommit
+AWS CodeBuild
+AWS CodeDeploy
+AWS CodePipeline
+AWS CloudFormation
+📩 Messaging & Integration
+Amazon SQS
+Amazon SNS
+Amazon EventBridge
+📈 Scaling & Load
+Amazon EC2 Auto Scaling
+AWS Application Auto Scaling
+👉 Compute + Storage + Database + Networking + Security + Monitoring + DevOps + Messaging + Scaling
