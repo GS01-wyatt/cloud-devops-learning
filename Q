@@ -1,67 +1,32 @@
-Q why do we actually need cloud.
-Q how Amazon web services has scattered it data centers or
-  how it is managing its data cemter in differnt part of the world.
-
-Q how you understand its global infrastructure of AW players.
-Q How the network work
-
 1. video
 https://www.youtube.com/watch?v=dmGybCohHsw&list=PLxCzCOWd7aiHRHVUtR-O52MsrdUSrzuy4
 
 2. video
 https://www.youtube.com/results?search_query=cloud+computing+full+course
 
-
-<!-- 
-what?
-what purpose?
-how setup
-what how use -->
-
-🔥 1 Real Git + GitHub + AWS Project (step-by-step)
-⚙️ 2. CI/CD Pipeline Project (Intermediate)
-
-01-04-2026
-month 1:
-- cloud computing
-- cloud provider-(AWS)
-
-01-05-2026
-month - 2:
-foundamental and basic
-- networking
-- window linux
-- program
-- OS
-- database(SQL or Nosql)
-
-01-06-2026
-month - 3
-- vertualization
-- Terraform
-- project
-
-
-
-
-𝐀𝐖𝐒 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐨𝐤𝐢𝐧𝐠 𝐥𝐢𝐧𝐤 : https://aws.amazon.com/certification/
 𝐀𝐖𝐒 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐨𝐤𝐢𝐧𝐠 𝐥𝐢𝐧𝐤 : https://aws.amazon.com/certification/
 
 
 𝐈𝐀𝐂 (𝐓𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 Free):   https://www.youtube.com/watch?v=fgp-t5SqQmM&list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf&index=1
-𝐈𝐀𝐂 (𝐓𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 Paid): https://www.udemy.com/course/terrafor...
+𝐈𝐀𝐂 (𝐓𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 Paid): 
+https://www.udemy.com/course/terrafor...
 
 1. networking:
 https://www.youtube.com/watch?v=iSOfkw_YyOU
+for revision:
+https://www.youtube.com/watch?v=Lw8QFsYCexc
 
 2. linux
-https://www.youtube.com/watch?v=e01GGTKmtpc&t=3160s
-
+A.https://www.youtube.com/watch?v=e01GGTKmtpc&list=LL&index=15&t=14447s
 3. GitHub
+
+3. Git
+https://www.youtube.com/watch?v=MuZySo5lF8E
 
 
 4. docker min project
 1 https://www.youtube.com/watch?v=Uf6PXnagtsg
+2 https://www.youtube.com/watch?v=3c-iBn73dDE
 
 2 https://www.youtube.com/watch?v=9bSbNNH4Nqw&list=PLlfy9GnSVerQjeoYfoYKEMS1yKl89NOvL&index=3
 
@@ -73,19 +38,14 @@ CI/CD
 https://www.youtube.com/watch?v=y4RcDlfYKB8&t=1482s
 
 8. AWS 
-https://www.youtube.com/watch?v=N4sJj-SxX00&t=1703s
+1 https://www.youtube.com/watch?v=N4sJj-SxX00&t=1703s
 
+2 https://www.youtube.com/playlist?list=PLlfy9GnSVerQwJTUul8p_BWT5SdXAslI7
 
 9. terraform
 https://www.youtube.com/watch?v=S9mohJI_R34&list=PLlfy9GnSVerQjeoYfoYKEMS1yKl89NOvL&index=5
 
 10. Ansible
-
-
-
-
-
-
 
 
 

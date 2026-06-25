@@ -1,0 +1,62 @@
+9. Shell Scripting
+Shell Basics
+
+Bash Scripting Introduction
+
+Script File Creation
+
+Variables
+
+User Input
+
+Conditional Statements (if)
+
+Loops (for, while)
+
+Functions
+
+Arguments ($1, $2)
+
+Exit Status
+
+Operators
+
+String Handling
+
+Debugging Scripts
+
+Scheduling Scripts
+
+Real-world Automation
+
+
+# 1. What is Shell Scripting, and why is it important in DevOps?
+What is the difference between a Shell Script and a normal Linux command?
+How do you create and execute a Bash script in Linux?
+What are positional parameters ($1, $2, $#, $@, $?) in Shell Scripting?
+What is the difference between for, while, and until loops in Shell Scripting?
+How do you use if, if-else, and case statements in a Shell Script?
+How do you pass command-line arguments to a Shell Script?
+A script is failing unexpectedly. How would you debug and troubleshoot it?
+How would you write a script to monitor disk usage and send an alert when usage exceeds 80%?
+What are some real-world DevOps tasks that can be automated using Shell Scripts?
+Most Asked Scenario-Based Questions
+1.
+
+You need to take a backup of application logs every day. How would you automate it using Shell Scripting?
+
+2.
+
+You have 100 Linux servers. How would you automate checking disk usage on all servers?
+
+3.
+
+A service goes down frequently. How would you write a script to check the service status and restart it automatically?
+
+4.
+
+You need to monitor CPU, Memory, and Disk usage and generate a daily report. How would you approach this using Shell Scripting?
+
+5.
+
+You want to automate user creation for multiple employees from a text file. How would you do it using a Shell Script?

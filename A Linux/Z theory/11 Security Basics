@@ -1,0 +1,51 @@
+11. Security Basics
+Linux Security Concepts
+
+File Permissions Security
+
+User Access Control
+
+Sudo Security
+
+SSH Security
+
+SSH Key Authentication
+
+Disable Root Login
+
+Firewall Basics (ufw, iptables)
+
+Open/Close Ports
+
+Fail2Ban Basics
+
+Password Policies
+
+System Updates
+
+SELinux/AppArmor Basics
+
+Secure File Transfer
+
+Basic Hardening
+
+
+# What are Linux file permissions, and how do you check them?
+What is the difference between Read (r), Write (w), and Execute (x) permissions?
+What is the difference between chmod, chown, and chgrp commands?
+What is SSH Key Authentication, and why is it more secure than password authentication?
+How do you generate an SSH key pair and use it for passwordless login?
+A user cannot access a file even though the file exists. How would you troubleshoot the permission issue?
+What is a firewall, and why is it important in Linux servers?
+What is the difference between UFW and Firewalld?
+A web application is running on port 8080, but users cannot access it. How would you check whether the firewall is blocking the port?
+What security best practices would you follow when managing Linux servers in a Cloud/DevOps environment?
+
+Most Asked Scenario-Based Questions
+
+# You are unable to SSH into a server. What security-related checks would you perform?
+
+A developer needs access to a specific directory but should not modify files. How would you configure permissions?
+An application works locally but is inaccessible from outside the server. How would you determine whether the firewall is the issue?
+How would you secure a newly created Linux server before deploying applications?
+Why should root login via SSH be disabled in production environments?

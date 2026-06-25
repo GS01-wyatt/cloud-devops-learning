@@ -1,0 +1,54 @@
+. Networking in Linux
+Networking Basics
+
+IP Address Concepts
+
+Check IP (ip a, ifconfig)
+
+Ping Command
+
+Hostname & DNS
+
+/etc/hosts File
+
+SSH Basics
+
+Remote Login (ssh)
+
+Secure Copy (scp)
+
+File Transfer (rsync)
+
+Network Interfaces
+
+Netstat / ss Command
+
+Curl / Wget
+
+Firewall Basics
+
+Port Checking
+
+
+# 1. What is an IP Address, and what is the difference between Public IP and Private IP?
+How do you check the IP address of a Linux server?
+What is SSH, and why is it important in Linux administration and DevOps?
+How do you connect to a remote Linux server using SSH?
+What is the difference between TCP and UDP?
+How do you check whether a server is reachable over the network?
+A Linux server is not reachable through SSH. How would you troubleshoot the issue?
+How do you check which ports are currently open and listening on a Linux server?
+What is DNS, and how do you verify whether DNS resolution is working correctly?
+A web application hosted on a Linux server is not accessible. What networking checks would you perform to identify the issue?
+
+
+Most Asked Scenario-Based Questions
+# You cannot SSH into a production server. What steps would you take to troubleshoot?
+
+# A website is down. How would you determine whether the problem is network-related or application-related?
+
+# Users can ping a server but cannot access the application running on it. What could be the reasons?
+
+# DNS resolution is failing on a Linux server. How would you investigate?
+
+# A specific port (e.g., 8080) is not accessible from outside. How would you troubleshoot it?

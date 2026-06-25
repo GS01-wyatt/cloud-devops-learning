@@ -77,6 +77,7 @@ Hardware → Host OS → Containers → Apps only (no separate OS)
 
 # Type 1 vs Type 2 Virtualization
 
+
 # a. Virtualization
 What is it:
 Running multiple virtual machines (VMs) on one physical system using a hypervisor.
@@ -103,3 +104,6 @@ Easy to scale and deploy
 ⚡ Final Difference (Simple):
 Virtualization = Full OS per app (Heavy)
 Containerization = Shared OS (Lightweight & Fast)
+
+# Elastic compute cloud(EC2)
+provide resizable compute capacity in the cloud.

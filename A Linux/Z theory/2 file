@@ -1,0 +1,193 @@
+1. File and Directory Concepts
+
+Definition:
+A file stores data, while a directory (folder) stores files and other directories.
+
+Example:
+/home/user/document.txt   # File
+/home/user/Documents      # Directory
+
+
+2. Absolute vs Relative Path
+Absolute Path
+Definition: Path starting from the root directory (/).
+Example:
+/home/user/file.txt
+
+Relative Path
+Definition: Path relative to the current directory.
+Example:
+Documents/file.txt
+
+3. Listing Files (ls)
+Definition: Displays files and directories.
+Example:
+ls
+ls -l
+
+4. Creating Files (touch)
+Definition: Creates an empty file.
+Example:
+touch file.txt
+
+5. Creating Directories (mkdir)
+Definition: Creates a new directory.
+Example:
+mkdir myfolder
+
+6. Removing Files (rm)
+Definition: Deletes files.
+Example:
+rm file.txt
+
+7. Removing Directories (rmdir)
+Definition: Deletes an empty directory.
+Example:
+rmdir myfolder
+
+
+8. Copy Files and Directories (cp)
+Definition: Copies files or directories.
+Example:
+cp file.txt backup.txt
+cp -r folder1 folder2
+
+9. Move/Rename Files (mv)
+Definition: Moves or renames files/directories.
+Example:
+mv file.txt newfile.txt
+mv file.txt /home/user/
+
+
+10. View File Content (cat, less, more)
+cat
+Definition: Displays complete file content.
+Example:
+cat file.txt
+less
+Definition: Views file content page by page.
+Example:
+less file.txt
+more
+Definition: Displays file content one screen at a time.
+Example:
+more file.txt
+
+11. File Permissions Basics
+Definition: Controls who can access a file or directory.
+Example:
+-rw-r--r--
+
+12. Read, Write, Execute Permissions
+> Read (r)
+Definition: View file contents.
+Example:
+r
+> Write (w)
+Definition: Modify file contents.
+Example:
+w
+> Execute (x)
+Definition: Run a file as a program.
+Example:
+x
+
+13. Permission Representation
+Symbolic Representation
+Definition: Uses letters (r, w, x).
+
+Example:
+rwxr-xr--
+
+Numeric Representation
+Definition: Uses numbers.
+
+Example:
+755
+644
+
+14. Changing Permissions (chmod)
+Definition: Changes file permissions.
+
+Example:
+chmod 755 script.sh
+chmod u+x script.sh
+
+15. Changing Ownership (chown)
+Definition: Changes the owner of a file.
+Example
+chown user file.txt
+
+16. Changing Group (chgrp)
+Definition: Changes the group of a file.
+Example:
+chgrp developers file.txt
+
+17. Default Permissions (umask)
+Definition: Sets default permissions for new files and directories.
+
+Example:
+umask 022
+
+18. Special Permissions
+SUID (Set User ID)
+Definition: Executes a file with the owner's privileges.
+Example:
+chmod 4755 program
+
+SGID (Set Group ID)
+Definition: Executes a file with the group's privileges.
+Example:
+chmod 2755 program
+
+> Sticky Bit
+Definition: Only the file owner can delete files in a shared directory.
+
+Example:
+chmod 1777 /shared
+
+19. File Types in Linux
+> Regular File (-)
+Definition: Stores data.
+Example:
+file.txt
+
+> Directory (d)
+Definition: Contains files and folders.
+
+Example:
+Documents/
+
+> Symbolic Link (l)
+Definition: Shortcut to another file.
+Example:
+ln -s file.txt link.txt
+
+> Character Device (c)
+Definition: Handles character-based devices.
+Example:
+/dev/tty
+
+> Block Device (b)
+Definition: Handles block storage devices.
+Example:
+/dev/sda
+
+> Named Pipe (p)
+Definition: Used for process communication.
+Example:
+mkfifo mypipe
+
+> Socket (s)
+Definition: Used for network communication.
+Example:
+/var/run/docker.sock
+
+
+20. Access Control Lists (ACL) Basics
+Definition: Provides additional permissions beyond owner, group, and others.
+
+Example:
+
+setfacl -m u:john:rwx file.txt
+getfacl file.txt

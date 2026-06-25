@@ -1,0 +1,57 @@
+# Process Basics
+
+Types of Processes (Foreground & Background)
+
+Process States (Running, Sleeping, Zombie, etc.)
+
+View Processes (ps)
+
+Real-time Monitoring (top, htop)
+
+Process ID (PID)
+
+Start Process in Background (&)
+
+Bring Process to Foreground (fg)
+
+Send Process to Background (bg)
+
+Kill Process (kill)
+
+Kill All Processes (killall)
+
+Signal Types (SIGTERM, SIGKILL, etc.)
+
+Process Priority (Nice & Renice)
+
+Job Control (jobs)
+
+System Load Monitoring
+
+Process Tree (pstree)
+
+CPU & Memory Usage Monitoring
+
+Daemon Processes
+
+Scheduling Processes (cron, at)
+
+Process Logs & Debugging
+
+
+Top 10 Most Important Linux Process Management Interview Questions (Cloud & DevOps)
+What is a process in Linux?
+What is a PID (Process ID), and why is it important?
+How do you check all running processes in Linux?
+What is the difference between ps, top, and htop commands?
+A server's CPU usage suddenly becomes 100%. How would you identify the process causing the issue?
+An application is not responding. How would you check whether its process is running and troubleshoot it?
+What is the difference between kill, kill -9, and pkill?
+What is a Zombie Process, and how can you identify it?
+What are nice and renice commands, and why are they used?
+What is the difference between a Process and a Thread?
+Most Asked Scenario-Based Questions
+A production server is running very slowly. How would you identify the problematic process?
+A service is down in production. How would you troubleshoot it?
+A process is consuming excessive memory. What steps would you take?
+A process keeps crashing and restarting. How would you investigate the issue?

@@ -1,0 +1,51 @@
+13. Linux for Cloud
+Cloud Linux Basics
+
+Amazon Web Services (AWS EC2 Basics)
+
+Launch Linux Server
+
+Connect via SSH
+
+Key Pair Usage
+
+Security Groups
+
+File Transfer to Server
+
+Install Software on Server
+
+Monitor Server
+
+Manage Users in Cloud
+
+Basic Deployment
+
+Nginx/Apache Setup
+
+Remote Commands
+
+Scaling Basics
+
+Cloud Best Practices
+
+
+# Why is Linux the most preferred operating system in Cloud and DevOps environments?
+What is an EC2 instance in AWS, and how does Linux run on it?
+How do you connect to a Linux cloud server remotely?
+What is SSH key-based authentication, and why is it preferred over passwords in cloud environments?
+A newly launched EC2 Linux instance is not accessible via SSH. How would you troubleshoot it?
+How do you transfer files between your local machine and a Linux cloud server?
+How do you monitor CPU, memory, disk, and network usage on a Linux cloud server?
+How would you secure a Linux server running in the cloud?
+A web application deployed on a Linux cloud server is not accessible from the internet. What steps would you take to troubleshoot it?
+What are the daily Linux administration tasks you might perform on a cloud server as a Cloud/DevOps Engineer?
+
+Most Asked Scenario-Based Questions
+
+# You cannot SSH into an AWS EC2 instance. How would you troubleshoot the issue?
+
+A production Linux server in AWS is running out of disk space. What would you do?
+A website hosted on an EC2 instance is not accessible. What checks would you perform?
+How would you deploy an application on a Linux cloud server?
+How would you secure a Linux server exposed to the internet?

@@ -1,0 +1,46 @@
+# 🐧 LINUX SYLLABUS 
+
+1. Linux Basics
+→ Understand Linux OS, distributions, terminal usage, and file system structure.
+
+2. File Management & Permissions
+→ Learn file operations and control access using read, write, execute permissions.
+
+3. User & Group Management
+→ Create/manage users and groups, and control system access.
+
+4. Process Management
+→ Monitor and control running processes using system commands.
+
+5. Package Management
+→ Install, update, and remove software using package managers.
+
+6. Networking in Linux
+→ Learn IP, SSH, and commands to test and troubleshoot network connections.
+
+7. Disk & Storage Management
+→ Check disk usage, manage partitions, and mount storage.
+
+8. Text Processing & Editors
+→ Edit files and process text using tools like grep, sed, awk.
+
+9. Shell Scripting
+→ Automate tasks using Bash scripts, loops, and conditions.
+
+10. System Monitoring & Logs
+→ Track system performance and analyze logs for issues.
+
+11. Security Basics
+→ Secure system with permissions, SSH keys, and firewall basics.
+
+12. Cron Jobs (Automation)
+→ Schedule automatic tasks using crontab.
+
+13. Linux for Cloud
+→ Use Linux on cloud servers (like AWS) and manage remote systems.
+
+14. Advanced Linux Topics
+→ Learn system services, environment variables, and tools like Docker/Nginx.
+
+🔥 One Line Truth:
+“Linux is not theory — it’s practice in terminal.”

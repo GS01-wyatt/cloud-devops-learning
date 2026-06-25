@@ -1,4 +1,5 @@
-🔹 1. Image Commands
+# 1. Image Commands
+
 👉 docker pull <image>
 ➡️ Downloads an image from Docker Hub
 👉 Example: docker pull nginx
@@ -22,7 +23,8 @@
 👉 docker run --name mycontainer <image>
 ➡️ Runs container with custom name
 
-🔹 3. Container Management
+# 3. Container Management
+
 👉 docker ps
 ➡️ Shows running containers
 
@@ -41,7 +43,8 @@
 👉 docker rm <id>
 ➡️ Deletes a container
 
-🔹 4. Logs & Info
+# 4. Logs & Info
+
 👉 docker logs <id>
 ➡️ Shows container output/logs
 
@@ -160,5 +163,6 @@ docker exec -it mycontainer /bin/sh
 logs → view output
 exec bash → full terminal
 exec sh → basic terminal
+
 
 

@@ -1,0 +1,128 @@
+# 1. Hub (Layer 1 – Physical Layer)
+   A Hub is a basic, non-intelligent device used to connect multiple computers in a LAN. Think of it as a "signal repeater."
+
+🛠️ How it works:
+It receives a signal on one port and forwards it to all other ports, regardless of destination.
+Has no understanding of MAC or IP addresses.
+Causes collision domains (data clashing).
+
+
+📌 Types of Hubs:
+Passive Hub: Simply connects wires, no power.
+Active Hub: Amplifies signals.
+Intelligent Hub: Some diagnostics features.
+
+🚫 Limitations:
+Very inefficient.
+No traffic control.
+Replaced by switches.
+
+✅ Use Case (now obsolete):
+Used in early Ethernet networks (10 Mbps or 100 Mbps).
+
+# 2. Switch (Layer 2 – Data Link Layer)
+📘 What it is:
+   A Switch is a smart device that connects computers in a LAN and forwards data to the correct device based on MAC address.
+
+🛠️ How it works:
+Switch maintains a MAC Address Table.
+When it receives a frame, it checks destination MAC and sends only to that port (unicast).
+Reduces collisions significantly.
+
+📌 Advanced Features:
+VLAN support: Isolate traffic within networks.
+Port Mirroring: For network monitoring.
+
+Layer 3 Switch: Also performs routing (works on IP addresses).
+
+⚡ Use Case:
+Backbone of modern LAN networks.
+
+# 3. Bridge (Layer 2)
+📘 What it is:
+   A Bridge connects two LAN segments and filters traffic to reduce congestion.
+
+🛠️ How it works:
+Stores a table of MAC addresses per segment.
+Only forwards data if destination is on the other segment.
+Helps in segmentation.
+
+🆚 Difference from Switch:
+Switch: Multi-port and faster.
+Bridge: Two-port and software-based.
+
+✅ Use Case:
+Used in older LAN setups or for protocol bridging.
+
+# 4. Router (Layer 3 – Network Layer)
+📘 What it is:
+A Router connects multiple networks, usually a LAN to the Internet, and routes data based on IP addresses.
+
+🛠️ How it works:
+Maintains a Routing Table (Static or Dynamic).
+Makes decisions using routing protocols (RIP, OSPF, BGP).
+Uses NAT to translate private IP to public IP.
+Assigns IP addresses (via DHCP).
+
+📌 Types of Routers:
+Wired/Wireless Router
+Core Router (used by ISPs)
+Edge Router (connects to external networks)
+
+⚡ Use Case:
+In every home, office, data center for connecting networks.
+
+# 5. Gateway (All Layers – Mostly Layer 7)
+📘 What it is:
+A Gateway acts as a protocol translator between networks using different protocols (e.g., TCP/IP ↔ AppleTalk).
+
+🛠️ How it works:
+Converts data formats, header information, and sometimes encryption.
+
+Operates across all layers of OSI (mainly application layer).
+
+Often combines with router/firewall functionality.
+
+⚡ Use Case:
+IoT platforms (CoAP ↔ HTTP)
+
+Email gateways (SMTP ↔ X.400)
+
+VoIP calls (SIP ↔ PSTN)
+
+🔹 6. Modem (Layer 1 – Physical Layer)
+📘 What it is:
+Modem = MOdulator + DEModulator.
+It converts digital signals to analog and vice versa for telephone/cable transmission.
+
+🛠️ How it works:
+Your computer sends digital data.
+Modem converts it to analog for transmission over copper lines.
+Receiver modem converts it back to digital.
+
+📌 Types:
+DSL Modem
+Cable Modem
+Fiber Modem (ONT)
+
+⚡ Use Case:
+Used in home networks, especially DSL or cable internet.
+
+🔹 7. Access Point (Layer 2)
+📘 What it is:
+An Access Point (AP) allows wireless devices (laptops, phones) to connect to a wired network using Wi-Fi.
+
+🛠️ How it works:
+Connects to a router/switch via Ethernet.
+Transmits Wi-Fi signals (SSID).
+Handles MAC authentication, sometimes DHCP relay.
+
+📌 Types:
+    Standalone AP: Basic home usage.
+
+    Controller-based AP: Used in enterprise for central management.
+
+⚡ Use Case:
+    Offices, homes, airports, campuses.
+
+ 

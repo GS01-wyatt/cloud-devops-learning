@@ -1,0 +1,57 @@
+14. Advanced Linux Topics
+System Services (systemctl)
+
+Service Management
+
+Boot Process
+
+Environment Variables
+
+Profile Files
+
+Aliases
+
+Process Scheduling Advanced
+
+Networking Advanced
+
+Log Management Advanced
+
+Container Basics
+
+Docker Basics
+
+Nginx Basics
+
+Performance Tuning
+
+Kernel Basics
+
+Troubleshooting Advanced
+
+
+
+# What are System Services in Linux, and how are they managed using systemctl?
+What is the difference between systemctl start, stop, restart, enable, and status?
+What are Environment Variables, and why are they important in Linux?
+What is the difference between local environment variables and global environment variables?
+How do you set, view, and permanently configure environment variables in Linux?
+What is Docker, and how is it different from a Virtual Machine (VM)?
+What are Docker Images and Docker Containers? Explain the difference.
+What is Nginx, and why is it commonly used in Cloud and DevOps environments?
+A web application is not accessible through Nginx. How would you troubleshoot the issue?
+How would you deploy and run a Dockerized application on a Linux server?
+
+Most Asked Scenario-Based Questions
+# A service is not starting after a server reboot. How would you troubleshoot it?
+
+An application cannot access an environment variable. What checks would you perform?
+A Docker container keeps stopping unexpectedly. How would you investigate?
+Nginx is running, but users cannot access the website. What could be the issue?
+You need to deploy a web application quickly and consistently across multiple servers. Why would you choose Docker?
+Very Common Cloud & DevOps Interview Questions
+What is Docker, and why is it used?
+What is the difference between Docker and Virtual Machines?
+What is Nginx, and how does it work as a Reverse Proxy?
+What are Environment Variables?
+How do you manage services in Linux using systemctl?

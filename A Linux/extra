@@ -1,0 +1,65 @@
+In Linux, OS (Operating System) refers to the system software that manages hardware and software resources and provides services for programs.
+
+# What is Linux OS?
+Linux is an open-source operating system based on the Unix architecture. It is widely used in servers, desktops, mobile devices (Android), and embedded systems.
+
+> structure of linux
+> fundamental of Linux
+> Linux components
+> Linux distribution
+> Linux set up
+> package Management
+> 
+
+
+# Q 403 and 404
+403 Forbidden
+Server request ko samajh gaya but access deny kar diya.
+Meaning:
+Permission nahi hai
+Example:
+Private page access karna
+404 Not Found
+Requested page/resource server par nahi mila.
+Meaning:
+URL ya page exist nahi karta
+
+# Q 443 and 80
+Port 443
+HTTPS ka default port
+Use:
+Secure websites
+Example:
+https://google.com
+
+Port 80
+HTTP ka default port
+Use:
+Normal unsecured websites
+Example:
+http://example.com
+
+# Q. API (Application Programming Interface)
+Ye ek bridge ya messenger ki tarah kaam karta hai jo do software/applications ko aapas me communicate karne deta hai.
+Simple language me:
+Ek app request bhejta hai
+API us request ko dusre server/application tak pahuchata hai
+Fir response wapas laata hai
+
+type:
+REST API:
+-Representational State Transfer API
+SOAP API:
+-Simple Object Access Protocol API
+GraphQL API
+Query language based API developed by Facebook
+WebSocket API
+Real-time communication API
+Public API
+API available for everyone
+Private API
+API used inside a company
+Partner API
+API shared with authorized partners
+Composite API
+API that combines multiple APIs in one request

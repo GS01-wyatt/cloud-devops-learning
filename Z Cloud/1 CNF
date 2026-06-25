@@ -30,16 +30,16 @@ These applications store and process data on cloud servers.
 On-Demand Self Service
 Users can automatically access computing resources whenever needed without human interaction with the provider.
 
-Broad Network Access 
+Broad Network Access(BNA)
 Cloud services are available over the internet and can be accessed using devices such as laptops, smartphones, or tablets.
 
-Resource Pooling
+Resource Pooling(RP)
 Cloud providers share computing resources among multiple users.
 
-Rapid Elasticity
+Rapid Elasticity(RE)
 Resources can be quickly increased or decreased depending on the demand.
 
-Measured Service
+Measured Service(MS)
 Users pay only for the resources they use (pay-as-you-go model).
 
 
@@ -121,19 +121,16 @@ Today → Cloud used worldwide for many applications.
 We need Cloud Computing because it makes computing easier, cheaper, and more flexible than traditional systems.
 
 1. Cost Saving
-
 Organizations do not need to buy expensive servers, hardware, and infrastructure.
 They can use cloud services and pay only for what they use.
 
 2. Scalability
 Cloud allows users to increase or decrease resources (storage, servers, etc.) according to their needs.
-
 Example:
 If a website gets more visitors, the cloud can increase server capacity automatically.
 
 3. Access from Anywhere
 Cloud services can be accessed from anywhere using the internet.
-
 Example:
 Files stored in Google Drive can be accessed from any device.
 
@@ -145,7 +142,6 @@ Cloud providers use powerful data centers and advanced hardware, which gives bet
 
 6. Easy Collaboration
 Multiple users can work on the same file or project at the same time.
-
 Example:
 Using Google Docs, many people can edit the same document together.
 
@@ -153,7 +149,6 @@ Using Google Docs, many people can edit the same document together.
 Cloud providers automatically update software and security, so users do not need to manage it.
 
 # Evolution of computing
-
 Evolution of Computing ka simple matlab hai computer ka time ke saath development hona.
 Simple Steps
 
@@ -267,7 +262,7 @@ High availability 🔄
 👉 Cloud computing is the delivery of computing services like storage, servers, and software over the internet.
 👉 It allows users to access data and applications anytime without managing physical hardware.
 
-2. Benefits of Cloud Computing
+# Benefits of Cloud Computing
 Key Points:
 Cost Effective
 👉 No need to buy expensive hardware
@@ -335,8 +330,8 @@ Cloud Developer
 👉 Companies like Netflix and Amazon use cloud to handle millions of users.
 
 
-# ☁️ The Actual Concept of Cloud Computing
-👉 Simple Meaning:
+# The Actual Concept of Cloud Computing
+Simple Meaning:
 Cloud Computing = Internet ke through computing services use karna
 
 Instead of:
@@ -352,3 +347,7 @@ Microsoft Azure → apps deploy
 👉 Key Idea:
 👉 “You don’t own infrastructure, you rent it on demand”
 
+
+
+
+> computing services kya hota hai.

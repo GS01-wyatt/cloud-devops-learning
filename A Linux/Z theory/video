@@ -1,0 +1,184 @@
+# System level command
+uname
+uptime
+date
+who, whoami
+which
+id
+sudo
+shutdown
+reboot
+apt
+yum
+dnf
+pacman
+portage
+rpm
+
+# user and files managementuname
+uptime
+date
+who / whoami
+which
+id
+sudo
+shutdown
+reboot
+apt
+yum
+dnf
+pacman
+portage
+
+# user and Group management commands
+sudo
+useradd
+whoami
+su
+passwd
+userdel
+groupadd
+gpasswd
+groupdel
+
+# file permission commands
+umask
+ls -l
+chmod
+chown
+chgrp
+
+# Compression Commands:
+zip / gzip / gunzip
+tar / untar
+
+# file transfer commands
+SCP commands (copy file)
+rsync commands
+
+
+# Networking Commands
+ping
+netstat
+ifconfig
+traceroute
+tracepath
+mtr
+nslookup
+telnet
+hostname
+ip
+iwconfig
+ss
+arp
+dig
+nc (netcat)
+whois
+ifplugstatus
+route
+nmap
+
+>>
+
+ping
+Netstat
+ifconfig
+Traceroute vs tracepath
+mtr
+nslookup
+Telnet
+Hostname
+ip
+iwconfig
+ss
+arp
+dig
+nc (netcat)
+whois
+ifplugstatus
+
+>>
+
+route
+nmap
+Wget
+Watch
+iptables
+traceroute
+curl vs wget 
+jq
+
+
+# AWK
+AWK is a powerful Linux command-line tool used for text processing, pattern searching, and data extraction from files or command output.
+It works line by line and is mostly used for handling structured data like tables, logs, and CSV files.
+
+>Main Uses of AWK
+Searching specific patterns in text
+Extracting columns from files
+Performing calculations
+Generating formatted reports
+Processing large text files
+Example
+awk '{print $1}' file.txt
+
+This prints the first column of every line in file.txt.
+
+>Features
+Supports variables and loops
+Works like a small programming language
+Fast for text/data manipulation
+Useful for automation and scripting
+
+# SED
+SED (Stream Editor) is a Linux command used to edit and modify text automatically in files or command output without opening the file manually.
+
+It processes text line by line and is mainly used for searching, replacing, deleting, and editing text.
+
+>Main Uses of SED
+Find and replace words
+Delete lines
+Insert new text
+Modify file content automatically
+Batch text editing
+Example
+sed 's/hello/hi/g' file.txt
+
+This replaces all occurrences of hello with hi.
+
+>Features
+Non-interactive text editor
+Very useful in shell scripting
+Fast processing for large files
+Supports regular expressions
+
+# GREP
+GREP is a Linux command used to search specific words, patterns, or expressions inside files and display matching lines.
+
+It is mainly used for filtering and finding required information from large amounts of text.
+
+>Main Uses of GREP
+Search words in files
+Find patterns using regular expressions
+Filter command output
+Search logs and error messages
+Case-sensitive or case-insensitive search
+Example
+grep "error" file.txt
+
+This displays all lines containing the word error.
+
+>Features
+Fast text searching
+Supports regular expressions
+Useful for log analysis
+Can search multiple files at once
+
+>>>>>>>>>>>>>>>>
+
+Introduction to Linux Volumes and AWS EBS
+Physical vs Logical Volumes vs Volume Groups in Linux
+Mounting Volumes in Linux
+Managing AWS EBS on EC2 Instances
+Introduction to LVM (Logical Volume Manager)
+Using LVM with EBS for Dynamic Storage Management (Notes)

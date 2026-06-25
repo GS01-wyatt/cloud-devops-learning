@@ -1,0 +1,204 @@
+🐧 Linux Commands (Basic to Advanced)
+
+📌 1. Basic Navigation Commands
+Command          	Definition
+pwd	        Show current working directory
+ls	        List files and folders
+ls -l	      Detailed file list
+ls -a	      Show hidden files
+cd dir	    Change directory
+cd ..	      Move one folder back
+cd ~	      Go to home directory
+clear	      Clear terminal screen
+history	    Show command history
+
+📌 2. File Management Commands
+
+Command	                   Definition
+touch file.txt          	Create empty file
+cat file.txt	            Display file content
+nano file.txt	            Open file editor
+vim file.txt	Open Vim editor
+cp a b	Copy file
+mv a b	Move/Rename file
+rm file.txt	Delete file
+rm -rf dir	Force delete directory
+mkdir dir	Create directory
+rmdir dir	Remove empty directory
+find / -name file	Search file
+locate file	Quickly locate file
+
+📌 3. File Viewing Commands
+Command	Definition
+head file	First 10 lines
+tail file	Last 10 lines
+tail -f log	Live log monitoring
+less file	Read large files
+more file	Page-by-page viewing
+wc file	Count lines/words
+sort file	Sort file contents
+uniq file	Remove duplicates
+cut -d ":" -f1	Extract columns
+awk '{print $1}'	Process text
+sed 's/old/new/'	Replace text
+
+📌 4. User Management Commands
+Command	Definition
+whoami	Current user
+id	User and group ID
+users	Logged-in users
+who	User session details
+adduser user	Create user
+userdel user	Delete user
+passwd user	Change password
+groupadd group	Create group
+usermod -aG group user	Add user to group
+su user	Switch user
+sudo command	Run as admin
+
+📌 5. Permission Commands
+Command	Definition
+chmod 777 file	Change permissions
+chmod +x file	Make executable
+chown user file	Change owner
+chgrp group file	Change group
+umask	Default permissions
+
+📌 6. Process Management Commands
+Command	Definition
+ps	Show processes
+ps aux	Detailed process list
+top	Live process monitor
+htop	Advanced process viewer
+kill PID	Stop process
+kill -9 PID	Force stop
+pkill name	Kill by name
+jobs	Background jobs
+bg	Run in background
+fg	Bring to foreground
+nohup command &	Run after logout
+
+📌 7. Disk & Memory Commands
+Command	Definition
+df -h	Disk space usage
+du -sh dir	Folder size
+free -m	Memory usage
+lsblk	Block devices
+fdisk -l	Disk partitions
+mount	Mount devices
+umount	Unmount device
+
+📌 8. Networking Commands
+Command	Definition
+ping host	Check connectivity
+ifconfig	Network configuration
+ip a	IP address
+netstat -tulnp	Open ports
+ss -tulnp	Socket statistics
+curl URL	API/web request
+wget URL	Download files
+scp file user@ip:/path	Secure copy
+rsync	Sync files
+ssh user@ip	Remote login
+dig domain	DNS lookup
+traceroute host	Network path
+
+📌 9. Package Management Commands
+Ubuntu/Debian
+Command	Definition
+apt update	Update package list
+apt upgrade	Upgrade packages
+apt install nginx	Install package
+apt remove nginx	Remove package
+RedHat/CentOS
+Command	Definition
+yum install httpd	Install package
+dnf install package	New package manager
+
+📌 10. Compression Commands
+Command	Definition
+tar -cvf file.tar dir	Create tar
+tar -xvf file.tar	Extract tar
+gzip file	Compress
+gunzip file.gz	Decompress
+zip file.zip file	Zip file
+unzip file.zip	Extract zip
+
+📌 11. System Information Commands
+Command	Definition
+uname -a	System information
+hostname	System name
+uptime	Running time
+date	Current date/time
+cal	Calendar
+env	Environment variables
+echo $PATH	Show PATH
+
+📌 12. Service Management Commands
+Command	Definition
+systemctl start service	Start service
+systemctl stop service	Stop service
+systemctl restart service	Restart service
+systemctl status service	Service status
+systemctl enable service	Auto start service
+
+📌 13. Log Commands
+Command	Definition
+journalctl	System logs
+dmesg	Kernel logs
+tail -f /var/log/syslog	Live logs
+
+📌 14. Advanced Linux Commands
+Command	Definition
+grep "text" file	Search text
+xargs	Pass arguments
+tee file	Save output
+alias ll='ls -la'	Create shortcut
+crontab -e	Schedule tasks
+at 10:00	One-time scheduling
+iptables	Firewall management
+chmod setuid	Special permissions
+ln -s target link	Symbolic link
+strace command	Trace system calls
+lsof	Open files
+tcpdump	Packet capture
+
+📌 15. Shell Scripting Commands
+Command	Definition
+#!/bin/bash	Bash script start
+read var	Take input
+echo	Print output
+if	Conditional statement
+for	Loop
+while	While loop
+case	Multi-condition
+export VAR=value	Environment variable
+
+📌 16. DevOps Important Linux Commands
+Command	Definition
+docker ps	Running containers
+kubectl get pods	Kubernetes pods
+git status	Git changes
+terraform apply	Infrastructure deploy
+
+🌟 Most Important Commands for Interviews
+Focus strongly on:
+ls
+cd
+grep
+find
+chmod
+chown
+ps
+top
+kill
+ssh
+scp
+curl
+systemctl
+crontab
+tar
+awk
+sed
+These are heavily asked in Cloud and DevOps interviews.
+

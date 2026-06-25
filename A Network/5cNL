@@ -1,0 +1,291 @@
+# 3. Network Layer:
+The Network Layer is the 3rd layer in the OSI model, sitting between the Data Link Layer and the Transport Layer.
+
+It is responsible for source-to-destination delivery of packets across multiple networks.
+
+The Network Layer determines the best path (routing) for data to travel from sender to receiver and handles logical addressing using IP addresses.
+
+📌 Main Responsibilities
+> Logical Addressing
+Uses IP addresses to identify source and destination devices.
+Example: IPv4, IPv6.
+
+> Routing
+Finds the best path for packets to travel.
+Routers perform this function.
+
+> Packet Forwarding
+Moves packets from one network to another until they reach the destination.
+
+> Fragmentation & Reassembly
+Splits large packets into smaller fragments.
+Reassembles them at the destination.
+
+> Internetworking
+Connects different networks together.
+
+> Congestion Control
+Helps reduce network traffic congestion.
+
+📌 Advantages
+Enables communication across multiple networks.
+Uses logical addressing (IP).
+Finds optimal paths using routing.
+Supports large-scale networks like the Internet.
+
+📌 Disadvantages
+Routing can introduce delays.
+More complex than lower layers.
+Requires routing tables and protocols.
+
+
+> Main Responsibilities of the Network Layer
+
+>Logical Addressing
+Every device connected to a network requires a unique logical address known as an IP address. The Network Layer assigns and uses these addresses to identify source and destination devices.
+
+Routing
+
+Routing is the process of determining the best path for data to travel from the sender to the receiver. Routers use routing algorithms and routing tables to make these decisions.
+
+Packet Forwarding
+
+After determining the route, the Network Layer forwards packets from one network to another until they reach the destination.
+
+Fragmentation and Reassembly
+
+Different networks support different packet sizes. If a packet is larger than the allowed size, it may be fragmented into smaller packets and reassembled at the destination.
+
+Inter-Network Communication
+
+The Network Layer enables communication between devices located on different networks and geographical locations.
+
+> Internet Protocol (IP)
+The primary protocol used at the Network Layer is the Internet Protocol (IP).
+
+IP provides:
+Logical addressing
+Routing capabilities
+Packet delivery services
+
+The two major versions are:
+IPv4 (Internet Protocol Version 4)
+IPv6 (Internet Protocol Version 6)
+
+> IPv4 (Internet Protocol Version 4)
+IPv4 is the most widely used version of the Internet Protocol.
+
+It uses a 32-bit addressing scheme, allowing approximately 4.3 billion unique addresses.
+
+IPv4 addresses are written in dotted decimal notation, where the address is divided into four sections called octets.
+
+> Characteristics of IPv4
+Uses 32-bit addresses
+Supports approximately 4.3 billion addresses
+Uses decimal numbers
+Widely deployed across the internet
+Requires techniques like NAT due to address exhaustion
+
+> Advantages of IPv4
+Easy to implement
+Widely supported
+Mature and stable technology
+
+>Limitations of IPv4
+Limited address space
+Increasing shortage of available addresses
+Dependence on NAT
+Less efficient routing compared to IPv6
+
+> IPv4 Header
+Every IPv4 packet contains a header that carries important control information.
+
+Version
+Indicates the IP version being used.
+
+Header Length
+Specifies the size of the header.
+
+Total Length
+Represents the total size of the packet.
+
+Identification
+Used during packet fragmentation and reassembly.
+
+Time To Live (TTL)
+Prevents packets from circulating indefinitely in the network.
+
+Protocol
+Identifies the upper-layer protocol such as TCP, UDP, or ICMP.
+
+Source Address
+Contains the sender's IP address.
+
+Destination Address
+Contains the receiver's IP address.
+
+> IPv6 (Internet Protocol Version 6)
+IPv6 was developed to overcome the limitations of IPv4, particularly address exhaustion.
+
+IPv6 uses a 128-bit addressing scheme, providing an enormous number of unique addresses.
+
+Addresses are written in hexadecimal format and separated by colons.
+
+Characteristics of IPv6
+Uses 128-bit addresses
+Extremely large address space
+Simplified header structure
+Better support for security
+Improved routing efficiency
+Supports automatic address configuration
+Advantages of IPv6
+Vast Address Space
+
+Provides enough addresses for future growth.
+
+Improved Security
+
+Designed with support for IPsec.
+
+Efficient Routing
+
+Simplified header processing improves performance.
+
+Auto Configuration
+
+Devices can automatically obtain addresses.
+
+End-to-End Connectivity
+
+Reduces dependency on NAT.
+
+Challenges of IPv6
+Migration from IPv4 can be complex.
+Some legacy systems may not support IPv6.
+
+> Classful Addressing
+Classful addressing was the original method of dividing IPv4 addresses into predefined classes.
+
+The purpose was to allocate network addresses based on organizational size.
+
+The five classes are:
+
+Class A
+Designed for very large networks.
+
+Class B
+Designed for medium-sized organizations.
+
+Class C
+Designed for small organizations and local networks.
+
+Class D
+Reserved for multicast communication.
+
+Class E
+Reserved for research and experimental purposes.
+
+> Limitations of Classful Addressing
+Classful addressing led to inefficient utilization of IP addresses because organizations often received far more addresses than they actually needed.
+
+Major problems included:-
+Address wastage
+Limited flexibility
+Large routing tables
+Poor scalability
+-These limitations led to the development of CIDR.
+
+> CIDR (Classless Inter-Domain Routing)
+CIDR is the modern method of IP address allocation.
+
+Instead of fixed classes, CIDR allows network administrators to allocate addresses according to actual requirements.
+
+CIDR uses a prefix length to indicate the network portion of an address.
+
+> Benefits of CIDR
+Efficient Address Allocation
+
+Reduces address wastage.
+
+Flexible Network Design
+
+Networks can be created according to actual needs.
+
+Better Scalability
+
+Supports growth without unnecessary address allocation.
+
+Route Aggregation
+
+Reduces routing table size and improves routing efficiency.
+
+> Public IP Address
+
+A Public IP address is globally unique and can be accessed through the internet.
+
+Public IP addresses are assigned by Internet Service Providers (ISPs).
+
+>Characteristics
+Globally unique
+Routable on the internet
+Assigned by ISPs
+Required for internet-facing services
+>Uses
+Web servers
+Cloud servers
+Public websites
+Online applications
+
+> Private IP Address
+A Private IP address is used within local networks and is not directly accessible from the internet.
+
+These addresses can be reused in different organizations because they are not globally unique.
+
+>Characteristics
+Used within private networks
+Not routable on the internet
+Assigned by routers or network administrators
+Conserves public IP addresses
+
+>Common Uses
+Home networks
+Office networks
+Educational institutions
+Internal enterprise networks
+
+> Public IP vs Private IP
+Public IP
+Accessible from the internet
+Globally unique
+Assigned by ISPs
+Used for external communication
+Private IP
+Used within local networks
+Not directly accessible from the internet
+Can be reused by different organizations
+Used for internal communication
+
+> NAT (Network Address Translation)
+NAT is a technique that allows multiple devices using private IP addresses to access the internet through a single public IP address.
+
+It acts as a translator between private and public networks.
+
+>Why NAT is Needed
+Conserves public IP addresses
+Enhances security
+Allows private networks to access the internet
+
+>Benefits of NAT
+Reduced consumption of public IP addresses
+Improved network security
+Simplified network management
+
+>Importance of the Network Layer
+
+The Network Layer is crucial because it:
+
+Enables communication across different networks
+Provides logical addressing through IP addresses
+Supports routing and path determination
+Connects the global internet infrastructure
+Ensures packets reach their intended destination efficiently

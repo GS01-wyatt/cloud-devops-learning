@@ -1,0 +1,207 @@
+# Transport Layer
+What is the Transport Layer?
+The Transport Layer is the third layer of the TCP/IP Model and the fourth layer of the OSI Model.
+
+It is responsible for providing end-to-end communication between applications running on different devices.
+
+In simple words, the Transport Layer ensures that data sent from one application reaches the correct application on another device.
+
+Example
+When you send a message on WhatsApp, the Transport Layer ensures that the message reaches the recipient's WhatsApp application correctly.
+
+
+# Why is the Transport Layer Used?
+
+The Transport Layer is used to ensure reliable and efficient communication between devices.
+
+Main Reasons
+To deliver data from source to destination.
+To ensure reliable communication.
+To detect and recover from errors.
+To control the flow of data.
+To identify applications using port numbers.
+Example
+
+While downloading a file, the Transport Layer makes sure that every part of the file is received correctly.
+
+# Where is the Transport Layer Used?
+The Transport Layer is used whenever applications communicate over a network.
+
+Used In
+Web Browsing
+Email
+Video Streaming
+Online Gaming
+Video Calls
+File Transfers
+Example
+
+When you open YouTube, the Transport Layer manages communication between your browser and the YouTube server.
+
+# How Does the Transport Layer Work?
+Step 1: Receive Data
+The Application Layer sends data to the Transport Layer.
+
+Example
+A browser sends a request to open Google.
+
+Step 2: Segmentation
+Large data is divided into smaller pieces called segments.
+
+Example
+A 100 MB file is broken into many smaller segments before transmission.
+
+Step 3: Add Port Numbers
+The Transport Layer adds source and destination port numbers.
+
+This helps identify which application should receive the data.
+
+Example
+HTTP → Port 80
+HTTPS → Port 443
+FTP → Port 21
+SSH → Port 22
+
+Step 4: Data Transmission
+The segments are sent to the Internet Layer for routing.
+
+Step 5: Reassembly
+At the destination, all segments are reassembled in the correct order.
+
+Example
+The downloaded file is reconstructed exactly as it was sent.
+
+
+# Protocols of the Transport Layer
+There are two main protocols:
+
+1. TCP (Transmission Control Protocol)
+TCP is a connection-oriented and reliable protocol.
+
+Features:
+Reliable communication
+Error checking
+Acknowledgements
+Retransmission of lost data
+Ordered delivery
+
+Example
+When downloading a PDF file:
+
+If segment 5 is lost,
+TCP requests segment 5 again before completing the download.
+
+> Uses
+Web Browsing
+Online Banking
+Emails
+File Transfers
+
+> Advantage
+Data arrives correctly and completely.
+
+>Disadvantage
+Slightly slower because of error checking.
+
+2. UDP (User Datagram Protocol)
+UDP is a connectionless protocol.
+It focuses on speed rather than reliability.
+
+Features
+Fast communication
+No acknowledgements
+No retransmission
+No guaranteed delivery
+
+Example
+While watching a live cricket match:
+
+If one video packet is lost, UDP does not resend it because speed is more important.
+
+Uses
+Video Streaming
+Online Gaming
+Video Calls
+Live Broadcasts
+
+Advantage
+Very fast.
+
+Disadvantage
+Some data may be lost.
+
+> Important Functions of the Transport Layer
+1. Segmentation
+Breaks large data into smaller segments.
+Example
+A 1 GB file is divided into many segments.
+
+2. Flow Control
+Controls the speed of data transmission.
+Example
+If the receiver is slow, the sender reduces its transmission speed.
+
+3. Error Control
+Detects transmission errors.
+Example
+If a segment is corrupted, TCP requests it again.
+
+4. Multiplexing
+Allows multiple applications to use the network at the same time.
+Example
+
+You can:
+Watch YouTube
+Browse Google
+Download a file
+
+all simultaneously on the same device.
+
+5. Port Addressing
+Uses port numbers to identify applications.
+Example
+A web request goes to Port 443 (HTTPS), while an email may use a different port.
+
+> Real-Life Example
+Imagine you are sending a 500-page book to a friend.
+
+> Application Layer
+Creates the book.
+
+> Transport Layer
+Divides the book into chapters, numbers them, checks for missing chapters, and ensures they arrive in order.
+
+> Internet Layer
+Chooses the route.
+
+ > Network Access Layer
+Physically delivers the package.
+
+This is exactly how the Transport Layer works with data.
+
+
+
+
+
+
+
+Interview Questions
+Q1. What is the main purpose of the Transport Layer?
+
+Answer: To provide end-to-end communication and reliable data delivery between applications.
+
+Q2. Which protocols work at the Transport Layer?
+
+Answer: TCP and UDP.
+
+Q3. Which protocol is reliable?
+
+Answer: TCP.
+
+Q4. Which protocol is faster?
+
+Answer: UDP.
+
+Q5. What is a segment?
+
+Answer: A small piece of data created by the Transport Layer for transmission.

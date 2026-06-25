@@ -7,8 +7,7 @@ Application code
 Libraries
 Dependencies
 Runtime
-
-👉 This ensures the application runs consistently across different systems
+This ensures the application runs consistently across different systems
 
 ❌ Without Docker
 To run a Node.js app:

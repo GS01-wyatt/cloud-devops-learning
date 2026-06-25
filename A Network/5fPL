@@ -1,0 +1,73 @@
+What is the Presentation Layer?
+The Presentation Layer is the sixth layer of the OSI Model. It acts as a translator between the Application Layer and the network.
+
+It ensures that data sent by one system is properly understood by another system, even if both systems use different data formats.
+
+Example
+When you open an image, video, or document received from another device, the Presentation Layer helps convert the data into a format your device can understand.
+
+>Why is the Presentation Layer Used?
+The Presentation Layer is used to make data readable, secure, and efficient for transmission.
+
+Main Reasons
+To translate data formats.
+
+To encrypt sensitive data.
+
+To decrypt received data.
+
+To compress data before transmission.
+
+To decompress received data.
+
+Example
+When you access a secure website (HTTPS), data is encrypted before being sent and decrypted when received.
+
+>Where is the Presentation Layer Used?
+The Presentation Layer is used in applications that require data formatting, security, and data compression.
+
+Used In
+Web Browsers
+
+Email Applications
+
+Multimedia Applications
+
+Secure Banking Systems
+
+File Transfer Systems
+
+Example
+While watching a video on YouTube, data is compressed for transmission and decompressed on your device.
+
+>How Does the Presentation Layer Work?
+The Presentation Layer performs several operations before data is sent and after it is received.
+
+>Data Translation
+Converts data into a standard format that both devices can understand.
+
+>Encryption and Decryption
+Protects data from unauthorized access by converting it into a secure format and then restoring it at the destination.
+
+>Compression and Decompression
+Reduces the size of data for faster transmission and restores it to its original size after reception.
+
+Example
+When sending a confidential document:
+
+Data is encrypted.
+
+Data may be compressed.
+
+Data is transmitted.
+
+At the receiver, data is decompressed and decrypted.
+
+>Importance of the Presentation Layer
+Ensures compatibility between different systems.
+
+Provides data security.
+
+Reduces bandwidth usage through compression.
+
+Improves efficiency of data transmission.

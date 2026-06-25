@@ -1,0 +1,53 @@
+8. Text Processing & Editors
+Text Editors Overview
+
+vi/vim Basics
+
+nano Basics
+
+Read Files (cat, less)
+
+Search Text (grep)
+
+Sort Text (sort)
+
+Unique Lines (uniq)
+
+Cut Columns (cut)
+
+Replace Text (sed)
+
+Pattern Scanning (awk)
+
+Head & Tail
+
+Word Count (wc)
+
+Pipe (|) Usage
+
+Redirect Output (>, >>)
+
+Combine Commands
+
+
+# What is the purpose of the grep command in Linux?
+What is the difference between grep, egrep, and fgrep?
+How would you search for a specific word or error message in a log file?
+What is sed, and where is it commonly used in DevOps?
+What is awk, and how is it different from sed?
+How do you print a specific column from a text file using awk?
+How would you count the number of occurrences of a word in a file?
+What is the difference between vi and vim editors?
+A log file contains millions of lines. How would you find all ERROR messages generated today?
+How do DevOps engineers use grep, sed, and awk for log analysis and automation?
+
+Most Asked Scenario-Based Questions
+# An application is failing in production. How would you search the logs for errors?
+
+# You need to replace an IP address in a configuration file across multiple servers. Which tool would you use?
+
+# A CSV file contains user data. How would you extract only the email column?
+
+# A log file is very large. How would you efficiently find failed login attempts?
+
+# You need to count how many times a specific error occurred in the last 24 hours. How would you do it?

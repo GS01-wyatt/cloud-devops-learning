@@ -1,0 +1,247 @@
+# 1.  difference b/w networking and internet.
+Networking
+ Networking is the interconnection of computers and devices to exchange data and share resources using communication channels.
+Example: Connecting computers in a college laboratory through a LAN.
+
+Internet
+ The Internet is a global system of interconnected computer networks that allows users worldwide to communicate and access information.
+Example: Browsing websites, sending emails, and using online applications.
+
+Key Point
+Networking is the technology of connecting devices, whereas the Internet is the world's largest network created using networking technologies.
+
+1. > internet protocol kya hai.
+
+
+# 1. The Physical Internet / How the Internet Works
+# Internet kya hai?
+Internet duniya bhar ke computers aur networks ka ek bahut bada network hai jo TCP/IP protocol ke through ek dusre se communicate karta hai.
+
+Simple Definition
+Internet ek global network of networks hai jo duniya ke lakho-crodo devices ko connect karta hai aur information share karne ki suvidha deta hai.
+
+Features
+Worldwide connectivity provide karta hai.
+Information sharing ko easy banata hai.
+Email, web browsing, file transfer, video calling jaise services provide karta hai.
+TCP/IP protocol par kaam karta hai.
+24×7 available rehta hai.
+
+Uses of Internet
+Email bhejna aur receive karna
+Web browsing
+Online shopping
+Online banking
+Social media
+Video conferencing
+Online education
+
+Example
+Jab aap browser me koi website open karte hain, jaise Google, to Internet ke madhyam se aapka computer us website ke server se connect hota hai aur webpage display karta hai.
+
+Exam Definition
+"Internet is a worldwide network of interconnected computers and networks that communicate using TCP/IP protocols to share information and resources."
+
+# Data ek device se doosre device tak kaise jata hai?
+ Jab aap kisi device se data bhejte hain (jaise WhatsApp message, email, ya website request), to data kai steps se hokar destination device tak pahunchta hai.
+
+Step 1: Data Create Hota Hai
+User message ya file send karta hai.
+Device data ko digital form (0 aur 1) me convert karta hai.
+
+Step 2: Data Packets Me Divide Hota Hai
+Bada data chhote-chhote packets me divide kiya jata hai.
+Har packet me source address aur destination address hota hai.
+
+Step 3: Router/Switch Tak Jata Hai
+Packet pehle local network ke Switch ya Router tak pahunchta hai.
+Router packet ke liye best path choose karta hai.
+
+Step 4: Internet Ke Through Travel Karta Hai
+Packets alag-alag networks aur routers se hokar travel karte hain.
+Har router packet ko next destination ki taraf forward karta hai.
+
+Step 5: Destination Device Tak Pahunchta Hai
+Saare packets destination device par receive hote hain.
+Device packets ko sahi order me jodkar original data bana deta hai.
+
+> Example
+Aap Chennai se apne dost ko Delhi me WhatsApp message "Hello" bhejte ho:
+1 Message packet me convert hota hai.
+2 Router aur Internet ke through travel karta hai.
+3 Dost ke mobile tak pahunchta hai.
+4 Mobile packets ko jodkar "Hello" display karta hai.
+
+> Flow Diagram
+Sender Device
+      ↓
+ Switch/Router
+      ↓
+   Internet
+      ↓
+ Routers
+      ↓
+Destination Device
+
+> Exam Definition
+"Data is transmitted from one device to another by dividing it into packets, routing those packets through network devices and the Internet, and reassembling them at the destination device."
+
+# Routers, switches, cables, fiber optics ka role.
+1. Switch
+ Switch ek network device hai jo multiple devices ko LAN (Local Area Network) me connect karta hai.
+Data ko sirf usi device tak bhejta hai jiske liye data hota hai.
+MAC Address ka use karta hai.
+Example:
+College lab me 20 computers ko connect karne ke liye switch use kiya jata hai.
+
+2. Router
+ Router different networks ko connect karta hai.
+Data packet ke liye best path select karta hai.
+Internet access provide karta hai.
+IP Address ka use karta hai.
+Example:
+Ghar ka Wi-Fi router aapke mobile aur laptop ko Internet se connect karta hai.
+
+3. Cables
+ Cables data ko ek device se doosre device tak physical medium ke through transfer karte hain.
+Types:
+Twisted Pair Cable (UTP)
+Coaxial Cable
+Example:
+Computer ko switch se connect karne ke liye Ethernet cable use hoti hai.
+
+4. Fiber Optics
+ Fiber optic cable data ko light signals ke form me transfer karti hai.
+Bahut high speed aur long-distance communication provide karti hai.
+Signal loss bahut kam hota hai.
+
+Example:
+Internet Service Providers (ISP) high-speed broadband ke liye fiber optic cables use karte hain.
+
+
+##  IP packets ka basic flow.
+ IP Packet data ka ek chhota unit hota hai jo network ya Internet par travel karta hai. Har packet me Source IP Address aur Destination IP Address hota hai.
+
+Basic Flow
+Step 1: Data Create Hota Hai
+User message, email, ya website request bhejta hai.
+Data packets me divide ho jata hai.
+
+
+Step 2: IP Address Add Hota Hai
+Har packet me:
+-Source IP (sender ka address)
+-Destination IP (receiver ka address)
+add kiya jata hai.
+
+Step 3: Packet Router Tak Jata Hai
+Packet local router ko milta hai.
+Router destination IP check karta hai.
+
+Step 4: Router Best Path Choose Karta Hai
+Router routing table ka use karke next route decide karta hai.
+Packet ek router se dusre router tak travel karta hai.
+
+Step 5: Destination Network Tak Pahunchta Hai
+Packet destination network ke router tak pahunchta hai.
+Router packet ko correct device tak forward karta hai.
+
+Step 6: Data Reassemble Hota Hai
+Destination device saare packets receive karti hai.
+Packets ko original order me jodkar complete data bana diya jata hai.
+
+Example
+Aap Chennai se Delhi me friend ko "Hello" bhejte ho:
+
+Mobile
+   ↓
+Wi-Fi Router
+   ↓
+ISP Network
+   ↓
+Internet Routers
+   ↓
+Destination ISP
+   ↓
+Friend's Mobile
+
+Message packet ban kar Internet ke routers se travel karta hai aur destination par pahunchkar phir se original message ban jata hai.
+
+Simple Diagram
+Sender
+  ↓
+Router
+  ↓
+Internet
+  ↓
+Router
+  ↓
+Receiver
+
+Exam Definition
+"An IP packet is a unit of data containing source and destination IP addresses that travels through routers across networks to reach its destination."
+
+
+
+*******************************************************
+*******************************************************
+
+
+# 2. The Addressing for Internet
+IP Address (IPv4, IPv6)
+Public vs Private IP
+Subnetting
+DNS (Domain Name System)
+MAC Address
+
+
+# 3. How the Data Moves in the Internet (OSI / TCP-IP Model)
+OSI Model (7 Layers)
+TCP/IP Model
+TCP vs UDP
+HTTP, HTTPS, FTP, SSH
+Packet, Segment, Frame
+
+
+# 4. Security for the Internet (VPC)
+VPC (Virtual Private Cloud)
+Firewall -> Ingress&& egress, TLS&SSL, port ke bare me
+Security Groups
+Network ACLs
+VPN
+NAT Gateway
+
+# 5. System Design & How to Design Applications
+Load Balancer
+Caching
+Database Design
+Scalability
+High Availability
+Microservices
+Distributed Systems
+Recommended Learning Order
+How Internet Works
+IP Addressing & DNS
+OSI Model & TCP/IP
+TCP, UDP, HTTP, HTTPS
+Routing & Switching
+VPC & Network Security
+Load Balancers
+System Design Fundamentals
+Scalability & Microservices
+
+
+
+
+# For DevOps interviews and cloud roles, focus especially on:
+TCP/IP
+DNS
+HTTP/HTTPS
+Security Groups
+Load Balancer
+NAT Gateway
+VPN
+
+
+
+

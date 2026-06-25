@@ -1,0 +1,49 @@
+Cron Jobs (Automation)
+Cron Basics
+
+Crontab File
+
+Edit Crontab (crontab -e)
+
+Cron Syntax
+
+Schedule Jobs
+
+List Cron Jobs
+
+Remove Cron Jobs
+
+System Cron (/etc/crontab)
+
+Run Scripts Automatically
+
+Logging Cron Jobs
+
+Cron Permissions
+
+Cron vs At
+
+Debug Cron Jobs
+
+Real-time Examples
+
+Automation Use Cases
+
+
+# What is a Cron Job in Linux, and why is it used?
+What is the purpose of the crontab command?
+How do you create and edit a Cron Job in Linux?
+Explain the five fields in a Cron expression (* * * * *).
+How would you schedule a script to run every day at 2:00 AM?
+How would you schedule a backup script to run every Sunday?
+How can you view all Cron Jobs configured for a user?
+A Cron Job is not running as expected. How would you troubleshoot it?
+What is the difference between Cron Jobs and systemd timers?
+In a DevOps environment, how would you use Cron Jobs for automation tasks such as backups, log cleanup, or monitoring?
+
+Most Asked Scenario-Based Questions
+ # You need to automate database backups every night. How would you implement it using Cron?
+A Cron Job was scheduled, but it never executed. What checks would you perform?
+How would you automate log file cleanup every week?
+How can you redirect Cron Job output to a log file for troubleshooting?
+A script works manually but fails when executed by Cron. Why might this happen?

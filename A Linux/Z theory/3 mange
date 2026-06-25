@@ -1,0 +1,142 @@
+3. User & Group Management
+→ Create/manage users and groups, and control system access.
+
+User Account Concepts
+
+Types of Users (Root, Normal, System)
+
+Create User (useradd)
+
+Set Password (passwd)
+
+Modify User (usermod)
+
+Delete User (userdel)
+
+Group Concepts
+
+Create Group (groupadd)
+
+Modify Group (groupmod)
+
+Delete Group (groupdel)
+
+Add User to Group
+
+Primary vs Secondary Group
+
+View User Information (id)
+
+View Logged-in Users (who, whoami)
+
+Switch User (su)
+
+Sudo Access (sudo)
+
+Configure Sudo (visudo)
+
+Password Policies
+
+Account Expiry & Locking
+
+User Environment Files (.bashrc, .profile)
+
+
+
+# interviews
+1. What is the difference between a User and a Group in Linux?
+A User is an individual account used to log in and perform tasks.
+A Group is a collection of users that share the same permissions.
+
+Example:
+User: golu
+Group: developers
+
+Command:
+id golu
+
+2. How do you create a new user in Linux?
+The useradd command is used to create a user.
+
+Command:
+sudo useradd devopsuser
+sudo passwd devopsuser
+
+Interview Tip:
+After creating a user, always set a password.
+
+3. How do you create a group in Linux?
+The groupadd command is used to create a group.
+
+Command:
+sudo groupadd developers
+
+Use Case:
+A DevOps team can be placed in a common group to share project files.
+
+4. How do you add a user to a group?
+Use the usermod command.
+
+Command:
+sudo usermod -aG developers devopsuser
+
+Explanation:
+-a → append
+-G → supplementary group
+
+Verify:
+groups devopsuser
+
+
+5. How can you check the details of a user?
+Use the id command.
+
+Command
+id devopsuser
+
+Output Example:
+uid=1001(devopsuser) gid=1001(devopsuser) groups=1001,1002(developers)
+
+5. How can you check the details of a user?
+Use the id command.
+
+Command:
+id devopsuser
+
+Output Example:
+uid=1001(devopsuser) gid=1001(devopsuser) groups=1001,1002(developers)
+
+8. How do you switch from one user to another?
+Use the su command.
+
+Command:
+su - devopsuser
+or
+sudo su - devopsuser
+
+Use Case:
+Testing application permissions with another user account.
+
+9. How do you delete a user in Linux?
+Use the userdel command.
+
+Command:
+sudo userdel devopsuser
+
+Delete user along with home directory:
+sudo userdel -r devopsuser
+
+10. What is the difference between Root User and Normal User?
+Root User	                  Normal User
+Full system access	  Limited access
+Can install software	Cannot install without permission
+Can manage all users	Cannot manage other users
+
+
+Q. Why is User and Group Management important in Cloud & DevOps?
+Answer:
+User and Group Management helps implement security and access control. In DevOps environments, different teams (Developers, Testers, DevOps Engineers) require different permissions.
+Example:
+Developers → Deploy applications
+Testers → Access test environment only
+DevOps Team → Manage servers and CI/CD pipelines

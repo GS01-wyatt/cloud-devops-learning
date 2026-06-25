@@ -1,0 +1,50 @@
+7. Disk & Storage Management
+Disk Basics
+
+Check Disk Usage (df)
+
+Check Directory Size (du)
+
+Partition Concepts
+
+Create Partitions (fdisk)
+
+Format Disk (mkfs)
+
+Mount/Unmount (mount, umount)
+
+/etc/fstab File
+
+Disk Types (HDD, SSD)
+
+Swap Memory
+
+LVM Basics
+
+Check Disk Health
+
+UUID Concepts
+
+Disk Permissions
+
+Backup Basics
+
+
+# How do you check disk usage in Linux?
+What is the difference between df and du commands?
+How do you identify which directory is consuming the most disk space?
+What is a partition in Linux, and why is it used?
+How do you view all available disks and partitions on a Linux server?
+What is mounting in Linux, and why is it required?
+How do you mount and unmount a filesystem in Linux?
+A production server shows "No space left on device". How would you troubleshoot the issue?
+How do you check disk health and storage utilization on a Linux server?
+A new disk is added to a Linux server. What steps would you follow to make it available for application use?
+
+
+Most Asked Scenario-Based Questions
+# The root (/) partition is 100% full. How will you identify and resolve the issue?
+A server is running out of storage. What checks will you perform?
+A mounted filesystem is not accessible after reboot. What could be the reason?
+How would you add and mount a new storage volume on a production server?
+What is the difference between a hard link and a soft link?

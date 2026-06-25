@@ -1,5 +1,7 @@
-full topic (component od AWS)
+# full topic (component od AWS)
+
 ☁️ Components of AWS
+
 🖥️ Compute
 Amazon EC2
 AWS Lambda
@@ -7,6 +9,7 @@ AWS Elastic Beanstalk
 Amazon ECS
 Amazon EKS
 AWS Fargate
+
 💾 Storage
 Amazon S3
 Amazon EBS
@@ -47,4 +50,5 @@ Amazon EventBridge
 📈 Scaling & Load
 Amazon EC2 Auto Scaling
 AWS Application Auto Scaling
+
 👉 Compute + Storage + Database + Networking + Security + Monitoring + DevOps + Messaging + Scaling

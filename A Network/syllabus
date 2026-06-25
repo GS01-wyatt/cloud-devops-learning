@@ -1,0 +1,110 @@
+https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/
+
+✅ 1. Basics
+
+✅ 2. Network Devices
+Devices: Hub, Switch, Router, Bridge, Gateway, Modem, Access Point.
+Goal: Learn the function and layer at which each device operates.
+
+✅ 3. Types of Networks
+LAN, MAN, WAN, PAN, WLAN, CAN.
+
+
+✅ 4. Network Models
+OSI Model (7 Layers): 
+TCP/IP Model (4 Layers): 
+
+5 Physical
+5 data link
+Function: Node-to-node data transfer, error detection.
+Key Topics:
+Switching Techniques (Circuit, Packet, Message)
+VLAN, Link Aggregation
+Framing, Error Detection/Correction (Parity, CRC, Hamming).
+Flow Control (Stop-and-Wait, Sliding Window: Go-Back-N, Selective Repeat).
+Piggybacking for efficiency.
+5 network
+5 transport 
+5 session
+5 presentation
+5 application
+
+
+✅ 8. Subnetting
+Skills:
+Understand and apply subnet masks
+Calculate network/broadcast/host addresses
+Apply VLSM (Variable Length Subnet Masking)
+Supernetting (opposite of subnetting; aggregation)
+
+✅ 8. Routing
+Static vs Dynamic
+Routing Algorithms:
+Link State (OSPF), Distance Vector (RIP)
+NAT (hide private IPs)
+
+✅ 10. Network Layer Protocols
+Includes:
+ARP/RARP, DHCP, ICMP, IGMP
+Routing Protocols: RIP, OSPF, BGP, IS-IS, EIGRP
+MPLS (for performance)
+GRE (Tunneling)
+
+✅ 11. Transport Layer
+Focus: End-to-end communication
+Key Protocols:
+TCP: Reliable, connection-based
+3-Way Handshake, TCP Header, Congestion Control (AIMD)
+UDP: Fast, connectionless
+Others: SCTP, DCCP, RUDP, QUIC
+
+✅ 12. Session and Presentation Layer
+Session Layer: Manages sessions/connections (SSL, RPC, PPTP)
+
+Presentation Layer: Data translation, encryption, compression (MIME, AFP, NCP)
+
+✅ 13. Application Layer
+Client-Server Architecture
+WWW, E-Mail basics
+Content Delivery Networks (CDN)
+
+✅ 14. Application Layer Protocols
+Examples:
+DNS, FTP, SMTP, SNMP
+HTTP/HTTPS, POP3, IMAP
+LDAP, NTP, TFTP, NNTP
+MQTT, SIP, SMB
+
+Purpose: Enable specific services over the internet.
+
+✅ 15. Methods of Network Security
+Focus: Protecting data and systems.
+Techniques:
+Authentication, Encryption
+Firewalls
+MAC Address Filtering
+
+✅ 16. QoS (Quality of Service)
+Purpose: Ensure reliable and timely delivery of critical data.
+Mechanisms:
+Congestion Control
+Token Bucket & Leaky Bucket Algorithms
+
+✅ 17. Wireless and Mobile Networking
+Wi-Fi Standards (802.11a/b/g/n/ac/ax)
+Bluetooth, Zigbee
+Mobile Network Generations (3G, 4G, 5G)
+
+✅ 18. Cloud Networking
+Concepts:
+IaaS, PaaS, SaaS
+VPN (Virtual Private Network)
+NFV (Network Function Virtualization)
+
+📌 Summary:
+This syllabus covers everything from basic to advanced computer networking:
+Layered understanding (OSI, TCP/IP)
+Protocols and real-world implementations
+Security and performance concepts
+Cloud and wireless innovations
+
