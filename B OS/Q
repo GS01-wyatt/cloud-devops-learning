@@ -1,0 +1,220 @@
+🟢 1. OS Fundamentals (1–15)
+
+🔹 1. What is an Operating System and what role does it play between hardware and user applications?
+👉 Follow-up: Can a computer work without OS? Explain
+
+🔹 2. What are the main functions of an OS? Can you relate them to real-life examples?
+
+🔹 3. What is the difference between kernel and OS?
+👉 Follow-up: What happens if kernel fails?
+
+🔹 4. What are different types of operating systems? (batch, time-sharing, real-time)
+👉 Follow-up: Which is used in modern systems?
+
+🔹 5. What is system call? How does user program interact with OS?
+
+🔹 6. What is dual mode (user mode vs kernel mode)? Why is it important?
+
+🔹 7. What is a process? How is it different from a program?
+
+🔹 8. What is process lifecycle? Explain all states with transitions
+
+🔹 9. What is Process Control Block (PCB)? What information does it store?
+
+🔹 10. What is context switching? Why is it costly?
+
+🔹 11. What is a thread? How is it different from a process?
+
+🔹 12. What are advantages of multithreading?
+
+🔹 13. What is user-level vs kernel-level thread?
+
+🔹 14. What is CPU scheduling and why is it needed?
+
+🔹 15. What is multitasking vs multiprocessing?
+
+🟡 2. CPU Scheduling (16–30)
+
+🔹 16. What are different CPU scheduling algorithms? Explain with examples
+
+🔹 17. What is FCFS scheduling? What are its drawbacks?
+
+🔹 18. What is Shortest Job First (SJF)? Why is it optimal?
+
+🔹 19. What is Round Robin scheduling? How does time quantum affect performance?
+
+🔹 20. What is Priority scheduling? What is starvation?
+
+🔹 21. What is aging in OS? How does it solve starvation?
+
+🔹 22. What is preemptive vs non-preemptive scheduling?
+
+🔹 23. What is turnaround time, waiting time, response time?
+
+🔹 24. Given processes, calculate scheduling metrics (common problem)
+
+🔹 25. What is multilevel queue scheduling?
+
+🔹 26. What is multilevel feedback queue?
+
+🔹 27. Which scheduling algorithm is best and why?
+
+🔹 28. What is throughput in scheduling?
+
+🔹 29. What is CPU utilization? How to improve it?
+
+🔹 30. What is convoy effect?
+
+🟠 3. Process Synchronization (31–50) 🔥🔥
+
+🔹 31. What is process synchronization? Why needed?
+
+🔹 32. What is critical section problem? Explain conditions
+
+🔹 33. What is race condition? Give example
+
+🔹 34. What is semaphore? Types?
+
+🔹 35. What is mutex? Difference with semaphore?
+
+🔹 36. What is producer-consumer problem? Explain solution
+
+🔹 37. What is readers-writers problem?
+
+🔹 38. What is dining philosophers problem?
+
+🔹 39. What is busy waiting? Why bad?
+
+🔹 40. What is spinlock?
+
+🔹 41. What is deadlock? Explain with real example
+
+🔹 42. What are necessary conditions of deadlock?
+
+🔹 43. What is deadlock prevention vs avoidance?
+
+🔹 44. What is Banker's algorithm? Explain working
+
+🔹 45. What is deadlock detection and recovery?
+
+🔹 46. What is livelock vs deadlock?
+
+🔹 47. What is starvation?
+
+🔹 48. What is resource allocation graph?
+
+🔹 49. How to avoid deadlock in real systems?
+
+🔹 50. What are synchronization primitives?
+
+🔹 51. Explain how paging works in memory management. How does it eliminate external fragmentation?
+👉 Follow-up: What problem does it introduce instead?
+
+🔹 52. What is segmentation and how is it different from paging in terms of user perspective?
+👉 Follow-up: Which one is better and why?
+
+🔹 53. What is virtual memory and how does it allow programs larger than RAM to execute?
+👉 Follow-up: What role does disk play here?
+
+🔹 54. What happens internally when a page fault occurs? Explain step-by-step
+👉 Follow-up: How does OS decide which page to replace?
+
+🔹 55. What is demand paging? How is it different from normal paging?
+
+🔹 56. What are page replacement algorithms? Compare FIFO, LRU, and Optimal
+👉 Follow-up: Which one is used in real systems?
+
+🔹 57. What is thrashing? How can you detect and prevent it?
+
+🔹 58. What is TLB and how does it improve memory access speed?
+👉 Follow-up: What happens on TLB miss?
+
+🔹 59. What is internal vs external fragmentation? Give real examples
+
+🔹 60. What is swapping? How does it affect system performance?
+
+🔹 61. What is working set model? How does it prevent thrashing?
+
+🔹 62. What is copy-on-write? Where is it used?
+
+🔹 63. What is memory protection? How OS ensures it?
+
+🔹 64. What is logical vs physical address? How are they mapped?
+
+🔹 65. What is a page table? What are its challenges?
+👉 Follow-up: Why multi-level paging is needed?
+
+🔹 66. What is multi-level paging? How does it reduce memory overhead?
+
+🔹 67. What is inverted page table? When is it used?
+
+🔹 68. What is segmentation fault? Why does it occur?
+
+🔹 69. What is cache memory and how is it different from RAM?
+
+🔹 70. What is memory hierarchy? Why is it important?
+
+🔹 71. What is NUMA architecture? Why is it used in modern systems?
+
+🔹 72. How does OS manage memory for multiple processes simultaneously?
+
+🔹 73. What is buddy system in memory allocation?
+
+🔹 74. What is slab allocation? Why is it efficient?
+
+🔹 75. How do modern operating systems handle large-scale memory efficiently?
+
+🟣 5. File System (76–90)
+
+🔹 76. What is a file system and how does OS organize data on disk?
+
+🔹 77. What are file attributes and metadata? Why important?
+
+🔹 78. What are different file allocation methods (contiguous, linked, indexed)? Compare them
+
+🔹 79. What is directory structure? Explain different types with pros/cons
+
+🔹 80. What is inode in Linux? What information does it store?
+
+🔹 81. What is journaling file system? How does it improve reliability?
+
+🔹 82. What is disk scheduling? Why needed?
+
+🔹 83. Compare FCFS, SSTF, SCAN, LOOK disk scheduling algorithms
+
+🔹 84. What is RAID? Explain different levels and their use cases
+
+🔹 85. What is disk fragmentation? How is it handled?
+
+🔹 86. What is file descriptor? How OS uses it internally?
+
+🔹 87. What is access control in file systems? How security is maintained?
+
+🔹 88. What is buffering vs caching? Difference with examples
+
+🔹 89. What is mount point in OS? How file systems are attached?
+
+🔹 90. What is file locking? Why is it needed?
+
+☁️ 6. Advanced OS + System Design (91–100)
+
+🔹 91. How does an OS manage multiple users and processes simultaneously?
+
+🔹 92. What is virtualization and how does OS support it?
+👉 Follow-up: What is hypervisor?
+
+🔹 93. What is difference between Type-1 and Type-2 hypervisor?
+
+🔹 94. What is containerization? How is it different from virtual machines?
+
+🔹 95. What is interrupt? How does OS handle interrupts?
+
+🔹 96. What is DMA (Direct Memory Access)? Why is it used?
+
+🔹 97. Explain the boot process of a computer step-by-step
+
+🔹 98. How do you monitor and improve system performance in OS?
+
+🔹 99. What is load balancing in OS or distributed systems?
+
+🔹 100. How would you design an OS for a real-time system like traffic control or medical system?

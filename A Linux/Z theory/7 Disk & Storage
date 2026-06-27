@@ -30,15 +30,70 @@ Disk Permissions
 Backup Basics
 
 
-# How do you check disk usage in Linux?
-What is the difference between df and du commands?
-How do you identify which directory is consuming the most disk space?
-What is a partition in Linux, and why is it used?
-How do you view all available disks and partitions on a Linux server?
+# 1. How do you check disk usage in Linux?
+"In Linux, I use the df -h command to check the disk usage of all mounted file systems. It displays the total, used, available space, and usage percentage in a human-readable format such as MB or GB. If I want to check the size of a specific directory, I use du -sh <directory>."
+1. df → Shows disk usage of file systems.
+2. du -sh <directory> – Shows the total size of a specific directory.
+3. lsblk – Lists all available storage devices and partitions.
+
+
+# 2. What is the difference between df and du commands?
+Answer:
+
+df (Disk Free): Shows the total, used, and free space of the entire file system or disk space
+du (Disk Usage): Shows how much space a file or directory is using.
+
+> Simple Example
+df -h → How much space is left on the disk?
+du -sh /home → How much space is used by the /home folder?
+
+
+
+# 3. How do you identify which directory is consuming the most disk space?
+Answer:
+
+"I use the du -sh * command to check the size of all directories in the current location. The directory with the largest size is consuming the most disk space."
+
+Command:
+// du -sh *
+If I want the largest directories first:
+// du -sh * | sort -hr
+
+
+# 4. What is a partition in Linux, and why is it used?
+Answer:
+A partition is a logical section of a hard disk. It divides one physical disk into multiple parts, and each partition can store data or have its own file system.
+
+> Why is it used?
+To organize data properly.
+To separate the operating system and user data.
+To improve security and make backups easier.
+> Example
+A 500 GB hard disk can be divided into:
+/ (Root) – 100 GB
+/home – 350 GB
+swap – 50 GB
+
+
+# 5. How do you view all available disks and partitions on a Linux server?
+Answer:
+I use the lsblk command to view all available disks and partitions on a Linux server. It displays the disk names, partitions, sizes, and mount points in a tree format.
+
+> Command:
+// lsblk                     
+Other useful commands:
+// sudo fdisk -l            
+(Shows detailed information about all disks and partitions.)
+
+
 What is mounting in Linux, and why is it required?
+
 How do you mount and unmount a filesystem in Linux?
+
 A production server shows "No space left on device". How would you troubleshoot the issue?
+
 How do you check disk health and storage utilization on a Linux server?
+
 A new disk is added to a Linux server. What steps would you follow to make it available for application use?
 
 

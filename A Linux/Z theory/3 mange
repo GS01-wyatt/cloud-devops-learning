@@ -110,18 +110,17 @@ uid=1001(devopsuser) gid=1001(devopsuser) groups=1001,1002(developers)
 Use the su command.
 
 Command:
-su - devopsuser
+// su - devopsuser
 or
-sudo su - devopsuser
+// sudo su - devopsuser
 
 Use Case:
 Testing application permissions with another user account.
 
 9. How do you delete a user in Linux?
 Use the userdel command.
-
 Command:
-sudo userdel devopsuser
+// sudo userdel devopsuser
 
 Delete user along with home directory:
 sudo userdel -r devopsuser
@@ -133,10 +132,11 @@ Can install software	Cannot install without permission
 Can manage all users	Cannot manage other users
 
 
-Q. Why is User and Group Management important in Cloud & DevOps?
+# Q. Why is User and Group Management important in Cloud & DevOps?
 Answer:
 User and Group Management helps implement security and access control. In DevOps environments, different teams (Developers, Testers, DevOps Engineers) require different permissions.
-Example:
+
+> Example:
 Developers → Deploy applications
 Testers → Access test environment only
 DevOps Team → Manage servers and CI/CD pipelines

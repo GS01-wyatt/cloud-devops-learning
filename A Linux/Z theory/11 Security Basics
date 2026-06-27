@@ -30,8 +30,9 @@ Secure File Transfer
 Basic Hardening
 
 
-# What are Linux file permissions, and how do you check them?
-What is the difference between Read (r), Write (w), and Execute (x) permissions?
+# 2. What are Linux file permissions, and how do you check them?
+
+# 2. What is the difference between Read (r), Write (w), and Execute (x) permissions?
 What is the difference between chmod, chown, and chgrp commands?
 What is SSH Key Authentication, and why is it more secure than password authentication?
 How do you generate an SSH key pair and use it for passwordless login?

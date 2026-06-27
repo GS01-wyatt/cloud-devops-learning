@@ -1,0 +1,209 @@
+# Part 1: Website Deployment & DevOps Concepts
+1. Website Deployment
+
+Website Deployment ka matlab hai application ko local computer se internet par live karna, taaki koi bhi user browser se access kar sake. Is process me server, hosting, domain aur configuration ka use hota hai.
+
+
+2. DNS (Domain Name System)
+
+DNS ek naming service hai jo domain name ko IP Address me convert karta hai. Jab user domain type karta hai, DNS usse sahi server tak pahunchata hai.
+
+3. Custom Domain
+
+Custom Domain website ka unique address hota hai, jaise mywebsite.com. Ye users ko website yaad rakhne me aasani deta hai aur professional identity banata hai.
+
+4. Scaling
+
+Scaling ka matlab hai application ki capacity badhana taaki zyada users ko handle kiya ja sake. Iske do types hote hain: Vertical Scaling aur Horizontal Scaling.
+
+5. Global Deployment
+
+Global Deployment me application ko alag-alag regions me deploy kiya jata hai. Isse duniya ke kisi bhi location se users ko fast response milta hai.
+
+6. CDN (Content Delivery Network)
+
+CDN servers ka network hota hai jo website ke static files ko users ke nearest location se deliver karta hai. Isse website ki speed aur performance improve hoti hai.
+
+7. Load Balancing
+
+Load Balancer incoming traffic ko multiple servers me distribute karta hai. Isse koi ek server overload nahi hota aur application high availability maintain karti hai.
+
+8. Firewall Rules
+
+Firewall ek security layer hai jo server ke incoming aur outgoing traffic ko control karti hai. Ye sirf allowed requests ko access deti hai aur unauthorized traffic ko block karti hai.
+
+9. Networking (IP, Ports, Subnets, Internet Gateway, Routing)
+
+Networking cloud resources ko connect karne ka system hai.
+
+IP Address: Device ki unique identity.
+Port: Specific service ka communication point.
+Subnet: Network ka chhota hissa.
+Internet Gateway: Internet access provide karta hai.
+Routing: Data ko destination tak pahunchata hai.
+10. IaC (Infrastructure as Code)
+
+IaC ka matlab hai infrastructure ko manually create karne ki jagah code ke through create aur manage karna. Isse automation aur consistency maintain hoti hai.
+
+11. Manage Containers
+
+Container Management ka matlab Docker ya Kubernetes ke containers ko create, run, update aur monitor karna hai. Isse applications ko easily deploy aur scale kiya ja sakta hai.
+
+12. Deploy Full Stack Web Application
+
+Full Stack Deployment me Frontend, Backend aur Database ko configure karke production server par deploy kiya jata hai. Isme Nginx, Docker aur CI/CD ka use ho sakta hai.
+
+13. SSL/TLS Working
+
+SSL/TLS protocols browser aur server ke beech secure encrypted communication establish karte hain. Isse website HTTPS par chalti hai aur data secure rehta hai.
+
+# Part 2: AWS Services
+1. AWS Basics
+
+AWS (Amazon Web Services) ek cloud platform hai jo computing, storage, networking aur database jaise services provide karta hai. Iska use scalable applications banane ke liye hota hai.
+
+2. AWS Account Setup
+
+AWS services use karne ke liye account create kiya jata hai. Iske baad billing, security aur region settings configure ki jati hain.
+
+3. IAM (Identity and Access Management)
+
+IAM users, groups aur roles ko manage karta hai. Iske through decide hota hai ki kaun AWS resources ko access kar sakta hai aur kis permission ke saath.
+
+4. EC2 (Elastic Compute Cloud)
+
+EC2 AWS ka virtual server hai jahan applications host aur run ki jati hain. Isme CPU, RAM aur Storage requirements ke according instances choose kiye jate hain.
+
+5. AMI (Amazon Machine Image)
+
+AMI ek pre-configured operating system template hota hai. Iska use naye EC2 instances launch karne ke liye kiya jata hai.
+
+6. Elastic Beanstalk
+
+Elastic Beanstalk ek Platform as a Service (PaaS) hai jo application deployment ko automate karta hai. Developer sirf code upload karta hai, baaki infrastructure AWS manage karta hai.
+
+7. Lambda
+
+Lambda serverless computing service hai. Isme code bina server manage kiye events ke response me execute hota hai.
+
+8. ECS / EKS / ECR
+ECS: Docker containers run karne ki service.
+EKS: Kubernetes cluster manage karne ki service.
+ECR: Docker images store karne ka private registry.
+9. S3 (Simple Storage Service)
+
+S3 object storage service hai jisme files, images, videos aur backups store kiye jate hain. Ye highly durable aur scalable storage provide karta hai.
+
+10. EBS & EFS
+EBS: EC2 ke liye block storage.
+EFS: Multiple EC2 instances ke liye shared file storage.
+11. Glacier
+
+Glacier long-term backup aur archival storage service hai. Iska use rarely accessed data ko low cost me store karne ke liye hota hai.
+
+12. CloudFront
+
+CloudFront AWS ka CDN service hai jo content ko nearest edge location se users tak deliver karta hai aur website ki speed improve karta hai.
+
+13. SQS / SNS / API Gateway
+SQS: Message Queue Service.
+SNS: Notification Service.
+API Gateway: APIs create, publish aur secure karne ki service.
+14. RDS
+
+RDS managed relational database service hai jo MySQL, PostgreSQL, MariaDB aur SQL Server ko support karti hai. AWS backup aur maintenance manage karta hai.
+
+15. DynamoDB
+
+DynamoDB AWS ka NoSQL database hai jo high performance aur low latency applications ke liye use hota hai.
+
+16. VPC (Virtual Private Cloud)
+
+VPC AWS me private virtual network create karne ki service hai. Isme Subnets, Route Tables, Internet Gateway aur Security Groups configure kiye jate hain.
+
+17. Route 53
+
+Route 53 AWS ki DNS service hai jo domain registration aur DNS management provide karti hai. Ye domain ko AWS resources se connect karti hai.
+
+18. Load Balancer
+
+AWS Load Balancer user requests ko multiple EC2 instances me distribute karta hai. Isse application reliable aur highly available rehti hai.
+
+19. Auto Scaling
+
+Auto Scaling traffic ke according EC2 instances automatically increase ya decrease karta hai. Isse performance aur cost dono optimize hote hain.
+
+20. CloudFormation
+
+CloudFormation AWS infrastructure ko templates ke through automatically create aur manage karta hai. Ye Infrastructure as Code (IaC) service hai.
+
+21. CloudWatch & CloudTrail
+CloudWatch: Resources aur applications ko monitor karta hai.
+CloudTrail: AWS account ki activities aur API calls ka log maintain karta hai.
+22. Billing & Cost Management
+
+Ye service AWS usage aur billing ko monitor karti hai. Iske through cost reports, budgets aur alerts set kiye ja sakte hain.
+
+23. SageMaker
+
+SageMaker Machine Learning models ko build, train aur deploy karne ki AWS managed service hai.
+
+24. AWS IoT
+
+AWS IoT devices ko cloud se securely connect karta hai. Ye sensor data collect aur process karne ke liye use hota hai.
+
+# Part 3: Bonus Concepts
+1. Cloud Computing
+
+Cloud Computing internet ke through computing resources (Server, Storage, Database, Networking) on-demand provide karta hai. Isse physical infrastructure kharidne ki zarurat nahi padti.
+
+2. Virtualization
+
+Virtualization ek physical machine par multiple virtual machines (VMs) run karne ki technology hai. Isse hardware utilization improve hota hai.
+
+3. CLI Configuration
+
+CLI (Command Line Interface) ke through AWS resources ko commands ki madad se configure aur manage kiya jata hai. Iske liye AWS CLI install aur configure ki jati hai.
+
+4. ELB & ASG
+ELB (Elastic Load Balancer): Traffic ko multiple servers me distribute karta hai.
+ASG (Auto Scaling Group): Traffic ke hisaab se servers automatically add ya remove karta hai.
+5. Lambda Function
+
+Lambda Function ek specific task ko event trigger hone par automatically execute karti hai. Isme server manage karne ki zarurat nahi hoti.
+
+6. CloudFormation (IaC)
+
+CloudFormation JSON ya YAML templates ka use karke AWS infrastructure automatically create aur manage karta hai.
+
+7. CloudFront (CDN)
+
+CloudFront static content ko edge locations se deliver karta hai, jisse latency kam aur website ki speed fast ho jati hai.
+
+8. AWS Billing & Organization
+
+AWS Billing account usage aur cost ko track karta hai, jabki AWS Organizations multiple AWS accounts ko centrally manage karne ki service hai.
+
+9. AWS Amplify
+
+AWS Amplify frontend aur full-stack web applications ko build, host aur deploy karne ki managed service hai.
+
+10. AWS ECS
+
+Amazon ECS Docker containers ko manage aur run karne ki fully managed container orchestration service hai.
+
+11. AWS EKS
+
+Amazon EKS Kubernetes clusters ko create aur manage karne ki managed service hai.
+
+12. Terraform
+
+Terraform ek open-source Infrastructure as Code tool hai jo cloud resources ko code ke through create aur manage karta hai. Ye AWS ke alawa Azure, GCP aur doosre cloud providers ko bhi support karta hai.
+
+13. DNS Working
+
+DNS domain name ko IP Address me convert karta hai taaki browser sahi server se connect ho sake. Is process ko DNS Resolution kehte hain.
+
+14. SSL/TLS Certificates & Encryption
+
+SSL/TLS Certificates website ki identity verify karte hain aur browser aur server ke beech encrypted communication establish karte hain. Isse data secure rehta hai aur website HTTPS par chalti hai.

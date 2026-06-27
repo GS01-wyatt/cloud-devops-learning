@@ -1,3 +1,19 @@
+# Navigattion and basic
+pdw - 
+ls -al :-
+cd :-
+touch :-
+mkdir :-
+rm -rf :-
+
+# file read and edit
+cat -
+head/tail -
+name -
+vim -
+
+
+
 # System level command
 uname
 uptime

@@ -29,7 +29,7 @@ find / -name file	Search file
 locate file	Quickly locate file
 
 📌 3. File Viewing Commands
-Command	Definition
+
 head file	First 10 lines
 tail file	Last 10 lines
 tail -f log	Live log monitoring
@@ -164,7 +164,7 @@ lsof	Open files
 tcpdump	Packet capture
 
 📌 15. Shell Scripting Commands
-Command	Definition
+
 #!/bin/bash	Bash script start
 read var	Take input
 echo	Print output

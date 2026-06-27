@@ -31,13 +31,95 @@ Port Checking
 
 
 # 1. What is an IP Address, and what is the difference between Public IP and Private IP?
-How do you check the IP address of a Linux server?
-What is SSH, and why is it important in Linux administration and DevOps?
-How do you connect to a remote Linux server using SSH?
-What is the difference between TCP and UDP?
-How do you check whether a server is reachable over the network?
-A Linux server is not reachable through SSH. How would you troubleshoot the issue?
-How do you check which ports are currently open and listening on a Linux server?
+> What is an IP Address?
+An IP (Internet Protocol) Address is a unique numerical address assigned to every device connected to a network. It allows devices to communicate with each other over a network or the internet.
+
+Example:
+IPv4: 192.168.1.10
+IPv6: 2001:db8::1
+
+> Difference Between Public IP and Private IP
+Public IP	                           Private IP
+-Accessible over the Internet	
+-Used only inside a private network
+
+Assigned by the Internet Service Provider (ISP)	
+Assigned by the router or network administrator
+
+Must be globally unique.
+Can be reused in different private networks.
+> Private IP Address Ranges
+10.0.0.0 – 10.255.255.255
+172.16.0.0 – 172.31.255.255
+192.168.0.0 – 192.168.255.255
+> Example
+Your Wi-Fi router gives your laptop a Private IP (e.g., 192.168.1.5).
+Your ISP assigns your router a Public IP (e.g., 49.205.100.25), which is visible on the internet.
+
+
+
+# 2. How do you check the IP address of a Linux server?
+To check the IP address of a Linux server, I use the ip addr or ip a command. It displays all network interfaces along with their IP addresses. If I only need the server's IP address, I use hostname -I, which shows the IP directly.
+
+Commands
+// ip addr
+or
+// ip a
+To display only the IP address:
+// hostname -I
+
+> Which command do you use most in a production server?
+I usually use ip addr because it shows complete network information, including interface names, IP addresses, and their status.
+
+
+# 3. What is SSH, and why is it important in Linux administration and DevOps?
+Answer
+SSH (Secure Shell) is a secure network protocol used to connect to a remote Linux server over a network. It allows administrators and DevOps engineers to manage servers securely using the command line. All communication is encrypted, making it safe from unauthorized access.
+
+> Why is SSH important?
+To securely access remote Linux servers.
+To execute commands remotely.
+To transfer files securely (using SCP or SFTP).
+To manage cloud servers (AWS EC2, Azure, GCP).
+> Command to Connect
+// ssh username@server_ip
+Example:
+// ssh ubuntu@192.168.1.10
+
+
+# 4. How do you connect to a remote Linux server using SSH?
+To connect to a remote Linux server, I use the SSH command followed by the username and the server's IP address or hostname. 
+If it's my first time connecting, the server's fingerprint is displayed, and after accepting it, I enter the password or use an SSH key for authentication.
+
+>Interviewer: How do you connect to an AWS EC2 instance?
+
+You:
+
+"I use the SSH command with the private key. For example:
+ssh -i mykey.pem ubuntu@<public-ip>
+This securely connects me to the EC2 instance."
+
+
+
+# 5. What is the difference between TCP and UDP?
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two communication protocols used to send data over a network. 
+The main difference is that TCP is reliable and connection-oriented, while UDP is faster but does not guarantee delivery.
+
+Examples
+TCP: HTTP/HTTPS, SSH, FTP, Email
+UDP: Video streaming, Online gaming, DNS, VoIP
+> Real Interview Scenario
+
+Interviewer: Which protocol does SSH use?
+
+You:
+SSH uses TCP because it requires reliable and secure communication.
+
+# 6. How do you check whether a server is reachable over the network?
+
+# 7. A Linux server is not reachable through SSH. How would you troubleshoot the issue?
+# 8. How do you check which ports are currently open and listening on a Linux server?
+
 What is DNS, and how do you verify whether DNS resolution is working correctly?
 A web application hosted on a Linux server is not accessible. What networking checks would you perform to identify the issue?
 

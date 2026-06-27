@@ -1,0 +1,304 @@
+🔷 1. Basics of Networking
+✅ Basic (5)
+What is networking and where is it used in real applications?
+Why networking is important for backend systems?
+What is data transmission?
+What is protocol?
+What is bandwidth vs latency?
+
+✅ Real Interview Scenarios (20)
+If your API is slow, how do you check network issue vs code issue?
+Why high bandwidth but still slow application?
+What happens if latency is high in cloud app?
+Why packet loss affects video streaming?
+What happens if network congestion occurs?
+Why protocols needed for communication?
+What happens if protocol mismatch?
+Why networking basics asked in interviews?
+What happens if server unreachable?
+Why ping used for debugging?
+What happens if packet dropped repeatedly?
+Why retry mechanism needed?
+What happens if DNS slow?
+Why CDN improves performance?
+What happens if network unstable?
+Why network troubleshooting important?
+What happens if firewall blocks request?
+Why networking knowledge required for developers?
+What happens if IP conflict occurs?
+How to debug real network issue step-by-step?
+
+🔷 2. Network Devices
+✅ Basic (5)
+What is Hub, Switch, Router difference?
+What is Gateway?
+What is Modem?
+What is Access Point?
+Which device works at which OSI layer?
+
+✅ Real Interview Scenarios (25)
+Why switch preferred over hub in real networks?
+What happens if hub used instead of switch?
+Why router needed between networks?
+What happens if router fails in cloud?
+Why gateway used in real systems?
+What happens if default gateway misconfigured?
+Why modem needed in internet connection?
+What happens if access point overloaded?
+Why switches improve performance?
+What happens if MAC table full?
+Why router uses IP instead of MAC?
+What happens if ARP fails?
+Why gateway critical in API calls?
+What happens if no router between networks?
+Why devices operate at different OSI layers?
+What happens if switch loop occurs?
+Why STP used?
+What happens if broadcast storm occurs?
+Why load balancer acts like smart router?
+What happens if device overloaded?
+Why network segmentation important?
+What happens if wrong device used?
+Why device-level questions asked?
+What happens if firewall placed wrongly?
+How to debug device-level issue?
+
+🔷 3. Types of Networks
+✅ Basic (5)
+What is LAN, WAN, MAN?
+What is PAN and WLAN?
+What is CAN?
+Difference LAN vs WAN?
+Where each network type used?
+
+✅ Real Interview Scenarios (20)
+Why LAN faster than WAN?
+What happens if WAN latency high?
+Why cloud uses WAN heavily?
+What happens if WLAN unstable?
+Why PAN used in IoT?
+What happens if network coverage low?
+Why enterprise uses MAN?
+What happens if LAN overloaded?
+Why network type matters in design?
+What happens if WAN fails?
+Why CDN uses distributed networks?
+What happens if network scaling required?
+Why hybrid network used?
+What happens if wireless interference?
+Why network type impacts performance?
+What happens if wrong network chosen?
+Why cloud multi-region deployment?
+What happens if data center down?
+Why redundancy needed?
+How to choose network type?
+
+🔷 4. Network Models (OSI + TCP/IP)
+✅ Basic (5)
+What is OSI model?
+What is TCP/IP model?
+Difference between OSI and TCP/IP?
+Why layering used?
+What is encapsulation?
+
+✅ Real Interview Scenarios (25)
+If API fails, how OSI helps debugging?
+Why TCP/IP used in real systems?
+What happens if one layer fails?
+Why layering simplifies design?
+What happens if data corrupted?
+Why encapsulation important?
+What happens if packet lost?
+Why reassembly needed?
+What happens if out-of-order packets?
+Why transport layer critical?
+What happens if application layer fails?
+Why OSI asked in interviews?
+What happens if encryption missing?
+Why TCP/IP simpler than OSI?
+What happens if wrong protocol used?
+Why abstraction important?
+What happens if DNS fails?
+Why debugging layer-by-layer?
+What happens if firewall blocks layer?
+Why models important for cloud?
+What happens if session lost?
+Why presentation layer used?
+What happens if compression fails?
+Why models help in interviews?
+How to explain request flow end-to-end?
+
+🔷 5–6. Physical + Data Link Layer (Merged Important)
+✅ Basic (5)
+What is physical layer?
+What is data link layer?
+What is topology?
+What is framing?
+What is error detection?
+
+✅ Real Interview Scenarios (25)
+What happens if cable damaged?
+Why fiber faster than copper?
+What happens if signal noise high?
+Why CRC used?
+What happens if frame lost?
+Why sliding window used?
+What happens if flow control fails?
+Why stop-and-wait inefficient?
+What happens if retransmission needed?
+Why VLAN used?
+What happens if VLAN misconfigured?
+Why switching technique matters?
+What happens if packet switching fails?
+Why error detection critical?
+What happens if parity check fails?
+Why link aggregation used?
+What happens if bandwidth limited?
+Why piggybacking used?
+What happens if collision occurs?
+Why MAC addressing important?
+What happens if frame duplication?
+Why congestion happens?
+What happens if network overloaded?
+Why link layer reliability important?
+How to debug data link issue?
+
+🔷 7–9. Network Layer + Subnetting + Routing
+✅ Basic (5)
+What is IP addressing?
+What is subnetting?
+What is routing?
+What is NAT?
+What is CIDR?
+
+✅ Real Interview Scenarios (25)
+Why subnetting required in cloud VPC?
+What happens if IP conflict?
+Why NAT used in real systems?
+What happens if routing fails?
+Why CIDR used in AWS?
+What happens if subnet mask wrong?
+Why private IP used?
+What happens if gateway not reachable?
+Why routing protocols needed?
+What happens if OSPF fails?
+Why BGP used on internet?
+What happens if route loop occurs?
+Why VLSM used?
+What happens if broadcast address wrong?
+Why IP addressing critical?
+What happens if route not found?
+Why network segmentation important?
+What happens if NAT fails?
+Why routing table important?
+What happens if cloud route misconfigured?
+Why subnet isolation improves security?
+What happens if IP unreachable?
+Why routing scalable?
+What happens if packet dropped?
+How to debug routing issue?
+
+🔷 10–11. Transport Layer + Protocols (TCP/UDP)
+✅ Basic (5)
+What is TCP?
+What is UDP?
+What is 3-way handshake?
+What is congestion control?
+Difference TCP vs UDP?
+
+✅ Real Interview Scenarios (25)
+Why TCP used in APIs but UDP in streaming?
+What happens if handshake fails?
+Why TCP reliable?
+What happens if packet lost?
+Why UDP faster?
+What happens if congestion occurs?
+Why AIMD used?
+What happens if window size small?
+Why QUIC used in HTTP/3?
+What happens if connection reset?
+Why retransmission needed?
+What happens if duplicate packet?
+Why flow control important?
+What happens if buffer overflow?
+Why transport layer critical?
+What happens if timeout occurs?
+Why TCP slow start used?
+What happens if port blocked?
+Why multiplexing used?
+What happens if connection never closed?
+Why sockets used?
+What happens if high latency?
+Why UDP unreliable?
+What happens if wrong port used?
+How to debug TCP issue?
+
+🔷 12–14. Application Layer + Protocols
+✅ Basic (5)
+What is HTTP/HTTPS?
+What is DNS?
+What is FTP?
+What is SMTP?
+What is CDN?
+
+✅ Real Interview Scenarios (25)
+What happens when URL entered in browser?
+Why HTTPS required?
+What happens if DNS fails?
+Why CDN improves performance?
+What happens if HTTP 500 error?
+Why REST APIs use HTTP?
+What happens if server down?
+Why caching important?
+What happens if email not sent?
+Why SMTP used?
+What happens if DNS slow?
+Why load balancing needed?
+What happens if API timeout?
+Why status codes important?
+What happens if request malformed?
+Why HTTP stateless?
+What happens if session lost?
+Why cookies used?
+What happens if CDN fails?
+Why microservices depend on HTTP?
+What happens if API overloaded?
+Why API gateway used?
+What happens if authentication fails?
+Why DNS caching important?
+How to debug API issue?
+
+🔷 15–18. Security + QoS + Wireless + Cloud Networking
+✅ Basic (5)
+What is firewall?
+What is VPN?
+What is QoS?
+What is Wi-Fi standard?
+What is cloud networking?
+
+✅ Real Interview Scenarios (25)
+What happens if firewall blocks traffic?
+Why VPN used in companies?
+What happens if DDoS attack?
+Why QoS important for streaming?
+What happens if bandwidth not prioritized?
+Why 5G faster than 4G?
+What happens if wireless interference?
+Why cloud networking critical?
+What happens if VPC misconfigured?
+Why load balancer used?
+What happens if security group open?
+Why encryption needed?
+What happens if data leaked?
+Why IAM roles important?
+What happens if NAT fails?
+Why multi-region deployment used?
+What happens if AZ down?
+Why monitoring needed?
+What happens if logs missing?
+Why CDN used globally?
+What happens if network latency high?
+Why auto-scaling important?
+What happens if cloud outage?
+Why zero-trust security used?
+How to debug cloud networking issue?

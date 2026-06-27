@@ -30,16 +30,126 @@ Redirect Output (>, >>)
 Combine Commands
 
 
-# What is the purpose of the grep command in Linux?
-What is the difference between grep, egrep, and fgrep?
-How would you search for a specific word or error message in a log file?
-What is sed, and where is it commonly used in DevOps?
-What is awk, and how is it different from sed?
-How do you print a specific column from a text file using awk?
+# 1. What is the purpose of the grep command in Linux?
+The grep (Global Regular Expression Print) command is used to search for a specific word or pattern in a file or command output. It displays only the lines that match the given pattern.
+
+> Syntax
+// grep "pattern" filename
+Example
+Search for the word "error" in a log file:
+// grep "error" logfile.txt
+> Why is grep important?
+Find specific text in files.
+Search log files for errors.
+Filter command output.
+Troubleshoot issues quickly.
+>Interviewer: How would you find all error messages in a log file?
+You
+I use the grep command. For example:
+// grep "ERROR" application.log
+This displays only the lines containing "ERROR".
+
+
+# 2. What is the difference between grep, egrep, and fgrep?
+All three commands are used to search text in Linux, but they work differently.
+
+Command	Purpose
+> grep-	Searches for a simple word or pattern.
+> egrep-	Searches using extended regular expressions (supports +, ?, `
+
+> fgrep-	Searches for a fixed string (does not treat special characters as regular expressions). It is equivalent to grep -F.
+
+> Examples
+1. grep
+//grep "error" logfile.txt
+(Searches for the word error.)
+
+
+
+# 3. How would you search for a specific word or error message in a log file?
+Answer
+
+To search for a specific word or error message in a log file, I use the grep command. It searches the file and displays only the lines that contain the matching word or pattern. This is very useful for troubleshooting logs.
+
+Syntax
+grep "word" filename
+>Examples
+Search for ERROR in a log file:
+// grep "ERROR" application.log
+>Real Interview Scenario
+
+Interviewer: A production application is failing. How will you find the error in the log file?
+
+You:
+
+First, I locate the application's log file. Then I use the grep command to search for keywords such as ERROR, Exception, or Failed. For example:
+
+//grep "ERROR" application.log
+
+This quickly shows the error messages, helping me identify the root cause.
+
+
+# 4. What is sed, and where is it commonly used in DevOps?
+Answer
+
+sed (Stream Editor) is a Linux command used to search, replace, insert, delete, or modify text in a file or command output without opening the file in a text editor.
+
+Where is it used in DevOps?
+To update configuration files automatically.
+To replace environment variables in deployment scripts.
+To modify YAML, JSON, or properties files.
+>Example Commands
+
+Replace 8080 with 9090 in a file:
+
+// sed 's/8080/9090/' app.conf
+
+>Real Interview Scenario
+
+Interviewer: Suppose you need to change the port number from 8080 to 9090 in a configuration file on multiple servers. What will you do?
+
+You:
+
+I use the sed command to replace the value automatically instead of editing the file manually.
+
+// sed -i 's/8080/9090/g' app.conf
+
+
+# 5. What is awk, and how is it different from sed?
+Answer
+
+awk is a Linux command used to search, filter, and process text or columns in a file. It is mainly used to extract and analyze data.
+
+The main difference is that sed is used to edit or replace text, while awk is used to read, filter, and process structured data.
+
+Examples
+
+Print the first column of a file:
+
+// awk '{print $1}' employees.txt
+
+Replace "8080" with "9090":
+
+// sed -i 's/8080/9090/g' app.conf
+
+> Real Interview Scenario
+Interviewer: When would you use awk instead of sed?
+
+You:
+I use awk when I need to extract specific columns or analyze data, such as displaying usernames from /etc/passwd or generating reports. I use sed when I need to modify or replace text in a file.
+
+
+
+# How do you print a specific column from a text file using awk?
+
 How would you count the number of occurrences of a word in a file?
+
 What is the difference between vi and vim editors?
+
 A log file contains millions of lines. How would you find all ERROR messages generated today?
+
 How do DevOps engineers use grep, sed, and awk for log analysis and automation?
+
 
 Most Asked Scenario-Based Questions
 # An application is failing in production. How would you search the logs for errors?

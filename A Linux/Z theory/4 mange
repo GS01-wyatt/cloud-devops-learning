@@ -39,19 +39,105 @@ Scheduling Processes (cron, at)
 Process Logs & Debugging
 
 
-Top 10 Most Important Linux Process Management Interview Questions (Cloud & DevOps)
-What is a process in Linux?
-What is a PID (Process ID), and why is it important?
-How do you check all running processes in Linux?
-What is the difference between ps, top, and htop commands?
-A server's CPU usage suddenly becomes 100%. How would you identify the process causing the issue?
-An application is not responding. How would you check whether its process is running and troubleshoot it?
-What is the difference between kill, kill -9, and pkill?
-What is a Zombie Process, and how can you identify it?
-What are nice and renice commands, and why are they used?
-What is the difference between a Process and a Thread?
+
+# 1. What is a process in Linux?
+A process is a program that is currently running (executing) in the Linux operating system.
+
+Every process has a unique Process ID (PID).
+The Linux kernel manages all processes.
+A process uses system resources such as CPU, memory, and files while it is running.
+
+Example:
+When you open a web browser, text editor, or run a command like ls, Linux creates a new process.
+
+# 2. What is a PID (Process ID), and why is it important?
+Answer:
+A PID (Process ID) is a unique number assigned by the Linux operating system to every running process. It helps the system identify and manage each process.
+
+> Why is it important?
+To identify a running process.
+To monitor process status.
+To stop or kill a process.
+To troubleshoot process-related issues.
+> Example Commands
+// ps -ef
+(Shows all running processes with their PIDs.)
+// kill <PID>
+(Stops a process using its PID.)
+
+
+# 3. How do you check all running processes in Linux?
+Answer:
+To check all running processes in Linux, I use the ps -ef command. It displays all running processes along with details such as the user, PID, CPU time, and command. For a real-time view of running processes, I use the top command.
+
+> Commands
+// ps -ef
+(Shows all running processes.)
+// top
+(Shows running processes in real time.)
+
+# 4. What is the difference between ps, top, and htop commands?
+Answer:
+ps – Shows a snapshot of the currently running processes.
+top – Shows live (real-time) running processes and updates continuously.
+htop – An interactive and user-friendly version of top with colors, scrolling, and easier process management.
+
+> Commands
+// ps -ef
+(Shows a snapshot of all running processes.)
+// top
+(Shows processes in real time.)
+// htop
+(Shows an interactive real-time process monitor. It may need to be installed first.)
+
+
+# 5. A server's CPU usage suddenly becomes 100%. How would you identify the process causing the issue?
+Answer:
+First, I use the top or htop command to monitor CPU usage in real time. Then I identify the process with the highest CPU usage by checking its PID and process name. If needed, I use ps -p <PID> -f to get more details about that process.
+
+> Commands
+// top
+or
+// htop
+To get details of a specific process:
+// ps -p <PID> -f
+If the process is unnecessary or stuck:
+// kill <PID>
+or
+// kill -9 <PID>
+
+# 6. An application is not responding. How would you check whether its process is running and troubleshoot it?
+
+# 7. What is the difference between kill, kill -9, and pkill?
+
+# 8. What is a Zombie Process, and how can you identify it?
+
+# 9. What are nice and renice commands, and why are they used?
+
+# 10What is the difference between a Process and a Thread?
+
+
 Most Asked Scenario-Based Questions
-A production server is running very slowly. How would you identify the problematic process?
+
+# A production server is running very slowly. How would you identify the problematic process?
+Answer:
+
+First, I check the system's CPU and memory usage using the top or htop command. These commands show all running processes in real time. I identify the process consuming the highest CPU or memory by checking its PID and process name. Then, I use ps -p <PID> -f to get more details. If the process is stuck or unnecessary, I stop it using the kill command after verifying it is safe to do so.
+
+> Commands
+// top
+or
+// htop
+To get details of the process:
+// ps -p <PID> -f
+To stop the process:
+// kill <PID>
+If it does not stop:
+// kill -9 <PID>
+
+
 A service is down in production. How would you troubleshoot it?
+
 A process is consuming excessive memory. What steps would you take?
+
 A process keeps crashing and restarting. How would you investigate the issue?
