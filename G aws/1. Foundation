@@ -1,0 +1,232 @@
+# Foundation
+Cloud Computing
+Virtualization
+AWS Basics
+AWS Account Setup
+AWS CLI Configuration
+IAM (Identity and Access Management)
+
+
+☁️ 1. cloud computing
+  > see folder(Z cloud)
+
+☁️ 2. vertualization
+Virtualization is the process of dividing one physical machine into multiple virtual machines using a Hypervisor.
+
+> Why Do We Need Virtualization?
+> Before virtualization:
+One physical server ran only one operating system.
+Hardware resources were underutilized.
+Higher hardware, power, and maintenance costs.
+
+> After virtualization:
+One physical server can run multiple virtual machines.
+Better resource utilization.
+Lower cost.
+> How Virtualization Works
+The Hypervisor creates and manages virtual machines by sharing the physical hardware resources.
+> Example
+Suppose you have a server with:
+CPU: 16 Cores
+RAM: 64 GB
+Storage: 2 TB
+Without virtualization:
+Only one operating system uses the entire server.
+With virtualization:
+VM1 → Ubuntu (4 CPU, 16 GB RAM)
+
+> Types of Virtualization
+1. Server Virtualization
+Creates multiple virtual servers from one physical server.
+Example:
+Running Ubuntu, Windows Server, and CentOS on one physical machine.
+2. Desktop Virtualization
+Runs desktop operating systems virtually.
+Example:
+Using Windows Virtual Desktop from the cloud.
+3. Storage Virtualization
+Combines multiple storage devices into one logical storage pool.
+Example:
+AWS EBS, SAN Storage.
+4. Network Virtualization
+Creates virtual networks independent of physical hardware.
+Example:
+AWS VPC.
+5. Application Virtualization
+Runs applications without installing them directly on the operating system.
+Example:
+Microsoft App-V.
+
+
+> Virtual Machine (VM)
+A Virtual Machine (VM) is a software-based computer that behaves like a real physical computer. Each VM has its own:
+Operating System
+CPU allocation
+RAM allocation
+Storage
+Network
+
+> Advantages of Virtualization
+Better hardware utilization
+Cost savings
+High availability
+Easy backup and recovery
+> Disadvantages of Virtualization
+Performance overhead compared to bare metal
+Requires powerful hardware
+Hypervisor failure can affect multiple VMs
+
+> Real-World Example
+A company has 10 physical servers, each running one application. Most servers use only 20–30% of their CPU and memory.
+By using virtualization:
+They consolidate all workloads onto 2–3 physical servers.
+Each application runs in its own VM.
+
+
+Q why we need Virtual Machine.
+Q how to Setup the virtualization.
+
+Q Hypervisor and type.
+A Hypervisor is software that creates, runs, and manages Virtual Machines (VMs). It allocates CPU, memory, storage, and networking resources to each VM.
+Without a Hypervisor, virtualization is not possible.
+
+> Type 1 Hypervisor (Bare Metal)
+Installed directly on the physical hardware.
+Examples:
+VMware ESXi
+Microsoft Hyper-V
+Xen
+KVM
+Advantages
+High performance
+Better security
+Used in cloud environments
+> Type 2 Hypervisor (Hosted)
+Installed on top of an existing operating system.
+Examples:
+Oracle VirtualBox
+VMware Workstation
+VMware Fusion
+Advantages
+Easy to install
+Good for learning and testing
+
+Q. What is the difference between Virtualization and Cloud Computing?
+Virtualization is a technology that creates virtual machines on physical hardware.
+Cloud Computing delivers computing resources (servers, storage, networking, databases, etc.) over the internet, often using virtualization behind the scenes.
+
+Q Why is Virtualization important in Cloud Computing?
+Virtualization allows cloud providers like AWS to run many virtual servers on a single physical server. This improves resource utilization, enables scalability, reduces costs, and allows customers to create or remove virtual machines on demand.
+
+Q how Hypervisor works.
+A Hypervisor is software that sits between the physical hardware and the Virtual Machines (VMs). It creates, manages, and allocates hardware resources such as CPU, RAM, storage, and network to each VM.
+Working Process: 
+The physical server provides CPU, RAM, storage, and network resources.
+The Hypervisor is installed on the server.
+The Hypervisor creates multiple Virtual Machines (VMs)
+
+Q What are the benefits of Virtual Machines (VMs)?
+Answer
+Virtual Machines provide several advantages:
+1. Better Resource Utilization
+Multiple VMs share one physical server, reducing idle hardware.
+2. Cost Savings
+Fewer physical servers mean lower hardware, electricity, cooling, and maintenance costs.
+3. Isolation
+Each VM is independent. If one VM fails or is compromised, others are not affected.
+4. Scalability
+New VMs can be created or removed quickly based on business needs.
+5. Multiple Operating Systems
+Run Windows, Linux, Ubuntu, and CentOS simultaneously on the same physical machine.
+6. Easy Backup and Recovery
+VMs can be backed up using snapshots and restored quickly.
+7. Faster Deployment
+Creating a VM takes only a few minutes compared to setting up a new physical server.
+
+Q why do companies use virtualization.
+Companies use virtualization to improve efficiency, reduce costs, and simplify infrastructure management.
+> Reasons:
+Reduce Infrastructure Costs by running multiple VMs on one physical server.
+Improve Resource Utilization so CPU and memory are used efficiently.
+Increase Flexibility by creating, deleting, or modifying VMs quickly.
+Support Business Growth through easy scaling.
+
+
+
+
+☁️ 3. AWS (Amazon Web Services):
+AWS (Amazon Web Services) is a cloud computing platform provided by Amazon. It offers more than 200 cloud services such as computing, storage, databases, networking, security, and machine learning. AWS allows users to build, deploy, and manage applications without purchasing physical hardware.
+
+> What makes AWS so special?
+AWS (Amazon Web Services) is the world's leading cloud computing platform. It is special because it provides secure, scalable, reliable, and cost-effective cloud services that help businesses build and run applications without investing in physical infrastructure.
+
+>Why is AWS Special?
+1. Global Infrastructure
+2. Scalability
+3. Pay-As-You-Go Pricing
+4. High Availability & Reliability
+5. Strong Security
+6. Wide Range of Services
+7. Easy Integration
+8. Automation
+9. Global Trust
+
+
+☁️ # AWS CLI Configuration
+"AWS CLI Configuration is the process of connecting the AWS Command Line Interface to an AWS account by providing an IAM user's Access Key ID, Secret Access Key, default Region, and output format, enabling secure management of AWS services directly from the command line."
+
+> Why do we configure AWS CLI?
+AWS CLI needs your AWS account credentials so it can securely communicate with AWS services.
+
+> What information is required during AWS CLI configuration?
+AWS Access Key ID → Identifies the IAM user.
+AWS Secret Access Key → Authenticates the IAM user.
+Default Region → Specifies the AWS Region (e.g., ap-south-1 for Mumbai).
+Default Output Format → Specifies how command output is displayed.
+
+> Advantages of AWS CLI
+Faster than using the AWS Management Console.
+Automates repetitive tasks.
+
+> Which command is used to configure AWS CLI?
+// aws configure
+> How do you verify that AWS CLI is configured correctly?
+// aws sts get-caller-identity
+If it returns your IAM user details, the configuration is successful.
+
+
+# 1. What is AWS? Why do companies prefer AWS over traditional data centers?
+
+# 2. Explain the difference between EC2, Lambda, and Elastic Beanstalk. When would you use each service?
+
+3. What is Amazon EC2? How do you launch an EC2 instance, and what are the important configurations you need to select?
+4. What is the difference between Security Groups and Network ACLs? Which one would you use to secure an EC2 instance?
+5. Explain the differences between Amazon S3, Amazon EBS, and Amazon EFS with real-world use cases.
+
+6. What is Amazon VPC? Explain the concepts of Public Subnet, Private Subnet, Internet Gateway, NAT Gateway, and Route Table.
+
+7. What is IAM? Explain IAM Users, Groups, Roles, and Policies. Why should we use IAM Roles instead of sharing Access Keys?
+
+8. What is Elastic Load Balancer (ELB)? What are the different types of Load Balancers, and when would you use each?
+
+9. What is Auto Scaling? How does it work with Load Balancers to maintain high availability?
+
+10. What is the difference between Amazon RDS and DynamoDB? In which scenarios would you choose one over the other?
+
+11. What is Amazon CloudWatch? How would you use CloudWatch to monitor an EC2 instance and configure alerts?
+
+12. What is AWS CloudTrail? How is it different from CloudWatch? Can both services work together?
+
+13. Explain the complete CI/CD pipeline using AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline.
+
+14. Suppose your application is hosted on EC2, and users report that the website is not accessible. How would you troubleshoot the issue step by step?
+
+15. Design a simple production-ready architecture for a web application on AWS using EC2, VPC, ELB, Auto Scaling, RDS, S3, CloudWatch, and IAM. Explain why you selected each service.
+
+
+⭐ Bonus Scenario-Based Questions (Frequently Asked)
+# 1. Your EC2 instance is running, but the website is not opening. What will you check first?
+An employee accidentally deleted an important file from an S3 bucket. How can you recover it?
+Your EC2 CPU utilization suddenly reaches 95%. What actions will you take?
+You need to give an EC2 instance access to an S3 bucket. How will you do it securely?
+How would you host a highly available static website on AWS?

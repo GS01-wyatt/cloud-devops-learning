@@ -1,209 +1,551 @@
-# Part 1: Website Deployment & DevOps Concepts
-1. Website Deployment
-
-Website Deployment ka matlab hai application ko local computer se internet par live karna, taaki koi bhi user browser se access kar sake. Is process me server, hosting, domain aur configuration ka use hota hai.
-
-
-2. DNS (Domain Name System)
-
-DNS ek naming service hai jo domain name ko IP Address me convert karta hai. Jab user domain type karta hai, DNS usse sahi server tak pahunchata hai.
-
-3. Custom Domain
-
-Custom Domain website ka unique address hota hai, jaise mywebsite.com. Ye users ko website yaad rakhne me aasani deta hai aur professional identity banata hai.
-
-4. Scaling
-
-Scaling ka matlab hai application ki capacity badhana taaki zyada users ko handle kiya ja sake. Iske do types hote hain: Vertical Scaling aur Horizontal Scaling.
-
-5. Global Deployment
-
-Global Deployment me application ko alag-alag regions me deploy kiya jata hai. Isse duniya ke kisi bhi location se users ko fast response milta hai.
-
-6. CDN (Content Delivery Network)
-
-CDN servers ka network hota hai jo website ke static files ko users ke nearest location se deliver karta hai. Isse website ki speed aur performance improve hoti hai.
-
-7. Load Balancing
-
-Load Balancer incoming traffic ko multiple servers me distribute karta hai. Isse koi ek server overload nahi hota aur application high availability maintain karti hai.
-
-8. Firewall Rules
-
-Firewall ek security layer hai jo server ke incoming aur outgoing traffic ko control karti hai. Ye sirf allowed requests ko access deti hai aur unauthorized traffic ko block karti hai.
-
-9. Networking (IP, Ports, Subnets, Internet Gateway, Routing)
-
-Networking cloud resources ko connect karne ka system hai.
-
-IP Address: Device ki unique identity.
-Port: Specific service ka communication point.
-Subnet: Network ka chhota hissa.
-Internet Gateway: Internet access provide karta hai.
-Routing: Data ko destination tak pahunchata hai.
-10. IaC (Infrastructure as Code)
-
-IaC ka matlab hai infrastructure ko manually create karne ki jagah code ke through create aur manage karna. Isse automation aur consistency maintain hoti hai.
-
-11. Manage Containers
-
-Container Management ka matlab Docker ya Kubernetes ke containers ko create, run, update aur monitor karna hai. Isse applications ko easily deploy aur scale kiya ja sakta hai.
-
-12. Deploy Full Stack Web Application
-
-Full Stack Deployment me Frontend, Backend aur Database ko configure karke production server par deploy kiya jata hai. Isme Nginx, Docker aur CI/CD ka use ho sakta hai.
-
-13. SSL/TLS Working
-
-SSL/TLS protocols browser aur server ke beech secure encrypted communication establish karte hain. Isse website HTTPS par chalti hai aur data secure rehta hai.
-
-# Part 2: AWS Services
-1. AWS Basics
-
-AWS (Amazon Web Services) ek cloud platform hai jo computing, storage, networking aur database jaise services provide karta hai. Iska use scalable applications banane ke liye hota hai.
-
-2. AWS Account Setup
-
-AWS services use karne ke liye account create kiya jata hai. Iske baad billing, security aur region settings configure ki jati hain.
-
-3. IAM (Identity and Access Management)
-
-IAM users, groups aur roles ko manage karta hai. Iske through decide hota hai ki kaun AWS resources ko access kar sakta hai aur kis permission ke saath.
-
-4. EC2 (Elastic Compute Cloud)
-
-EC2 AWS ka virtual server hai jahan applications host aur run ki jati hain. Isme CPU, RAM aur Storage requirements ke according instances choose kiye jate hain.
-
-5. AMI (Amazon Machine Image)
-
-AMI ek pre-configured operating system template hota hai. Iska use naye EC2 instances launch karne ke liye kiya jata hai.
-
-6. Elastic Beanstalk
-
-Elastic Beanstalk ek Platform as a Service (PaaS) hai jo application deployment ko automate karta hai. Developer sirf code upload karta hai, baaki infrastructure AWS manage karta hai.
-
-7. Lambda
-
-Lambda serverless computing service hai. Isme code bina server manage kiye events ke response me execute hota hai.
-
-8. ECS / EKS / ECR
-ECS: Docker containers run karne ki service.
-EKS: Kubernetes cluster manage karne ki service.
-ECR: Docker images store karne ka private registry.
-9. S3 (Simple Storage Service)
-
-S3 object storage service hai jisme files, images, videos aur backups store kiye jate hain. Ye highly durable aur scalable storage provide karta hai.
-
-10. EBS & EFS
-EBS: EC2 ke liye block storage.
-EFS: Multiple EC2 instances ke liye shared file storage.
-11. Glacier
-
-Glacier long-term backup aur archival storage service hai. Iska use rarely accessed data ko low cost me store karne ke liye hota hai.
-
-12. CloudFront
-
-CloudFront AWS ka CDN service hai jo content ko nearest edge location se users tak deliver karta hai aur website ki speed improve karta hai.
-
-13. SQS / SNS / API Gateway
-SQS: Message Queue Service.
-SNS: Notification Service.
-API Gateway: APIs create, publish aur secure karne ki service.
-14. RDS
-
-RDS managed relational database service hai jo MySQL, PostgreSQL, MariaDB aur SQL Server ko support karti hai. AWS backup aur maintenance manage karta hai.
-
-15. DynamoDB
-
-DynamoDB AWS ka NoSQL database hai jo high performance aur low latency applications ke liye use hota hai.
-
-16. VPC (Virtual Private Cloud)
-
-VPC AWS me private virtual network create karne ki service hai. Isme Subnets, Route Tables, Internet Gateway aur Security Groups configure kiye jate hain.
-
-17. Route 53
-
-Route 53 AWS ki DNS service hai jo domain registration aur DNS management provide karti hai. Ye domain ko AWS resources se connect karti hai.
-
-18. Load Balancer
-
-AWS Load Balancer user requests ko multiple EC2 instances me distribute karta hai. Isse application reliable aur highly available rehti hai.
-
-19. Auto Scaling
-
-Auto Scaling traffic ke according EC2 instances automatically increase ya decrease karta hai. Isse performance aur cost dono optimize hote hain.
-
-20. CloudFormation
-
-CloudFormation AWS infrastructure ko templates ke through automatically create aur manage karta hai. Ye Infrastructure as Code (IaC) service hai.
-
-21. CloudWatch & CloudTrail
-CloudWatch: Resources aur applications ko monitor karta hai.
-CloudTrail: AWS account ki activities aur API calls ka log maintain karta hai.
-22. Billing & Cost Management
-
-Ye service AWS usage aur billing ko monitor karti hai. Iske through cost reports, budgets aur alerts set kiye ja sakte hain.
-
-23. SageMaker
-
-SageMaker Machine Learning models ko build, train aur deploy karne ki AWS managed service hai.
-
-24. AWS IoT
-
-AWS IoT devices ko cloud se securely connect karta hai. Ye sensor data collect aur process karne ke liye use hota hai.
-
-# Part 3: Bonus Concepts
+Foundation
 1. Cloud Computing
 
-Cloud Computing internet ke through computing resources (Server, Storage, Database, Networking) on-demand provide karta hai. Isse physical infrastructure kharidne ki zarurat nahi padti.
+Definition:
+Cloud Computing is the delivery of computing services such as servers, storage, databases, networking, software, and analytics over the internet instead of using local computers or physical servers. It allows users to access resources on demand, pay only for what they use, and scale resources easily.
 
 2. Virtualization
 
-Virtualization ek physical machine par multiple virtual machines (VMs) run karne ki technology hai. Isse hardware utilization improve hota hai.
+Definition:
+Virtualization is the technology that allows multiple virtual machines (VMs) to run on a single physical server. Each VM has its own operating system and resources, making hardware utilization more efficient while reducing cost.
 
-3. CLI Configuration
+3. AWS Basics
 
-CLI (Command Line Interface) ke through AWS resources ko commands ki madad se configure aur manage kiya jata hai. Iske liye AWS CLI install aur configure ki jati hai.
+Definition:
+Amazon Web Services (AWS) is a cloud computing platform provided by Amazon. It offers more than 200 cloud services, including computing, storage, databases, networking, security, AI, and DevOps tools to build and manage applications.
 
-4. ELB & ASG
-ELB (Elastic Load Balancer): Traffic ko multiple servers me distribute karta hai.
-ASG (Auto Scaling Group): Traffic ke hisaab se servers automatically add ya remove karta hai.
-5. Lambda Function
+4. AWS Account Setup
 
-Lambda Function ek specific task ko event trigger hone par automatically execute karti hai. Isme server manage karne ki zarurat nahi hoti.
+Definition:
+AWS Account Setup is the process of creating an AWS account by registering with an email address, verifying identity, adding payment information, and enabling security features such as Multi-Factor Authentication (MFA). It is the first step to access AWS services.
 
-6. CloudFormation (IaC)
+5. AWS CLI Configuration
 
-CloudFormation JSON ya YAML templates ka use karke AWS infrastructure automatically create aur manage karta hai.
+Definition:
+AWS CLI (Command Line Interface) Configuration allows users to interact with AWS services using terminal commands instead of the AWS Management Console. It is configured using Access Key ID, Secret Access Key, Region, and Output Format.
 
-7. CloudFront (CDN)
+6. IAM (Identity and Access Management)
 
-CloudFront static content ko edge locations se deliver karta hai, jisse latency kam aur website ki speed fast ho jati hai.
+Definition:
+IAM is a security service that controls who can access AWS resources and what actions they are allowed to perform. It manages users, groups, roles, and policies to provide secure access to cloud resources.
 
-8. AWS Billing & Organization
+Compute Services
+7. EC2 (Elastic Compute Cloud)
 
-AWS Billing account usage aur cost ko track karta hai, jabki AWS Organizations multiple AWS accounts ko centrally manage karne ki service hai.
+Definition:
+Amazon EC2 is a virtual server service that allows users to launch, manage, and scale virtual machines in the cloud. It is commonly used to host websites, applications, and backend services.
 
-9. AWS Amplify
+8. AMI (Amazon Machine Image)
 
-AWS Amplify frontend aur full-stack web applications ko build, host aur deploy karne ki managed service hai.
+Definition:
+An AMI is a pre-configured template used to launch EC2 instances. It contains the operating system, software, configurations, and required applications, making server deployment faster and more consistent.
 
-10. AWS ECS
+9. Elastic Beanstalk
 
-Amazon ECS Docker containers ko manage aur run karne ki fully managed container orchestration service hai.
+Definition:
+Elastic Beanstalk is a Platform as a Service (PaaS) that automatically deploys, manages, and scales web applications. Developers only upload their code, while AWS handles the infrastructure, load balancing, monitoring, and scaling.
 
-11. AWS EKS
+10. AWS Lambda
 
-Amazon EKS Kubernetes clusters ko create aur manage karne ki managed service hai.
+Definition:
+AWS Lambda is a serverless computing service that allows users to run code without managing servers. It automatically executes functions in response to events and charges only for the execution time used.
 
-12. Terraform
+Storage Services
+11. S3 (Simple Storage Service)
 
-Terraform ek open-source Infrastructure as Code tool hai jo cloud resources ko code ke through create aur manage karta hai. Ye AWS ke alawa Azure, GCP aur doosre cloud providers ko bhi support karta hai.
+Definition:
+Amazon S3 is an object storage service used to store files such as images, videos, documents, backups, and application data. It is highly durable, scalable, and accessible from anywhere over the internet.
 
-13. DNS Working
+12. EBS (Elastic Block Store)
 
-DNS domain name ko IP Address me convert karta hai taaki browser sahi server se connect ho sake. Is process ko DNS Resolution kehte hain.
+Definition:
+Amazon EBS provides block-level storage volumes that can be attached to EC2 instances. It is mainly used as the primary storage for operating systems, applications, and databases running on EC2.
 
-14. SSL/TLS Certificates & Encryption
+13. EFS (Elastic File System)
 
-SSL/TLS Certificates website ki identity verify karte hain aur browser aur server ke beech encrypted communication establish karte hain. Isse data secure rehta hai aur website HTTPS par chalti hai.
+Definition:
+Amazon EFS is a fully managed file storage service that allows multiple EC2 instances to access the same shared file system simultaneously. It is commonly used for shared applications and content management systems.
+
+14. Glacier
+
+Definition:
+Amazon Glacier is a low-cost cloud storage service designed for long-term backup and data archiving. It is ideal for storing data that is rarely accessed but must be retained for months or years.
+
+Database Services
+15. RDS (Relational Database Service)
+
+Definition:
+Amazon RDS is a managed relational database service that supports databases such as MySQL, PostgreSQL, MariaDB, Oracle, and SQL Server. AWS automatically handles backups, updates, and maintenance.
+
+16. DynamoDB
+
+Definition:
+Amazon DynamoDB is a fully managed NoSQL database service designed for high performance and low latency. It automatically scales and is commonly used for real-time applications, gaming, IoT, and mobile apps.
+
+# Part 2: Networking + Security + Load Balancing + CDN
+Networking
+17. VPC (Virtual Private Cloud)
+
+Definition:
+A Virtual Private Cloud (VPC) is a logically isolated virtual network in AWS where you can launch and manage AWS resources securely. It gives you complete control over IP addresses, subnets, routing, and network security.
+
+18. VPC Creation
+
+Definition:
+VPC Creation is the process of setting up a private network in AWS by defining an IP address range (CIDR block), creating subnets, configuring route tables, internet gateways, and security settings. It is the foundation of AWS networking.
+
+19. IP Addressing
+
+Definition:
+An IP Address (Internet Protocol Address) is a unique numerical address assigned to every device connected to a network. It helps identify and communicate with devices over the internet or a private network.
+
+Types:
+
+Public IP
+Private IP
+IPv4
+IPv6
+20. Subnets
+
+Definition:
+A subnet is a smaller network created from a VPC. It divides the VPC into multiple sections, allowing better organization, security, and resource management.
+
+Types:
+
+Public Subnet
+Private Subnet
+21. Internet Gateway (IGW)
+
+Definition:
+An Internet Gateway (IGW) is a networking component that connects a VPC to the internet. It enables resources in public subnets to send and receive internet traffic.
+
+22. NAT Gateway
+
+Definition:
+A NAT (Network Address Translation) Gateway allows instances in a private subnet to access the internet for updates or downloads while preventing inbound internet connections. This improves security by keeping private servers hidden.
+
+23. Route Tables & Routing
+
+Definition:
+A Route Table is a set of rules that determines where network traffic should be directed. It controls communication between subnets, internet gateways, NAT gateways, VPNs, and other networks.
+
+24. Security Groups
+
+Definition:
+A Security Group is a virtual firewall attached to AWS resources such as EC2 instances. It controls inbound and outbound traffic by allowing only specific ports, protocols, and IP addresses.
+
+Example:
+
+Allow HTTP (Port 80)
+Allow HTTPS (Port 443)
+Allow SSH (Port 22)
+25. Network ACL (NACL)
+
+Definition:
+A Network Access Control List (NACL) is an optional security layer that controls inbound and outbound traffic at the subnet level. Unlike Security Groups, NACLs support both Allow and Deny rules.
+
+26. Ports
+
+Definition:
+Ports are logical communication endpoints used by applications and services to send and receive network traffic. Different services use different port numbers.
+
+Examples:
+
+22 → SSH
+80 → HTTP
+443 → HTTPS
+3306 → MySQL
+27. Route 53 (DNS)
+
+Definition:
+Amazon Route 53 is AWS's managed Domain Name System (DNS) service. It translates domain names into IP addresses and routes users to the appropriate AWS resources.
+
+28. DNS Working
+
+Definition:
+DNS (Domain Name System) converts human-readable domain names (like example.com) into machine-readable IP addresses. This allows browsers to locate and connect to the correct server.
+
+29. Custom Domain
+
+Definition:
+A Custom Domain is a unique website address purchased from a domain registrar and linked to cloud resources. It provides a professional identity for websites and applications.
+
+Example:
+
+www.mywebsite.com
+api.mywebsite.com
+Security
+30. Firewall Rules
+
+Definition:
+Firewall Rules define which network traffic is allowed or blocked. They protect cloud resources from unauthorized access by filtering traffic based on IP addresses, ports, and protocols.
+
+31. SSL/TLS Certificates & Encryption
+
+Definition:
+SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are security protocols that encrypt data transmitted between users and servers. They ensure secure communication and enable HTTPS for websites.
+
+Load Balancing & Scaling
+32. Elastic Load Balancer (ELB)
+
+Definition:
+Elastic Load Balancer automatically distributes incoming traffic across multiple servers or EC2 instances. It improves application availability, reliability, and performance by preventing any single server from becoming overloaded.
+
+33. Auto Scaling Group (ASG)
+
+Definition:
+An Auto Scaling Group automatically increases or decreases the number of EC2 instances based on application demand. It helps maintain performance while reducing infrastructure costs.
+
+34. Scaling Concepts
+
+Definition:
+Scaling is the process of increasing or decreasing computing resources to handle changing workloads. It ensures applications remain available during high traffic while optimizing resource usage.
+
+Types:
+
+Vertical Scaling (Increase server capacity)
+Horizontal Scaling (Add more servers)
+35. Global Deployment
+
+Definition:
+Global Deployment is the process of deploying an application across multiple AWS regions or availability zones. It reduces latency, improves fault tolerance, and ensures high availability for users worldwide.
+
+CDN & Content Delivery
+36. CloudFront (CDN)
+
+Definition:
+Amazon CloudFront is AWS's Content Delivery Network (CDN) service. It stores copies of website content at edge locations around the world and delivers it to users from the nearest location, reducing latency and improving performance.
+
+37. CDN Concepts
+
+Definition:
+A Content Delivery Network (CDN) is a globally distributed network of servers that caches and delivers static content such as images, videos, CSS, JavaScript, and HTML from locations closest to users. This improves website speed and reduces server load.
+
+# Part 3: Containers + Serverless + Infrastructure as Code (IaC)
+Containers & Orchestration
+38. Docker Basics
+
+Definition:
+Docker is a containerization platform that packages an application along with its dependencies, libraries, and runtime into a lightweight container. This ensures the application runs consistently across different environments.
+
+Benefits:
+
+Portable
+Lightweight
+Fast Deployment
+Consistent Environment
+39. Manage Containers
+
+Definition:
+Managing containers involves creating, starting, stopping, restarting, monitoring, and deleting Docker containers. It ensures applications run efficiently and can be updated or scaled when needed.
+
+Common Docker Commands:
+
+docker run
+docker start
+docker stop
+docker restart
+docker ps
+docker logs
+40. ECR (Elastic Container Registry)
+
+Definition:
+Amazon ECR is a fully managed Docker container registry provided by AWS. It is used to securely store, manage, and retrieve Docker images that can later be deployed to ECS or EKS.
+
+Purpose:
+
+Store Docker Images
+Version Control Images
+Secure Image Repository
+41. ECS (Elastic Container Service)
+
+Definition:
+Amazon ECS is a fully managed container orchestration service that runs and manages Docker containers without requiring users to install or maintain their own orchestration platform.
+
+Purpose:
+
+Deploy Containers
+Manage Containers
+Scale Applications
+Monitor Container Health
+42. EKS (Elastic Kubernetes Service)
+
+Definition:
+Amazon EKS is a managed Kubernetes service that simplifies deploying, managing, and scaling containerized applications using Kubernetes. AWS manages the Kubernetes control plane while users manage their applications.
+
+Purpose:
+
+Kubernetes Management
+High Availability
+Container Orchestration
+Automatic Scaling
+Serverless & Integration
+43. API Gateway
+
+Definition:
+Amazon API Gateway is a fully managed service used to create, publish, secure, monitor, and manage APIs. It acts as an entry point for applications to communicate with backend services such as Lambda, ECS, or EC2.
+
+Purpose:
+
+API Management
+Authentication
+Rate Limiting
+Monitoring
+44. SQS (Simple Queue Service)
+
+Definition:
+Amazon SQS is a fully managed message queue service that enables applications to exchange messages asynchronously. It helps decouple application components and improves reliability.
+
+Purpose:
+
+Queue Messages
+Reduce System Dependency
+Improve Reliability
+Process Background Tasks
+45. SNS (Simple Notification Service)
+
+Definition:
+Amazon SNS is a fully managed messaging service used to send notifications to multiple subscribers through email, SMS, mobile push notifications, or other AWS services.
+
+Purpose:
+
+Send Alerts
+Broadcast Messages
+Event Notifications
+Application Integration
+Infrastructure as Code (IaC)
+46. CloudFormation
+
+Definition:
+AWS CloudFormation is an Infrastructure as Code (IaC) service that allows users to create and manage AWS resources using YAML or JSON templates instead of manually configuring them.
+
+Purpose:
+
+Automate Infrastructure
+Consistent Deployment
+Easy Resource Management
+47. CloudFormation IaC
+
+Definition:
+CloudFormation IaC refers to defining the entire cloud infrastructure as code using CloudFormation templates. The templates describe AWS resources, their configurations, and dependencies, allowing repeatable and automated deployments.
+
+48. Terraform
+
+Definition:
+Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It allows users to provision and manage infrastructure across multiple cloud providers such as AWS, Azure, and Google Cloud using configuration files.
+
+Benefits:
+
+Multi-Cloud Support
+Version Control
+Automation
+Reusable Infrastructure
+49. Infrastructure as Code (IaC) Concepts
+
+Definition:
+Infrastructure as Code (IaC) is the practice of managing and provisioning infrastructure through configuration files instead of manual setup. It enables automation, consistency, faster deployments, and version control for infrastructure.
+> Popular IaC Tools:
+AWS CloudFormation
+Terraform
+Ansible
+Pulumi
+
+
+> Key Difference
+Service	                  Description
+Docker	Creates and runs containers.
+ECR	Stores Docker images.
+ECS	Runs and manages Docker containers.
+EKS	Runs and manages Kubernetes clusters.
+API Gateway	Creates and manages APIs.
+SQS	Stores messages in a queue for asynchronous processing.
+SNS	Sends notifications to multiple subscribers.
+CloudFormation	AWS-native IaC tool for provisioning AWS resources.
+Terraform	Multi-cloud IaC tool for provisioning infrastructure.
+
+
+
+Part 4: Deployment + Monitoring + Billing + AI & IoT
+Deployment
+50. Website Deployment
+
+Definition:
+Website Deployment is the process of making a website or application available on the internet. It involves uploading the application to a server, configuring networking, and making it accessible through a domain name.
+
+Purpose:
+
+Make the application available online
+Allow users to access it from anywhere
+Ensure high availability and performance
+51. Deploy Full Stack Web Application
+
+Definition:
+Deploying a Full Stack Web Application means hosting the frontend, backend, and database so they work together on the internet. The frontend communicates with the backend, and the backend interacts with the database.
+
+Example Flow:
+
+User
+   ↓
+Frontend (React)
+   ↓
+Backend (Spring Boot / Node.js)
+   ↓
+Database (MySQL / MongoDB)
+52. AWS Amplify (Full Stack Web Deployment)
+
+Definition:
+AWS Amplify is a fully managed service used to build, deploy, and host full-stack web and mobile applications. It supports continuous deployment directly from GitHub and automatically manages hosting and SSL certificates.
+
+Purpose:
+
+Easy Deployment
+GitHub Integration
+Automatic Builds
+Built-in HTTPS
+Monitoring & Logging
+53. CloudWatch
+
+Definition:
+Amazon CloudWatch is a monitoring service that collects metrics, logs, and events from AWS resources. It helps monitor application performance, server health, CPU usage, memory utilization, and network activity.
+
+Purpose:
+
+Monitor Resources
+Create Alarms
+Collect Logs
+Track Performance
+54. CloudTrail
+
+Definition:
+AWS CloudTrail records every API call and user activity performed in an AWS account. It is mainly used for auditing, security monitoring, and troubleshooting.
+
+Purpose:
+
+Track User Activities
+Security Auditing
+Compliance
+Investigate Issues
+Billing & Management
+55. AWS Billing & Cost
+
+Definition:
+AWS Billing & Cost Management is a service used to track cloud expenses, monitor resource usage, estimate monthly costs, and create budgets. It helps control spending and optimize cloud costs.
+
+Purpose:
+
+View Bills
+Track Usage
+Create Budgets
+Cost Optimization
+56. AWS Organizations
+
+Definition:
+AWS Organizations is a service that helps manage multiple AWS accounts from a single master account. It allows centralized billing, policy management, and resource governance.
+
+Purpose:
+
+Centralized Account Management
+Consolidated Billing
+Apply Security Policies
+Manage Multiple Teams
+AI & Machine Learning
+57. SageMaker
+
+Definition:
+Amazon SageMaker is a fully managed machine learning service used to build, train, deploy, and manage ML models. It provides tools for data preparation, model training, and deployment without managing infrastructure.
+
+Purpose:
+
+Build ML Models
+Train Models
+Deploy Models
+Monitor Model Performance
+Internet of Things (IoT)
+58. AWS IoT
+
+Definition:
+AWS IoT is a cloud service that securely connects Internet of Things (IoT) devices to AWS. It allows devices such as sensors, cameras, and smart appliances to send, receive, and process data in real time.
+
+Purpose:
+
+Connect Smart Devices
+Collect Sensor Data
+Device Monitoring
+Remote Device Management
+AWS CLI Configuration (Revision)
+59. AWS CLI Configuration
+
+Definition:
+AWS CLI Configuration is the process of connecting the AWS Command Line Interface to your AWS account using credentials. Once configured, AWS services can be managed directly from the terminal without using the AWS Management Console.
+
+Configuration Details:
+
+Access Key ID
+Secret Access Key
+Default Region
+Output Format (JSON, Table, Text)
+ELB & ASG Service
+
+
+60. ELB & ASG Service
+
+Definition:
+Elastic Load Balancer (ELB) and Auto Scaling Group (ASG) work together to provide high availability and scalability. ELB distributes incoming traffic across multiple EC2 instances, while ASG automatically adds or removes instances based on application demand.
+
+Working Flow:
+
+Users
+   ↓
+Elastic Load Balancer (ELB)
+   ↓
+EC2 Instance 1
+EC2 Instance 2
+EC2 Instance 3
+        ↑
+Auto Scaling Group (ASG)
+
+Benefits:
+
+High Availability
+Automatic Scaling
+Better Performance
+Fault Tolerance
+Cost Optimization
+Complete AWS Learning Flow
+Cloud Computing
+      ↓
+Virtualization
+      ↓
+AWS Basics
+      ↓
+IAM
+      ↓
+EC2
+      ↓
+Storage (S3, EBS, EFS)
+      ↓
+Databases (RDS, DynamoDB)
+      ↓
+Networking (VPC, Route 53)
+      ↓
+Security (IAM, SSL, Security Groups)
+      ↓
+Load Balancer & Auto Scaling
+      ↓
+Docker
+      ↓
+ECR → ECS → EKS
+      ↓
+API Gateway → Lambda
+      ↓
+CloudFormation → Terraform
+      ↓
+Deploy Full Stack Application
+      ↓
+CloudWatch & CloudTrail
+      ↓
+Billing & Cost Optimization
+      ↓
+SageMaker
+      ↓
+AWS IoT
