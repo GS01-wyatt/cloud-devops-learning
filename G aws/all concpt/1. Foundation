@@ -57,15 +57,6 @@ Runs applications without installing them directly on the operating system.
 Example:
 Microsoft App-V.
 
-
-> Virtual Machine (VM)
-A Virtual Machine (VM) is a software-based computer that behaves like a real physical computer. Each VM has its own:
-Operating System
-CPU allocation
-RAM allocation
-Storage
-Network
-
 > Advantages of Virtualization
 Better hardware utilization
 Cost savings
@@ -82,11 +73,34 @@ By using virtualization:
 They consolidate all workloads onto 2–3 physical servers.
 Each application runs in its own VM.
 
-
-Q why we need Virtual Machine.
 Q how to Setup the virtualization.
 
-Q Hypervisor and type.
+
+
+☁️ Virtual Machine (VM)
+A Virtual Machine (VM) is a software-based computer that behaves like a real physical computer. Each VM has its own:
+Operating System
+CPU allocation
+RAM allocation
+Storage
+Network
+
+Q why we need Virtual Machine.
+A Virtual Machine (VM) is a software-based computer that runs on a physical computer. It allows us to run multiple operating systems on a single physical machine.
+
+Why do we need a VM?
+1 Run multiple operating systems
+Example: Run Windows and Linux on the same computer.
+2 Better resource utilization
+One physical server can host many virtual machines, reducing hardware costs.
+3 Isolation
+If one VM crashes or is infected with malware, other VMs are not affected.
+Testing and development
+4 Developers can safely test applications or new operating systems without affecting the host system.
+5 Easy backup and recovery
+VMs can be cloned, snapshotted, and restored quickly.
+
+Q.  Hypervisor and type.
 A Hypervisor is software that creates, runs, and manages Virtual Machines (VMs). It allocates CPU, memory, storage, and networking resources to each VM.
 Without a Hypervisor, virtualization is not possible.
 
@@ -99,8 +113,7 @@ Xen
 KVM
 Advantages
 High performance
-Better security
-Used in cloud environments
+Better Security
 > Type 2 Hypervisor (Hosted)
 Installed on top of an existing operating system.
 Examples:
@@ -111,21 +124,21 @@ Advantages
 Easy to install
 Good for learning and testing
 
-Q. What is the difference between Virtualization and Cloud Computing?
+Q.  What is the difference between Virtualization and Cloud Computing?
 Virtualization is a technology that creates virtual machines on physical hardware.
 Cloud Computing delivers computing resources (servers, storage, networking, databases, etc.) over the internet, often using virtualization behind the scenes.
 
-Q Why is Virtualization important in Cloud Computing?
+Q.  Why is Virtualization important in Cloud Computing?
 Virtualization allows cloud providers like AWS to run many virtual servers on a single physical server. This improves resource utilization, enables scalability, reduces costs, and allows customers to create or remove virtual machines on demand.
 
-Q how Hypervisor works.
+Q.  how Hypervisor works.
 A Hypervisor is software that sits between the physical hardware and the Virtual Machines (VMs). It creates, manages, and allocates hardware resources such as CPU, RAM, storage, and network to each VM.
 Working Process: 
 The physical server provides CPU, RAM, storage, and network resources.
 The Hypervisor is installed on the server.
 The Hypervisor creates multiple Virtual Machines (VMs)
 
-Q What are the benefits of Virtual Machines (VMs)?
+Q.  What are the benefits of Virtual Machines (VMs)?
 Answer
 Virtual Machines provide several advantages:
 1. Better Resource Utilization
@@ -143,7 +156,7 @@ VMs can be backed up using snapshots and restored quickly.
 7. Faster Deployment
 Creating a VM takes only a few minutes compared to setting up a new physical server.
 
-Q why do companies use virtualization.
+Q. why do companies use virtualization.
 Companies use virtualization to improve efficiency, reduce costs, and simplify infrastructure management.
 > Reasons:
 Reduce Infrastructure Costs by running multiple VMs on one physical server.
@@ -160,7 +173,7 @@ AWS (Amazon Web Services) is a cloud computing platform provided by Amazon. It o
 > What makes AWS so special?
 AWS (Amazon Web Services) is the world's leading cloud computing platform. It is special because it provides secure, scalable, reliable, and cost-effective cloud services that help businesses build and run applications without investing in physical infrastructure.
 
->Why is AWS Special?
+> Why is AWS Special?
 1. Global Infrastructure
 2. Scalability
 3. Pay-As-You-Go Pricing
@@ -169,11 +182,12 @@ AWS (Amazon Web Services) is the world's leading cloud computing platform. It is
 6. Wide Range of Services
 7. Easy Integration
 8. Automation
-9. Global Trust
+
+
 
 
 ☁️ # AWS CLI Configuration
-"AWS CLI Configuration is the process of connecting the AWS Command Line Interface to an AWS account by providing an IAM user's Access Key ID, Secret Access Key, default Region, and output format, enabling secure management of AWS services directly from the command line."
+"AWS CLI Configuration is the process of connecting the AWS Command Line Interface to an AWS account by providing  IAM user's Access Key ID, Secret Access Key, default Region, and output format, enabling secure management of AWS services directly from the command line."
 
 > Why do we configure AWS CLI?
 AWS CLI needs your AWS account credentials so it can securely communicate with AWS services.
@@ -193,6 +207,26 @@ Automates repetitive tasks.
 > How do you verify that AWS CLI is configured correctly?
 // aws sts get-caller-identity
 If it returns your IAM user details, the configuration is successful.
+
+Q. ways of accessing AWS.
+Answer: There are four main ways:
+AWS Management Console – Web-based GUI for managing AWS resources.
+AWS CLI – Command-line tool for managing AWS services.
+AWS SDK – Programming libraries for languages like Java, Python, and JavaScript.
+AWS API – Direct HTTP/HTTPS interface for interacting with AWS services.
+
+Q: What is AWS SDK?
+Answer: AWS SDK (Software Development Kit) is a collection of libraries for programming languages like Java, Python, and JavaScript that allows developers to interact with AWS services easily without manually calling APIs.
+
+Q: What is AWS API?
+Answer: AWS API is a set of HTTP/HTTPS endpoints provided by AWS that allow applications to communicate directly with AWS services such as S3, EC2, and Lambda.
+
+
+
+
+
+
+
 
 
 # 1. What is AWS? Why do companies prefer AWS over traditional data centers?
@@ -226,7 +260,12 @@ If it returns your IAM user details, the configuration is successful.
 
 ⭐ Bonus Scenario-Based Questions (Frequently Asked)
 # 1. Your EC2 instance is running, but the website is not opening. What will you check first?
-An employee accidentally deleted an important file from an S3 bucket. How can you recover it?
-Your EC2 CPU utilization suddenly reaches 95%. What actions will you take?
-You need to give an EC2 instance access to an S3 bucket. How will you do it securely?
-How would you host a highly available static website on AWS?
+
+# 2. An employee accidentally deleted an important file from an S3 bucket. How can you recover it?
+
+# 3. Your EC2 CPU utilization suddenly reaches 95%. What actions will you take?
+
+# 4. You need to give an EC2 instance access to an S3 bucket. How will you do it securely?
+
+# 5. How would you host a highly available static website on AWS?
+

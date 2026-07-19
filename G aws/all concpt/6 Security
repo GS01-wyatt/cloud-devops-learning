@@ -1,0 +1,52 @@
+
+# 6. AWS Security
+Firewall Rules
+SSL/TLS Certificates & Encryption
+
+
+
+AWS Security – Firewall Rules
+Firewall kya hota hai?
+Firewall ek security system hai jo decide karta hai ki kaunsa network traffic allow hoga aur kaunsa block hoga.
+
+> Simple words me:
+Firewall = Security Guard
+Jaise kisi company ke gate par security guard check karta hai ki kaun andar aa sakta hai aur kaun nahi, waise hi firewall network traffic ko check karta hai.
+
+> AWS me Firewall kaise implement hota hai?
+AWS me mainly 3 tarike se firewall use hota hai:
+Security Group (Instance Level)
+Network ACL (Subnet Level)
+AWS Network Firewall (Advanced enterprise firewall)
+
+> Firewall Rules
+Firewall rules batate hain:
+Kis IP ko access milega.
+Kaunsa port open hoga.
+Kaunsa protocol allow hoga.
+Traffic allow hoga ya deny.
+
+Har rule me ye fields hoti hain:
+Protocol (TCP, UDP, ICMP)
+Port Number (22, 80, 443, etc.)
+Source/Destination IP
+Action (Allow/Deny)
+
+> Meaning
+Port 80 → HTTP website sab access kar sakte hain.
+Port 443 → HTTPS website sab access kar sakte hain.
+Port 22 → SSH sirf tumhare IP se allow hai.
+
+Port	Service
+22	SSH
+80	HTTP
+443	HTTPS
+53	DNS
+3306	MySQL
+5432	PostgreSQL
+3389	RDP
+
+> Q: What are Firewall Rules in AWS?
+Answer:
+Firewall rules are security rules that control incoming (inbound) and outgoing (outbound) network traffic. They define which IP addresses, ports, and protocols are allowed or denied. In AWS, firewall rules are mainly configured using Security Groups (instance-level, stateful) and Network ACLs (subnet-level, stateless).
+

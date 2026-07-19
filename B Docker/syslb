@@ -130,15 +130,3 @@ Docker with AWS
 Docker with Azure
 Docker with Google Cloud
 Docker + Kubernetes Integration
-
-🎯 Final Structure (Short)
-Basics
-Commands
-Dockerfile
-Networking + Volumes
-Compose
-Registry
-Swarm
-Security
-Kubernetes
-

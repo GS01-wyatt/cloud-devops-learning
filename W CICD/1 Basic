@@ -1,0 +1,13 @@
+# CI/CD Pipeline - System Design
+CI/CD stands for Continuous Integration and Continuous Delivery/Deployment. 
+It automates building, testing, and deploying code, making software delivery faster, more reliable, and less error-prone.
+
+> Continuous Integration: 
+Developers regularly merge code changes, and automated tests run to detect issues early.
+> Continuous Delivery: 
+Code changes are automatically prepared for release after successful testing but require manual approval for deployment.
+> Continuous Deployment: 
+Code changes are automatically deployed to production without manual approval
+
+Example: In a web application, when a developer pushes code to a repository, it is automatically built and tested. If everything passes, the application is deployed to production without manual effort.
+

@@ -10,7 +10,7 @@
 👉 docker rmi <image_id>
 ➡️ Deletes an image from system
 
-🔹 2. Run Container
+# 2. Run Container
 👉 docker run <image>
 ➡️ Runs a container from image
 

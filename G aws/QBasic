@@ -1,0 +1,208 @@
+# interview purpose
+
+Create EC2 Instances with Security Groups and Elastic IPs
+Provision S3 Buckets with HTTP Endpoints
+Set Up VPCs with Subnets and Route Tables
+Create RDS Databases with Automatic Backups
+Deploy Lambda Functions with API Gateway Integrations
+Set Up Elastic Load Balancers and Auto Scaling for Web Applications
+Deploy IAM Roles, Policies, and User Access Management
+
+
+Assignment 1 – Secure Web Server
+Task:
+Create a web server that can be accessed by users over the internet.
+Requirements
+Create an EC2 instance.
+Install Apache/Nginx.
+Create a Security Group allowing only HTTP and SSH.
+Verify the web page using the public IP.
+
+Assignment 2 – Secure File Storage
+Task:
+Create secure cloud storage for company documents.
+Requirements
+Create an S3 bucket.
+Enable Versioning.
+Enable Server-Side Encryption.
+Block Public Access.
+Upload sample files.
+
+Assignment 3 – Employee Access Management
+Task:
+The company has Developers and Testers.
+Requirements
+Create IAM Groups.
+Create IAM Users.
+Developers can manage EC2.
+Testers can only view EC2.
+Enable MFA.
+Assignment 4 – Company Network
+
+Task:
+Design a secure AWS network.
+
+Requirements
+Create a VPC.
+Create Public and Private Subnets.
+Attach an Internet Gateway.
+Configure Route Tables.
+Launch EC2 in the Public Subnet.
+Assignment 5 – Database Deployment
+
+Task:
+Deploy a MySQL database securely.
+
+Requirements
+Create an RDS MySQL instance.
+Enable Automatic Backup.
+Disable Public Access.
+Allow only EC2 to connect.
+Assignment 6 – High Availability
+
+Task:
+Deploy a highly available web application.
+
+Requirements
+Launch two EC2 instances.
+Place them in different Availability Zones.
+Configure an Application Load Balancer.
+Test Load Balancing.
+Assignment 7 – Auto Scaling
+
+Task:
+Your website traffic increases during office hours.
+
+Requirements
+Create an Auto Scaling Group.
+Desired Capacity = 2
+Maximum Capacity = 5
+Scale when CPU > 70%.
+Assignment 8 – Monitoring
+
+Task:
+Monitor your production server.
+
+Requirements
+Create a CloudWatch Alarm.
+Trigger SNS Email Notification.
+Alert when CPU > 80%.
+Assignment 9 – Serverless Image Upload
+
+Task:
+Automatically process uploaded images.
+
+Requirements
+Create an S3 Bucket.
+Create a Lambda Function.
+Trigger Lambda when an image is uploaded.
+Store log output in CloudWatch.
+Assignment 10 – Public API
+
+Task:
+Create an API without managing servers.
+
+Requirements
+Create a Lambda Function.
+Integrate with API Gateway.
+Return JSON response.
+Intermediate Placement Questions
+Q11
+
+Deploy a static website using S3 and make it publicly accessible.
+
+Q12
+
+Create an EC2 instance and attach an IAM Role to access S3 without Access Keys.
+
+Q13
+
+Create a Bastion Host and connect to a private EC2 instance.
+
+Q14
+
+Create an EBS volume, attach it to EC2, and mount it permanently.
+
+Q15
+
+Create an AMI from an EC2 instance and launch another instance from it.
+
+Q16
+
+Create Lifecycle Rules to move S3 files older than 30 days to Glacier.
+
+Q17
+
+Configure Cross-Region Replication between two S3 buckets.
+
+Q18
+
+Create a Read Replica for an RDS database.
+
+Q19
+
+Create a Multi-AZ RDS deployment.
+
+Q20
+
+Configure Route 53 to point a domain to an Application Load Balancer.
+
+Advanced Placement Questions
+Q21
+
+Design a Three-Tier Architecture consisting of:
+
+Public Subnet
+Private Application Subnet
+Private Database Subnet
+Q22
+
+Deploy a secure web application using:
+
+VPC
+EC2
+ALB
+Auto Scaling
+RDS
+Q23
+
+Deploy infrastructure using Terraform:
+
+VPC
+EC2
+S3
+Security Groups
+Q24
+
+Create a CloudFormation template to deploy:
+
+EC2
+S3
+IAM Role
+Q25
+
+Design a disaster recovery solution using:
+
+Multi-AZ
+Snapshots
+Cross-Region Replication
+Real Interview Scenario Questions (Most Asked)
+Q26
+
+Your EC2 instance is running, but the website is not accessible. Diagnose and fix the issue.
+
+Q27
+
+Your application experiences sudden traffic spikes. Design an AWS solution that automatically handles the load.
+
+Q28
+
+A developer accidentally deletes important files from S3. How would you recover them?
+
+Q29
+
+An EC2 instance cannot connect to an RDS database. Identify possible causes and resolve the issue.
+
+Q30
+
+A company wants to reduce infrastructure costs while maintaining high availability. Design an AWS architecture using appropriate services.

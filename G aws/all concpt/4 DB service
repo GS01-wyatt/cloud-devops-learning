@@ -1,0 +1,126 @@
+# Database Services
+RDS (Relational Database Service)
+DynamoDB
+
+# RDS (Relational Database Service) 4:25
+Amazon RDS (Relational Database Service) is a fully managed database service provided by AWS. 
+It allows you to create, operate, and scale relational databases without managing the underlying infrastructure.
+
+> Real-Life Example
+Imagine you have an E-commerce Website:
+Users sign up.
+Products are stored.
+Orders are placed.
+Payments are recorded.
+
+All this structured data is stored in a database.
+
+Instead of installing MySQL on your own server and managing backups, updates, and security, you use Amazon RDS, and AWS handles all these tasks.
+
+> Benefits of Using RDS:
+High availability and fault tolerance.
+Vertical and Horizontal Scaling.
+Automated backups and recovery.
+Read replicas for improved read performance.
+Multi AZ setup for DR (Disaster Recovery).
+Cost-effectiveness.
+
+> Use Cases
+1. 🛒 E-Commerce Website
+Stores:
+Users
+Products
+Orders
+Payments
+2. 🏦 Banking Application
+Stores:
+Customer Accounts
+Transactions
+Loan Details
+Account Balance
+
+> Why Use RDS?
+Without RDS:
+Install database manually
+Take backups manually
+Update database manually
+Handle crashes manually
+
+With RDS:
+AWS installs the database
+AWS takes backups
+AWS updates the software
+
+> Supported Database Engines
+MySQL
+PostgreSQL
+MariaDB
+Oracle
+Microsoft SQL Server
+
+> Advantages
+Easy to set up
+Automatic backups
+High availability
+Automatic updates
+Easy scaling
+
+> Limitations
+No OS-level access (no SSH into the database server)
+Less control compared to self-managed databases on EC2
+
+> RDS vs EC2 Database
+Amazon RDS	Database on EC2
+Fully managed	Self-managed
+Automatic backups	Manual backups
+Automatic patching	Manual patching
+Easy scaling	Manual scaling
+
+
+Q2. What databases does RDS support?
+Answer: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, and Amazon Aurora.
+
+Q3. What is Multi-AZ in RDS?
+Answer: Multi-AZ creates a standby database in another Availability Zone for high availability and automatic failover.
+
+Q4. What is a Read Replica?
+Answer: A Read Replica is a read-only copy of an RDS database used to improve read performance and distribute read traffic.
+
+Q5. Can we SSH into an RDS instance?
+Answer: No. RDS is a managed service, so AWS does not provide SSH access to the underlying server.
+
+# RDS Instance
+Create an RDS MySQL Instance:
+Use Free Tier
+Username will be admin and you can set a password (don't use special characters)
+Keep Public Access = True to access it from a local machine or remote server
+Create a Security Group and allow Port 3306 from everywhere (0.0.0.0/0) (for learning purposes)
+After creating the instance, copy the Endpoint (Hostname) to connect to the database
+
+# EC2 Instance
+sudo yum install -y docker
+sudo service docker start
+sudo usermod -aG docker ec2-user
+sudo docker pull philippaul/node-mysql-app:02
+
+Note: Allowing 3306 from everywhere is suitable only for practice or demo environments. In production, restrict access to specific IP addresses or security groups for better security.
+
+
+# AWS DynamoDM
+AWS DynamoDB is a fully managed NoSQL database service provided by AWS that stores data in key-value and document formats. 
+It offers high performance, automatic scaling, low latency, and high availability, making it ideal for modern applications that require fast and reliable data access.
+
+> AWS DynamoDB Free Tier
+DynamoDB offers a Free Tier that includes 25 GB of storage.
+The Free Tier also provides 25 Write Capacity Units (WCU) and 25 Read Capacity Units (RCU).
+This is sufficient to handle up to 200 million requests per month for many small applications.
+
+> Benefits of AWS DynamoDB
+Serverless: No need for server provisioning, software installation, maintenance, or patching.
+Automatic Scaling: Instantly scales up or down based on demand, with no manual adjustments needed.
+Zero Downtime: Provides continuous availability without maintenance windows.
+On-Demand Pricing: Pay only for the read/write requests used, ideal for fluctuating workloads.
+Idle Cost Savings: Scales down to zero during inactivity, so there’s no cost when tables have no traffic.
+
+>> docker based Node app with dynamodb 5: 10
+>> DynamoDB Accelerator - DAX

@@ -1,0 +1,47 @@
+
+
+
+
+11. Scenario-Based Questions
+A server suddenly becomes slow. How will you troubleshoot it?
+CPU usage is 100%. What steps will you take?
+Memory utilization is continuously increasing. What will you do?
+Disk utilization has reached 100%. How will you recover the server?
+SSH is not working. How do you troubleshoot?
+A service is failing after every reboot. What will you check?
+A website hosted on Linux is returning 502 Bad Gateway. What could be the reasons?
+Users cannot log in to the server. What will you investigate?
+One process is consuming all CPU. How do you identify the root cause?
+A file is getting deleted automatically every day. How will you investigate?
+The application works locally but not on the server. What could be the issue?
+Your server cannot resolve domain names. What will you check?
+One filesystem is full while others have free space. What options do you have?
+A cron job is not running. How will you troubleshoot?
+The server is automatically rebooting. How do you investigate?
+After updating packages, the server fails to boot. What steps will you take?
+Users report slow file transfers. How will you diagnose the issue?
+A process cannot write to a directory even though the user owns it. What could be wrong?
+You accidentally changed permissions on /etc. How would you recover?
+The root account is locked. What recovery options are available?
+12. Cloud/DevOps Linux Questions
+Why is Linux preferred in Cloud and DevOps?
+How do you secure a Linux server in AWS?
+How do you connect to an EC2 instance?
+What happens if you lose your EC2 key pair?
+How do you transfer files between local machine and Linux server?
+How do you automate Linux tasks?
+How do you monitor Linux servers in production?
+How do you troubleshoot a Linux server in production without rebooting it?
+How do you investigate high load average on a production server?
+Explain your Linux troubleshooting approach during a production outage.
+HR + Practical Linux Questions
+Tell me about a Linux issue you solved.
+Which Linux commands do you use daily?
+What Linux distributions have you worked on?
+Which Linux tools do you use for monitoring?
+Describe a production Linux incident you handled.
+Have you ever written Bash scripts? Explain one.
+What is your Linux troubleshooting workflow?
+Which logs do you check first during an outage?
+What Linux topic do you find most challenging?
+Why should we hire you for a Linux/DevOps role?

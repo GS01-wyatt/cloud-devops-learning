@@ -1,0 +1,34 @@
+
+# 8 CDN & Content Delivery
+CloudFront (CDN)
+CDN Concepts
+
+# Amazon CloudFront
+AWS CloudFront is a Content Delivery Network (CDN) service that delivers your website, videos, images, APIs, and other content faster by storing copies of the content in Edge Locations (servers located around the world).
+
+> Simple Explanation:
+Imagine your website is hosted in Mumbai.
+A user from Delhi requests your website.
+A user from London also requests your website.
+
+Without CloudFront:
+Every request goes all the way to the server in Mumbai.
+Users who are far away experience higher latency (slower loading).
+
+With CloudFront:
+CloudFront stores a cached copy of your website at nearby Edge Locations.
+The Delhi user gets the content from a nearby Indian edge location.
+The London user gets it from a nearby European edge location.
+> Key Points (Interview)
+CloudFront = AWS CDN service
+Purpose: Faster content delivery
+Works by: Caching content at Edge Locations
+Origin can be: S3 Bucket, EC2, Application Load Balancer (ALB), or any web server
+Benefits:
+Faster website loading
+Lower latency
+Reduced load on the origin server
+
+>Q. Why do we use CloudFront?
+Answer:
+We use AWS CloudFront to make websites and applications faster by caching content at Edge Locations near users. It reduces latency, decreases the load on the origin server, and improves the user experience.

@@ -3,6 +3,9 @@ Cloud Engineer
 Cloud Developer
 AWS Support Engineer
 
+⭐ Tools
+putty 
+
 
 1. video
 https://www.youtube.com/watch?v=dmGybCohHsw&list=PLxCzCOWd7aiHRHVUtR-O52MsrdUSrzuy4
@@ -28,7 +31,6 @@ A.https://www.youtube.com/watch?v=e01GGTKmtpc&list=LL&index=15&t=14447s
 
 3. Git
 https://www.youtube.com/watch?v=MuZySo5lF8E
-
 
 4. docker min project
 1 https://www.youtube.com/watch?v=Uf6PXnagtsg
@@ -116,3 +118,45 @@ Monitoring → Tracks app performance
 
 👉 In short:
 A scalable, secure, and automated system to deploy and manage applications using Kubernetes in real-world enterprise environments.
+
+
+For your profile (Cloud & DevOps Fresher), also apply to these companies:
+Accenture Careers
+Cognizant Careers
+Capgemini Careers
+IBM Careers
+Deloitte Careers
+EY Careers
+KPMG Careers
+DXC Technology Careers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

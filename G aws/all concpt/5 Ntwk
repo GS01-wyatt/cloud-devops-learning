@@ -1,0 +1,250 @@
+VPC (Virtual Private Cloud)
+VPC Creation
+IP Addressing
+Subnets
+Internet Gateway (IGW)
+NAT Gateway
+Route Tables & Routing
+Security Groups
+Network ACL (NACL)
+Ports
+Route 53 (DNS) 6:05
+DNS Working
+Custom Domain
+
+
+# 1. VPC (Virtual Private Cloud)
+ VPC ek private virtual network hota hai jo AWS cloud ke andar banta hai.
+Jaise company ka apna office hota hai, waise hi AWS me VPC aapka private network hota hai jisme aap EC2, RDS, Load Balancer aur dusre resources rakhte ho.
+
+Simple Example
+AWS = City
+VPC = Aapka Ghar
+EC2 = Ghar ke Rooms
+Dusra koi bina permission ke andar nahi aa sakta.
+
+> Kyu use hota hai?
+Security provide karta hai.
+Network ko control karne ke liye.
+Resources ko private rakhne ke liye.
+Traffic manage karne ke liye.
+
+> Kaise kaam karta hai?
+User browser me amazon.com open karta hai.
+Request pehle Load Balancer tak jaati hai.
+Load Balancer request ko Web Server (EC2) ko bhejta hai.
+Web Server Application Server se data maangta hai.
+Application Server Database (RDS) se product ki information leta hai.
+Product ki details user ko dikh jaati hain.
+
+> Ek aur Real Example (College)
+Maan lo tumhare college ka Attendance Management System AWS par host hai.
+
+VPC
+│
+├── Public Subnet
+│      └── EC2 (Attendance Website)
+│
+└── Private Subnet
+       └── MySQL Database
+Student website open karega → Public EC2.
+EC2 database se attendance fetch karega.
+Database ko koi student directly access nahi kar sakta, kyunki wo Private Subnet me hai.
+
+>> why we need VPC
+
+
+Q1. What is a VPC?
+Answer: A VPC is a private virtual network in AWS where we launch and manage AWS resources securely.
+
+Q2. What is an IP Address?
+Answer: An IP address is a unique identifier assigned to every device or resource in a network.
+
+Q3. What is a Subnet?
+Answer: A subnet is a smaller network created inside a VPC to organize and isolate AWS resources.
+
+# 1. Internet Gateway (IGW)
+Kya hai?
+Internet Gateway ek gate hai jo VPC ko Internet se connect karta hai.
+Agar IGW nahi hoga, to internet se koi connection nahi hoga.
+> Real Example
+Tumhari company ka office hai.
+Office ke bahar ek main gate hai.
+-Gate khula → Log andar aur bahar aa sakte hain.
+-Gate band → Koi nahi aa sakta.
+IGW = Office ka Main Gate
+
+> Kyo Use Hota Hai?
+Internet se connect karne ke liye.
+Public website chalane ke liye.
+Public EC2 ko internet dene ke liye.
+
+> Kab Use Hota Hai?
+Jab EC2 ko internet se access karna ho.
+Example:
+Web Server
+Nginx Server
+Portfolio Website
+WordPress
+
+# 2. NAT Gateway
+Kya hai?
+NAT Gateway private server ko sirf Internet use karne deta hai, lekin Internet se koi us server tak nahi aa sakta.
+
+Real Example
+Company me Accounts Department hai.
+Accounts wale bahar ja sakte hain (bank, market), lekin bahar wala aadmi directly Accounts room me nahi aa sakta.
+
+> Kyo Use Hota Hai?
+Private EC2 ko:
+Software download karna hai.
+Windows/Linux update karna hai.
+Docker image pull karni hai.
+GitHub clone karna hai.
+
+Lekin koi Internet se us server ko access na kare.
+
+> Kab Use Hota Hai?
+Private subnet me EC2 ho aur usko internet chahiye.
+
+Example:
+App Server
+Backend Server
+Database Server (normally internet access bhi avoid kiya jata hai)
+
+# 3. Route Table
+Kya hai?
+Route Table ek Google Maps ki tarah hoti hai.
+Ye batati hai:
+Data ko kis raste bhejna hai.
+Destination          Go Through
+0.0.0.0/0        → Internet Gateway
+10.0.2.0/24      → Local
+
+> Real Example
+Tum GPS me location dalte ho.
+Google Maps batata hai kis road se jana hai.
+AWS me ye kaam Route Table karti hai.
+> Kyo Use Hota Hai?
+Network traffic ko direction dene ke liye.
+Ye decide karti hai:
+Internet jana hai?
+Private subnet jana hai?
+NAT Gateway jana hai?
+Local VPC me rehna hai?
+> Kab Use Hota Hai?
+Har subnet ke saath Route Table attach hoti hai.
+
+# Security Group (SG)
+Kya hai?
+Security Group EC2 Instance ka Firewall hai.
+Ye decide karta hai:
+Kaun andar aa sakta hai aur kaun nahi.
+
+> Real Example
+Tumhare ghar ka security guard.
+Sirf family ko andar aane deta hai.
+Unknown person ko mana kar deta hai.
+> Kyo Use Hota Hai?
+EC2 ko secure rakhne ke liye.
+Example:
+SSH allow karna
+HTTP allow karna
+HTTPS allow karna
+> Kab Use Hota Hai?
+Jab bhi EC2 launch karte ho.
+Har EC2 ke saath ek Security Group attach hota hai.
+
+# Network ACL (NACL)
+Kya hai?
+NACL Subnet ka Firewall hai.
+Security Group EC2 ko protect karta hai.
+NACL poore Subnet ko protect karta hai.
+> Real Example
+Apartment ke gate par security.
+Sabko check karega.
+Chahe kisi bhi flat me jana ho.
+> Kyo Use Hota Hai?
+Poore subnet ki security ke liye.
+> Kab Use Hota Hai?
+Jab subnet level par rules lagane ho.
+Example:
+Ek pura subnet block karna.
+Kisi IP Range ko deny karna.
+
+# 3. Ports
+Kya hai?
+Port ek door (gate) hota hai.
+Har service ka apna door hota hai.
+Real Example
+Hospital me:
+Room 101 → Doctor
+Room 102 → Pharmacy
+Room 103 → Reception
+> Kyo Use Hota Hai?
+Computer ko pata chale kis service tak request bhejni hai.
+
+
+
+>> Security Group
+Security Group is an instance-level firewall that controls inbound and outbound traffic for an EC2 instance.
+
+>> Network ACL
+Network ACL is a subnet-level firewall that controls traffic entering and leaving a subnet. It supports both allow and deny rules.
+
+>> Ports
+A port is a communication endpoint used by applications. Different services use different port numbers, such as 22 for SSH, 80 for HTTP, and 443 for HTTPS.
+
+>> VPC Peering
+>> Bastion Host
+>> VPC Endpoint
+>> Elastic IP Addresses
+>> Diract Connect
+
+# Route 53 
+Route 53 is a highly available and scalable DNS (Domain Name System) web service provided by AWS. 
+It translates a domain name (like www.example.com) into an IP address (like 192.168.1.10) so users can access websites and applications.
+
+Example
+Domain Name: www.amazon.com
+Route 53 finds the corresponding IP address.
+Browser connects to that server.
+Website opens.
+
+> Key Features
+🌐 Domain Registration
+🔍 DNS Management
+⚖️ Traffic Routing (Latency, Weighted, Geolocation, Failover)
+❤️ Health Checks
+🔄 High Availability & Automatic Failover
+
+> Use Cases
+Hosting website domains
+Routing traffic to EC2, ALB, CloudFront, S3
+Disaster recovery (Failover)
+Load balancing across regions
+
+> summary of billing
+>> how to work Route 53
+>> Type of Records supported by AWS route 53
+
+>> DNS (Domain Name System)
+DNS (Domain Name System) is the internet service that translates human-friendly domain names (e.g., www.example.com) into machine-readable IP addresses.
+Default Port
+Default Port for DNS: 53
+Protocol: UDP 53 (used for most DNS queries)
+TCP 53 (used for zone transfers and large DNS responses)
+''
+
+# NAT Gateway Kya Karta Hai?
+
+NAT Gateway Private EC2 ko Internet use karne deta hai, lekin Internet se koi Private EC2 ko directly access nahi kar sakta.
+
+>Easy Memory Trick
+🏠 Private EC2 = Ghar ke andar ka employe
+🚪 NAT Gateway = Office ka Exit Gate
+Employee bahar ja sakta hai. ✅
+Bahar wala employee ke room me nahi aa sakta. ❌
+
+>Q. Why do we use NAT Gateway?
+NAT Gateway allows instances in a private subnet to access the internet for outbound traffic, such as downloading software updates or accessing AWS services, while preventing inbound connections from the internet.

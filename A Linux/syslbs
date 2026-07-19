@@ -1,0 +1,160 @@
+# 🐧 LINUX SYLLABUS 
+
+1. Linux Basics
+→ Understand Linux OS, distributions, terminal usage, and file system structure.
+
+2. File Management & Permissions
+→ Learn file operations and control access using read, write, execute permissions.
+
+3. User & Group Management
+→ Create/manage users and groups, and control system access.
+
+4. Process Management
+→ Monitor and control running processes using system commands.
+
+5. Package Management
+→ Install, update, and remove software using package managers.
+
+6. Networking in Linux
+→ Learn IP, SSH, and commands to test and troubleshoot network connections.
+
+7. Disk & Storage Management
+→ Check disk usage, manage partitions, and mount storage.
+
+8. Text Processing & Editors
+→ Edit files and process text using tools like grep, sed, awk.
+
+9. Shell Scripting
+→ Automate tasks using Bash scripts, loops, and conditions.
+
+10. System Monitoring & Logs
+→ Track system performance and analyze logs for issues.
+
+11. Security Basics
+→ Secure system with permissions, SSH keys, and firewall basics.
+
+12. Cron Jobs (Automation)
+→ Schedule automatic tasks using crontab.
+
+13. Linux for Cloud
+→ Use Linux on cloud servers (like AWS) and manage remote systems.
+
+14. Advanced Linux Topics
+→ Learn system services, environment variables, and tools like Docker/Nginx.
+
+🔥 One Line Truth:
+“Linux is not theory — it’s practice in terminal.”
+
+
+
+
+1. Linux Basics
+What happens internally when you power on a Linux system?
+Explain the Linux boot process.
+What is the difference between Linux Kernel and Operating System?
+What is the difference between Linux and Unix?
+What are different Linux distributions?
+Explain the Linux directory structure.
+What is the purpose of /etc, /var, /usr, /opt, /tmp, /proc, /sys?
+What is the difference between hard link and soft link?
+How do you check your Linux version?
+How do you check the kernel version?
+2. File & Directory Management
+How do you find the largest files on a server?
+A file was accidentally deleted. What recovery options do you have?
+How do you search files modified in the last 7 days?
+How do you search files larger than 1GB?
+How do you find duplicate files?
+How do you copy permissions from one file to another?
+Difference between cp, mv and rsync?
+What happens if you move a file across different file systems?
+How do you archive and compress files?
+Difference between tar, gzip, bzip2 and xz?
+3. Permissions
+Explain Linux file permissions.
+Difference between chmod 755 and 777?
+What are SUID, SGID and Sticky Bit?
+Why is Sticky Bit used on /tmp?
+How do you change file ownership?
+Explain umask.
+How do ACLs work?
+Difference between chmod and chown?
+What is the default permission of newly created files?
+How do you secure sensitive files?
+4. Users & Groups
+How do you create users?
+Difference between useradd and adduser?
+How do you lock a user account?
+How do you reset a forgotten password?
+Difference between primary and secondary groups?
+How do you check group memberships?
+How do you switch users?
+Explain /etc/passwd.
+Explain /etc/shadow.
+How do you disable shell access?
+5. Process Management
+What is a process?
+Difference between process and thread?
+How do you identify a high CPU process?
+How do you identify a memory leak?
+Difference between kill, killall and pkill?
+Difference between SIGTERM and SIGKILL?
+What is a zombie process?
+What is an orphan process?
+How do you monitor running processes?
+How do you change process priority?
+6. Services & Systemd
+What is systemd?
+Difference between service and systemctl?
+How do you enable a service at boot?
+How do you troubleshoot a failed service?
+Where are service logs stored?
+How do you restart a service?
+Difference between enable and start?
+How do you check boot logs?
+Explain journald.
+How do you analyze boot time?
+7. Disk Management
+How do you check disk usage?
+Difference between df and du?
+Disk is full. How do you investigate?
+How do you identify large directories?
+Difference between partition and filesystem?
+Explain ext4, XFS and Btrfs.
+What is LVM?
+How do you extend an LVM partition?
+What is swap memory?
+How do you increase swap space?
+8. Networking
+How do you check your IP address?
+Difference between ifconfig and ip command?
+How do you check routing table?
+Difference between ping and traceroute?
+How do you troubleshoot DNS issues?
+How do you check open ports?
+Difference between netstat and ss?
+How do you identify which process is using a port?
+How do you test connectivity to a remote server?
+Explain the TCP three-way handshake.
+9. Logs
+Where are Linux logs stored?
+How do you monitor logs in real time?
+Application is failing. Which logs do you check first?
+How do you rotate logs?
+Explain logrotate.
+Difference between journalctl and syslog?
+How do you find errors from the last one hour?
+How do you search logs efficiently?
+How do you monitor login attempts?
+How do you identify authentication failures?
+10. Shell Scripting
+What is Bash?
+Difference between "$@" and "$*"?
+How do you pass arguments to a script?
+Explain exit codes.
+Difference between && and ||?
+How do you debug a shell script?
+How do you schedule a script?
+Difference between cron and at?
+Explain environment variables.
+How do you export variables?

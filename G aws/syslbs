@@ -1,0 +1,192 @@
+# 1. Foundation
+Cloud Computing
+Virtualization
+AWS Basics
+AWS Account Setup
+AWS CLI Configuration
+IAM (Identity and Access Management)
+
+# 2. Compute Services
+EC2 (Elastic Compute Cloud)
+AMI (Amazon Machine Image)
+Elastic Beanstalk
+AWS Lambda
+
+# 3.  Storage Services
+S3 (Simple Storage Service)
+EBS (Elastic Block Store)
+EFS (Elastic File System)
+Glacier
+
+# 4. Database Services
+RDS (Relational Database Service)
+DynamoDB
+
+# 5 Networking - all in (A Network folder)
+VPC (Virtual Private Cloud)
+VPC Creation
+IP Addressing
+Subnets
+Internet Gateway (IGW)
+NAT Gateway
+Route Tables & Routing
+Security Groups
+Network ACL (NACL)
+Ports
+Route 53 (DNS)
+DNS Working
+Custom Domain
+
+# 6. AWS Security
+Firewall Rules
+SSL/TLS Certificates & Encryption
+
+# 7. AWS Load Balancing & Scaling
+Elastic Load Balancer (ELB)
+Auto Scaling Group (ASG)
+Scaling Concepts
+Global Deployment
+
+# 8 CDN & Content Delivery
+CloudFront (CDN)
+CDN Concepts
+
+# 9 Containers & Orchestration
+Docker Basics
+Manage Containers
+ECR (Elastic Container Registry)
+ECS (Elastic Container Service)
+EKS (Elastic Kubernetes Service)
+
+# 10 Serverless & Integration
+API Gateway
+SQS (Simple Queue Service)
+SNS (Simple Notification Service)
+
+# 11 Infrastructure as Code (IaC)
+CloudFormation
+CloudFormation IAC
+Terraform
+Infrastructure as Code (IaC) Concepts
+
+# 12 Deployment
+Website Deployment
+Deploy Full Stack Web Application
+AWS Amplify (Full Stack Web Deployment)
+
+# 13 Monitoring & Logging
+CloudWatch
+CloudTrail
+
+# 14 Billing & Management
+AWS Billing and cost
+AWS Organizations
+
+# 15 AI & IoT
+SageMaker
+AWS IoT
+
+# Practice & Services
+CLI Configuration (Hands-on Practice)
+ELB & ASG Service (Practical Implementation)
+
+
+
+https://www.geeksforgeeks.org/devops/aws-tutorial/ 
+
+# AWS learn only these service.
+> EC2
+Instance type
+AMI
+security group
+user data
+keypair
+ebs volume
+ssh
+> EC2 Auto Scalling
+asg
+launch temp
+capacity
+scallig policy
+asg with load balancer
+> Elastic Load Balancing
+type of LB
+target group
+listeners
+health checks
+troubleshooting questions
+> S3
+buckets
+objects
+versioning
+storage class
+lifecycle rules
+encryption
+bucket policy
+> IAM
+users
+group
+polices
+roles
+permission
+least privilege
+principle
+> VPC
+CIDR
+Public Private Subnet
+Route Table
+Internet Gateway
+NAT Gateway
+NACL
+Security Group
+> RDS
+Read Replica
+BackUp
+SnapShots
+Multi AZ
+Database Engines
+> AWS Lambda
+Functions
+Triggers
+Runtime
+Permissions
+Lambda Integration with Other Services
+> CloudWatch
+Metrics
+Alarms
+Logs
+Dashboard
+Integration with Other Services
+> CloudFormation
+YAML/JSON
+IaC (Infrastructure as Code)
+Template
+Stack
+Resource Creation & Updates
+> Secrets manager
+IAM Policy
+Secrets Rotation
+App Integration
+Secret Storage
+> EKS
+What Kubernetes is
+Docker vs Kubernetes
+Cluster
+Node Groups
+Pods
+Deployments
+Services
+Ingress (Basic Understanding)
+How EKS Integrates with IAM and Load Balancers
+> SNS
+Topic
+Publisher
+Subscriber
+Subscription Protocol
+Fan-Out Architecture
+> SQS
+FIFO Queue
+Dead Letter Queue (DLQ)
+Message Retention
+Visibility Timeout
+Standard Queue

@@ -1,0 +1,243 @@
+# ☁️ BASIC IT & CLOUD TERMS
+IT (Information Technology) — Technology used to manage computers, software, networks, and data.
+ICT (Information and Communication Technology) — Technology used for computing and digital communication.
+HW (Hardware) — Physical components of a computer, such as CPU, RAM, and storage.
+SW (Software) — Programs and applications that run on computers.
+OS (Operating System) — Software that manages computer hardware and applications.
+CPU (Central Processing Unit) — The main processor that executes instructions.
+RAM (Random Access Memory) — Temporary memory used by running programs.
+HDD (Hard Disk Drive) — Magnetic storage used to save data permanently.
+SSD (Solid State Drive) — Fast electronic storage used to save data.
+VM (Virtual Machine) — A software-based computer that runs inside a physical computer.
+CLI (Command Line Interface) — A text-based way to interact with a computer using commands.
+GUI (Graphical User Interface) — A visual way to interact with software using windows, icons, and buttons.
+API (Application Programming Interface) — A way for two software applications to communicate.
+SDK (Software Development Kit) — A collection of tools used to build applications.
+IDE (Integrated Development Environment) — Software used to write, run, and debug code.
+URL (Uniform Resource Locator) — The address of a resource on the internet.
+URI (Uniform Resource Identifier) — A unique identifier for a resource.
+IP (Internet Protocol) — Rules used to identify and communicate between devices on a network.
+MAC (Media Access Control) — A unique hardware address assigned to a network interface.
+DNS (Domain Name System) — Converts domain names into IP addresses.
+ISP (Internet Service Provider) — A company that provides internet access.
+HTTP (Hypertext Transfer Protocol) — Protocol used to transfer web data.
+HTTPS (Hypertext Transfer Protocol Secure) — Secure and encrypted version of HTTP.
+SSL (Secure Sockets Layer) — Older technology used to secure network communication.
+TLS (Transport Layer Security) — Modern security protocol used to encrypt communication.
+TCP (Transmission Control Protocol) — Reliable protocol used to transfer data.
+UDP (User Datagram Protocol) — Fast protocol that transfers data without guaranteed delivery.
+LAN (Local Area Network) — A network covering a small area.
+WAN (Wide Area Network) — A network covering a large geographical area.
+WLAN (Wireless Local Area Network) — A local network that uses wireless communication.
+VPN (Virtual Private Network) — Creates a secure encrypted connection over the internet.
+
+☁️ CLOUD COMPUTING TERMS
+CC (Cloud Computing) — Delivery of computing services over the internet.
+CSP (Cloud Service Provider) — A company that provides cloud computing services.
+IaaS (Infrastructure as a Service) — Provides virtual servers, storage, and networking.
+PaaS (Platform as a Service) — Provides a platform to develop and deploy applications.
+SaaS (Software as a Service) — Provides ready-to-use software through the internet.
+FaaS (Function as a Service) — Runs individual functions without managing servers.
+BaaS (Backend as a Service) — Provides ready-made backend services for applications.
+DBaaS (Database as a Service) — Provides managed database services in the cloud.
+DaaS (Desktop as a Service) — Provides virtual desktops through the cloud.
+XaaS (Everything as a Service) — General term for services delivered through the cloud.
+PAYG (Pay As You Go) — Pay only for the cloud resources you use.
+HA (High Availability) — Keeps applications available with minimum downtime.
+FT (Fault Tolerance) — Allows a system to continue working when a component fails.
+DR (Disaster Recovery) — Restores systems and data after a disaster.
+BCP (Business Continuity Plan) — A plan to keep business operations running during disruptions.
+RTO (Recovery Time Objective) — Maximum acceptable time to restore a system.
+RPO (Recovery Point Objective) — Maximum acceptable amount of data loss measured by time.
+SLA (Service Level Agreement) — Agreement that defines expected service performance and availability.
+CAPEX (Capital Expenditure) — Money spent on purchasing physical infrastructure.
+OPEX (Operational Expenditure) — Money spent on ongoing operational services.
+TCO (Total Cost of Ownership) — Total cost of owning and operating a system.
+
+🌐 CLOUD DEPLOYMENT MODELS
+Public Cloud — Cloud infrastructure shared by multiple customers.
+Private Cloud — Cloud infrastructure dedicated to one organization.
+Hybrid Cloud — Combination of public and private cloud.
+Multi-Cloud — Using services from multiple cloud providers.
+On-Prem (On-Premises) — Infrastructure hosted inside an organization's own location.
+
+Major CSPs include AWS, Microsoft Azure, and Google Cloud.
+
+🟠 AWS FULL FORMS – BASIC TO ADVANCED
+AWS (Amazon Web Services) — A cloud computing platform that provides servers, storage, databases, networking, and other services.
+EC2 (Elastic Compute Cloud) — Provides virtual servers in AWS.
+AMI (Amazon Machine Image) — A template used to create EC2 instances.
+EBS (Elastic Block Store) — Block storage used with EC2.
+S3 (Simple Storage Service) — Object storage used to store files and data.
+EFS (Elastic File System) — Shared file storage for multiple servers.
+RDS (Relational Database Service) — Managed relational database service.
+DMS (Database Migration Service) — Helps migrate databases to AWS.
+VPC (Virtual Private Cloud) — A private virtual network inside AWS.
+IGW (Internet Gateway) — Connects a VPC to the internet.
+NAT (Network Address Translation) — Allows private resources to access the internet.
+NACL (Network Access Control List) — Controls network traffic at the subnet level.
+SG (Security Group) — Virtual firewall that controls instance traffic.
+ENI (Elastic Network Interface) — Virtual network interface used by AWS resources.
+EIP (Elastic IP) — Static public IPv4 address.
+ELB (Elastic Load Balancing) — Distributes traffic across multiple servers.
+ALB (Application Load Balancer) — Load balancer for HTTP and HTTPS traffic.
+NLB (Network Load Balancer) — High-performance load balancer for TCP and UDP traffic.
+GWLB (Gateway Load Balancer) — Distributes traffic to virtual network appliances.
+ASG (Auto Scaling Group) — Automatically manages the number of EC2 instances.
+IAM (Identity and Access Management) — Controls users, roles, and permissions.
+MFA (Multi-Factor Authentication) — Uses multiple verification methods for login.
+STS (Security Token Service) — Provides temporary security credentials.
+KMS (Key Management Service) — Creates and manages encryption keys.
+ACM (AWS Certificate Manager) — Manages SSL/TLS certificates.
+WAF (Web Application Firewall) — Protects web applications from common web attacks.
+CDN (Content Delivery Network) — Delivers content from locations closer to users.
+CF (CloudFormation) — AWS Infrastructure as Code service.
+CW (CloudWatch) — Monitors AWS resources, logs, and metrics.
+CT (CloudTrail) — Records AWS account activity and API calls.
+SNS (Simple Notification Service) — Sends notifications using a publish/subscribe model.
+SQS (Simple Queue Service) — Message queue service used to decouple applications.
+SES (Simple Email Service) — Cloud-based email sending service.
+ECS (Elastic Container Service) — AWS container management service.
+EKS (Elastic Kubernetes Service) — Managed Kubernetes service.
+ECR (Elastic Container Registry) — Stores and manages container images.
+Fargate — Serverless compute engine for containers.
+Lambda — Serverless compute service that runs code without managing servers.
+API Gateway — Service used to create and manage APIs.
+Route 53 — AWS DNS and domain routing service.
+AZ (Availability Zone) — One or more isolated data centers inside an AWS Region.
+ARN (Amazon Resource Name) — Unique identifier for an AWS resource.
+
+♾️ DEVOPS BASIC TERMS
+DevOps (Development and Operations) — A culture and practice that combines development and operations to deliver software faster.
+SDLC (Software Development Life Cycle) — Process used to plan, develop, test, deploy, and maintain software.
+CI (Continuous Integration) — Developers frequently merge code and automatically test it.
+CD (Continuous Delivery) — Code is automatically prepared for production deployment.
+CD (Continuous Deployment) — Tested code is automatically deployed to production.
+CI/CD (Continuous Integration and Continuous Delivery/Deployment) — Automation of software build, test, and deployment.
+SCM (Source Code Management) — Process of managing changes to source code.
+VCS (Version Control System) — Software used to track code changes.
+DVCS (Distributed Version Control System) — Version control where every developer has a complete repository copy.
+IaC (Infrastructure as Code) — Managing infrastructure using code.
+CaC (Configuration as Code) — Managing system configurations using code.
+GitOps — Managing infrastructure and deployments using Git repositories as the source of truth.
+DevSecOps (Development, Security, and Operations) — Integrates security into the DevOps process.
+SRE (Site Reliability Engineering) — Uses software engineering practices to improve system reliability.
+AIOps (Artificial Intelligence for IT Operations) — Uses AI to automate and improve IT operations.
+MLOps (Machine Learning Operations) — Practices used to deploy and manage machine learning systems.
+🔀 GIT & GITHUB TERMS
+
+Git official site> and GitHub are core tools in many DevOps workflows.
+
+Git — Distributed version control system used to track source code changes.
+GitHub — Cloud platform used to host and collaborate on Git repositories.
+Repo (Repository) — Storage location for project files and Git history.
+WD (Working Directory) — Area where developers edit project files.
+SA (Staging Area) — Temporary area that stores changes before a commit.
+SHA (Secure Hash Algorithm) — Hash used by Git to identify objects and commits.
+PR (Pull Request) — Request to review and merge code changes.
+MR (Merge Request) — Another term for a request to merge code changes.
+SSH (Secure Shell) — Secure protocol used to access remote systems.
+PAT (Personal Access Token) — Token used for authentication.
+HEAD — Pointer to the currently checked-out Git commit or branch.
+CI/CD Pipeline — Automated sequence of build, test, and deployment steps.
+🐳 DOCKER & CONTAINER TERMS
+Docker — A platform used to build, package, and run applications in containers.
+OCI (Open Container Initiative) — Creates open standards for container formats and runtimes.
+CRI (Container Runtime Interface) — Interface used by Kubernetes to communicate with container runtimes.
+CNI (Container Network Interface) — Standard used to configure container networking.
+CSI (Container Storage Interface) — Standard used to connect storage systems with containers.
+Dockerfile — File containing instructions to build a Docker image.
+Image — Read-only template used to create containers.
+Container — Lightweight isolated environment used to run applications.
+Registry — Storage system for container images.
+Docker Hub — Cloud registry for Docker images.
+YAML (YAML Ain't Markup Language) — Human-readable configuration file format.
+JSON (JavaScript Object Notation) — Data format used to store and exchange structured data.
+☸️ KUBERNETES TERMS
+K8s (Kubernetes) — Container orchestration platform used to manage containers.
+K3s (Lightweight Kubernetes) — Lightweight Kubernetes distribution.
+API Server (Application Programming Interface Server) — Main communication point of a Kubernetes cluster.
+etcd — Distributed key-value database that stores Kubernetes cluster data.
+CM (Controller Manager) — Manages Kubernetes controllers.
+KCM (Kube Controller Manager) — Runs core Kubernetes control loops.
+CRD (Custom Resource Definition) — Adds custom resources to Kubernetes.
+RBAC (Role-Based Access Control) — Controls access based on roles.
+PVC (Persistent Volume Claim) — Request for persistent storage.
+PV (Persistent Volume) — Storage resource available to a Kubernetes cluster.
+HPA (Horizontal Pod Autoscaler) — Automatically changes the number of pods.
+VPA (Vertical Pod Autoscaler) — Adjusts CPU and memory resources for pods.
+PDB (Pod Disruption Budget) — Limits pod disruptions during maintenance.
+DNS (Domain Name System) — Provides service name resolution inside a cluster.
+Ingress — Manages external HTTP and HTTPS access to services.
+🔧 CI/CD & AUTOMATION TERMS
+JDK (Java Development Kit) — Tools used to develop Java applications.
+JRE (Java Runtime Environment) — Environment used to run Java applications.
+JVM (Java Virtual Machine) — Executes Java bytecode.
+Maven — Java build and dependency management tool.
+Gradle — Build automation tool.
+JAR (Java Archive) — Package format for Java applications.
+WAR (Web Application Archive) — Package format for Java web applications.
+Jenkins — Automation server used to create CI/CD pipelines.
+Pipeline — Automated sequence of software delivery steps.
+Artifact — Output created by a build process.
+CDN (Content Delivery Network) — Network used to deliver content closer to users.
+🏗️ TERRAFORM & INFRASTRUCTURE TERMS
+IaC (Infrastructure as Code) — Creating and managing infrastructure using code.
+HCL (HashiCorp Configuration Language) — Language used to write Terraform configuration.
+TF (Terraform) — Infrastructure as Code tool used to create cloud resources.
+State File — File that stores Terraform infrastructure information.
+Provider — Plugin used by Terraform to communicate with a platform.
+Module — Reusable collection of Terraform configuration.
+Backend — Location where Terraform state is stored.
+DRY (Don't Repeat Yourself) — Principle of avoiding duplicate code.
+📊 MONITORING & OBSERVABILITY TERMS
+APM (Application Performance Monitoring) — Monitors application performance.
+NMS (Network Management System) — Monitors and manages networks.
+SIEM (Security Information and Event Management) — Collects and analyzes security logs.
+ELK (Elasticsearch, Logstash, Kibana) — Stack used for centralized logging and log analysis.
+EFK (Elasticsearch, Fluentd, Kibana) — Logging stack that uses Fluentd.
+SLI (Service Level Indicator) — Metric that measures service performance.
+SLO (Service Level Objective) — Target value for service performance.
+SLA (Service Level Agreement) — Formal agreement about service performance.
+MTTR (Mean Time to Repair/Recovery) — Average time required to restore a failed system.
+MTBF (Mean Time Between Failures) — Average operating time between system failures.
+KPI (Key Performance Indicator) — Metric used to measure performance.
+CPU (Central Processing Unit) Utilization — Percentage of processor capacity being used.
+OOM (Out of Memory) — Situation where a system has insufficient memory.
+🔐 CLOUD & DEVOPS SECURITY TERMS
+IAM (Identity and Access Management) — Manages identities and permissions.
+AAA (Authentication, Authorization, and Accounting) — Security framework for verifying and tracking users.
+RBAC (Role-Based Access Control) — Provides permissions based on roles.
+ABAC (Attribute-Based Access Control) — Provides access based on attributes.
+MFA (Multi-Factor Authentication) — Uses multiple authentication methods.
+SSO (Single Sign-On) — Allows users to access multiple systems with one login.
+JWT (JSON Web Token) — Token format used for secure authentication.
+OAuth (Open Authorization) — Authorization framework used to provide limited access.
+OIDC (OpenID Connect) — Identity authentication layer built on OAuth 2.0.
+AES (Advanced Encryption Standard) — Symmetric encryption algorithm.
+RSA (Rivest-Shamir-Adleman) — Public-key encryption algorithm.
+DDoS (Distributed Denial of Service) — Attack that floods a system with traffic.
+WAF (Web Application Firewall) — Protects web applications from malicious traffic.
+CVE (Common Vulnerabilities and Exposures) — Public identifier for known security vulnerabilities.
+CVSS (Common Vulnerability Scoring System) — Scores the severity of vulnerabilities.
+OWASP (Open Worldwide Application Security Project) — Organization focused on web application security.
+🚀 ADVANCED CLOUD & DEVOPS TERMS
+SOA (Service-Oriented Architecture) — Architecture where applications are built using reusable services.
+MSA (Microservices Architecture) — Architecture where an application is divided into small independent services.
+REST (Representational State Transfer) — Architecture style used to design web APIs.
+RPC (Remote Procedure Call) — Allows a program to execute a function on another system.
+gRPC (Google Remote Procedure Call) — High-performance RPC framework.
+MQ (Message Queue) — Allows asynchronous communication between applications.
+DLQ (Dead Letter Queue) — Stores messages that failed processing.
+EDA (Event-Driven Architecture) — Architecture where systems communicate using events.
+CQRS (Command Query Responsibility Segregation) — Separates read and write operations.
+CAP (Consistency, Availability, Partition Tolerance) — Distributed system principle describing system trade-offs.
+ACID (Atomicity, Consistency, Isolation, Durability) — Properties that ensure reliable database transactions.
+BASE (Basically Available, Soft State, Eventual Consistency) — Distributed database consistency model.
+Blue-Green Deployment — Uses two environments to reduce deployment downtime.
+Canary Deployment — Releases a new version to a small number of users first.
+Rolling Deployment — Gradually replaces old application instances with new ones.
+Zero Downtime Deployment (ZDD) — Deploys applications without service interruption.
+RCA (Root Cause Analysis) — Process used to identify the main cause of a problem.
+PoC (Proof of Concept) — Small implementation used to test whether an idea works.
+MVP (Minimum Viable Product) — Basic product version with essential features.

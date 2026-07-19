@@ -2,7 +2,6 @@
 1. Developer Code Likhta Hai
 Kya Hota Hai?
 Developer website ya web application banata hai.
-
 > Kya Use Hota Hai?
 HTML
 CSS
@@ -10,9 +9,9 @@ JavaScript
 React / Angular / Vue (Frontend)
 Java Spring Boot / Node.js / Python Django (Backend)
 MySQL / MongoDB (Database)
->Iska Purpose
+> Iska Purpose
 Application ki functionality aur UI banana.
->Example
+> Example
 Cloud Attendance System me:
 Login Page
 Student Dashboard
@@ -21,7 +20,6 @@ Admin Panel
 👉 Is stage par application sirf development ke liye bani hoti hai.
 
 2. Laptop Me Test Karta Hai
-Kya Hota Hai?
 Developer apni machine par application run karke check karta hai ki sab sahi kaam kar raha hai ya nahi.
 
 Kya Use Hota Hai?
@@ -40,7 +38,6 @@ http://localhost:8080   → Spring Boot
 
 3. GitHub Par Push Karta Hai
 Kya Hota Hai?
-
 Developer apna code Git repository me upload karta hai.
 
 Kya Use Hota Hai?
@@ -60,7 +57,6 @@ git push origin main
 
 4. Cloud Me Server Leta Hai
 Kya Hota Hai?
-
 Website ko internet par chalane ke liye ek online server rent kiya jata hai.
 
 Kya Use Hota Hai?
@@ -74,16 +70,13 @@ Purpose
 Application ko 24×7 online rakhna.
 
 Example
-
 Laptop → Temporary
-
 Cloud Server → 24×7 Running
 
 👉 Isi server par application deploy hoti hai.
 
 5. Linux Install Hota Hai
 Kya Hota Hai?
-
 Server par Operating System install hota hai.
 
 Common Linux Distributions
@@ -105,19 +98,16 @@ Production Friendly
 
 6. Git Se Code Server Me Aata Hai
 Kya Hota Hai?
-
 GitHub se project ko server par download kiya jata hai.
 
 Kya Use Hota Hai?
 git clone repository-url
 
 Ya
-
 git pull
 Purpose
 
 Latest application code server par lana.
-
 Flow
 Laptop
      │
@@ -133,7 +123,6 @@ Server
 
 7. Database Install Hota Hai
 Kya Hota Hai?
-
 Application ka data store karne ke liye database setup kiya jata hai.
 
 Popular Databases
@@ -145,26 +134,19 @@ Purpose
 Permanent data store karna.
 
 Example
-
 Student Information
-
 Attendance Records
 
 Teacher Details
-
 👉 Database ke bina dynamic website ka data save nahi hoga.
 
 8. Backend Run Hota Hai
 Kya Hota Hai?
-
 Backend application server par start ki jati hai.
 
 Example
-
 Spring Boot
-
 java -jar app.jar
-
 Node.js
 
 npm start
@@ -178,12 +160,10 @@ Signup
 CRUD Operations
 Database Access
 Authentication
-
 👉 Backend hi application ka "Brain" hota hai.
 
 9. React Build Hota Hai
 Kya Hota Hai?
-
 React ka source code optimized production files me convert hota hai.
 
 Command
@@ -192,20 +172,17 @@ Output
 build/
 
 ya
-
 dist/
 Purpose
 
 Fast loading aur optimized website banana.
-
 👉 Browser source code nahi, build files load karta hai.
 
 10. Nginx Configure Hota Hai
 Kya Hota Hai?
-
 Nginx ek Web Server aur Reverse Proxy hai.
 
-Purpose
+> Purpose
 Static files serve karna
 User requests receive karna
 Backend ko request forward karna
@@ -213,20 +190,15 @@ Load Balancing
 SSL Handle karna
 Flow
 User
-
 ↓
-
 Nginx
-
 ↓
-
 Backend
 
 👉 Nginx website ka "Gatekeeper" hota hai.
 
 11. Domain Kharida Jata Hai
 Kya Hota Hai?
-
 Website ke liye ek human-readable address kharida jata hai.
 
 Example
@@ -239,29 +211,23 @@ Cloudflare Registrar
 Purpose
 
 IP Address yaad rakhne ki jagah ek simple naam use karna.
-
 👉 Domain website ka naam hota hai.
 
 12. DNS Domain Ko Server Se Connect Karta Hai
 Kya Hota Hai?
-
 DNS domain name ko server ke IP Address me convert karta hai.
 
 Example
 attendance.com
-
 ↓
-
 43.210.xxx.xxx
 Purpose
 
 Browser ko batana ki website kis server par hai.
-
 👉 DNS internet ki phonebook ki tarah kaam karta hai.
 
 13. SSL Lagta Hai (HTTPS)
 Kya Hota Hai?
-
 Website par SSL Certificate install kiya jata hai.
 
 Purpose
@@ -278,42 +244,24 @@ https://
 
 14. Website Live Ho Jati Hai
 Kya Hota Hai?
-
 Ab website duniya ke kisi bhi user ke liye accessible hoti hai.
-
 User Flow
 Browser
-
 ↓
-
 Domain
-
 ↓
-
 DNS
-
 ↓
-
 Server
-
 ↓
-
 Nginx
-
 ↓
-
 Backend
-
 ↓
-
 Database
-
 ↓
-
 Response
-
 ↓
-
 Website Display
 
 👉 Ye actual production environment hota hai.

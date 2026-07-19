@@ -1,0 +1,83 @@
+Docker scout 
+# for interviews purpose
+Logs & Debugging
+How do you check container logs?
+How do you enter a running container?
+Difference between docker logs and docker exec?
+How do you inspect container metadata?
+How do you find why a container exited?
+How do you monitor resource usage?
+How do you troubleshoot networking issues?
+How do you debug image build failures?
+Why is my application working locally but not inside Docker?
+How do you debug port conflicts?
+
+Security
+How do you secure Docker containers?
+Why should containers not run as root?
+What is Docker Content Trust?
+How do you scan Docker images for vulnerabilities?
+What is a read-only filesystem?
+What are Docker Secrets?
+What is Docker Bench Security?
+What are Linux capabilities?
+What is seccomp?
+What is AppArmor?
+
+Performance
+Why is Docker faster than VMs?
+How do you optimize Docker performance?
+Why should images be small?
+What is layer caching?
+How do you reduce build time?
+What causes slow container startup?
+What are resource limits?
+Difference between CPU shares and CPU quota?
+How do you limit container memory?
+What happens if a container exceeds its memory limit?
+
+CI/CD
+How is Docker used in Jenkins?
+How is Docker used in GitHub Actions?
+Why use Docker in CI/CD?
+How do you version Docker images?
+What is immutable infrastructure?
+How do you roll back to a previous Docker image?
+How do you automate Docker builds?
+What is Docker Buildx?
+What is Docker BuildKit?
+How do you store Docker images in AWS ECR?
+
+AWS + Docker
+How do you deploy Docker on EC2?
+How do you deploy containers using ECS?
+Difference between ECS and EKS?
+What is AWS Fargate?
+How do you push images to ECR?
+How do you update a running container in ECS?
+How do you store secrets in ECS?
+How do you connect ECS to RDS?
+How do you monitor containers in AWS?
+How do you auto-scale Docker containers?
+
+Real Interview Scenarios
+Your container exits immediately after starting. How will you troubleshoot?
+The application works on your laptop but fails inside Docker. What will you check?
+Docker build is taking 20 minutes. How do you optimize it?
+A container cannot connect to the database. How do you debug it?
+Your website is not accessible after publishing port 8080. What will you check?
+The container is consuming 100% CPU. What steps will you take?
+The container is running, but users get a 502 Bad Gateway. How do you investigate?
+You accidentally deleted a running container. How do you recover?
+Disk space on the Docker host is full. What commands will you use?
+One container cannot communicate with another. How do you troubleshoot?
+After deploying a new image, the application crashes. What is your rollback plan?
+A developer forgot to include environment variables. How will you fix it?
+Sensitive credentials are inside the Docker image. What should be done?
+A container keeps restarting every few seconds. How do you identify the cause?
+You need zero-downtime deployment for a Dockerized application. How would you achieve it?
+Your Docker host suddenly runs out of memory. What do you check first?
+Users report slow response times after container deployment. How do you investigate?
+You need to run multiple versions of the same application simultaneously. How would you design it?
+A production container was modified manually. How would you restore the correct state?
+Your company wants to migrate from VMs to Docker. What would be your migration approach?

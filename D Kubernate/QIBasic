@@ -1,0 +1,115 @@
+# Kubernetes Top 50 Interview Questions
+# Kubernetes Basics
+1. What is Kubernetes and why do we need it?
+
+2. Explain Kubernetes Architecture.
+
+3. What are the components of the Kubernetes Control Plane?
+
+4. What are Worker Nodes?
+What happens internally when you run kubectl apply -f deployment.yaml?
+Pods
+What is a Pod?
+Why is Pod the smallest deployable unit?
+Difference between Pod and Container?
+Can multiple containers run inside one Pod? Explain with a use case.
+What happens if a Pod crashes?
+ReplicaSet & Deployment
+What is ReplicaSet?
+Difference between ReplicaSet and Deployment?
+What is a Deployment?
+Explain the Deployment lifecycle.
+How do you perform a rolling update?
+How do you rollback a Deployment?
+Difference between Rolling Update and Recreate strategy?
+Services & Networking
+Why do we need a Service in Kubernetes?
+Explain ClusterIP, NodePort, and LoadBalancer.
+Difference between ClusterIP and NodePort.
+What is Ingress?
+Difference between Service and Ingress?
+How do Pods communicate with each other?
+What is CoreDNS?
+Storage
+What is Persistent Volume (PV)?
+What is Persistent Volume Claim (PVC)?
+Difference between PV and PVC?
+What is StorageClass?
+Why do we need Persistent Storage in Kubernetes?
+ConfigMaps & Secrets
+What is ConfigMap?
+What is Secret?
+Difference between ConfigMap and Secret?
+How do applications use Secrets securely?
+Scheduling
+How does the Kubernetes Scheduler decide where to place a Pod?
+What are Node Selectors?
+What are Taints and Tolerations?
+Difference between Node Affinity and Taints?
+Security
+What is RBAC?
+Difference between Role and ClusterRole?
+What is a Service Account?
+How do you secure a Kubernetes Cluster?
+Monitoring & Debugging
+How do you troubleshoot a Pod in CrashLoopBackOff state?
+A Pod is stuck in Pending state. How do you troubleshoot it?
+Your application is not accessible. What will you check?
+How do you view Pod logs?
+Difference between kubectl logs, kubectl describe, and kubectl exec?
+Scenario-Based Questions
+A Deployment has 5 replicas. One Pod crashes. What happens?
+Your application cannot connect to the database running in another Pod. How will you troubleshoot?
+Kubernetes cannot pull your Docker image (ImagePullBackOff). How do you fix it?
+A Worker Node suddenly goes down. How does Kubernetes recover, and what steps would you take?
+⭐ Must-Practice Scenario Questions (Highest Probability)
+
+If you have limited time, focus especially on these 10:
+
+Explain Kubernetes Architecture.
+What happens when you run kubectl apply?
+Difference between Pod, ReplicaSet, and Deployment.
+Difference between ClusterIP, NodePort, LoadBalancer, and Ingress.
+Difference between ConfigMap and Secret.
+Difference between PV and PVC.
+CrashLoopBackOff troubleshooting.
+Pending Pod troubleshooting.
+ImagePullBackOff troubleshooting.
+Worker Node failure recovery.
+
+
+
+CI/CD
+How does Jenkins deploy to Kubernetes?
+How does GitHub Actions deploy to Kubernetes?
+What is GitOps?
+Explain ArgoCD.
+Explain FluxCD.
+What is Blue-Green Deployment?
+What is Canary Deployment?
+AWS Kubernetes
+What is Amazon EKS?
+Difference between EKS and ECS?
+How do you deploy applications to EKS?
+How do you connect EKS with ECR?
+How does EKS integrate with IAM?
+Explain Managed Node Groups.
+What is Fargate in EKS?
+How do you expose applications in EKS?
+How do you scale EKS?
+How do you monitor EKS?
+Real Interview Scenarios
+A Pod is stuck in Pending state. How will you troubleshoot?
+A Pod is in CrashLoopBackOff. What steps will you take?
+Users cannot access your application. How do you debug?
+Deployment succeeded but Pods are not created. What will you check?
+One Pod is running but another identical Pod is failing. Why?
+Kubernetes cannot pull the Docker image. How do you fix it?
+A Service cannot communicate with Pods. What will you verify?
+Your application is slow after deployment. How do you investigate?
+A Node becomes NotReady. What actions will you take?
+etcd becomes unavailable. What is the impact?
+One worker node crashes unexpectedly. How does Kubernetes recover?
+A ConfigMap was updated but the application still uses old values. Why?
+A Secret was accidentally exposed. What should you do immediately?
+During a rolling update, users report downtime. How would you investigate and prevent it?
