@@ -1,3 +1,10 @@
+🟢 3. Docker Architecture
+Docker Client
+Docker Server (Daemon)
+Docker Engine
+Docker Registry
+Docker Objects
+
 # Docker — Architecture 
 Think of Docker like ordering food online.
 You (Customer) → Docker Client

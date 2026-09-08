@@ -1,0 +1,16 @@
+# store here new Q rendom
+
+Q: What is the difference between liveness and readiness probe?
+Answer:
+
+Liveness probe checks whether the application is alive and working. If it fails, Kubernetes can restart the container. Readiness probe checks whether the application is ready to receive traffic. If it fails, Kubernetes removes the Pod from Service endpoints, but normally does not restart the container.
+
+Q: Why do we need startup probe if we already have liveness?
+Answer:
+
+Some applications take a long time to start. A startup probe gives such applications enough time to initialize. Until the startup probe succeeds, Kubernetes does not use the liveness and readiness probes in the usual way.
+
+"Explain Kubernetes probes."
+Tum bolo:
+
+Kubernetes probes are health checks used to monitor containers. There are three main probes: liveness, readiness, and startup. Liveness checks whether the application is alive and can restart an unhealthy container. Readiness checks whether the application is ready to receive traffic and removes the Pod from traffic when it is not ready. Startup probe is useful for applications that take a long time to start. Probes can use HTTP, TCP, or commands executed inside the container.

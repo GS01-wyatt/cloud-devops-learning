@@ -21,6 +21,8 @@ Glacier
 # 4. Database Services
 RDS (Relational Database Service)
 DynamoDB
+ElastiCache
+Aurora
 
 # 5 Networking - all in (A Network folder)
 VPC (Virtual Private Cloud)
@@ -36,6 +38,7 @@ Ports
 Route 53 (DNS)
 DNS Working
 Custom Domain
+Load Balancer
 
 # 6. AWS Security
 Firewall Rules
@@ -190,3 +193,14 @@ Dead Letter Queue (DLQ)
 Message Retention
 Visibility Timeout
 Standard Queue
+> Route 53
+> DynamoDB
+> Auto Scaling
+> System manager
+
+
+
+what they are
+why you neet it
+How it work
+coding required

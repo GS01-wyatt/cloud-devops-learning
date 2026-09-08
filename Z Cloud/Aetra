@@ -44,9 +44,9 @@ App → Azure Blob Storage → Data stored → Access via API/SDK
 
 
 # 2. OS Virtualization (Operating System Virtualization)
-🔹 What is OS Virtualization?
 
-OS Virtualization is a technique where multiple isolated environments (virtual systems) run on a single physical machine using the same operating system kernel.
+🔹 What is OS Virtualization?
+ OS Virtualization is a technique where multiple isolated environments (virtual systems) run on a single physical machine using the same operating system kernel.
 
 👉 In simple words:
 1 computer → multiple virtual environments → each behaves like its own system

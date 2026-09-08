@@ -53,7 +53,6 @@ Database ko koi student directly access nahi kar sakta, kyunki wo Private Subnet
 
 >> why we need VPC
 
-
 Q1. What is a VPC?
 Answer: A VPC is a private virtual network in AWS where we launch and manage AWS resources securely.
 
@@ -63,7 +62,11 @@ Answer: An IP address is a unique identifier assigned to every device or resourc
 Q3. What is a Subnet?
 Answer: A subnet is a smaller network created inside a VPC to organize and isolate AWS resources.
 
-# 1. Internet Gateway (IGW)
+
+# VPC Creation
+
+
+#  Internet Gateway (IGW)
 Kya hai?
 Internet Gateway ek gate hai jo VPC ko Internet se connect karta hai.
 Agar IGW nahi hoga, to internet se koi connection nahi hoga.
@@ -87,7 +90,7 @@ Nginx Server
 Portfolio Website
 WordPress
 
-# 2. NAT Gateway
+# NAT Gateway
 Kya hai?
 NAT Gateway private server ko sirf Internet use karne deta hai, lekin Internet se koi us server tak nahi aa sakta.
 
@@ -112,7 +115,7 @@ App Server
 Backend Server
 Database Server (normally internet access bhi avoid kiya jata hai)
 
-# 3. Route Table
+# Route Table
 Kya hai?
 Route Table ek Google Maps ki tarah hoti hai.
 Ye batati hai:
@@ -172,7 +175,7 @@ Example:
 Ek pura subnet block karna.
 Kisi IP Range ko deny karna.
 
-# 3. Ports
+# Ports
 Kya hai?
 Port ek door (gate) hota hai.
 Har service ka apna door hota hai.
@@ -200,6 +203,8 @@ A port is a communication endpoint used by applications. Different services use 
 >> VPC Endpoint
 >> Elastic IP Addresses
 >> Diract Connect
+>> AWS Client VPN
+
 
 # Route 53 
 Route 53 is a highly available and scalable DNS (Domain Name System) web service provided by AWS. 

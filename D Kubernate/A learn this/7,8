@@ -1,0 +1,175 @@
+
+🟢 7. Resource Management — MUST LEARN
+Resource Requests — Minimum CPU/Memory required by a Pod
+Resource Limits — Maximum CPU/Memory a Pod can consume
+Resource Quotas — Namespace-level resource restrictions
+
+<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+🟢 8. Health Checks & Probes
+Kubernetes Probes
+Liveness Probe
+Readiness Probe
+Startup Probe
+HTTP Probe
+TCP Probe
+gRPC Probe
+Exec Probe
+Probe Configuration
+Probe Failure
+Container Restart
+Readiness vs Liveness
+Startup vs Liveness
+
+
+# One-minute revision
+PROBES
+│
+├── Liveness
+│      └── Alive? → FAIL → Restart
+│
+├── Readiness
+│      └── Ready for traffic? → FAIL → No Traffic
+│
+└── Startup
+       └── Started? → Give startup time
+
+# Probe methods:
+HTTP  → HTTP endpoint check
+TCP   → Port connection check
+gRPC  → gRPC health check
+Exec  → Command inside container
+
+# Main parameters:
+initialDelaySeconds → Kab start kare?
+periodSeconds       → Kitni frequently?
+timeoutSeconds      → Kitna wait?
+failureThreshold    → Kitni failures?
+successThreshold    → Kitni successes?
+
+
+# "Explain Kubernetes probes."
+Kubernetes probes are health checks used to monitor containers. There are three main probes: liveness, readiness, and startup. Liveness checks whether the application is alive and can restart an unhealthy container. Readiness checks whether the application is ready to receive traffic and removes the Pod from traffic when it is not ready. Startup probe is useful for applications that take a long time to start. Probes can use HTTP, TCP, or commands executed inside the container.
+
+# Sample YAML
+liveness-http and readiness-http
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello
+spec:
+  containers:
+  - name: liveness
+    image: registry.k8s.io/e2e-test-images/agnhost:2.40
+    args:
+    - liveness
+    livenessProbe:
+      httpGet:
+        path: /healthz
+        port: 8080
+      initialDelaySeconds: 3
+      periodSeconds: 3
+    readinessProbe:
+      httpGet:
+        path: /healthz
+        port: 8080
+      initialDelaySeconds: 15
+      periodSeconds: 10
+
+# liveness command
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    test: liveness
+  name: liveness-exec
+spec:
+  containers:
+  - name: liveness
+    image: registry.k8s.io/busybox
+    args:
+    - /bin/sh
+    - -c
+    - touch /tmp/healthy; sleep 30; rm -f /tmp/healthy; sleep 600
+    livenessProbe:
+      exec:
+        command:
+        - cat 
+        - /tmp/healthy
+      initialDelaySeconds: 5
+      periodSeconds: 5
+
+# liveness-tcp
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tcp-pod
+  labels:
+    app: tcp-pod
+spec:
+  containers:
+  - name: goproxy
+    image: registry.k8s.io/goproxy:0.1
+    ports:
+    - containerPort: 8080
+    livenessProbe:
+      tcpSocket:
+        port: 3000
+      initialDelaySeconds: 10
+      periodSeconds: 5
+
+
+# Q1. What is a Kubernetes Probe?
+A probe is a health check mechanism used by Kubernetes to determine the state of a container or application.
+
+Q2. What are the three main probes?
+Liveness, Readiness, and Startup probes.
+
+Q3. What is Liveness Probe?
+It checks whether the application is alive. If it repeatedly fails, Kubernetes can restart the container.
+
+Q4. What is Readiness Probe?
+It checks whether the application is ready to receive traffic. If it fails, Kubernetes stops routing traffic to the Pod.
+
+Q5. What is Startup Probe?
+It gives slow-starting applications enough time to start before normal health checking takes over.
+
+Q6. What types of probes are available?
+HTTP, TCP, gRPC, and Exec.
+
+Q7. What happens when Readiness Probe fails?
+The Pod is marked not ready and is removed from Service traffic, but the container is normally not restarted.
+
+Q8. What happens when Liveness Probe fails?
+After the configured failure conditions are met, Kubernetes can restart the container.
+
+Q9. Liveness vs Readiness?
+Liveness checks "Should I restart the application?"
+Readiness checks "Should I send traffic to the application?"
+
+# Q10. Startup vs Liveness?
+Startup is for application initialization; Liveness is for ongoing health after startup.
+
+
+
+
+# terminal
+Command                          	Meaning
+k apply -f "name file"	
+-YAML file se Kubernetes resource create/update karta hai.
+k get po	
+Kubernetes ke Pods ki list dikhata hai.
+k get po --watch	
+Pods ko continuously watch karta hai; status change hote hi dikhata hai.
+k describe po/liveness-exec 
+liveness-exec Pod ki detailed information/events/configuration dikhata hai.
+k exec -it hello -- sh	
+hello container ke andar shell open karta hai.
+k exec -it hello -- bash	
+hello container ke andar Bash shell open karta hai, agar Bash installed ho.
+cat /healthz	
+/healthz file ka content/read karta hai.
+touch /healthz	
+/healthz naam ki empty file create karta hai; agar file already hai to timestamp update karta hai.
+k apply --force -f "name file"	
+YAML ko forcefully re-apply karta hai; zarurat padne par existing resource ko recreate karta hai.

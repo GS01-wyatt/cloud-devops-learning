@@ -1,0 +1,191 @@
+# What is CI/CD?
+⭐ Interview Answer
+
+“CI/CD is a practice that automates the process of building, testing, and deploying applications.
+
+CI stands for Continuous Integration, where developers frequently push their code to Git and an automated pipeline builds, tests, and validates the code.
+
+CD stands for Continuous Delivery or Continuous Deployment, where the validated application is packaged and deployed to different environments such as Dev, QA, UAT, and Production.
+
+The main goal of CI/CD is to deliver software faster, more reliably, and with fewer manual errors.”
+
+> 
+If interviewer asks: Why do we need CI/CD?
+“Without CI/CD, developers and operations teams have to perform many steps manually. CI/CD automates these repetitive activities, provides faster feedback, improves consistency, and reduces deployment errors.”
+
+
+# How does a CI Pipeline work?
+⭐ Interview Answer
+
+“When a developer pushes code to Git, it triggers the CI pipeline. The pipeline first checks out the latest source code. Then it builds the application, runs automated tests, performs code-quality and security checks, and finally creates a versioned artifact.
+
+If any stage fails, the pipeline stops and the team gets feedback. Only code that passes all required checks moves forward.”
+
+# Explain Git → Build → Test → Code Quality → Artifact
+⭐ Interview Answer
+“This is the typical flow of a CI pipeline.”
+
+1. Git — Source Code
+Developer pushes code:
+// git push
+Git stores and versions the source code.
+
+2. Build — Compile Application
+The pipeline builds the application.
+For example, Java:
+// mvn clean package
+
+It may generate:
+// application.jar
+
+3. Test — Verify Functionality
+Automated tests are executed.
+
+Unit Tests
+Integration Tests
+
+If tests fail:
+
+❌ Pipeline stops
+
+4. Code Quality — Check Code
+Tools like SonarQube can check:
+
+Bugs
+Vulnerabilities
+Code Smells
+Code Duplication
+
+5. Artifact — Deployable Output
+After successful validation, the application is packaged as an artifact.
+
+Examples:
+
+Java     → JAR/WAR
+Docker   → Docker Image
+Node.js  → Build Package
+
+The artifact can then be stored in:
+
+Nexus
+JFrog Artifactory
+Amazon ECR
+
+⭐ Strong closing statement:
+“So CI converts source code into a tested and validated versioned artifact that is ready for deployment.”
+
+# What is an Artifact and why is it important?
+⭐ Interview Answer
+“An artifact is the output produced by the build process that can be deployed to an environment.
+
+For example, in a Java application it could be a JAR file, and in a containerized application it could be a Docker image.
+
+Artifacts are important because they are versioned, traceable, and can be promoted across environments without rebuilding the application.”
+
+# How does CD Pipeline work?
+⭐ Interview Answer
+
+“After CI successfully creates the artifact, CD takes that artifact and handles the deployment process.
+
+Usually, the artifact is deployed first to Dev. After validation, it is promoted to QA, then UAT, and finally Production. Depending on the organization, some environments may require manual approval before promotion.”
+
+# Why deploy the same artifact across Dev, QA, UAT & Production?
+⭐ Interview Answer
+“We deploy the same artifact across all environments to ensure consistency.
+
+If we rebuild the application separately for Dev, QA, UAT, and Production, there is a possibility that the builds can be different.
+
+Instead, we build the application once, test that artifact, and promote the exact same artifact through all environments.”
+
+# What are Environment-Specific Configurations?
+
+This is where you can show real DevOps knowledge.
+⭐ Interview Answer
+“The application code and artifact should remain the same, but some configuration values are different for each environment.
+
+For example, Dev, QA, and Production may use different database endpoints, API URLs, credentials, replica counts, or feature configurations.
+
+So we keep these values outside the application artifact and inject the appropriate configuration during deployment.”
+
+# What happens when deployment fails?
+⭐ Interview Answer
+
+“If a deployment fails, we don't continue promoting that version to the next environment.
+
+First, I would check the pipeline logs, deployment events, application logs, and health checks to identify the root cause.
+
+If the issue can be fixed quickly, I would fix it and redeploy. If the new version is already causing problems in Production, I would rollback to the previous stable version.”
+
+# What is Rollback in CI/CD?
+⭐ Interview Answer
+
+“Rollback means moving the application back to the last known stable version when the current deployment has a problem.
+
+For example, if version 2.0 is deployed to Production and starts causing errors, we can rollback to version 1.9 while we investigate the issue.”
+
+
+# “Can you explain your CI/CD pipeline?”
+
+“Sure. Let me explain the complete flow.
+In my CI/CD pipeline, the process starts when a developer pushes code to Git.
+
+That push triggers the CI pipeline. First, the pipeline checks out the latest source code. Then it builds the application and runs automated unit and integration tests.
+
+After that, we perform code-quality and security checks. If all the checks pass, we create a versioned artifact, such as a JAR file or Docker image, and store it in an artifact repository.
+
+Then the CD pipeline takes that exact artifact and deploys it to the Dev environment. After successful validation, the same artifact is promoted to QA and UAT. Production deployment can have an approval or change-management step depending on the organization.
+
+For environment-specific values, such as database URLs, API endpoints, and secrets, we keep configuration separate from the artifact. In a Kubernetes environment, for example, we can use ConfigMaps and Secrets.
+
+If a deployment fails, we first check the pipeline and application logs to identify the root cause. If the issue is fixable, we redeploy the corrected version. If a production deployment causes an issue, we can rollback to the previous stable version.
+
+So, in simple terms, my CI/CD approach is:
+
+Git → Build → Test → Quality Checks → Artifact → Dev → QA → UAT → Production.
+
+The key principle is to build once, create a versioned artifact, and promote the same tested artifact across environments.”
+
+
+
+# "Which tools did you use?"
+
+You can answer like this:
+
+“Depending on the project, the CI/CD stack can include GitHub or GitLab for source control, Jenkins or GitHub Actions for pipeline automation, Maven for building Java applications, JUnit for testing, SonarQube for code quality, Docker for containerization, and Nexus, JFrog, or Amazon ECR for artifact storage. For deployment, we can use Kubernetes, ECS, or other infrastructure depending on the application architecture.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.geeksforgeeks.org/system-design/cicd-pipeline-system-design/
+

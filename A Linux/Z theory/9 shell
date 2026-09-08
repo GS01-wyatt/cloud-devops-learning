@@ -31,42 +31,103 @@ Real-world Automation
 
 
 # 1. What is Shell Scripting, and why is it important in DevOps?
+Shell Scripting is a way to automate tasks using a sequence of Linux commands. In DevOps, it is widely used for automation, deployment, monitoring, and managing infrastructure efficiently.
 
-What is the difference between a Shell Script and a normal Linux command?
+# 2 What is the difference between a Shell Script and a normal Linux command?
+A Linux command performs a single task, whereas a shell script is a collection of commands used to automate > multiple tasks.
+> Shell Script	
+Normal Linux Command
+A shell script is a file containing multiple Linux commands executed together.	
+A Linux command is a single instruction executed directly in the terminal.
+Used to automate repetitive tasks and complex workflows.	
+Used to perform a specific task immediately.
+Can include variables, loops, conditions, and functions.	
+Usually performs one operation at a time.
 
-How do you create and execute a Bash script in Linux?
+# 3. How do you create and execute a Bash script in Linux?
+To create a Bash script, first create a file with the .sh extension and add the Bash shebang (#!/bin/bash) at the top. Write the required commands, save the file, give it execute permission using chmod +x, and then run it.
 
-What are positional parameters ($1, $2, $#, $@, $?) in Shell Scripting?
+Example
+#!/bin/bash
+echo "Hello World"
 
-What is the difference between for, while, and until loops in Shell Scripting?
 
-How do you use if, if-else, and case statements in a Shell Script?
+# 4. What are positional parameters ($1, $2, $#, $@, $?) in Shell Scripting?
+ Positional parameters are special variables used to access command-line arguments and script execution details.
 
-How do you pass command-line arguments to a Shell Script?
+$1 → First argument passed to the script.
+$2 → Second argument passed to the script.
+$# → Total number of arguments passed.
+$@ → All arguments passed to the script.
+$? → Exit status of the last executed command (0 = success, non-zero = error).
+Example
+#!/bin/bash
+echo "First Argument: $1"
+echo "Second Argument: $2"
+echo "Total Arguments: $#"
+echo "All Arguments: $@"
+
+# 5. What is the difference between for, while, and until loops in Shell Scripting?
+Loop	Purpose
+for	  Used when the number of iterations is known.
+while	Runs as long as the condition is true.
+until	Runs as long as the condition is false and stops when it becomes true.
+
+
+# 6. How do you use if, if-else, and case statements in a Shell Script?
+if → Executes code when a condition is true.
+if-else → Chooses between two blocks based on a condition.
+case → Used for handling multiple choices more efficiently than multiple if-else statements.
+
+
+
+# 7. How do you pass command-line arguments to a Shell Script?
+Command-line arguments are values passed to a shell script when it is executed. These values can be accessed using special variables like $1, $2, $3, etc.
+
+For example, if you run a script with:
+
+./script.sh DevOps AWS
+$1 = DevOps
+$2 = AWS
+
+>Why is it useful in DevOps?
+Instead of hardcoding values inside the script, we can pass them dynamically at runtime. For example, passing a server name, environment (dev/prod), or application name.
+
+> Real-Time Example
+#!/bin/bash
+echo "Deploying application to $1 environment"
+
+Run:
+./deploy.sh production
+
+Output:
+Deploying application to production environment
 A script is failing unexpectedly. How would you debug and troubleshoot it?
 
-How would you write a script to monitor disk usage and send an alert when usage exceeds 80%?
+# 8. How would you write a script to monitor disk usage and send an alert when usage exceeds 80%?
+I would use the df -h command to check disk usage, compare the usage percentage with a threshold value (80%), and send an alert using email or a notification tool if the usage exceeds the limit. This helps prevent disk space issues before they impact applications.
 
-What are some real-world DevOps tasks that can be automated using Shell Scripts?
+# 9. What are some real-world DevOps tasks that can be automated using Shell Scripts?
+Shell Scripts can automate many DevOps tasks such as:
 
+Application deployment
+Server provisioning and configuration
+Log monitoring and cleanup
+Backup and restore operations
+Disk and memory monitoring
+User and permission management
+CI/CD pipeline tasks
+Service start, stop, and restart operations
+Health checks and alerting
+Scheduled maintenance tasks
 
-Most Asked Scenario-Based Questions
-1.
+# Most Asked Scenario-Based Questions
+1. You need to take a backup of application logs every day. How would you automate it using Shell Scripting?
 
-You need to take a backup of application logs every day. How would you automate it using Shell Scripting?
+2. You have 100 Linux servers. How would you automate checking disk usage on all servers?
 
-2.
+3. A service goes down frequently. How would you write a script to check the service status and restart it automatically?
 
-You have 100 Linux servers. How would you automate checking disk usage on all servers?
+4. You need to monitor CPU, Memory, and Disk usage and generate a daily report. How would you approach this using Shell Scripting?
 
-3.
-
-A service goes down frequently. How would you write a script to check the service status and restart it automatically?
-
-4.
-
-You need to monitor CPU, Memory, and Disk usage and generate a daily report. How would you approach this using Shell Scripting?
-
-5.
-
-You want to automate user creation for multiple employees from a text file. How would you do it using a Shell Script?
+5. You want to automate user creation for multiple employees from a text file. How would you do it using a Shell Script?

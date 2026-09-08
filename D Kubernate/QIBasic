@@ -1,37 +1,129 @@
 # Kubernetes Top 50 Interview Questions
+
 # Kubernetes Basics
 1. What is Kubernetes and why do we need it?
+Kubernetes (K8s) is an open-source container orchestration platform used to deploy, manage, scale, and monitor containerized applications automatically.
+It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation (CNCF).
+> Why do we need Kubernetes?
+Automates application deployment.
+Automatically scales applications based on traffic.
+Restarts failed containers (self-healing).
+Distributes traffic using load balancing.
+Performs rolling updates and rollbacks with minimal downtime.
 
 2. Explain Kubernetes Architecture.
+Kubernetes follows a Master-Worker architecture.
+It has two main components:
+> 1. Control Plane (Master Node)
+The Control Plane manages the entire Kubernetes cluster.
+Components:
+API Server – Entry point for all Kubernetes commands.
+etcd – Stores cluster configuration and state.
+Scheduler – Decides which worker node will run a Pod.
+Controller Manager – Monitors the cluster and maintains the desired state.
+Cloud Controller Manager:	Integrates Kubernetes with cloud services
 
-3. What are the components of the Kubernetes Control Plane?
+> 2. Worker Node
+Worker nodes run the application containers.
+Components:
+Pods – Run the application containers.
+Kubelet – Communicates with the Control Plane and manages Pods.
+Container Runtime – Runs containers (such as containerd or CRI-O).
+Kube Proxy – Handles networking and load balancing between Pods.
 
-4. What are Worker Nodes?
-What happens internally when you run kubectl apply -f deployment.yaml?
-Pods
-What is a Pod?
-Why is Pod the smallest deployable unit?
-Difference between Pod and Container?
-Can multiple containers run inside one Pod? Explain with a use case.
-What happens if a Pod crashes?
-ReplicaSet & Deployment
+3. 
+
+
+4. 
+ 
+
+5. What happens internally when you run kubectl apply -f deployment.yaml?
+When you run: 
+kubectl apply -f deployment.yaml
+the following steps happen:
+kubectl reads the deployment.yaml file.
+It sends the request to the API Server.
+The API Server validates and stores the configuration in etcd.
+The Scheduler selects a suitable Worker Node.
+The Container Runtime starts the application containers.
+
+# Pods
+1. What is a Pod?
+“Pod is the smallest deployable unit in Kubernetes. It is a wrapper around one or more containers. Usually, one application container runs inside one Pod.”
+Example:
+“For example, if I deploy an Nginx application, Kubernetes runs the Nginx container inside a Pod.”
+
+2. Why is Pod the smallest deployable unit?
+“Because Kubernetes schedules and manages Pods, not individual containers. A Pod represents the running instance of an application from Kubernetes' point of view.”
+For example:
+Deployment
+    ↓
+   Pod
+    ↓
+Container
+
+When Kubernetes wants to run my application on a node, it schedules the Pod there.
+Remember:
+Container = runs application
+Pod = Kubernetes manages it
+
+3. Difference between Pod and Container?
+“A container is the actual isolated environment where my application runs, while a Pod is a Kubernetes abstraction that contains one or more containers.”
+Example:
+Pod
+ ├── Application Container
+ └── Sidecar Container
+Containers inside the same Pod can share:
+Network
+IP address
+Volumes
+So they can communicate using:
+localhost
+
+4. Can multiple containers run inside one Pod? Explain with a use case.
+“Yes. Multiple containers can run inside a single Pod. We do this when the containers are tightly coupled and need to share the same network or storage.”
+For example:
+Main container → runs application
+Sidecar → collects application logs
+
+Both containers are always scheduled together.
+Interview point:
+“I wouldn't put unrelated applications in the same Pod. Multiple containers are generally used when they have a strong relationship.”
+
+
+5. What happens if a Pod crashes?
+“First, Kubernetes checks what exactly failed. If a container inside the Pod crashes, Kubernetes can restart that container. If the Pod is deleted or lost, a controller such as Deployment or ReplicaSet creates a new Pod to maintain the desired number of replicas.”
+Important:
+“Pods are generally treated as disposable. Kubernetes replaces them rather than trying to permanently repair the same Pod.”
+
+
+# ReplicaSet & Deployment
+
 What is ReplicaSet?
+
 Difference between ReplicaSet and Deployment?
+
 What is a Deployment?
+
 Explain the Deployment lifecycle.
+
 How do you perform a rolling update?
+
 How do you rollback a Deployment?
+
 Difference between Rolling Update and Recreate strategy?
-Services & Networking
-Why do we need a Service in Kubernetes?
+
+# Services & Networking
+1. Why do we need a Service in Kubernetes?
 Explain ClusterIP, NodePort, and LoadBalancer.
 Difference between ClusterIP and NodePort.
 What is Ingress?
 Difference between Service and Ingress?
 How do Pods communicate with each other?
 What is CoreDNS?
-Storage
-What is Persistent Volume (PV)?
+
+# Storage
+1. What is Persistent Volume (PV)?
 What is Persistent Volume Claim (PVC)?
 Difference between PV and PVC?
 What is StorageClass?
@@ -41,32 +133,41 @@ What is ConfigMap?
 What is Secret?
 Difference between ConfigMap and Secret?
 How do applications use Secrets securely?
-Scheduling
-How does the Kubernetes Scheduler decide where to place a Pod?
+
+# Scheduling
+1. How does the Kubernetes Scheduler decide where to place a Pod?
 What are Node Selectors?
 What are Taints and Tolerations?
 Difference between Node Affinity and Taints?
-Security
-What is RBAC?
+
+# Security
+1. What is RBAC?
 Difference between Role and ClusterRole?
 What is a Service Account?
 How do you secure a Kubernetes Cluster?
-Monitoring & Debugging
-How do you troubleshoot a Pod in CrashLoopBackOff state?
-A Pod is stuck in Pending state. How do you troubleshoot it?
-Your application is not accessible. What will you check?
-How do you view Pod logs?
-Difference between kubectl logs, kubectl describe, and kubectl exec?
-Scenario-Based Questions
-A Deployment has 5 replicas. One Pod crashes. What happens?
-Your application cannot connect to the database running in another Pod. How will you troubleshoot?
-Kubernetes cannot pull your Docker image (ImagePullBackOff). How do you fix it?
-A Worker Node suddenly goes down. How does Kubernetes recover, and what steps would you take?
-⭐ Must-Practice Scenario Questions (Highest Probability)
 
-If you have limited time, focus especially on these 10:
+# Monitoring & Debugging
+1. How do you troubleshoot a Pod in CrashLoopBackOff state?
 
-Explain Kubernetes Architecture.
+2. A Pod is stuck in Pending state. How do you troubleshoot it?
+
+3. Your application is not accessible. What will you check?
+
+4. How do you view Pod logs?
+
+5. Difference between kubectl logs, kubectl describe, and kubectl exec?
+
+# Scenario-Based Questions
+1. A Deployment has 5 replicas. One Pod crashes. What happens?
+2. Your application cannot connect to the database running in another Pod. How will you troubleshoot?
+
+3. Kubernetes cannot pull your Docker image (ImagePullBackOff). How do you fix it?
+
+4. A Worker Node suddenly goes down. How does Kubernetes recover, and what steps would you take?
+
+
+# Must-Practice Scenario Questions 
+1. Explain Kubernetes Architecture.
 What happens when you run kubectl apply?
 Difference between Pod, ReplicaSet, and Deployment.
 Difference between ClusterIP, NodePort, LoadBalancer, and Ingress.
@@ -79,37 +180,68 @@ Worker Node failure recovery.
 
 
 
-CI/CD
-How does Jenkins deploy to Kubernetes?
-How does GitHub Actions deploy to Kubernetes?
-What is GitOps?
-Explain ArgoCD.
-Explain FluxCD.
-What is Blue-Green Deployment?
-What is Canary Deployment?
-AWS Kubernetes
-What is Amazon EKS?
-Difference between EKS and ECS?
-How do you deploy applications to EKS?
-How do you connect EKS with ECR?
-How does EKS integrate with IAM?
-Explain Managed Node Groups.
-What is Fargate in EKS?
-How do you expose applications in EKS?
-How do you scale EKS?
-How do you monitor EKS?
-Real Interview Scenarios
-A Pod is stuck in Pending state. How will you troubleshoot?
-A Pod is in CrashLoopBackOff. What steps will you take?
-Users cannot access your application. How do you debug?
-Deployment succeeded but Pods are not created. What will you check?
-One Pod is running but another identical Pod is failing. Why?
-Kubernetes cannot pull the Docker image. How do you fix it?
-A Service cannot communicate with Pods. What will you verify?
-Your application is slow after deployment. How do you investigate?
-A Node becomes NotReady. What actions will you take?
-etcd becomes unavailable. What is the impact?
-One worker node crashes unexpectedly. How does Kubernetes recover?
-A ConfigMap was updated but the application still uses old values. Why?
-A Secret was accidentally exposed. What should you do immediately?
-During a rolling update, users report downtime. How would you investigate and prevent it?
+# Real Interview Scenarios
+1. A Pod is stuck in Pending state. How will you troubleshoot?
+
+2. A Pod is in CrashLoopBackOff. What steps will you take?
+
+3. Users cannot access your application. How do you debug?
+
+4. Deployment succeeded but Pods are not created. What will you check?
+
+5. One Pod is running but another identical Pod is failing. Why?
+
+6. Kubernetes cannot pull the Docker image. How do you fix it?
+
+7. A Service cannot communicate with Pods. What will you verify?
+
+8. Your application is slow after deployment. How do you investigate?
+
+9. A Node becomes NotReady. What actions will you take?
+
+10. etcd becomes unavailable. What is the impact?
+
+11. One worker node crashes unexpectedly. How does Kubernetes recover?
+
+12. A ConfigMap was updated but the application still uses old values. Why?
+
+13. A Secret was accidentally exposed. What should you do immediately?
+
+14. During a rolling update, users report downtime. How would you investigate and prevent it?
+
+
+# Kubernetes (K8s) kya hai? 
+Kubernetes (K8s) ek Container Orchestration Tool hai jo containers ko automatically manage karta hai.
+> Simple Example
+Maan lo tumhari website Docker containers me chal rahi hai.
+1 container frontend
+1 container backend
+1 container database
+Agar:
+Backend container crash ho jaye ❌
+Traffic bahut badh jaye 📈
+Naya version deploy karna ho 🔄
+
+To ye sab manually karna mushkil hai.
+Yahi kaam Kubernetes automatically karta hai.
+
+> Kubernetes kyu use karte hain?
+✅ Containers ko automatically start karta hai.
+✅ Agar container crash ho jaye to dobara start karta hai.
+✅ Traffic badhne par aur containers create kar deta hai (Auto Scaling).
+✅ Traffic ko sab containers me equally distribute karta hai (Load Balancing).
+✅ Application ko bina downtime ke update karta hai (Rolling Update).
+
+> Real-Life Example
+Socho tumhare paas ek restaurant hai.
+Chef = Docker Container
+Restaurant Manager = Kubernetes
+Manager ka kaam:
+Chef beemar ho gaya → naya chef bulao.
+Customers zyada aa gaye → aur chefs bulao.
+Customers kam ho gaye → extra chefs hata do.
+Sab customers ko proper service mile.
+
+Manager = Kubernetes
+
+> Docker vs Kubernetes

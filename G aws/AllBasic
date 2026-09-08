@@ -1,6 +1,7 @@
-Foundation
+# Foundation
 1. Cloud Computing
- Cloud Computing is the delivery of computing services such as servers, storage, databases, networking, software, and analytics over the internet instead of using local computers or physical servers. It allows users to access resources on demand, pay only for what they use, and scale resources easily.
+ Cloud Computing is the delivery of computing services such as servers, storage, databases, networking, software, and analytics over the internet instead of using local computers or physical servers. 
+ It allows users to access resources on demand, pay only for what they use, and scale resources easily.
 
 2. Virtualization
  Virtualization is the technology that allows multiple virtual machines (VMs) to run on a single physical server. Each VM has its own operating system and resources, making hardware utilization more efficient while reducing cost.
@@ -8,18 +9,17 @@ Foundation
 3. AWS Basics
  Amazon Web Services (AWS) is a cloud computing platform provided by Amazon. It offers more than 200 cloud services, including computing, storage, databases, networking, security, AI, and DevOps tools to build and manage applications.
 
-4. AWS Account Setup
- AWS Account Setup is the process of creating an AWS account by registering with an email address, verifying identity, adding payment information, and enabling security features such as Multi-Factor Authentication (MFA). It is the first step to access AWS services.
-
 5. AWS CLI Configuration
- AWS CLI (Command Line Interface) Configuration allows users to interact with AWS services using terminal commands instead of the AWS Management Console. It is configured using Access Key ID, Secret Access Key, Region, and Output Format.
+ AWS CLI (Command Line Interface) Configuration allows users to interact with AWS services using terminal commands instead of the AWS Management Console. 
+ It is configured using Access Key ID, Secret Access Key, Region, and Output Format.
 
 6. IAM (Identity and Access Management)
- IAM is a security service that controls who can access AWS resources and what actions they are allowed to perform. It manages users, groups, roles, and policies to provide secure access to cloud resources.
+ IAM is a security service that controls who can access AWS resources and what actions they are allowed to perform. 
+ It manages users, groups, roles, and policies to provide secure access to cloud resources.
 
+<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<>>>>>>>
 
 # Compute Services
-
 7. EC2 (Elastic Compute Cloud)
  Amazon EC2 is a virtual server service that allows users to launch, manage, and scale virtual machines in the cloud. It is commonly used to host websites, applications, and backend services.
 
@@ -377,49 +377,40 @@ View Bills
 Track Usage
 Create Budgets
 Cost Optimization
+
 56. AWS Organizations
-
-Definition:
 AWS Organizations is a service that helps manage multiple AWS accounts from a single master account. It allows centralized billing, policy management, and resource governance.
-
 Purpose:
-
 Centralized Account Management
 Consolidated Billing
 Apply Security Policies
 Manage Multiple Teams
 AI & Machine Learning
-57. SageMaker
 
-Definition:
-Amazon SageMaker is a fully managed machine learning service used to build, train, deploy, and manage ML models. It provides tools for data preparation, model training, and deployment without managing infrastructure.
+57. AWS SageMaker
+Amazon SageMaker is a fully managed machine learning service used to build, train, deploy, and manage ML models. 
+It provides tools for data preparation, model training, and deployment without managing infrastructure.
 
-Purpose:
-
+>> Purpose:
 Build ML Models
 Train Models
 Deploy Models
 Monitor Model Performance
 Internet of Things (IoT)
+
 58. AWS IoT
-
-Definition:
-AWS IoT is a cloud service that securely connects Internet of Things (IoT) devices to AWS. It allows devices such as sensors, cameras, and smart appliances to send, receive, and process data in real time.
-
-Purpose:
-
+AWS IoT is a cloud service that securely connects Internet of Things (IoT) devices to AWS. 
+It allows devices such as sensors, cameras, and smart appliances to send, receive, and process data in real time.
+>> Purpose:
 Connect Smart Devices
 Collect Sensor Data
 Device Monitoring
 Remote Device Management
 AWS CLI Configuration (Revision)
+
 59. AWS CLI Configuration
-
-Definition:
 AWS CLI Configuration is the process of connecting the AWS Command Line Interface to your AWS account using credentials. Once configured, AWS services can be managed directly from the terminal without using the AWS Management Console.
-
-Configuration Details:
-
+>> Configuration Details:
 Access Key ID
 Secret Access Key
 Default Region
@@ -428,12 +419,10 @@ ELB & ASG Service
 
 
 60. ELB & ASG Service
+Elastic Load Balancer (ELB) and Auto Scaling Group (ASG) work together to provide high availability and scalability. ELB distributes incoming traffic across multiple EC2 instances. 
+while ASG automatically adds or removes instances based on application demand.
 
-Definition:
-Elastic Load Balancer (ELB) and Auto Scaling Group (ASG) work together to provide high availability and scalability. ELB distributes incoming traffic across multiple EC2 instances, while ASG automatically adds or removes instances based on application demand.
-
-Working Flow:
-
+>> Working Flow:
 Users
    ↓
 Elastic Load Balancer (ELB)
@@ -444,48 +433,9 @@ EC2 Instance 3
         ↑
 Auto Scaling Group (ASG)
 
-Benefits:
-
+>> Benefits:
 High Availability
 Automatic Scaling
 Better Performance
 Fault Tolerance
-Cost Optimization
-Complete AWS Learning Flow
-Cloud Computing
-      ↓
-Virtualization
-      ↓
-AWS Basics
-      ↓
-IAM
-      ↓
-EC2
-      ↓
-Storage (S3, EBS, EFS)
-      ↓
-Databases (RDS, DynamoDB)
-      ↓
-Networking (VPC, Route 53)
-      ↓
-Security (IAM, SSL, Security Groups)
-      ↓
-Load Balancer & Auto Scaling
-      ↓
-Docker
-      ↓
-ECR → ECS → EKS
-      ↓
-API Gateway → Lambda
-      ↓
-CloudFormation → Terraform
-      ↓
-Deploy Full Stack Application
-      ↓
-CloudWatch & CloudTrail
-      ↓
-Billing & Cost Optimization
-      ↓
-SageMaker
-      ↓
-AWS IoT
+

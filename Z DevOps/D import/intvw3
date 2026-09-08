@@ -1,0 +1,260 @@
+# Random quetion all fundamental sun=bjenct
+
+1. Migration (Application & Infrastructure Migration to Cloud)
+Q1. How have you migrated an application and infrastructure to the cloud?
+ "I have not worked on a real production cloud migration yet, but I have performed cloud migration as part of my learning and academic projects. 
+I started by analyzing the application requirements and creating the required cloud infrastructure. Then, I deployed the application, configured the database and environment variables, and tested the application to ensure everything was working correctly. 
+> If the interviewer asks: "What are the steps involved in cloud migration?"
+You can answer:
+Analyze the application and its requirements.
+Create the required cloud infrastructure.
+Deploy the application to the cloud.
+Configure the database and environment variables.
+Test the application after deployment.
+Monitor the application and optimize its performance.
+
+
+# Q2. What are the different deployment strategies?
+"Deployment strategies are different ways of releasing a new version of application with minimum downtime and risk. The main deployment strategies are 
+Blue-Green Deployment, 
+Rolling Deployment, 
+Canary Deployment, 
+Recreate Deployment, 
+and A/B Testing. The choice of strategy depends on the application's requirements and the level of risk we can accept."
+> If the interviewer asks, "Can you explain each one?"
+1. Recreate Deployment:
+"The old version is stopped first, and then the new version is deployed, so there is some downtime."
+2. Rolling Deployment:
+"The new version is deployed one server at a time, which reduces downtime."
+3. Blue-Green Deployment:
+"Two identical environments are used, and traffic is switched to the new version after testing."
+4. Canary Deployment:
+"The new version is released to a small group of users first, and then to everyone if it works well."
+5. A/B Testing:
+"Two versions are shown to different users to compare performance and choose the better one."
+
+
+# Q
+3. What steps do you follow before migrating an application to the cloud?
+Analyze the application – Understand the application and its dependencies.
+Choose the cloud platform – Select AWS, Azure, or Google Cloud.
+Plan the infrastructure – Decide the required servers, storage, and database.
+Take a backup – Back up the application and database.
+Configure security – Set up IAM, firewall, and network settings.
+Test before migration – Verify that everything is ready before moving to the cloud.
+
+
+4. What challenges did you face during migration and how did you resolve them?
+Database connection issue – I verified the connection string and database configuration.
+Environment variable issue – I updated the environment variables correctly.
+Deployment error – I checked the logs and fixed the configuration issues.
+Application testing – I tested all the features after deployment to ensure everything worked properly. 
+
+5. How do you minimize downtime during cloud migration?
+ "To minimize downtime, I plan the migration carefully, take a backup, test the application before going live, and switch users to the new environment only after verifying that everything is working correctly."
+
+6. How do you validate that the migrated application is working correctly?
+ "After migration, I verify that the application is running correctly by testing all the features, checking the database connection, reviewing the logs, monitoring performance, and confirming that users can access the application without any issues."
+
+
+# 2. Containerization (Docker, Kubernetes & Microservices)
+
+Q1. Explain containerization and microservices architecture using Docker and Kubernetes.
+"Containerization ka matlab hai application ko uski saari dependencies ke saath package karna, taaki wo har environment me same tarah se chale. Iske liye Docker use hota hai. Microservices architecture me ek bade application ko chhote-chhote independent services me divide kiya jata hai. In sab containers ko deploy, manage aur scale karne ke liye Kubernetes use hota hai."
+
+Q2. What is the difference between a Virtual Machine and a Docker Container?
+"Virtual Machine ke andar apna khud ka operating system hota hai, isliye wo heavy hoti hai aur start hone me time lagta hai. Docker Container host operating system ko share karta hai, isliye wo lightweight hota hai aur bahut jaldi start ho jata hai."
+
+Q3. Why do we use Kubernetes instead of Docker alone?
+"Docker sirf container banane aur run karne ke liye use hota hai. Agar bahut saare containers ho jayein, to unhe manage karna difficult ho jata hai. Kubernetes un containers ko automatically deploy, scale, load balance aur restart karta hai." 
+
+Q4. Explain the lifecycle of a Docker container.
+"Sabse pehle Docker image create karte hain. Us image se container run karte hain. Container application ko run karta hai. Jab zarurat na ho, to container ko stop, restart ya remove kar sakte hain."
+
+Q5. How do Docker and Kubernetes work together?
+"Docker application ko container ke andar package karta hai, aur Kubernetes un containers ko deploy, manage, scale aur monitor karta hai, taaki application smoothly run kare."
+
+6. How would you deploy a microservices application using Kubernetes?
+"Sabse pehle main har microservice ka Docker image banata hoon aur usse Docker Hub par push karta hoon. Uske baad Kubernetes ke Deployment aur Service files create karke cluster me deploy karta hoon. Finally, check karta hoon ki saare pods aur services sahi se run kar rahe hain aur application properly work kar rahi hai."
+
+
+# 3. Infrastructure as Code (Terraform & CloudFormation)
+Q1. Explain how you use Terraform or CloudFormation to create infrastructure.
+Q2. What is Infrastructure as Code (IaC) and why is it important?
+Q3. What is the difference between Terraform and AWS CloudFormation?
+Q4. How does Terraform maintain the infrastructure state?
+Q5. What is Terraform State File and why is it important?
+Q6. Explain the Terraform workflow (init, plan, apply, destroy).
+
+
+# Bonus Interview Scenario Questions
+1. Your production server suddenly crashes after deployment. What steps will you take?
+
+Check server and application logs.
+Find the root cause.
+Check deployment, configuration, and database.
+Rollback to the previous stable version if needed.
+Fix the issue.
+Test and monitor the application.
+
+> One-line Answer
+"I would check the logs, identify the root cause, fix the issue or rollback to the previous stable version, and then test and monitor the application."
+
+
+2. The Kubernetes Pod is in CrashLoopBackOff state. How will you troubleshoot it?
+Check pod logs.
+Run kubectl describe pod.
+Check configuration and environment variables.
+Verify Docker image and database connection.
+Fix the issue and restart the pod.
+Confirm the pod is running successfully.
+
+> Second Answer
+"I would first check the pod logs and describe the pod to find the error. Then I would verify the configuration, environment variables, Docker image, and database connection. After fixing the issue, I would restart the pod and make sure it is running successfully."
+
+
+3. Terraform apply fails while creating infrastructure. What will you check first?
+"Agar terraform apply fail ho jata hai, to sabse pehle main error message ko dhyan se check karunga. Fir Terraform configuration files, cloud credentials, provider configuration, aur variable values verify karunga. Issue fix karne ke baad dobara terraform plan aur terraform apply run karke check karunga."
+
+> Check the error message.
+Verify the Terraform configuration (.tf files).
+Check cloud credentials and provider configuration.
+Verify variable values.
+Run terraform plan.
+Run terraform apply again.
+
+> Second Answer
+"First, I would check the error message. Then I would verify the Terraform configuration, cloud credentials, provider settings, and variable values. After fixing the issue, I would run terraform plan and then terraform apply again to make sure the infrastructure is created successfully."
+
+
+4. Your CI/CD pipeline fails during the build stage. How will you debug it?
+ "Agar CI/CD pipeline build stage me fail ho jaye, to sabse pehle main build logs check karunga taaki error ka exact reason pata chale. Fir code, dependencies, configuration, aur environment variables verify karunga. Issue fix karne ke baad pipeline ko dobara run karke ensure karunga ki build successfully complete ho gaya hai."
+
+Simple Steps
+Check build logs.
+Find the error.
+Verify code and dependencies.
+Check configuration and environment variables.
+Fix the issue.
+Run the pipeline again.
+
+5. A Docker container is running locally but not on the production server. What could be the reasons?
+ "Agar container local system par chal raha hai lekin production server par nahi chal raha, to main sabse pehle logs check karunga. Fir environment variables, port mapping, Docker image version, network settings, aur database connection verify karunga. Issue fix karne ke baad container ko dobara run karke test karunga."
+> Common Reasons
+Environment variables are missing.
+Port mapping is incorrect.
+Wrong Docker image version.
+Network or firewall issue.
+Database connection issue.
+> Second Answer
+"I would first check the container logs. Then I would verify the environment variables, port mapping, Docker image, network settings, and database connection. After fixing the issue, I would restart the container and test it again."
+
+
+6. Users report that the application is very slow after migrating to AWS. How will you investigate?
+"Agar AWS par migrate karne ke baad application slow ho gayi hai, to main sabse pehle CPU, memory aur disk usage check karunga. Fir network latency, database performance, application logs, load balancer aur AWS resources ki configuration verify karunga. Issue identify karne ke baad required changes karke application ko dobara test karunga."
+
+Common Reasons
+
+High CPU or memory usage.
+Slow database queries.
+Network latency.
+Incorrect EC2 instance size.
+Load Balancer configuration issue.
+Application configuration issue.
+Insufficient resources.
+
+Second Answer
+"I would first check CPU, memory, disk usage and application logs. Then I would verify database performance, network latency, EC2 instance size and load balancer configuration. After identifying the bottleneck, I would fix it and test the application again."
+
+7. The cloud bill suddenly doubles this month. What steps will you take to identify and reduce the cost?
+"Agar cloud bill suddenly double ho jata hai, to main sabse pehle AWS Cost Explorer me previous aur current month's usage compare karunga. Fir check karunga ki kaunsi service ka cost increase hua hai. Uske baad unused resources, oversized EC2 instances, storage aur data transfer charges check karunga. Unused resources remove karke aur resources ko right-size karke cost reduce karunga."
+
+Common Reasons
+
+Unused EC2 instances.
+Oversized EC2 instances.
+Increased S3 storage.
+High data transfer.
+Unused EBS volumes.
+NAT Gateway charges.
+Increased database usage.
+
+Second Answer
+"I would first use AWS Cost Explorer to identify which service caused the increase. Then I would check unused resources, instance sizes, storage and data transfer costs. After identifying the cause, I would remove unused resources and right-size the infrastructure to reduce the bill."
+
+8. A Kubernetes Deployment has 5 replicas, but only 2 Pods are running. How will you troubleshoot the issue?
+"Agar Deployment me 5 replicas configured hain lekin sirf 2 Pods running hain, to main sabse pehle Pod status check karunga. Fir failed ya pending Pods ke events aur logs check karunga. Uske baad resources, image, node availability aur deployment configuration verify karunga. Root cause fix karne ke baad Pods ko dobara verify karunga."
+
+Common Reasons
+
+Insufficient CPU or memory.
+Image pull failure.
+Pod configuration error.
+Node resources unavailable.
+CrashLoopBackOff.
+Readiness/Liveness probe failure.
+Scheduling problem.
+
+Useful Commands
+
+kubectl get pods
+kubectl describe pod <pod-name>
+kubectl logs <pod-name>
+kubectl get nodes
+kubectl describe deployment <deployment-name>
+
+Second Answer
+"I would first check the Pod status using kubectl get pods. Then I would use kubectl describe pod and check logs and events. I would also verify node resources, image availability and deployment configuration. After fixing the root cause, I would verify that all 5 replicas are running."
+
+
+9. Your application deployment failed during a rolling update. How will you perform a rollback?
+"Agar rolling update ke during deployment fail ho jata hai, to main sabse pehle deployment status aur logs check karunga. Agar new version issue create kar raha hai, to main Kubernetes rollback command use karke previous stable version par wapas jaunga. Uske baad Pods aur application health verify karunga."
+
+> Common Reasons
+New application version has bugs.
+Container image issue.
+Configuration error.
+Failed health probes.
+Resource issue.
+Deployment configuration problem.
+
+> Rollback Command
+kubectl rollout undo deployment <deployment-name>
+
+> Check Rollback
+kubectl rollout status deployment <deployment-name>
+
+> Second Answer
+"I would first check the deployment status and identify why the rolling update failed. If the new version is causing the issue, I would use kubectl rollout undo deployment to return to the previous stable version. Then I would verify the Pods, logs and application health."
+
+10. Your team accidentally deletes an EC2 instance hosting an application. How will you recover the application quickly?
+"Agar EC2 instance accidentally delete ho jata hai, to main sabse pehle check karunga ki application ka backup, AMI, EBS snapshot ya Infrastructure as Code available hai ya nahi. Agar AMI available hai, to usse new EC2 instance launch karunga. Fir required security group, networking, storage aur application configuration restore karke application ko test karunga."
+
+> Common Recovery Options
+EC2 AMI available.
+EBS Snapshot available.
+Application backup available.
+Terraform/IaC available.
+Docker image available.
+Database backup available.
+Load Balancer can redirect traffic to a new instance.
+
+> Recovery Flow
+EC2 Deleted
+     ↓
+Check AMI / Snapshot / IaC
+     ↓
+Launch New EC2
+     ↓
+Restore Storage & Configuration
+     ↓
+Deploy Application
+     ↓
+Test Application
+     ↓
+Add to Load Balancer
+     ↓
+Monitor
+
+> Second Answer
+"I would first check whether an AMI, EBS snapshot, backup, or Infrastructure as Code configuration is available. I would launch a new EC2 instance from the available backup or recreate it using Terraform, restore the required configuration and application, connect it to the load balancer, and verify the application."

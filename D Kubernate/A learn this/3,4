@@ -1,0 +1,339 @@
+
+🟢 3. Kubernetes Workloads — MUST LEARN
+Namespaces — Resource isolation and organization
+Pods — Smallest deployable unit in Kubernetes
+Deployments — Application deployment and replica management
+ReplicaSets — Maintaining desired number of Pods
+static pod
+manual scheduling
+Labels & Selectors — Identifying and connecting Kubernetes resources
+Rolling Updates — Updating applications without downtime
+Rollback — Reverting failed deployments
+DaemonSets — Running a Pod on selected/all nodes
+Jobs — One-time task execution
+CronJobs — Scheduled task execution
+StatefulSets — Managing stateful applications
+
+🟢 4. Kubernetes Networking — MUST LEARN
+Kubernetes Networking — Pod-to-Pod communication
+Services — Exposing Pods and service discovery
+ClusterIP — Internal application access
+NodePort — Exposing application through node ports
+LoadBalancer — External load-balanced access
+Service Discovery — Communication between Kubernetes services
+Kubernetes DNS — Internal name resolution
+Ingress — HTTP/HTTPS traffic routing
+Ingress Controller — Implementing and managing Ingress
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Kubernetes Workloads
+Workloads are Kubernetes objects used to run and manage applications inside a cluster.
+
+A workload tells Kubernetes:
+What application to run
+How many Pods to create
+How to update Pods
+How to recover from failures
+
+> Types of Kubernetes Workloads
+Workload	  Purpose
+Pod	        Run containers
+ReplicaSet	Maintain Pod count
+Deployment	Manage application lifecycle
+StatefulSet	Stateful applications
+DaemonSet	  One Pod per node
+Job	        Run task once
+CronJob	    Run task on schedule
+
+1. Namespaces
+A Namespace is used to logically divide and organize resources within a Kubernetes cluster.
+> Why Use Namespaces?
+Resource isolation
+Environment separation (Dev, Test, Prod)
+Better resource management
+Example
+Cluster
+ ├── Dev Namespace
+ ├── Test Namespace
+ └── Prod Namespace
+
+2. Pods
+A Pod is the smallest Kubernetes object that runs one or more containers.
+> Features
+Contains one or more containers
+Shared network and storage
+Runs application workloads
+Example
+Pod
+ └── Nginx Container
+
+3. Deployments
+Deployment is used to deploy, update, and manage application Pods in Kubernetes.
+> Features
+Scaling
+Rolling Updates
+Rollback
+Self-Healing
+> Example
+Deployment
+    ↓
+ReplicaSet
+    ↓
+Pods
+
+4. ReplicaSets
+ReplicaSet maintains a fixed number of identical Pods running at all times.
+> Example
+Desired Pods = 3
+Pod-1
+Pod-2
+Pod-3
+If one Pod fails, ReplicaSet automatically creates a new Pod.
+
+5. static pod
+5. manual scheduling
+
+5. Labels & Selectors
+Labels identify Kubernetes resources, while Selectors use those labels to find and connect resources.
+> Labels
+Labels are key-value pairs attached to Kubernetes objects.
+> Example:
+labels:
+  app: nginx
+  env: prod
+
+>Selectors
+Selectors find and connect resources using labels.
+> Example:
+selector:
+  app: nginx
+
+6. Rolling Updates
+Rolling Update replaces old Pods with new Pods gradually without affecting application availability.
+> Process
+Old Pod → New Pod
+Old Pod → New Pod
+Old Pod → New Pod
+> Benefits
+Zero downtime
+Safer deployments
+Continuous availability
+
+7. RollbackRollback reverts an application deployment to its previous working version.
+> Example
+Version 1 → Version 2 ❌
+Rollback
+Version 2 → Version 1 ✅
+
+8. DaemonSets
+A DaemonSet is a Kubernetes object that ensures a copy of a Pod runs on every node or on selected nodes in a cluster.
+
+When a new node is added to the cluster, Kubernetes automatically creates the DaemonSet Pod on that node. When a node is removed, its Pod is also removed.
+> Use Cases
+Monitoring
+Logging
+Security agents
+> Example
+Node-1 → Pod
+Node-2 → Pod
+Node-3 → Pod
+
+9. Jobs
+A Job is used when you want a Pod to perform a task and finish successfully.
+
+Unlike a Deployment, which keeps applications running continuously, a Job is designed for one-time or finite tasks.
+> Use Cases
+Database migration
+Backup
+Data processing
+> Flow
+Start
+  ↓
+Task
+  ↓
+Complete
+
+10. CronJobs
+A CronJob is used to run a Job automatically according to a schedule.
+It is similar to Linux cron.
+> Examples
+Daily Backup
+Weekly Reports
+Log Cleanup
+Flow
+12:00 AM
+   ↓
+  Job
+   ↓
+Complete
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Kubernetes Networking 
+Kubernetes Networking allows communication between Pods, Services, and external users inside a Kubernetes cluster.
+
+> Goal of Kubernetes Networking
+Pod-to-Pod Communication
+Pod-to-Service Communication
+External-to-Service Communication
+Load Balancing
+>Pod-to-Pod Communication
+Har Pod ko unique IP address milta hai.
+Pod-A (10.1.1.2)
+       ↓
+Pod-B (10.1.1.3)
+Pod-A directly Pod-B se baat kar sakta hai bina NAT ke.
+
+2. Services
+Service Kubernetes ka ek resource hai jo Pods ko expose karta hai aur unke liye ek stable IP aur DNS name provide karta hai.
+
+Pod restart hone par uska IP change ho sakta hai, lekin Service ka IP stable rehta hai.
+> Example
+Pods
+ ↓
+Service
+ ↓
+Users
+> Benefits
+Stable Endpoint
+Load Balancing
+Service Discovery
+Easy Communication
+> Interview Answer (English)
+A Kubernetes Service provides a stable network endpoint and enables communication with Pods, even if Pod IP addresses change.
+
+3. ClusterIP
+ClusterIP Kubernetes ka default Service type hai jo application ko sirf cluster ke andar expose karta hai.
+External users ise access nahi kar sakte.
+
+Example
+Pod-A
+  ↓
+ClusterIP Service
+  ↓
+Pod-B
+Use Cases
+Backend APIs
+Database Services
+Internal Microservices
+Interview Answer (English)
+
+ClusterIP is the default Kubernetes Service type that exposes an application internally within the cluster using a virtual IP address.
+
+4. NodePort
+Definition (Hindi)
+
+NodePort Service application ko Worker Node ke port par expose karti hai.
+
+External users Node IP aur Port ke through application access kar sakte hain.
+
+Example
+User
+ ↓
+192.168.1.10:30080
+ ↓
+NodePort Service
+ ↓
+Pods
+Port Range
+30000 - 32767
+Use Cases
+Testing
+Development Environment
+Interview Answer (English)
+
+NodePort exposes a Kubernetes Service on a static port of each worker node, allowing external access using NodeIP and Port.
+
+5. LoadBalancer
+LoadBalancer Service cloud provider ke Load Balancer ko create karti hai aur application ko internet par expose karti hai.
+Traffic automatically multiple Pods me distribute hota hai.
+> Example
+Internet
+   ↓
+Load Balancer
+   ↓
+Service
+   ↓
+Pods
+> Benefits
+External Access
+High Availability
+Load Distribution
+> Interview Answer (English)
+LoadBalancer is a Service type that exposes an application externally by creating a cloud provider load balancer and distributing traffic across Pods.
+
+6. Service Discovery
+Service Discovery Kubernetes ka mechanism hai jo Services ko automatically discover karne ki facility deta hai.
+Pods IP ya Port yaad rakhe bina Service Name se connect kar sakte hain.
+> Example
+frontend-service
+       ↓
+backend-service
+Benefits
+Easy Communication
+No Hardcoded IPs
+Dynamic Environment Support
+> Interview Answer (English)
+Service Discovery allows Kubernetes services to communicate using service names instead of IP addresses, making communication dynamic and reliable.
+
+7. Kubernetes DNS
+Kubernetes DNS internal DNS system hai jo Services aur Pods ke naam ko IP address me convert karta hai.
+Har Service ka automatic DNS name generate hota hai.
+> Example
+backend-service.default.svc.cluster.local
+DNS is naam ko Service IP me resolve karta hai.
+> Benefits
+Automatic Name Resolution
+Easy Service Communication
+No Need to Remember IPs
+>Interview Answer (English)
+Kubernetes DNS provides internal name resolution by mapping service names to IP addresses, enabling easy communication between applications.
+
+8. Ingress
+Ingress Kubernetes resource hai jo HTTP aur HTTPS traffic ko manage karta hai aur requests ko different Services tak route karta hai.
+
+> Example
+app.company.com
+        ↓
+      Ingress
+        ↓
+     Service
+        ↓
+       Pods
+> Features
+Path-based Routing
+Host-based Routing
+SSL/TLS Support
+Single Entry Point
+> Use Cases
+Multiple Websites
+Production Applications
+> Interview Answer (English)
+Ingress is a Kubernetes resource that manages external HTTP and HTTPS traffic and routes requests to appropriate services.
+
+9. Ingress Controller
+Ingress Controller ek application hai jo Ingress rules ko implement karta hai.
+Ingress sirf configuration provide karta hai, actual routing Ingress Controller karta hai.
+> Popular Ingress Controllers
+NGINX Ingress Controller
+Traefik
+HAProxy
+AWS Load Balancer Controller
+> Example
+Internet
+   ↓
+Ingress Controller
+   ↓
+Ingress Rules
+   ↓
+Services
+   ↓
+Pods
+> Why Needed?
+Ingress resource khud traffic route nahi karta.
+Ingress Controller hi rules ko execute karta hai.
+
+> Interview Answer (English)
+An Ingress Controller is a component that implements Ingress rules and manages external HTTP/HTTPS traffic routing to Kubernetes services.

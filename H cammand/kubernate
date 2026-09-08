@@ -1,0 +1,29 @@
+// kubectl version --client	
+Check karta hai ki kubectl installed hai ya nahi
+// kubectl get nodes	
+Kubernetes ke nodes dekhta hai
+// docker --version	
+Docker installed hai ya nahi check karta hai
+// minikube version	
+Minikube installed/version check karta hai
+// minikube status	
+Minikube cluster ka status check karta hai
+// minikube start --driver=docker	
+Docker ke through Kubernetes cluster start karta hai
+// docker info	
+Docker Engine running hai ya nahi check karta hai
+// kubectl get nodes	
+Kubernetes node ka status check karta hai
+kubectl create deployment nginx --image=nginx --replicas=3	Nginx Deployment banakar 3 Pods create karta hai
+kubectl get pods	Running/created Pods dekhta hai
+kubectl delete pod <pod-name>	Specific Pod ko delete karta hai
+kubectl describe deployment nginx	Nginx Deployment ki detailed information dikhata hai
+kubectl get rs	ReplicaSets dekhta hai
+kubectl get deployment	Deployments dekhta hai
+kubectl scale deployment nginx --replicas=5	Nginx ke Pods ko 3 se 5 karta hai
+kubectl scale deployment nginx --replicas=3	Nginx ke Pods ko 5 se 3 karta hai
+kubectl delete deployment nginx	Nginx Deployment aur uske managed Pods ko delete karta hai
+kubectl delete pods --all	Current namespace ke saare Pods delete karta hai
+minikube stop	Kubernetes/Minikube cluster temporarily stop karta hai
+minikube start --driver=docker	Stopped Minikube cluster ko dobara start karta hai
+minikube delete	Minikube cluster completely delete karta hai

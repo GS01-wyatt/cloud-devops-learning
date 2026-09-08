@@ -42,13 +42,15 @@
 14. Advanced Linux Topics
 → Learn system services, environment variables, and tools like Docker/Nginx.
 
-🔥 One Line Truth:
+🔥 One Line Truth: 12:00
 “Linux is not theory — it’s practice in terminal.”
 
 
 
 
-1. Linux Basics
+
+
+# 1. Linux Basics
 What happens internally when you power on a Linux system?
 Explain the Linux boot process.
 What is the difference between Linux Kernel and Operating System?
@@ -59,7 +61,8 @@ What is the purpose of /etc, /var, /usr, /opt, /tmp, /proc, /sys?
 What is the difference between hard link and soft link?
 How do you check your Linux version?
 How do you check the kernel version?
-2. File & Directory Management
+
+# 2. File & Directory Management
 How do you find the largest files on a server?
 A file was accidentally deleted. What recovery options do you have?
 How do you search files modified in the last 7 days?
@@ -70,7 +73,8 @@ Difference between cp, mv and rsync?
 What happens if you move a file across different file systems?
 How do you archive and compress files?
 Difference between tar, gzip, bzip2 and xz?
-3. Permissions
+
+# 3. Permissions
 Explain Linux file permissions.
 Difference between chmod 755 and 777?
 What are SUID, SGID and Sticky Bit?
@@ -81,7 +85,8 @@ How do ACLs work?
 Difference between chmod and chown?
 What is the default permission of newly created files?
 How do you secure sensitive files?
-4. Users & Groups
+
+# 4. Users & Groups
 How do you create users?
 Difference between useradd and adduser?
 How do you lock a user account?
@@ -92,7 +97,8 @@ How do you switch users?
 Explain /etc/passwd.
 Explain /etc/shadow.
 How do you disable shell access?
-5. Process Management
+
+# 5. Process Management
 What is a process?
 Difference between process and thread?
 How do you identify a high CPU process?
@@ -103,7 +109,8 @@ What is a zombie process?
 What is an orphan process?
 How do you monitor running processes?
 How do you change process priority?
-6. Services & Systemd
+
+# 6. Services & Systemd
 What is systemd?
 Difference between service and systemctl?
 How do you enable a service at boot?
@@ -114,7 +121,8 @@ Difference between enable and start?
 How do you check boot logs?
 Explain journald.
 How do you analyze boot time?
-7. Disk Management
+
+# 7. Disk Management
 How do you check disk usage?
 Difference between df and du?
 Disk is full. How do you investigate?
@@ -125,7 +133,8 @@ What is LVM?
 How do you extend an LVM partition?
 What is swap memory?
 How do you increase swap space?
-8. Networking
+
+# 8. Networking
 How do you check your IP address?
 Difference between ifconfig and ip command?
 How do you check routing table?
@@ -136,7 +145,8 @@ Difference between netstat and ss?
 How do you identify which process is using a port?
 How do you test connectivity to a remote server?
 Explain the TCP three-way handshake.
-9. Logs
+
+# 9. Logs
 Where are Linux logs stored?
 How do you monitor logs in real time?
 Application is failing. Which logs do you check first?
@@ -147,7 +157,8 @@ How do you find errors from the last one hour?
 How do you search logs efficiently?
 How do you monitor login attempts?
 How do you identify authentication failures?
-10. Shell Scripting
+
+# 10. Shell Scripting
 What is Bash?
 Difference between "$@" and "$*"?
 How do you pass arguments to a script?

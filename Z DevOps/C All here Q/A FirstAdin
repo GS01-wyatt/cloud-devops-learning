@@ -1,0 +1,138 @@
+# all fundamental question hehe for all 
+> ye total milega with ans in seperate folder jo upper me hai.
+> A GitHub se Z Cloud
+
+# Docker & Kubernetes
+1. Your Kubernetes cluster has plenty of free CPU and memory. Yet new Pods remain stuck in Pending. Why aren't they getting scheduled?
+2. A container keeps restarting with CrashLoopBackOff. How do you actually debug it, step by step?
+3. What's the actual difference between a Docker image and a Docker container?
+4. Your Deployment rollout is stuck—old and new Pods are both running, and it won't finish. What do you check?
+5. What actually happens between kubectl apply and your Pod running—end to end?
+6. What's the difference between a Deployment, StatefulSet, and DaemonSet?
+
+7. How does a Kubernetes Service route traffic to Pods, and what's the difference between ClusterIP, NodePort, and LoadBalancer?
+
+8. Why would you use a multi-stage Docker build instead of a single-stage Dockerfile?
+
+9. What's the difference between scaling a Deployment to zero replicas and deleting it?
+
+10. What's the difference between a Kubernetes ConfigMap and a Secret?
+
+# kubernate
+How does a request flow from a browser to a Kubernetes Pod?
+How does Kubernetes decide which node should run a Pod?
+Why would a pod be Running but the application still be unavailable?
+How do you secure access using OAuth, Kubernetes RBAC and IAM?
+How do you configure autoscaling in Kubernetes? (HPA, VPA)
+
+Q. why we need container?
+Q. k8s is not always the solutions why?
+
+
+
+# Docker
+What happens internally when you run a Docker container?
+Write and Explain the Multi-Stage Dockerfile and why we use a Multi-Stage Dockerfile?
+
+
+# Terraform
+
+How does Terraform build a resource dependency graph?
+What is Terraform Drift, and how do you handle it?
+How does Terraform state locking work with S3 and DynamoDB?
+How do you design reusable Terraform modules for enterprise?
+Explain Infrastructure as Code using Terraform / CloudFormation.
+
+# Jenkit
+How do you handle build failures in Jenkins? What are post-build actions?
+
+# Linux Fundamentals (Q11–Q18) > go to linux folder
+A server is running fine, but df -h shows the disk is full. You delete large log files—and the disk still shows full. Why?
+Load average shows 8.0 on a 4-core server, but CPU usage in top is only 20%. What's happening?
+Explain the difference between a hard link and a symbolic link.
+A cron job works manually but fails when cron runs it. Why?
+What's the difference between a zombie process and a D-state process?
+"No space left on device" but df -h shows free space. What else could be full?
+What's the difference between chmod 755 and chmod 644? What do SUID and SGID do?
+A service fails to start and systemctl status only shows "failed." How do you find the real cause?
+
+# Cloud (AWS)  > go to folder for answer
+Your EC2 instance can't connect to the internet even though it has a public IP. What are you missing?
+What's the difference between an IAM Role and an IAM User?
+Your Auto Scaling Group keeps launching and terminating instances. How do you debug it?
+What's the difference between horizontal and vertical scaling?
+An S3 bucket policy and IAM policy both allow access, but the user still gets Access Denied. Why?
+What's the difference between a Security Group and a Network ACL?
+What are S3 storage classes, and how would you design a lifecycle policy?
+What's the difference between VPC Peering and a Transit Gateway?
+
+# Networking (Q27–Q32)
+What's the difference between TCP and UDP?
+Walk me through what happens after typing a URL into a browser.
+What's the difference between a Layer 4 and Layer 7 load balancer?
+Why put Nginx (or a reverse proxy) in front of your application server?
+What's the difference between a subnet, a CIDR block, and a route table?
+What happens during a TLS handshake, and why does an expired certificate break everything?
+
+# CI/CD (Q33–Q37)
+Your CI pipeline passes locally but fails intermittently in CI. What's your approach?
+What's the difference between Blue-Green and Canary deployments?
+What's an artifact repository, and why not pull dependencies directly from the internet?
+Why does Pipeline as Code matter compared to configuring jobs through a UI?
+How would you design a rollback strategy for a deployment pipeline?
+
+Explain the complete lifecycle of CI/CD from commit to production.
+
+# Git (Q38–Q42)
+What's the difference between git merge and git rebase?
+Walk me through how you'd resolve a merge conflict.
+What's the difference between git reset and git revert?
+What is a detached HEAD state, and how do you recover from it?
+What is git cherry-pick, and when would you use it?
+Terraform & IaC (Q43–Q48)
+What is Terraform state, and why is losing it serious?
+What happens when you run terraform plan versus terraform apply?
+What's the difference between Terraform and Ansible?
+What's a Terraform module, and why would you use one?
+Why do teams use remote state locking (S3 + DynamoDB)?
+What does Infrastructure as Code being idempotent mean?
+
+# Monitoring & Observability (Q49–Q53)
+What's the difference between monitoring and observability?
+What are the three pillars of observability (logs, metrics, traces)?
+How would you design alerting to avoid alert fatigue?
+What's the difference between SLI, SLO, and SLA?
+What's the difference between Prometheus's pull-based model and a push-based monitoring system?
+
+# Security & DevSecOps (Q54–Q58)
+What is the principle of least privilege, and where is it commonly violated in CI/CD?
+Where should secrets live in a CI/CD pipeline, and why is committing a .env file dangerous?
+What is a software supply chain attack, and how do you protect against it?
+Why scan container images for vulnerabilities, and when should scanning happen?
+What does "Shift-Left" security mean in a DevOps pipeline?
+
+
+# 4. Security (DevSecOps)
+Q1. How do you integrate security into a DevOps pipeline?
+Q2. What is DevSecOps?
+Q3. How do you manage secrets securely in CI/CD pipelines?
+Q4. What security checks do you perform before deployment?
+Q5. How do you scan Docker images for vulnerabilities?
+Q6. How do you secure a Kubernetes cluster?
+How do you store & manage secrets in DevOps?
+
+# 5. Automation (CI/CD & Scripting)
+Q1. How do you automate testing, building, and deployment using CI/CD?
+Q2. Explain the CI/CD pipeline you have worked on.
+Q3. Which CI/CD tools have you used?
+Q4. How do you automate deployments using Jenkins or GitHub Actions?
+Q5. What scripting languages have you used for automation?
+Q6. How do you handle failures in a CI/CD pipeline?
+
+# 6. Cost Optimization (Cloud Cost Management)
+Q1. How have you helped reduce cloud costs?
+Q2. What best practices do you follow to optimize cloud costs?
+Q3. How do you identify unused cloud resources?
+Q4. How do Auto Scaling and Load Balancing help reduce costs?
+Q5. How do Reserved Instances or Savings Plans reduce AWS costs?
+Q6. What monitoring tools do you use to track cloud spending?

@@ -46,7 +46,7 @@ What is Docker Image
 Image Layers
 Build Image (docker build)
 Optimize Docker Image
-Multi-stage Build
+Multi-stage Build 
 Build Web Server Dockerfile
 
 🟡 7. Docker Hub

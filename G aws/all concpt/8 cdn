@@ -3,7 +3,8 @@
 CloudFront (CDN)
 CDN Concepts
 
-# Amazon CloudFront
+
+# AWS CloudFront
 AWS CloudFront is a Content Delivery Network (CDN) service that delivers your website, videos, images, APIs, and other content faster by storing copies of the content in Edge Locations (servers located around the world).
 
 > Simple Explanation:
@@ -32,3 +33,65 @@ Reduced load on the origin server
 >Q. Why do we use CloudFront?
 Answer:
 We use AWS CloudFront to make websites and applications faster by caching content at Edge Locations near users. It reduces latency, decreases the load on the origin server, and improves the user experience.
+
+
+
+# CDN = Content Delivery Network
+
+Simple words mein: CDN ek network of servers hai jo website ka content user ke nearest server se deliver karta hai, jisse website fast load hoti hai.
+1. CDN kya karta hai?
+Suppose tumhari website ka main server Mumbai mein hai aur user Delhi mein hai.
+Without CDN:
+User Delhi
+    ↓
+Mumbai Server
+    ↓
+Website Content
+Distance zyada → response comparatively slow.
+With CDN:
+                 ┌── Delhi CDN ──→ User
+                 │
+Main Server ──→ CDN Network
+                 │
+                 └── Mumbai CDN
+User ko content nearest CDN server se mil sakta hai.
+2. CDN mein kya store hota hai?
+CDN commonly static content ko cache karta hai:
+🖼️ Images
+🎨 CSS files
+📜 JavaScript files
+🎥 Videos
+
+> CDN ke Benefits
+1. Faster Website
+User ko nearest location se content milta hai.
+2. Lower Latency
+Request ko long distance travel nahi karna padta.
+3. Reduced Server Load
+Origin server ko har request handle nahi karni padti.
+4. Better Scalability
+Millions of users ko content serve karna easier hota hai.
+5. Availability
+Multiple edge locations hone ke karan service more resilient ho sakti hai.
+
+
+> ☁️ AWS mein CDN
+AWS ka CDN service hai:
+Amazon CloudFront
+Typical architecture:
+              ┌── Edge Location ── User
+              │
+User → CloudFront
+              │
+              └── Origin
+                    ↓
+               S3 / EC2 / ALB
+Example:
+React Website
+     ↓
+   S3 Bucket
+     ↓
+CloudFront
+     ↓
+Users Worldwide
+Yahan S3 origin ho sakta hai aur CloudFront CDN ki tarah kaam karta hai.

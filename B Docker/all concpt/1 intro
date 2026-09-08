@@ -1,5 +1,5 @@
-What is Docker
-Docker is an open-source platform used to:
+# What is Docker
+Docker is an open-source platform used to
 develop, package, and run applications inside containers
 
 A container is a lightweight, standalone environment that includes:
@@ -29,6 +29,44 @@ Faster deployment
 Lightweight and efficient
 Eliminates “it works on my machine” problem
 
+
+# Problems Before Docker
+1. Environment Differences
+Developer PC      Server
+Node 18      ≠   Node 16
+
+Application crash ho sakti thi.
+
+2. Dependency Conflicts
+Example:
+App A → Python 3.8
+App B → Python 3.11
+
+Same server par conflict.
+
+3. Slow Setup
+New developer ko project run karne ke liye:
+
+Install Java
+Install Node
+Install MongoDB
+Install Redis
+Configure Everything
+
+Hours lag sakte the.
+
+4. Scaling Difficult
+100 servers par application deploy karna difficult tha.
+
+# Why Companies Use Docker
+Netflix:
+Thousands of microservices run karne ke liye.
+Amazon:
+Fast deployment aur scaling.
+Uber:
+Microservices management.
+Spotify:
+Consistent deployments.
 
 # Why Docker
 Docker is used to package, ship, and run applications in a consistent and efficient way using containers.

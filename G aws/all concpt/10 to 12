@@ -1,0 +1,174 @@
+
+# 10 Serverless & Integration
+API Gateway
+SQS (Simple Queue Service)
+SNS (Simple Notification Service)
+
+# 11 Infrastructure as Code (IaC)
+CloudFormation
+CloudFormation IAC
+Terraform
+Infrastructure as Code (IaC) Concepts
+
+# 12 Deployment
+Website Deployment
+Deploy Full Stack Web Application
+AWS Amplify (Full Stack Web Deployment)
+
+
+
+
+
+
+
+# 11 Infrastructure as Code (IaC)
+CloudFormation
+CloudFormation IAC
+Terraform
+Ansible
+Infrastructure as Code (IaC) Concepts
+
+
+# Infrastructure as Code (IaC)
+ Infrastructure as Code (IaC) ka matlab hai server, network, database aur cloud resources ko manually banane ke bajay code se banana aur manage karna.
+
+Infrastructure = EC2 + S3 + VPC + RDS + IAM
+Code = Terraform / CloudFormation
+IaC = Infrastructure + Code = Automatic Deployment 🚀
+
+> Kyun use karte hain?
+Maan lo tumhe AWS me banana hai:
+EC2
+VPC
+S3
+RDS
+Without IaC ❌
+AWS Console kholo
+Har resource manually create karo
+Time lagega
+Mistake ho sakti hai
+
+> IaC se kya bana sakte ho?
+EC2
+S3
+RDS
+VPC
+Load Balancer
+Auto Scaling
+IAM
+Lambda
+Security Group
+
+# CloudFormation
+AWS infrastructure ko code se automatically banane wala AWS ka IaC tool.
+
+AWS CloudFormation ek Infrastructure as Code (IaC) service hai.
+Iska use AWS resources (EC2, S3, VPC, RDS, IAM, etc.) ko code likhkar automatically create aur manage karne ke liye hota hai.
+
+> Kyun use hota hai?
+Maan lo tumhe create karna hai:
+EC2
+VPC
+S3 Bucket
+RDS Database
+Without CloudFormation ❌
+AWS Console me login
+Har resource manually create
+Time zyada lagega
+Galti hone ke chances zyada
+With CloudFormation ✅
+Ek template likho aur run karo.
+AWS sab resources automatically create kar dega.
+
+> CloudFormation se kya-kya create kar sakte ho?
+✅ EC2 → Virtual server create karne ke liye.
+✅ S3 Bucket → Files (images, videos, documents, backups) store karne ke liye.
+✅ VPC → Secure private network banane ke liye.
+✅ RDS → Database (MySQL, PostgreSQL, etc.) create karne ke liye.
+✅ IAM → Users aur permissions manage karne ke liye.
+✅ Lambda → Server manage kiye bina code run karne ke liye.
+✅ Load Balancer → Traffic ko multiple servers me distribute karne ke liye.
+✅ Auto Scaling → Traffic ke hisaab se servers automatically badhane ya kam karne ke liye.
+✅ CloudFront → Website aur files ko duniya bhar me fast deliver karne ke liye.
+
+# CloudFormation (IaC)
+CloudFormation is an AWS service that lets you create, manage, and update AWS infrastructure using code (templates) instead of manually creating resources in the AWS Console.
+
+What is Infrastructure as Code (IaC)?
+Infrastructure as Code (IaC) means defining infrastructure (servers, databases, networks, storage, etc.) in a code file so it can be created automatically.
+
+Instead of:
+Login to AWS Console
+Create EC2
+Create S3
+Configure VPC
+Attach Security Group
+
+You simply write a template and AWS creates everything automatically.
+> Why Use CloudFormation?
+✅ Automates infrastructure deployment
+✅ Saves time
+✅ Reduces manual errors
+✅ Version control with Git
+✅ Easy to recreate environments
+
+> Kya create kar sakta hai?
+💻 EC2 → Virtual Server
+📁 S3 → Storage
+🌐 VPC → Network
+🗄️ RDS → Database
+🔐 IAM → Security & Permissions
+⚡ Lambda → Serverless Code
+⚖️ Load Balancer → Traffic Distribution
+📈 Auto Scaling → Automatically Servers Increase/Decrease
+🚀 CloudFront → Fast Content Delivery
+
+# Terraform(Iac)
+Terraform ek Infrastructure as Code (IaC) tool hai.
+
+Iska use AWS, Azure, Google Cloud (GCP) aur dusre cloud platforms par infrastructure ko code se automatically create aur manage karne ke liye hota hai.
+
+# Ansible
+Ansible ek Automation aur Configuration Management Tool hai.
+
+Iska use servers ko automatically configure karne, software install karne aur applications deploy karne ke liye hota hai.
+
+Simple Definition: Ansible ek automation tool hai jo servers par configuration aur deployment automatically karta hai.
+
+Kyun use hota hai?
+Maan lo tumhare paas 100 servers hain.
+
+Without Ansible ❌:
+Har server par login karo.
+Java install karo.
+Docker install karo.
+Nginx install karo.
+
+Bahut time lagega.
+
+With Ansible ✅
+Ek playbook likho.
+Ek command run karo.
+Sabhi 100 servers par automatically install ho jayega.
+
+
+# Infrastructure as Code (IaC) Concepts
+Infrastructure as Code (IaC) ka matlab hai infrastructure ko code ke through create aur manage karna, manually AWS Console ya Azure Portal me click karke nahi.
+
+Simple Definition: 
+Infrastructure ko manually banane ki jagah code likhkar automatically create karna hi IaC hai.
+
+Without IaC ❌
+AWS Console open karo.
+EC2 manually create karo.
+VPC manually create karo.
+S3 manually create karo.
+Har baar same process repeat karna padta hai.
+With IaC ✅
+Ek code likho:
+EC2
+VPC
+S3
+RDS
+Run karo.
+👉 Sab resources automatically create ho jayenge.

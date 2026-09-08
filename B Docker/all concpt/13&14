@@ -1,0 +1,190 @@
+
+🔴 13. Docker Swarm
+What is Docker Swarm
+Swarm Cluster
+Manager Node
+Worker Node
+Services in Swarm
+Scaling Containers
+
+🔴 14. Docker Security
+Security Best Practices
+Image Scanning
+Secure Containers
+Secrets Management
+Least Privilege
+
+
+🔴 13. Docker Swarm
+# What is Docker Swarm?
+
+Docker Swarm Docker ka native container orchestration tool hai jo multiple Docker hosts ko ek cluster ki tarah manage karta hai.
+
+Jab containers ki sankhya badh jati hai aur unhe manually manage karna mushkil ho jata hai, tab Docker Swarm use kiya jata hai.
+
+> Why Docker Swarm is Used?
+Multiple containers manage karne ke liye
+High availability provide karne ke liye
+Load balancing ke liye
+Container scaling ke liye
+Cluster management ke liye
+# Swarm Cluster
+
+Swarm Cluster multiple Docker machines (nodes) ka group hota hai jo ek single system ki tarah kaam karta hai.
+
+Cluster me manager aur worker nodes hote hain.
+
+> Why Swarm Cluster is Used?
+Large-scale applications run karne ke liye
+Fault tolerance provide karne ke liye
+Workload distribute karne ke liye
+Centralized management ke liye
+# Manager Node
+
+Manager Node Swarm Cluster ka master node hota hai jo cluster ko control aur manage karta hai.
+
+Ye scheduling aur orchestration decisions leta hai.
+
+Responsibilities:
+Cluster manage karna
+Worker nodes monitor karna
+Services deploy karna
+Scaling decisions lena
+Why Manager Node is Used?
+Cluster control ke liye
+Resource allocation ke liye
+Service management ke liye
+Worker Node
+
+Worker Node wo node hota hai jo actual containers run karta hai.
+
+Manager se instructions receive karke tasks execute karta hai.
+
+Responsibilities:
+Containers run karna
+Assigned tasks execute karna
+Resource provide karna
+Why Worker Node is Used?
+Application workload handle karne ke liye
+Containers execute karne ke liye
+Cluster resources provide karne ke liye
+Services in Swarm
+
+Service Docker Swarm me application deployment unit hoti hai.
+
+Service define karti hai ki kitne containers (replicas) run honge aur kaunsi image use hogi.
+
+Why Services are Used?
+Application deployment ke liye
+Container replicas manage karne ke liye
+Desired state maintain karne ke liye
+High availability ke liye
+
+Example:
+Agar service me 3 replicas define hain aur 1 container fail ho jaye, to Swarm automatically naya container create kar dega.
+
+Scaling Containers
+
+Scaling ka matlab containers ki sankhya badhana ya kam karna hai according to workload.
+
+Why Scaling is Used?
+High traffic handle karne ke liye
+Better performance ke liye
+High availability ke liye
+Resource optimization ke liye
+Example:
+
+Traffic badhne par 2 containers ko 10 containers me scale kiya ja sakta hai.
+
+🔴 14. Docker Security
+Security Best Practices
+
+Docker Security Best Practices wo guidelines hain jo containers aur images ko secure banane me help karti hain.
+
+Why Security Best Practices are Important?
+Cyber attacks prevent karne ke liye
+Unauthorized access rokne ke liye
+Sensitive data protect karne ke liye
+Secure production environment maintain karne ke liye
+Common Practices:
+Trusted images use karo
+Latest updates apply karo
+Unused containers remove karo
+Secrets ko code me store mat karo
+Minimum permissions do
+Image Scanning
+
+Image Scanning ka matlab Docker Images ko vulnerabilities aur security issues ke liye check karna hai.
+
+Why Image Scanning is Used?
+Vulnerabilities identify karne ke liye
+Insecure packages detect karne ke liye
+Compliance maintain karne ke liye
+Secure deployments ke liye
+Example:
+
+Image me outdated software ya vulnerable library detect karna.
+
+Secure Containers
+
+Secure Containers ka matlab containers ko is tarah configure karna ki security risks minimum ho jaye.
+
+Why Secure Containers are Important?
+Container breakout attacks prevent karne ke liye
+Data protection ke liye
+Secure application execution ke liye
+Production security improve karne ke liye
+Practices:
+Non-root user use karo
+Minimal base image use karo
+Unnecessary ports expose mat karo
+Resource limits define karo
+# Secrets Management
+
+Secrets Management sensitive information ko securely store aur access karne ka process hai.
+
+> Examples of Secrets:
+Passwords
+API Keys
+Database Credentials
+Access Tokens
+> Why Secrets Management is Used?
+Sensitive data protect karne ke liye
+Hardcoding avoid karne ke liye
+Secure deployments ke liye
+Compliance requirements fulfill karne ke liye
+# Least Privilege
+
+Least Privilege Principle ka matlab hai user, process ya container ko sirf utni hi permissions dena jitni uske kaam ke liye zaroori ho.
+
+Why Least Privilege is Important?
+Security risks kam karne ke liye
+Unauthorized access rokne ke liye
+Attack impact reduce karne ke liye
+System security improve karne ke liye
+Example:
+
+Agar application ko sirf read access chahiye, to write access nahi deni chahiye.
+
+# Interview Purpose (English)
+
+Q: What is Docker Swarm?
+A: Docker Swarm is Docker’s native orchestration tool used to manage and scale containers across multiple hosts.
+
+Q: What is the role of a Manager Node in Docker Swarm?
+A: A Manager Node controls the cluster, schedules tasks, and manages services.
+
+Q: What is a Worker Node?
+A: A Worker Node executes tasks and runs containers assigned by the Manager Node.
+
+Q: What is Container Scaling?
+A: Scaling is the process of increasing or decreasing the number of container replicas based on workload.
+
+Q: Why is Docker Security important?
+A: Docker Security protects containers, images, and sensitive data from vulnerabilities and unauthorized access.
+
+Q: What is Image Scanning?
+A: Image Scanning is the process of checking Docker images for security vulnerabilities and misconfigurations.
+
+Q: What is the Principle of Least Privilege?
+A: It means giving only the minimum permissions required to perform a task, reducing security risks.

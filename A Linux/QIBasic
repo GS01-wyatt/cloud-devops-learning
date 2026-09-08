@@ -1,47 +1,541 @@
+# Scenario-Based Questions
+
+# 1. What is Linux and why is it used in DevOps?
+
+ "Linux is an open-source operating system. Most servers, cloud platforms, and DevOps tools run on Linux because it is stable, secure, lightweight, and highly customizable. As a DevOps Engineer, I use Linux to manage servers, deploy applications, monitor systems, and automate tasks."
+
+# 2. Where is Linux used in DevOps?
+
+ "Linux is used in web servers, application servers, cloud platforms, Docker containers, Kubernetes clusters, CI/CD servers, and monitoring systems. Almost every stage of the DevOps lifecycle involves Linux."
+
+# 3. How is Linux used in a real DevOps project?
+
+ "In a DevOps project, Linux is used to host applications, manage services, automate deployments using scripts, monitor system health, and run Docker and Kubernetes workloads."
+
+# 4. Why should a DevOps Engineer learn Linux?
+
+ "A DevOps Engineer must learn Linux because most production environments run on Linux. Troubleshooting, deployment, automation, monitoring, and server administration all require Linux knowledge."
+
+# 5. How do you use Linux in your daily DevOps work?
+
+ "I use Linux to manage servers, monitor resources, troubleshoot issues, automate tasks with shell scripts, manage files and permissions, and deploy applications."
+
+# 6. Why is Linux important in DevOps?
+
+ "Linux is the backbone of DevOps because most servers, cloud platforms, Docker containers, and Kubernetes clusters run on Linux. A DevOps Engineer uses Linux daily for server administration, automation, deployment, monitoring, and troubleshooting."
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# 1. A server suddenly becomes slow. How will you troubleshoot it?
+
+"First, I will check CPU usage using top or htop. Then I will check memory usage using free -h and disk usage using df -h. I will check which processes are consuming high resources. After that, I will check application and system logs using tail or journalctl. I will also check network connectivity if required. Finally, I will identify the root cause, fix it, and monitor the server to make sure the performance is normal."
+Server Slow
+    ↓
+Check CPU → top
+    ↓
+Check Memory → free -h
+    ↓
+Check Disk → df -h
+    ↓
+Check Processes → ps
+    ↓
+Check Logs → journalctl
+    ↓
+Check Network → ping/curl
+    ↓
+Find Root Cause
+    ↓
+Fix + Monitor
+
+# 2. CPU usage is 100%. What steps will you take?
+Answer:
+"First, I will identify which process is consuming high CPU using commands like top, htop, or ps. Then I will check application logs and system logs to find the root cause. I will verify whether it is due to a sudden traffic spike, a runaway process, inefficient code, or a scheduled job. If required, I can restart the affected service, optimize the application, or scale resources. Finally, I will monitor the system to ensure CPU usage returns to normal and the issue does not recur."
+
+> Interviewer kya dekhna chahta hai?
+Troubleshooting approach
+Linux commands knowledge (top, htop, ps)
+Root cause analysis
+Monitoring and problem-solving skills
+
+> Short Answer (Interview Friendly):
+"I will check high CPU-consuming processes using top or htop, analyze logs, identify the root cause, take corrective action such as restarting services or scaling resources, and continuously monitor the system."
+
+
+# 3. Memory utilization is continuously increasing. What will you do?
+Answer:
+"First, I will verify memory usage using commands like free -h, top, htop, or vmstat. Then I will identify which process is consuming excessive memory. I will check application logs and monitor the process over time to determine whether there is a memory leak, excessive caching, or an abnormal workload. Based on the findings, I may restart the affected service, optimize the application, clear unnecessary cache, or increase resources if required. Finally, I will continue monitoring to ensure memory usage stabilizes."
+
+> Hindi me Question ka matlab:
+"Agar server ki memory (RAM) lagataar badh rahi hai aur release nahi ho rahi, to aap kya karoge?"
+
+> Interviewer kya dekhna chahta hai?
+Memory troubleshooting skills
+Linux monitoring commands knowledge
+Understanding of memory leaks and caching
+Root cause analysis approach
+
+> Short Answer (Interview Friendly):
+"I will monitor memory usage using free -h and top, identify the process consuming memory, check logs for memory leaks or abnormal behavior, take corrective action, and continuously monitor the system."
+
+
+# 4. Disk utilization has reached 100%. How will you recover the server?
+Answer:
+"First, I will check disk usage using commands like df -h and identify which filesystem is full. Then I will use du -sh to find large files and directories consuming space. I will check logs, temporary files, old backups, and unnecessary data that can be safely removed. If a deleted file is still held open by a process, I will identify it using lsof and restart the process if required. I may also archive old data, extend the disk volume, or add additional storage if needed. Finally, I will monitor disk usage and set up alerts to prevent future issues."
+
+> Hindi me Question ka matlab:
+"Agar server ki disk 100% bhar gayi hai, to aap usse recover karne ke liye kya steps loge?"
+
+> Interviewer kya dekhna chahta hai?
+Linux troubleshooting skills
+Disk management knowledge
+Commands like df, du, lsof
+Root cause analysis and recovery approach
+
+> Short Answer (Interview Friendly):
+"I will use df -h and du -sh to identify disk usage, remove unnecessary files, check for deleted but open files using lsof, free up space, and monitor the server to avoid future disk-full issues."
+
+
+# 5. SSH is not working. How do you troubleshoot?
+Answer:
+"First, I will check whether the server is reachable using ping or network connectivity tests. Then I will verify that the SSH service is running using systemctl status sshd (or ssh). I will check if port 22 is listening using netstat or ss, and verify firewall and security group rules. Next, I will review SSH logs (/var/log/auth.log or /var/log/secure) for authentication or configuration errors. If needed, I will restart the SSH service and validate the SSH configuration. Finally, I will test the connection again and monitor for any further issues."
+
+Hindi me Question ka matlab:
+"Agar SSH se server connect nahi ho raha hai, to aap problem ko kaise identify aur fix karoge?"
+
+Interviewer kya dekhna chahta hai?
+
+Linux administration skills
+SSH troubleshooting knowledge
+Networking basics
+Log analysis and systematic debugging
+
+Short Answer (Interview Friendly):
+"I will check network connectivity, verify the SSH service status, ensure port 22 is open, check firewall/security group rules, analyze SSH logs, restart the service if required, and test the connection again."
+
+# 6. A service is failing after every reboot. What will you check?
+Answer:
+"First, I will check the service status using systemctl status <service>. Then I will check the service logs using journalctl -u <service> to identify the error. I will verify whether the service is enabled to start automatically using systemctl is-enabled <service>. I will also check service dependencies, configuration files, required ports, permissions, and whether the required network or database services are available after reboot. Finally, I will fix the root cause, enable the service if required, restart it, and verify that it starts successfully after another reboot."
+
+Hindi me Question ka matlab:
+"Agar server reboot karne ke baad koi service baar-baar fail ho jaati hai, to aap kya check karoge?"
+
+Interviewer kya dekhna chahta hai?
+
+systemctl knowledge
+Log checking
+Service dependencies
+Boot/startup configuration
+Root cause analysis
+
+Short Answer (Interview Friendly):
+
+"I will check the service status and logs, verify whether it is enabled at boot, check dependencies and configuration, fix the root cause, and test the service after reboot."
+
+
+# 7. A website hosted on Linux is returning 502 Bad Gateway. What could be the reasons?
+"A 502 Bad Gateway error usually occurs when the web server (Nginx/Apache) cannot communicate with the backend application. Possible reasons include the application service being down, incorrect proxy configuration, backend port not listening, high server load, network issues, or firewall restrictions."
+> Hindi me Question ka matlab:
+"Website 502 error de rahi hai, iske kya reasons ho sakte hain?"
+> Short Answer:
+"I will check the web server, backend application, logs, proxy settings, and service status."
+
+# 8. Users cannot log in to the server. What will you investigate?
+
+Answer:
+"I will check SSH service status, user account status, password expiry, authentication logs, disk space, PAM configuration, and firewall settings. I will also verify whether the user's account is locked."
+
+Hindi me Question ka matlab:
+"Users server me login nahi kar paa rahe hain, aap kya check karoge?"
+
+Short Answer:
+"I will check SSH, user accounts, authentication logs, and access permissions."
+
+# 9. One process is consuming all CPU. How do you identify the root cause?
+
+Answer:
+"I will identify the process using top or htop, check process details using ps, analyze logs, verify recent changes, and determine whether the issue is due to a bug, high traffic, infinite loop, or resource-intensive task."
+
+Hindi me Question ka matlab:
+"Ek process saara CPU consume kar raha hai, uska root cause kaise find karoge?"
+
+Short Answer:
+"I will identify the process, analyze logs, check workload, and investigate recent changes."
+
+# 10. A file is getting deleted automatically every day. How will you investigate?
+
+Answer:
+"I will check cron jobs, scheduled scripts, application logs, audit logs, and user activities. I may enable auditd to track which process or user is deleting the file."
+
+Hindi me Question ka matlab:
+"Ek file har din automatically delete ho rahi hai, kaise pata lagaoge?"
+
+Short Answer:
+"I will investigate cron jobs, scripts, logs, and use auditd for tracking."
+
+# 11. The application works locally but not on the server. What could be the issue?
+
+Answer:
+"Possible causes include configuration differences, missing dependencies, firewall restrictions, environment variable issues, permission problems, incorrect ports, or database connectivity issues."
+
+Hindi me Question ka matlab:
+"Application local machine par chal rahi hai lekin server par nahi, kyu?"
+
+Short Answer:
+"I will compare configurations, dependencies, permissions, and network settings."
+
+# 12. Your server cannot resolve domain names. What will you check?
+
+Answer:
+"I will check DNS configuration in /etc/resolv.conf, verify network connectivity, test DNS servers using nslookup or dig, and check firewall settings."
+
+Hindi me Question ka matlab:
+"Server domain names resolve nahi kar pa raha hai, kya check karoge?"
+
+Short Answer:
+"I will verify DNS settings, network connectivity, and DNS server availability."
+
+# 13. One filesystem is full while others have free space. What options do you have?
+
+Answer:
+"I can clean unnecessary files, move data to another filesystem, create symbolic links, extend the filesystem using LVM, or add additional storage."
+
+Hindi me Question ka matlab:
+"Ek filesystem full hai lekin dusre me space hai, kya karoge?"
+
+Short Answer:
+"I will free space, move data, or extend the filesystem."
+
+# 14. A cron job is not running. How will you troubleshoot?
+
+Answer:
+"I will verify the cron service status, check cron logs, confirm the job syntax, verify permissions, check environment variables, and test the script manually."
+
+Hindi me Question ka matlab:
+"Cron job execute nahi ho rahi hai, kaise troubleshoot karoge?"
+
+Short Answer:
+"I will check cron service, logs, syntax, permissions, and script execution."
+
+# 15. The server is automatically rebooting. How do you investigate?
+
+Answer:
+"I will review system logs, kernel logs, hardware alerts, OOM events, power issues, and recent changes. I will identify whether the reboot is caused by hardware, software, or resource exhaustion."
+
+Hindi me Question ka matlab:
+"Server khud se reboot ho raha hai, kaise investigate karoge?"
+
+Short Answer:
+"I will analyze logs, hardware events, and resource utilization."
+
+# 16. After updating packages, the server fails to boot. What steps will you take?
+
+Answer:
+"I will boot into recovery mode, check system logs, identify the failed package or service, roll back changes if possible, repair bootloader issues, and verify system integrity."
+
+Hindi me Question ka matlab:
+"Package update ke baad server boot nahi ho raha hai, kya karoge?"
+
+Short Answer:
+"I will use recovery mode, check logs, identify the faulty update, and restore the system."
+
+# 17. Users report slow file transfers. How will you diagnose the issue?
+
+Answer:
+"I will check network bandwidth, latency, packet loss, disk I/O performance, server load, and protocol settings. I will also compare transfer speeds across different systems."
+
+Hindi me Question ka matlab:
+"File transfer slow hai, kaise diagnose karoge?"
+
+Short Answer:
+"I will check network, disk performance, and server resource utilization."
+
+# 18. A process cannot write to a directory even though the user owns it. What could be wrong?
+"Possible reasons include insufficient directory permissions, filesystem mounted as read-only, SELinux/AppArmor restrictions, disk full condition, or ACL rules blocking access."
+> Hindi me Question ka matlab:
+"User owner hai phir bhi write nahi kar paa raha hai, kyu?"
+> Short Answer:
+"I will check permissions, filesystem status, SELinux, ACLs, and available disk space."
+
+# 19. You accidentally changed permissions on /etc. How would you recover?
+"I will restore permissions from backup, compare with a healthy system, use package verification tools, and recover critical files from rescue mode if required."
+> Hindi me Question ka matlab:
+"Galti se /etc ki permissions change ho gayi, kaise recover karoge?"
+> Short Answer:
+"I will restore correct permissions from backup or recovery mode."
+
+# 20. The root account is locked. What recovery options are available?
+"I can use another sudo-enabled account, boot into single-user/recovery mode, reset the root password, unlock the account, and verify access."
+> Hindi me Question ka matlab:
+"Root account lock ho gaya hai, access kaise wapas paoge?
+> Short Answer:
+"I will use sudo access or recovery mode to unlock and reset the root account."
+
+# Cloud/DevOps Linux Questions
+1. Why is Linux preferred in Cloud and DevOps?
+“Linux is widely preferred in Cloud and DevOps because it is stable, lightweight, secure, and highly customizable.
+
+Most cloud servers run Linux, and many DevOps tools such as Docker, Kubernetes, Jenkins, Ansible, and Terraform are commonly used in Linux environments.
+
+Linux also provides powerful command-line tools, which makes automation, scripting, monitoring, and server management easier.
+
+Another important reason is that Linux is open-source, so it is cost-effective for running cloud infrastructure.”
+
+2. How do you secure a Linux server in AWS?
+“I secure a Linux server in AWS using multiple layers of security rather than relying on a single mechanism.
+
+First, I use a Security Group to allow only the required network traffic. For example, SSH port 22 should not be open to the entire internet.
+
+I use SSH keys instead of passwords and disable unnecessary services and ports.
+
+I regularly apply security patches and updates, use proper Linux user permissions, and avoid running applications as root.
+
+I also follow the principle of least privilege using IAM, enable logging and monitoring, and use services such as CloudWatch where required.”
+
+3. How do you connect to an EC2 instance?
+“For a Linux EC2 instance, I normally connect using SSH. I need the instance's public IP or DNS, the private key associated with the instance, and the correct username.
+
+I also make sure that the Security Group allows SSH traffic from my trusted IP.”
+
+> Command:
+ssh -i my-key.pem ec2-user@<public-ip>
+For Ubuntu:
+ssh -i my-key.pem ubuntu@<public-ip>
+
+4. What happens if you lose your EC2 key pair?
+“If I lose the private key of an EC2 key pair, I cannot normally use that key to SSH into the instance anymore.
+
+I would not try to recover or recreate the same private key, because AWS does not provide the private key again.
+
+Instead, depending on the situation, I would use an alternative access method such as AWS Systems Manager Session Manager if it was configured. Otherwise, I would use an appropriate recovery procedure to add a new public key to the instance and then connect using the new private key.”
+
+
+5. How do you transfer files between local machine and Linux server?
+“To transfer files between my local machine and a Linux server, I commonly use SCP or SFTP.
+
+SCP is useful for simple and secure file transfers over SSH. For example, I can use the scp command to upload a file from my local machine to an EC2 instance.
+
+SFTP is useful when I need an interactive file-transfer session, where I can upload, download, and manage files.
+
+Both use SSH for secure communication, so the server must allow SSH access.”
+⭐ SCP
+Local → Server
+scp -i my-key.pem file.txt ec2-user@<public-ip>:/home/ec2-user/
+⭐ SFTP
+SFTP provides an interactive file-transfer session over SSH.
+sftp -i my-key.pem ec2-user@<public-ip>
+
+
+6. How do you automate Linux tasks?
+“I automate repetitive Linux tasks using shell scripting and scheduling tools like Cron.
+
+For example, if I need to regularly clean old log files, take backups, check disk usage, or restart a service when required, I can write a Bash script and schedule it using Cron.
+
+For larger environments, I can use configuration-management tools like Ansible to automate tasks across multiple servers.”
+
+7. How do you monitor Linux servers in production?
+“In production, I monitor the server from both the infrastructure and application perspective.
+
+At the Linux level, I monitor CPU, memory, disk usage, disk I/O, network, processes, and system logs.
+
+In AWS, I can use CloudWatch for metrics and alarms. For centralized monitoring, depending on the environment, tools like Prometheus and Grafana can also be used.
+
+I configure alerts for important thresholds so that the team can respond before the issue becomes a major outage.”
+
+
+8. How do you troubleshoot a Linux server in production without rebooting it?
+“I would first collect information without making any disruptive changes.
+
+I check system uptime, load, CPU, memory, disk space, disk I/O, processes, network connections, services, and system logs.
+
+Based on the findings, I take the smallest possible corrective action, such as restarting only a problematic service, killing a stuck process if necessary, or freeing disk space.
+
+I avoid rebooting the server unless it is actually required, because rebooting can cause unnecessary downtime and may also hide the real root cause.”
+
+
+9. How do you investigate high load average on a production server?
+“If I see a high load average, I first check the load along with the number of CPU cores, because a load value should be interpreted relative to the CPU capacity.
+
+Then I use tools like top or ps to identify processes consuming high CPU or memory. I also check memory pressure, swap usage, disk I/O, and processes stuck in I/O wait.
+
+If CPU usage is high, I identify the process responsible. If I/O wait is high, I investigate disk or storage activity. If memory is exhausted, I check for memory-heavy processes and possible swapping.
+
+After identifying the root cause, I take the least disruptive corrective action and monitor the server to confirm recovery.”
+
+
+10. Explain your Linux troubleshooting approach during a production outage.
+“During a production outage, my first priority is to understand the impact and stabilize the service as quickly and safely as possible.
+
+First, I confirm the issue and check whether the problem is affecting one server or multiple servers.
+
+Then I check the basic server health, including CPU, load average, memory, disk space, disk I/O, network connectivity, and running processes.
+
+Next, I check the status of critical services and review system and application logs to identify recent errors.
+
+If the issue is caused by a specific process or service, I take the minimum corrective action required. For example, I may restart only the affected service rather than rebooting the entire server.
+
+If the problem is related to a recent deployment, configuration change, or application release, I coordinate with the team and consider rollback to the last known stable version.
+
+After the service is restored, I verify application health, monitor the server, and confirm that the issue is actually resolved.
+
+Finally, I investigate the root cause and document the incident so that we can prevent the same issue from happening again.
+
+So my overall approach is: Confirm → Assess → Stabilize → Troubleshoot → Recover → Verify → Find Root Cause → Prevent Recurrence.”
 
 
 
+# HR + Practical Linux Questions
 
-11. Scenario-Based Questions
-A server suddenly becomes slow. How will you troubleshoot it?
-CPU usage is 100%. What steps will you take?
-Memory utilization is continuously increasing. What will you do?
-Disk utilization has reached 100%. How will you recover the server?
-SSH is not working. How do you troubleshoot?
-A service is failing after every reboot. What will you check?
-A website hosted on Linux is returning 502 Bad Gateway. What could be the reasons?
-Users cannot log in to the server. What will you investigate?
-One process is consuming all CPU. How do you identify the root cause?
-A file is getting deleted automatically every day. How will you investigate?
-The application works locally but not on the server. What could be the issue?
-Your server cannot resolve domain names. What will you check?
-One filesystem is full while others have free space. What options do you have?
-A cron job is not running. How will you troubleshoot?
-The server is automatically rebooting. How do you investigate?
-After updating packages, the server fails to boot. What steps will you take?
-Users report slow file transfers. How will you diagnose the issue?
-A process cannot write to a directory even though the user owns it. What could be wrong?
-You accidentally changed permissions on /etc. How would you recover?
-The root account is locked. What recovery options are available?
-12. Cloud/DevOps Linux Questions
-Why is Linux preferred in Cloud and DevOps?
-How do you secure a Linux server in AWS?
-How do you connect to an EC2 instance?
-What happens if you lose your EC2 key pair?
-How do you transfer files between local machine and Linux server?
-How do you automate Linux tasks?
-How do you monitor Linux servers in production?
-How do you troubleshoot a Linux server in production without rebooting it?
-How do you investigate high load average on a production server?
-Explain your Linux troubleshooting approach during a production outage.
-HR + Practical Linux Questions
-Tell me about a Linux issue you solved.
-Which Linux commands do you use daily?
-What Linux distributions have you worked on?
-Which Linux tools do you use for monitoring?
-Describe a production Linux incident you handled.
-Have you ever written Bash scripts? Explain one.
-What is your Linux troubleshooting workflow?
-Which logs do you check first during an outage?
-What Linux topic do you find most challenging?
-Why should we hire you for a Linux/DevOps role?
+1. Tell me about a Linux issue you solved.
+“One issue I faced was high disk usage on a Linux server.
+
+I first checked the disk usage using df -h. Then I identified which directories were consuming the most space using du.
+
+After that, I found that old application and log files were consuming a large amount of disk space. I verified that the files were no longer required and cleaned them according to the application's log-retention policy.
+
+After cleanup, I checked the disk usage again and confirmed that the application was working normally.
+
+I also recommended log rotation and proper retention to prevent the same issue from happening again.”
+
+2. Which Linux commands do you use daily?
+“I commonly use Linux commands for file management, system monitoring, process management, networking, permissions, and log troubleshooting.”
+
+Command	Purpose
+ls	List files/directories
+cd	Change directory
+pwd	Show current directory
+cp	Copy files
+mv	Move/rename files
+rm	Remove files
+cat	View file content
+grep	Search text
+find	Find files
+df -h	Check disk space
+du -sh	Check directory size
+top	Monitor processes
+ps	View processes
+free -m	Check memory
+systemctl	Manage services
+journalctl	Check system logs
+chmod	Change permissions
+chown	Change ownership
+ssh	Connect to remote server
+scp	Transfer files
+⭐ Strong closing:
+“I don't use commands just by memorizing them; I use them based on the issue I'm troubleshooting.”
+
+3. What Linux distributions have you worked on?
+“I have mainly worked with Ubuntu and Amazon Linux in cloud environments, especially for EC2 instances.
+
+I am comfortable with basic administration tasks such as package installation, service management, user and permission management, networking, log analysis, and troubleshooting.
+
+I also understand that different distributions can have differences in package managers and default configurations. For example, Ubuntu commonly uses `apt`, while Amazon Linux commonly uses `dnf` or `yum` depending on the version.”
+
+
+4. Which Linux tools do you use for monitoring?
+“For Linux monitoring, I use both command-line tools and centralized monitoring platforms.
+
+For quick troubleshooting, I use top or htop for CPU and processes, free for memory, df and du for disk usage, iostat for disk I/O, vmstat for system performance, and ss for network connections.
+
+In AWS environments, I can use CloudWatch for centralized metrics, alarms, and monitoring. In environments using the Prometheus and Grafana stack, I can use them for metrics visualization and alerting.”
+
+5. Describe a production Linux incident you handled.
+“In a production scenario, suppose an application becomes unavailable.
+
+My first step would be to confirm the impact and check whether the issue is limited to one server or affects multiple instances.
+
+Then I would check the server health using commands such as `uptime`, `top`, `free -m`, and `df -h`. I would check the status of the application service using `systemctl` and review the relevant application and system logs using `journalctl` and the application's log files.
+
+If I identify that the application service has failed, I would investigate the reason and, if it is safe and appropriate, restart only the affected service rather than rebooting the entire server.
+
+After recovery, I would verify the application health and continue monitoring it.
+
+Finally, I would identify the root cause and document preventive actions so that the same issue does not happen again.”
+
+
+6. Have you ever written Bash scripts? Explain one.
+“Yes. I have used Bash scripting to automate repetitive Linux tasks.
+
+For example, I can create a server health-check script that checks disk usage, memory, CPU/load, and important services. Instead of manually checking every server, the script can perform these checks automatically and report if any threshold is exceeded.”
+
+7. What is your Linux troubleshooting workflow?
+“My Linux troubleshooting workflow starts with understanding the problem and its impact.
+
+First, I confirm whether the issue is system-wide, application-specific, or limited to a particular server.
+
+Then I check the basic system health, including CPU, load average, memory, disk space, disk I/O, processes, services, and network connectivity.
+
+Next, I check the relevant system and application logs to identify errors or unusual activity.
+
+Once I have enough evidence, I identify the root cause and take the smallest safe corrective action.
+
+After making the change, I verify that the service has recovered and continue monitoring it.
+
+Finally, I document the root cause and preventive action.
+
+So my approach is: Understand → Assess → Investigate → Fix → Verify → Prevent.”
+
+
+8. Which logs do you check first during an outage?
+“It depends on the type of outage, but I generally start with the application logs and system logs around the time the issue started.
+
+On a systemd-based Linux server, I use journalctl to inspect service and system logs. I also check relevant files under /var/log, depending on the application and Linux distribution.
+
+If it's a web application, I would also check the web server or application logs, such as Nginx, Apache, or the application's own log files.”
+
+9. What Linux topic do you find most challenging?
+“One area I find more challenging is advanced Linux performance troubleshooting, especially understanding the relationship between CPU utilization, load average, memory pressure, disk I/O, and application behavior.
+
+I understand the fundamentals and regularly practice troubleshooting scenarios to improve in this area.
+
+I think this is also an important skill for a DevOps engineer because production issues are not always caused by a single resource.”
+
+
+10. Why should we hire you for a Linux/DevOps role?
+“You should hire me because I have a strong interest in Linux and DevOps, and I focus on understanding how things work rather than just memorizing commands.
+
+I am comfortable with Linux fundamentals, troubleshooting, scripting, cloud concepts, containers, and CI/CD, and I am continuously improving my practical skills through hands-on practice.
+
+When I face a problem, I follow a structured approach: I collect information, identify the root cause, make the safest possible change, and verify the result.
+
+I also have an automation mindset. If I see a repetitive manual task, I look for ways to automate it using Bash, Ansible, or CI/CD tools.
+
+As a fresher, I may not have experience with every production scenario yet, but I bring strong fundamentals, a willingness to learn, and a problem-solving mindset. I believe I can learn the organization's environment quickly and contribute effectively to the team.”
+
+
+
+# Linux Fundamentals (Q11–Q18)
+1. A server is running fine, but df -h shows the disk is full. You delete large log files—and the disk still shows full. Why?
+
+2. Load average shows 8.0 on a 4-core server, but CPU usage in top is only 20%. What's happening?
+
+3. Explain the difference between a hard link and a symbolic link.
+
+4. A cron job works manually but fails when cron runs it. Why?
+
+5. What's the difference between a zombie process and a D-state process?
+
+6. "No space left on device" but df -h shows free space. What else could be full?
+
+7. What's the difference between chmod 755 and chmod 644? What do SUID and SGID do?
+7. 
+A service fails to start and systemctl status only shows "failed." How do you find the real cause?
+
+
+
+What is the Command to change the ownership and 
+Permission of a file or directory in Linux?
+
+How do you manage and view running processes in Linux?
+What is SSH?
+
+How do you check memory stats and CPU stats as a Linux Admin?
+
+What is a cronjob?
+
+What is an alias in Linux?
+
+
+>>>>>>>>>>>>>>>>>>>>>.
+
+1. Interviewer: "Your Linux server suddenly stops accepting new SSH connections, but the server itself is still running. What could actually be wrong?"

@@ -1,1 +1,59 @@
 # for interview purposes
+
+🔹 IaaS Basics
+What is IaaS, and why do companies use it?
+What are the main components of IaaS?
+What is a virtual machine in IaaS?
+What is the difference between IaaS and traditional physical servers?
+What are the advantages of using IaaS?
+What are the disadvantages of IaaS?
+What is the difference between IaaS, PaaS, and SaaS?
+Give some real-world examples of IaaS services.
+How does IaaS reduce the need for physical hardware?
+How does IaaS help a company scale its infrastructure?
+🔹 Compute / Virtual Machines
+You need a virtual server for your application. Which IaaS service would you use?
+What is an EC2 instance in AWS?
+Your application needs more CPU and RAM. How would you increase the resources of your server?
+Your application suddenly gets more traffic. How can IaaS help you handle it?
+You don't need a server during the night. How can you reduce the cost?
+What is the difference between stopping and terminating a virtual machine?
+What is an instance type, and why is it important?
+How would you choose the right VM size for an application?
+Your VM is running slowly. How would you troubleshoot the problem?
+Your VM crashes unexpectedly. What steps would you take to recover the application?
+🔹 Networking
+Your application server needs a private network. How would you create it?
+What is a VPC in AWS?
+What is the difference between a public subnet and a private subnet?
+Your EC2 instance needs internet access. How would you provide it?
+You want to control traffic going to your EC2 instance. What would you use?
+What is a Security Group?
+What is a Network ACL, and how is it different from a Security Group?
+Your web server should be accessible from the internet, but your database should not. How would you design the network?
+Two servers need to communicate with each other privately. How would you configure this?
+Your application is not reachable from the internet. How would you troubleshoot the network?
+🔹 Storage
+Your application needs persistent storage. Which IaaS storage options can you use?
+What is the difference between block storage and object storage?
+What is an AWS EBS volume?
+Your EC2 instance is deleted, but you need to keep the application data. How would you handle it?
+Your application needs to store images and videos. Which AWS storage service would you choose?
+How would you create a backup of your server data?
+🔹 Security
+Your EC2 server needs access to other AWS services. How would you give it permission securely?
+Why should you avoid storing AWS access keys directly on a server?
+How would you secure an EC2 instance?
+Your company wants only SSH access from a specific IP address. How would you configure it?
+🔹 Scaling & Availability
+Your application gets high traffic during certain hours. How would you automatically add more servers?
+What is Auto Scaling in AWS?
+What is a Load Balancer, and why is it used with IaaS?
+One EC2 instance fails while your application is running. How can you keep the application available?
+Why would you deploy servers in multiple Availability Zones?
+Your company wants the application to remain available even if one AWS Availability Zone fails. How would you design it?
+🔹 Cost & Real-World Scenarios
+Your AWS bill has increased because of EC2 usage. How would you reduce the cost?
+Your company wants to move its physical servers to AWS. How can IaaS help with this migration?
+You need separate infrastructure for Development, Testing, and Production. How would you design it using IaaS?
+You are asked to design a highly available application using AWS IaaS. What services would you use and how would they work together?

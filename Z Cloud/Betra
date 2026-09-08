@@ -1,7 +1,0 @@
--AWS region: physical location around the world or a geographical location which consist of a cluster of datacenter owned and managed by aws.
--Availability zone: AZ is one or more discrete data center with radundant power,networking, and connectivity in an AWS region.
--services: 
--cluster: Group
--compute capacity:
--physical specification:
--

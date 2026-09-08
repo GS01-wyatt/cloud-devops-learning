@@ -108,7 +108,6 @@ uid=1001(devopsuser) gid=1001(devopsuser) groups=1001,1002(developers)
 
 8. How do you switch from one user to another?
 Use the su command.
-
 Command:
 // su - devopsuser
 or
@@ -118,12 +117,13 @@ Use Case:
 Testing application permissions with another user account.
 
 9. How do you delete a user in Linux?
+We use the userdel command to delete a user in Linux. The -r option removes the user along with their home directory and associated files.
 Use the userdel command.
 Command:
 // sudo userdel devopsuser
 
 Delete user along with home directory:
-sudo userdel -r devopsuser
+// sudo userdel -r devopsuser
 
 10. What is the difference between Root User and Normal User?
 Root User	                  Normal User

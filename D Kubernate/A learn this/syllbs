@@ -1,0 +1,156 @@
+🟢 1. Kubernetes Fundamentals — MUST LEARN
+Kubernetes Introduction — Container orchestration and core concepts
+Why Kubernetes? — Scalability, availability, automation and self-healing
+Kubernetes History — Google Borg → Kubernetes → CNCF
+Monolithic vs Microservices — Architecture differences and Kubernetes use
+Kubernetes Architecture — Control Plane + Worker Nodes
+Control Plane Components — API Server, etcd, Scheduler, Controller Manager
+Worker Node Components — Kubelet, Kube-proxy, Container Runtime
+kubectl — Kubernetes command-line management
+Kubernetes YAML — Manifest structure and declarative configuration
+Cluster, Node & Pod — Basic Kubernetes hierarchy
+🟢 2. Cluster Setup — MUST LEARN
+KIND — Local Kubernetes cluster using Docker
+Minikube — Local Kubernetes learning and testing cluster
+Kubeadm — Kubernetes cluster installation and initialization
+AWS Setup — Cloud environment for Kubernetes hands-on
+Amazon EKS — Managed Kubernetes service on AWS
+
+Priority: Learn Minikube/KIND for practice and EKS for real-world DevOps. Kubeadm only needs basic understanding initially.
+
+
+🟢 3. Kubernetes Workloads — MUST LEARN
+Namespaces — Resource isolation and organization
+Pods — Smallest deployable unit in Kubernetes
+Deployments — Application deployment and replica management
+ReplicaSets — Maintaining desired number of Pods
+static pod
+manual scheduling
+Labels & Selectors — Identifying and connecting Kubernetes resources
+Rolling Updates — Updating applications without downtime
+Rollback — Reverting failed deployments
+DaemonSets — Running a Pod on selected/all nodes
+Jobs — One-time task execution
+CronJobs — Scheduled task execution
+StatefulSets — Managing stateful applications
+
+🟢 4. Kubernetes Networking — MUST LEARN
+Kubernetes Networking — Pod-to-Pod communication
+Services — Exposing Pods and service discovery
+ClusterIP — Internal application access
+NodePort — Exposing application through node ports
+LoadBalancer — External load-balanced access
+Service Discovery — Communication between Kubernetes services
+Kubernetes DNS — Internal name resolution
+Ingress — HTTP/HTTPS traffic routing
+Ingress Controller — Implementing and managing Ingress
+
+
+🟢 5. Kubernetes Storage — MUST LEARN
+Kubernetes Storage — Persistent application data
+PersistentVolume (PV) — Cluster-level storage resource
+PersistentVolumeClaim (PVC) — Request for storage
+StorageClass — Storage type and dynamic provisioning
+Dynamic Provisioning — Automatically creating storage
+🟢 6. Configuration & Secrets — MUST LEARN
+ConfigMaps — Non-sensitive application configuration
+Secrets — Passwords, tokens and sensitive configuration
+Environment Variables — Passing configuration to containers
+Annotations — Additional metadata and configuration
+
+
+🟢 7. Resource Management — MUST LEARN
+Resource Requests — Minimum CPU/Memory required by a Pod
+Resource Limits — Maximum CPU/Memory a Pod can consume
+Resource Quotas — Namespace-level resource restrictions
+🟢 8. Health Checks — MUST LEARN
+Liveness Probe — Checks whether application is alive
+Readiness Probe — Checks whether application can receive traffic
+Startup Probe — Handles slow-starting applications
+
+
+🟢 9. Scheduling — MUST LEARN
+Taints & Tolerations — Control which Pods run on nodes
+Node Affinity — Schedule Pods to specific nodes
+Pod Affinity — Place related Pods together
+Pod Anti-Affinity — Keep Pods apart for availability
+🟢 10. Scaling — MUST LEARN
+HPA — Automatically scales Pods horizontally
+VPA — Adjusts CPU/Memory resources vertically
+Autoscaling Concepts — Scaling applications based on workload
+
+Priority: HPA is very important. VPA can be learned at a basic/intermediate level.
+
+🟢 11. Kubernetes Security — MUST LEARN
+RBAC — Role-Based Access Control
+Roles & RoleBindings — Namespace-level permissions
+ClusterRoles & ClusterRoleBindings — Cluster-level permissions
+ServiceAccounts — Identity for applications running in Kubernetes
+Secrets Security — Managing sensitive information safely
+🟢 12. Kubernetes Troubleshooting — VERY IMPORTANT
+Pod Troubleshooting — Finding application and container problems
+kubectl get — Checking resources and status
+kubectl describe — Investigating resource events/details
+kubectl logs — Checking application logs
+kubectl exec — Accessing a running container
+CrashLoopBackOff — Debugging repeatedly crashing Pods
+ImagePullBackOff — Debugging image-pull failures
+Pending Pods — Understanding scheduling/resource problems
+Service Problems — Debugging connectivity and selectors
+DNS Problems — Debugging Kubernetes service resolution
+Node Problems — Diagnosing unhealthy worker nodes
+CPU/Memory Problems — Identifying resource bottlenecks
+
+
+🟢 13. Helm — MUST LEARN
+Helm — Kubernetes package manager
+Helm Charts — Application packaging
+values.yaml — Application configuration
+Helm Install — Deploying applications
+Helm Upgrade — Updating applications
+Helm Rollback — Reverting releases
+🟢 14. Kubernetes + DevOps — MUST LEARN
+Docker + Kubernetes — Containerized application deployment
+Git + Kubernetes — Version-controlled manifests
+CI/CD + Kubernetes — Automated deployment
+GitHub Actions/Jenkins + Kubernetes — Pipeline integration
+Container Registry — Push/Pull images for Kubernetes
+ECR + EKS — AWS container deployment
+Environment-based Deployment — Dev, Test and Production
+Rolling Deployment — Gradual application updates
+Blue-Green Deployment — Switching between application versions
+Canary Deployment — Gradually releasing new versions
+
+
+🟢 15. AWS EKS — MUST LEARN FOR CLOUD/DEVOPS
+EKS Architecture — Managed Kubernetes on AWS
+EKS Node Groups — Managing worker nodes
+IAM + EKS — AWS permissions and Kubernetes access
+VPC + EKS — Networking for Kubernetes
+Load Balancer + EKS — External application access
+ECR + EKS — Container image deployment
+EKS Application Deployment — Deploying a complete application
+🟡 16. Advanced Kubernetes — LEARN AFTER BASICS
+Init Containers — Initialization before main containers
+Sidecar Containers — Supporting containers inside a Pod
+CRDs — Creating custom Kubernetes resources
+Operators — Automating application management
+Kubernetes API — Programmatic cluster interaction
+Service Mesh — Managing microservice communication
+Istio — Traffic management, security and observability
+
+
+🟡 17. Monitoring & Logging — IMPORTANT
+Kubernetes Monitoring — Cluster and application health
+Kubernetes Logging — Application and container logs
+Metrics — CPU, Memory and application metrics
+Kubernetes Dashboard — Visual cluster management
+Observability — Metrics, Logs and Traces
+
+Dashboard is useful, but understanding monitoring + logging + observability is more important.
+
+https://www.youtube.com/watch?v=ul96dslvVwY&list=PLl4APkPHzsUUOkOv3i62UidrLmSB8DcGC&index=2
+
+<<<<<<<<<<<>>>>>>>>>>>>>>
+18
+SSL/TLS works 

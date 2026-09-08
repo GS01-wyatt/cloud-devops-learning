@@ -11,3 +11,136 @@ Code changes are automatically deployed to production without manual approval
 
 Example: In a web application, when a developer pushes code to a repository, it is automatically built and tested. If everything passes, the application is deployed to production without manual effort.
 
+# Q: Explain CI/CD in one minute.
+
+Answer:
+"CI/CD is a DevOps practice that automates the software delivery lifecycle. Whenever a developer commits code, the pipeline automatically builds the application, runs tests, validates quality checks, and deploys the application. This helps teams deliver software faster, improve quality, and reduce manual errors while ensuring reliable deployments." 🚀
+
+# What is CI/CD and why is it used in DevOps?
+
+Answer:
+"CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. It automates the process of building, testing, and deploying applications. This helps teams release software faster, reduce manual errors, and improve reliability."
+
+2. Why is CI/CD important in DevOps?
+
+Answer:
+
+"CI/CD is important because modern applications are updated frequently. Manual builds and deployments are time-consuming and error-prone.
+
+CI/CD automates the entire process, provides quick feedback on code changes, reduces deployment failures, improves collaboration between development and operations teams, and enables faster software delivery."
+
+3. Explain the CI/CD pipeline workflow.
+
+Answer:
+
+"In a typical project, the workflow starts when a developer pushes code to Git.
+
+The CI/CD pipeline is triggered automatically.
+
+The pipeline performs:
+
+Source Code Checkout
+Build Stage
+Unit Testing
+Code Quality Checks
+Security Scanning
+Artifact Creation
+Deployment to Staging
+Validation Testing
+Deployment to Production
+
+If any stage fails, the pipeline stops and notifies the team. This ensures only validated code reaches production."
+
+4. What happens when a developer pushes code to Git?
+
+Answer:
+
+"When a developer pushes code, a webhook triggers the CI/CD pipeline.
+
+The pipeline pulls the latest code, builds the application, runs automated tests, performs code quality checks, and validates security policies.
+
+If all stages pass successfully, the application is packaged and deployed automatically or kept ready for deployment depending on the organization's process."
+
+5. What is Jenkins and how is it used in CI/CD?
+
+Answer:
+
+"Jenkins is an open-source automation server widely used for CI/CD.
+
+It automates repetitive tasks such as:
+
+Building applications
+Running tests
+Deploying applications
+Integrating with Git, Docker, Kubernetes, and cloud platforms
+
+In a project, Jenkins continuously monitors source code repositories and automatically executes pipeline stages whenever code changes occur."
+
+6. How would you handle a failed build?
+
+Answer:
+
+"First, I would check the build logs to identify the exact error.
+
+Common reasons include:
+
+Compilation errors
+Dependency issues
+Test failures
+Configuration problems
+
+After identifying the root cause, I would fix the issue, validate it locally if necessary, and rerun the pipeline.
+
+My focus is always on understanding the root cause rather than simply rerunning the build."
+
+7. How would you handle a failed deployment?
+
+Answer:
+
+"If a deployment fails, I first analyze deployment logs, application logs, and infrastructure logs.
+
+I verify whether the issue is related to:
+
+Application configuration
+Infrastructure
+Network connectivity
+Resource limitations
+
+If production is affected, I perform a rollback to the last stable version to minimize downtime and then investigate the issue thoroughly before redeployment."
+
+8. How do you ensure safe deployments?
+
+Answer:
+
+"I ensure multiple validation steps before production deployment.
+
+These include:
+
+Code Reviews
+Automated Testing
+Security Scans
+Staging Environment Validation
+Approval Gates (if required)
+
+I also use rollback mechanisms so that if an issue occurs, the application can quickly return to a stable version."
+
+9. What is the difference between Continuous Delivery and Continuous Deployment?
+
+Answer:
+
+"In Continuous Delivery, the application is automatically built, tested, and prepared for release, but deployment to production requires manual approval.
+
+In Continuous Deployment, every successful change automatically reaches production without manual intervention.
+
+The key difference is the manual approval step."
+
+10. Explain CI/CD using your project experience.
+
+Answer:
+"In my projects, I used Git for source code management and Docker for containerization.
+
+Whenever code was pushed to the repository, the CI/CD pipeline automatically triggered.
+
+The pipeline built the application, executed tests, created Docker images, and prepared the application for deployment.
+
+This approach reduced manual deployment effort, improved consistency across environments, and helped deliver changes faster and more reliably."

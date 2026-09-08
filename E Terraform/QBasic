@@ -1,1 +1,37 @@
 # for interview purpose
+🔹 Terraform Basics
+Your company wants to create AWS infrastructure automatically. What is Terraform, and why would you use it?
+You need to create an EC2 instance using Terraform. How would you do it?
+You have written Terraform configuration. What commands will you run to create the infrastructure?
+What is the difference between terraform init, terraform plan, and terraform apply?
+You made a change in your Terraform file. How will Terraform know what needs to be changed?
+What is Terraform State, and why is the terraform.tfstate file important?
+Your team is working on the same Terraform project. How would you store the Terraform state remotely?
+What is a Terraform Provider? Give an example of an AWS provider.
+What is a Terraform Resource? Give an example of an AWS EC2 resource.
+What is the difference between Terraform and AWS CloudFormation?
+🔹 Terraform Variables & Outputs
+You want to use different values for development and production. How would you use Terraform variables?
+You want Terraform to display the EC2 instance IP after deployment. How would you use an output variable?
+You have sensitive information such as a password in Terraform. How would you handle it securely?
+What is the difference between variable, local, and output in Terraform?
+You want to provide a variable value while running Terraform. How can you pass it?
+🔹 Terraform Modules
+Your team is creating the same AWS infrastructure for multiple projects. How would Terraform Modules help?
+What is a Terraform Module, and why would you use one?
+You have separate Dev and Prod environments. How can you reuse the same Terraform code for both?
+🔹 Terraform State
+Two developers are working on the same Terraform project and both run terraform apply. What problem can occur, and how can you prevent it?
+Your Terraform state file is deleted accidentally. What problem can this cause?
+You want to see which resources Terraform is currently managing. Which command would you use?
+A resource exists in AWS but Terraform is not managing it. How can you bring that resource under Terraform management?
+🔹 Terraform Destroy & Troubleshooting
+You want to remove infrastructure created by Terraform. Which command would you use?
+terraform apply is showing an error. How would you troubleshoot it?
+Terraform wants to recreate an existing resource even though you didn't expect it. How would you investigate the issue?
+You accidentally changed a Terraform resource and want to see what Terraform will modify before applying it. Which command would you use?
+🔹 Terraform + AWS
+You need to create an EC2 instance, VPC, subnet, and security group using Terraform. How would you organize the Terraform code?
+Your company wants to create the same infrastructure in multiple AWS regions. How would you configure Terraform for this?
+Your Terraform project needs AWS credentials. How would you authenticate Terraform with AWS securely?
+Your company wants Terraform to automatically create infrastructure whenever code is merged into GitHub. How would you integrate Terraform with CI/CD?

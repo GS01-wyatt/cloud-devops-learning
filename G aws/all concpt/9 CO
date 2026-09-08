@@ -1,0 +1,29 @@
+
+# 9 Containers & Orchestration
+Docker Basics
+Manage Containers
+ECR (Elastic Container Registry)
+ECS (Elastic Container Service)
+EKS (Elastic Kubernetes Service)
+
+
+
+
+# AWS ECS instance
+Amazon Elastic Container Service (ECS) is a fully managed container orchestration service that helps you deploy, manage, and scale Docker containers on AWS.
+
+It eliminates the need to install and manage your own container orchestration software.
+> Why Use ECS?
+Deploy containerized applications easily
+Automatic scaling
+High availability
+Load balancing support
+Secure networking
+Easy integration with AWS services
+> ECS term
+> 
+
+# AWS EKS
+
+
+> 

@@ -1,0 +1,214 @@
+
+🟠 9. Docker Engine & Storage
+Docker Engine
+Docker Daemon
+Docker Storage Drivers
+Docker Data Storage
+Backup Containers
+Manage Storage
+
+🟠 10. Docker Networking
+Docker Networking Basics
+Docker Ports
+Bridge Network
+Host Network
+Overlay Network
+Create Network
+Connect Containers
+Container Communication
+Default Bridge Network
+
+
+
+🟠 9. Docker Engine & Storage
+# Docker Engine
+Docker Engine Docker ka core runtime environment hai jo containers ko build, run aur manage karta hai. Ye Docker platform ka main component hai.
+
+Why Docker Engine is Used?
+Containers create aur run karne ke liye
+Images manage karne ke liye
+Networking aur storage handle karne ke liye
+Docker commands execute karne ke liye
+
+ # Docker Daemon
+
+Docker Daemon (dockerd) ek background service hai jo Docker Engine ka main process hota hai. Ye Docker requests ko receive karke containers, images aur networks ko manage karta hai.
+
+Why Docker Daemon is Used?
+Docker commands process karne ke liye
+Containers manage karne ke liye
+Images build aur run karne ke liye
+Background me Docker operations execute karne ke liye
+
+# Docker Storage Drivers
+
+Storage Drivers Docker Images aur Containers ke layers ko manage karte hain. Ye decide karte hain ki data disk par kaise store hoga.
+
+Why Storage Drivers are Used?
+Image layers manage karne ke liye
+Faster container creation ke liye
+Efficient disk usage ke liye
+Layer sharing aur caching ke liye
+
+Common Storage Drivers:
+
+overlay2
+aufs
+devicemapper
+btrfs
+
+# Docker Data Storage
+
+Container ka data store karne ke process ko Docker Data Storage kehte hain.
+
+Normally container delete hone par uska data bhi delete ho jata hai.
+
+Why Data Storage is Used?
+Important data save rakhne ke liye
+Databases ke data ko persist karne ke liye
+Container restart ke baad bhi data preserve karne ke liye
+
+# Backup Containers
+
+Container ke data aur configuration ka backup lena Backup Containers kehlata hai.
+
+Why Backup is Used?
+Data loss prevent karne ke liye
+Disaster recovery ke liye
+Production environment protection ke liye
+Application restore karne ke liye
+
+# Manage Storage
+
+Docker storage resources jaise volumes, images aur container data ko monitor aur maintain karna Manage Storage kehlata hai.
+
+Why Storage Management is Used?
+Disk space optimize karne ke liye
+Unused data remove karne ke liye
+Performance improve karne ke liye
+Storage utilization control karne ke liye
+
+
+🟠 10. Docker Networking
+Docker Networking Basics
+
+Docker Networking containers ko ek dusre aur external world ke saath communicate karne ki facility provide karti hai.
+
+Har container ko network connectivity di jati hai jisse applications communicate kar sakein.
+
+Why Docker Networking is Used?
+Container communication ke liye
+Service connectivity ke liye
+Internet access provide karne ke liye
+Distributed applications run karne ke liye
+
+# Docker Ports
+
+Ports container ke application ko host machine ya external users ke liye accessible banate hain.
+
+Why Ports are Used?
+Application expose karne ke liye
+User access provide karne ke liye
+Web services run karne ke liye
+External communication enable karne ke liye
+
+Example:
+Container ke andar application port 80 par chal rahi hai aur host par port 8080 se access ki ja sakti hai.
+
+# Bridge Network
+
+Bridge Docker ka default network driver hai jo ek hi host par running containers ko connect karta hai.
+
+Why Bridge Network is Used?
+Container-to-container communication ke liye
+Isolated network create karne ke liye
+Default Docker networking provide karne ke liye
+
+# Host Network
+
+Host Network me container directly host machine ka network use karta hai.
+
+Isme container ka apna separate network namespace nahi hota.
+
+Why Host Network is Used?
+Better network performance ke liye
+Low latency communication ke liye
+Direct host network access ke liye
+
+# Overlay Network
+
+Overlay Network multiple Docker hosts ke containers ko connect karta hai.
+
+Ye mostly Docker Swarm aur distributed environments me use hota hai.
+
+Why Overlay Network is Used?
+Multi-host communication ke liye
+Distributed applications ke liye
+Cluster environments ke liye
+
+# Create Network
+
+Docker me custom network create karke containers ko logically group kiya ja sakta hai.
+
+Why Custom Network is Used?
+Better isolation ke liye
+Security improve karne ke liye
+Application-specific communication ke liye
+
+# Connect Containers
+
+Containers ko same network me connect karke unke beech communication establish kiya jata hai.
+
+Why Container Connection is Used?
+Frontend aur backend communication ke liye
+Application services connect karne ke liye
+Database access provide karne ke liye
+
+# Container Communication
+
+Jab ek container dusre container se data exchange karta hai, ise Container Communication kehte hain.
+
+Why Container Communication is Important?
+Microservices architecture ke liye
+Service interaction ke liye
+Data sharing ke liye
+Distributed applications ke liye
+
+Example:
+Frontend Container → Backend Container → Database Container
+
+#  Default Bridge Network
+
+Docker install hone ke baad automatically ek default bridge network create hota hai.
+
+Agar koi custom network specify nahi kiya jata, to containers isi network par run hote hain.
+
+Why Default Bridge Network is Used?
+Basic container communication ke liye
+Quick setup ke liye
+Small applications ke liye
+Default networking environment provide karne ke liye
+
+
+> Interview Purpose (English)
+
+Q: What is Docker Engine?
+A: Docker Engine is the core runtime that builds, runs, and manages Docker containers.
+
+Q: What is Docker Daemon?
+A: Docker Daemon is a background service that manages Docker objects such as containers, images, networks, and volumes.
+
+Q: Why do we use Docker Storage?
+A: Docker Storage is used to persist and manage container data beyond the container lifecycle.
+
+Q: What is Docker Networking?
+A: Docker Networking enables communication between containers and external systems.
+
+Q: What is a Bridge Network?
+A: A Bridge Network is the default Docker network that allows containers on the same host to communicate.
+
+Q: What is an Overlay Network?
+A: An Overlay Network connects containers running on multiple Docker hosts.
+
+Q: Why is Container Communication important?
+A: It allows different services and microservices to interact and exchange data efficiently.

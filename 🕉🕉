@@ -1,0 +1,336 @@
+# 🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉
+✅ Do your homework.
+✅ Use learning resources.
+
+
+https://escbash.com
+# Recommended Learning Order
+1. Linux
+2. Networking
+3. Git & GitHub
+4. Shell Scripting
+5. Cloud Computing Basics
+6. AWS
+7. Docker
+8. Kubernetes
+9. Jenkins (CI/CD)
+10. Terraform
+11. Ansible
+12. Monitoring & Logging
+13. Security
+14. DevOps Concepts
+15. Real-world Projects
+16. Interview Preparation
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# DevOps Roadmap Content
+1. DevOps Mindset & Roles
+2. Foundations
+(Linux / Scripting, Networking, & Cloud)
+3. Delivery Pipeline
+(Git, CI/CD, Docker, Kubernetes & DevSecOps)
+4. Infrastructure Layer
+(IaC, GitOps, Observability & AI Infrastructure)
+
+# job title
+DevOps Engineer
+Cloud Engineer
+Cloud Developer
+AWS Support Engineer
+
+
+# need remem
+everything is fine and healthy.
+run consistently across environments."
+the couple of person look
+minimum intervation
+administrative affort
+i naver heart this
+sounding and being preapparation
+bishudh chutiya
+monatering
+scaling
+Rolling Updation
+Self Healing chacking
+
+
+Nehasri V
+Kukatikonda Mallikarjuna
+Rashim Duggal
+
+
+
+
+<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<>>>
+# Cloud Computing
+Designing, deploying, and managing cloud infrastructure.
+
+Cloud Computing is the delivery of computing services such as servers, storage, databases, networking, software, and analytics over the internet ("the cloud") instead of using local computers or physical servers.
+
+> Key Features
+On-demand access to resources
+Pay-as-you-use pricing
+Scalability (increase/decrease resources easily)
+High availability
+Remote access from anywhere
+
+>> Example
+Instead of buying your own server, you can use services from Amazon Web Services (AWS), Microsoft Azure, or Google Cloud to host applications and store data.
+
+# DevOps
+Automating software delivery and operations.
+
+DevOps is a set of practices, tools, and a culture that combines Development (Dev) and Operations (Ops) to improve software development, testing, deployment, and maintenance.
+
+> Key Goals
+Faster software delivery
+Better collaboration between teams
+Automation of repetitive tasks
+Continuous integration and deployment (CI/CD)
+Improved software quality and reliability
+
+> Common DevOps Tools
+Git
+GitHub
+Jenkins
+Docker
+Kubernetes
+Ansible
+Terraform
+
+> Example
+A developer writes code → Git stores the code → Jenkins automatically tests it → Docker packages the application → Kubernetes deploys it to the cloud.
+
+
+# difference:
+1. Definition
+Cloud Computing: Provides computing resources (servers, storage, databases, networking, etc.) over the internet.
+
+DevOps: A culture and methodology that combines Development (Dev) and Operations (Ops) to automate software delivery.
+
+2. Main Objective
+Cloud Computing: To provide scalable and on-demand IT resources.
+DevOps: To speed up software development, testing, and deployment.
+
+3. Focus Area
+Cloud Computing: Infrastructure, platforms, and cloud services.
+DevOps: Software development lifecycle and operations.
+
+4. Purpose
+Cloud Computing: To reduce the need for physical hardware and data centers.
+DevOps: To improve collaboration and automate workflows.
+
+5. Working Principle
+Cloud Computing: Delivers resources through the internet.
+
+DevOps: Uses automation and collaboration to deliver software continuously.
+
+6. Users
+Cloud Computing: Cloud Engineers, System Administrators, IT Teams.
+DevOps: Developers, DevOps Engineers, SREs, Operations Teams.
+
+7. Key Components
+Cloud Computing: Servers, Storage, Databases, Networking, Virtual Machines.
+DevOps: CI/CD, Version Control, Automation, Monitoring, Containerization.
+
+8. Service Models
+Cloud Computing:
+IaaS (Infrastructure as a Service)
+PaaS (Platform as a Service)
+SaaS (Software as a Service)
+
+DevOps:
+Continuous Integration (CI)
+Continuous Delivery (CD)
+Continuous Deployment
+Continuous Monitoring
+
+9. Deployment Models
+Cloud Computing:
+Public Cloud
+Private Cloud
+Hybrid Cloud
+Multi-Cloud
+
+DevOps:
+Not based on deployment models.
+
+Uses deployment strategies such as Blue-Green Deployment and Canary Deployment.
+
+10. Automation
+Cloud Computing: Automates infrastructure provisioning and scaling.
+
+DevOps: Automates building, testing, deployment, and monitoring.
+
+11. Scalability
+Cloud Computing: Easily scales resources up or down.
+
+DevOps: Helps applications handle scaling through automation.
+
+12. Cost
+Cloud Computing: Pay-as-you-use pricing model.
+
+DevOps: Reduces operational costs through automation.
+
+13. Security
+Cloud Computing: Focuses on cloud infrastructure security.
+
+DevOps: Uses DevSecOps practices to integrate security into development.
+
+14. Speed
+Cloud Computing: Quickly provides resources.
+DevOps: Quickly delivers software updates and features.
+
+15. Tools
+Cloud Computing:
+AWS
+Azure
+Google Cloud Platform (GCP)
+
+DevOps:
+Git
+Jenkins
+Docker
+Kubernetes
+Ansible
+Terraform
+
+16. Output
+Cloud Computing: Provides infrastructure and cloud services.
+
+DevOps: Provides faster and more reliable software delivery.
+
+17. Example
+Cloud Computing: Hosting a website on AWS EC2.
+
+DevOps: Using Git, Jenkins, Docker, and Kubernetes to deploy that website automatically.
+
+18. Career Roles
+Cloud Computing:
+Cloud Engineer
+Cloud Architect
+Cloud Administrator
+Solutions Architect
+
+DevOps:
+DevOps Engineer
+Site Reliability Engineer (SRE)
+Automation Engineer
+Release Engineer
+
+19. Advantages
+Cloud Computing:
+High scalability
+Cost-effective
+Global access
+High availability
+
+DevOps:
+Faster releases
+Better collaboration
+Reduced errors
+Increased productivity
+
+
+
+# DevOps Engineer
+> Responsibilities
+Build and maintain CI/CD pipelines
+Automate deployments
+Manage Docker and Kubernetes
+Monitor applications and infrastructure
+Implement Infrastructure as Code (Terraform, Ansible)
+Improve system reliability and uptime
+
+> Best if you enjoy:
+Automation
+Coding and scripting
+Solving deployment problems
+Working with developers
+
+# Cloud Engineer
+> Responsibilities
+Design cloud infrastructure
+Configure virtual networks, storage, and compute
+Manage cloud security and IAM
+Optimize cloud costs
+Migrate applications to the cloud
+Ensure high availability and disaster recovery
+> Best if you enjoy:
+Cloud architecture
+Networking
+Security
+Infrastructure design
+
+
+
+# Skills Comparison
+> DevOps
+Linux
+Git
+Docker
+Kubernetes
+Jenkins/GitHub Actions/GitLab CI
+Terraform
+Bash/Python
+Monitoring (Prometheus, Grafana)
+> Cloud
+AWS/Azure/GCP
+VPC/VNet
+IAM
+EC2/VMs
+Storage (S3, Blob Storage)
+Load Balancers
+Terraform
+Cloud security
+
+
+# Career Path
+> Cloud Engineer
+IT Support
+      ↓
+System Administrator
+      ↓
+Cloud Engineer
+      ↓
+Cloud Architect
+
+> DevOps Engineer
+Developer / System Administrator
+            ↓
+DevOps Engineer
+            ↓
+Senior DevOps Engineer
+            ↓
+Platform Engineer / Site Reliability Engineer (SRE)
+
+
+# Which should you choose?
+> Choose Cloud Engineering if you:
+Enjoy infrastructure, networking, and cloud platforms.
+Want to specialize in AWS, Azure, or Google Cloud.
+Are interested in cloud architecture and security.
+
+> Choose DevOps Engineering if you:
+Enjoy automation and scripting.
+Like improving development and deployment workflows.
+Want to work with Docker, Kubernetes, CI/CD, and Infrastructure as Code.
+
+
+
+
+Docker Limitation       	Kubernetes Solution
+Manual Scaling → Containers manually badhane padte hain.	
+Auto Scaling → Pods automatically scale ho jate hain.
+No Self-Healing → Container crash ho jaye to khud restart nahi hota.	
+Self-Healing → Kubernetes automatically restart kar deta hai.
+No Load Balancing → Traffic manually manage karna padta hai.	
+Built-in Load Balancer (Service) → Traffic automatically distribute hota hai.
+Manual Deployment → Deploy manually karna padta hai.	YAML Deployment → YAML file se deployment automate hota hai.
+No Secrets Management → Passwords/keys manage karna difficult hota hai.	
+Secrets & ConfigMaps → Passwords aur configs securely store hote hain.
+Difficult Networking → Container networking complex hoti hai.	
+Built-in Networking → Easy communication between Pods.
+No Rolling Updates → Update ke time downtime ho sakta hai.	
+Rolling Updates & Rollback → Zero downtime update aur old version par wapas ja sakte hain.

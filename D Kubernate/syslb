@@ -1,0 +1,599 @@
+🟢 LEVEL 1 — Kubernetes Fundamentals
+Kubernetes Introduction
+Kubernetes History
+Why Kubernetes?
+Kubernetes Use Cases
+Kubernetes Features
+Kubernetes vs Docker
+Kubernetes vs Docker Compose
+Monolithic vs Microservices
+Kubernetes Objects
+Declarative Configuration
+Desired State vs Current State
+Kubernetes Control Loop
+Kubernetes Cluster
+Kubernetes Node
+Kubernetes Pod
+Kubernetes Container
+Kubernetes Workload
+Kubernetes Namespace
+
+🟢 LEVEL 2 — Kubernetes Architecture
+Kubernetes Architecture
+Control Plane
+Worker Node
+Master Node
+kube-apiserver
+etcd
+kube-scheduler
+kube-controller-manager
+cloud-controller-manager
+kubelet
+kube-proxy
+Container Runtime
+Kubernetes API
+Kubernetes API Server Flow
+Controller Pattern
+Reconciliation Loop
+Kubernetes Cluster Communication
+Control Plane vs Worker Node
+
+🟢 LEVEL 3 — kubectl
+kubectl Introduction
+kubectl Installation
+kubectl Configuration
+kubeconfig
+kubectl Context
+kubectl Cluster Info
+kubectl Get
+kubectl Describe
+kubectl Create
+kubectl Apply
+kubectl Delete
+kubectl Edit
+kubectl Explain
+kubectl Logs
+kubectl Exec
+kubectl Port-Forward
+kubectl Label
+kubectl Annotate
+kubectl Scale
+kubectl Rollout
+kubectl Top
+kubectl Events
+kubectl Debug
+kubectl Diff
+kubectl Output Formats
+kubectl JSONPath
+
+🟢 LEVEL 4 — Kubernetes Cluster Setup
+Local Kubernetes Cluster
+KIND
+KIND Cluster
+KIND Configuration
+Multi-Node KIND Cluster
+Minikube
+Minikube Cluster
+Minikube Addons
+kubeadm
+kubeadm Cluster
+Control Plane Setup
+Worker Node Join
+Cluster Initialization
+Cluster Upgrade
+Cluster Reset
+Cluster Troubleshooting
+🟡 LEVEL 5 — YAML & Kubernetes Manifests
+Kubernetes YAML
+YAML Structure
+apiVersion
+kind
+metadata
+spec
+status
+Labels
+Selectors
+Annotations
+Namespaces in YAML
+Object References
+Manifest Files
+Multi-Document YAML
+Declarative Configuration
+Imperative vs Declarative Approach
+
+🟡 LEVEL 6 — Pods
+Pod
+Pod Lifecycle
+Pod Phase
+Pod Conditions
+Pod Status
+Single Container Pod
+Multi-Container Pod
+Pod YAML
+Pod Creation
+Pod Deletion
+Pod Restart Policy
+Pod Networking
+Pod IP
+Pod Communication
+Pod Environment Variables
+Pod Volumes
+Pod Security Context
+Pod Lifecycle Hooks
+Pod Disruption
+Pod Troubleshooting
+🟡 LEVEL 7 — Workloads
+Deployments
+Deployment
+Deployment YAML
+Deployment Strategy
+Rolling Update
+Recreate Strategy
+Rollout
+Rollout History
+Rollout Pause
+Rollout Resume
+Rollback
+Scaling Deployment
+ReplicaSets
+ReplicaSet
+ReplicaSet Controller
+Replica Management
+ReplicaSet vs Deployment
+StatefulSets
+StatefulSet
+StatefulSet Identity
+Stable Network Identity
+Stable Storage
+Ordered Deployment
+Ordered Scaling
+StatefulSet vs Deployment
+DaemonSets
+DaemonSet
+DaemonSet Scheduling
+DaemonSet Use Cases
+DaemonSet Updates
+Jobs
+Job
+Job Completion
+Job Parallelism
+Job Backoff
+Job Cleanup
+CronJobs
+CronJob
+Cron Schedule
+CronJob Concurrency
+CronJob History
+CronJob Cleanup
+🟡 LEVEL 8 — Labels, Selectors & Annotations
+Labels
+Label Selectors
+Equality-Based Selectors
+Set-Based Selectors
+Selector Matching
+Annotations
+Labels vs Annotations
+Object Identification
+Resource Organization
+🟡 LEVEL 9 — Kubernetes Services
+Service
+Service Discovery
+Service Networking
+ClusterIP
+NodePort
+LoadBalancer
+ExternalName
+Headless Service
+Service Selectors
+Service Ports
+TargetPort
+Port
+NodePort
+DNS-Based Service Discovery
+Kubernetes DNS
+Endpoint
+EndpointSlice
+Service Troubleshooting
+
+🟡 LEVEL 10 — Kubernetes Networking
+Kubernetes Networking Model
+Pod-to-Pod Networking
+Pod-to-Service Networking
+Node-to-Pod Networking
+Service-to-Service Networking
+Cluster DNS
+CoreDNS
+CNI
+Container Network Interface
+Network Plugins
+Network Policies
+Ingress Networking
+Egress Networking
+NetworkPolicy
+Ingress vs Service
+Kubernetes Network Troubleshooting
+
+🟡 LEVEL 11 — Ingress
+Ingress
+Ingress Controller
+Ingress Resources
+Ingress Rules
+Host-Based Routing
+Path-Based Routing
+Default Backend
+TLS Ingress
+Ingress Annotations
+Ingress Classes
+Ingress Troubleshooting
+
+🟠 LEVEL 12 — Kubernetes Storage
+Kubernetes Storage
+Ephemeral Storage
+Volumes
+Volume Types
+EmptyDir
+HostPath
+Persistent Storage
+PersistentVolume
+PersistentVolumeClaim
+StorageClass
+Dynamic Provisioning
+Static Provisioning
+Volume Binding
+Access Modes
+ReadWriteOnce
+ReadOnlyMany
+ReadWriteMany
+ReadWriteOncePod
+Reclaim Policies
+Volume Expansion
+CSI
+Container Storage Interface
+Volume Snapshots
+StatefulSet Storage
+
+🟠 LEVEL 13 — ConfigMaps & Secrets
+ConfigMaps
+ConfigMap
+ConfigMap YAML
+Environment Variables
+ConfigMap as Volume
+ConfigMap Updates
+Secrets
+Secret
+Secret Types
+Secret as Environment Variable
+Secret as Volume
+Secret Encryption
+Secret Management
+ConfigMap vs Secret
+🟠 LEVEL 14 — Resources & Scheduling
+Resource Management
+CPU Requests
+CPU Limits
+Memory Requests
+Memory Limits
+Resource Requests vs Limits
+QoS Classes
+Guaranteed
+Burstable
+BestEffort
+Resource Quotas
+ResourceQuota
+Namespace Resource Quota
+Object Count Quota
+LimitRange
+LimitRange
+Default Requests
+Default Limits
+🟠 LEVEL 15 — Kubernetes Scheduling
+Kubernetes Scheduler
+Scheduling Lifecycle
+Node Selection
+nodeSelector
+Node Labels
+Node Affinity
+Node Anti-Affinity
+Pod Affinity
+Pod Anti-Affinity
+Taints
+Tolerations
+Priority Classes
+Preemption
+Topology Spread Constraints
+Scheduling Constraints
+Custom Scheduling
+Scheduler Profiles
+
+🟠 LEVEL 16 — Health Checks & Probes => done
+Kubernetes Probes
+Liveness Probe
+Readiness Probe
+Startup Probe
+HTTP Probe
+TCP Probe
+gRPC Probe
+Exec Probe
+Probe Configuration
+Probe Failure
+Container Restart
+Readiness vs Liveness
+Startup vs Liveness
+
+🔴 LEVEL 17 — Kubernetes Security
+Kubernetes Security Architecture
+Authentication
+Authorization
+Admission Control
+Authentication vs Authorization
+RBAC
+Role
+ClusterRole
+RoleBinding
+ClusterRoleBinding
+ServiceAccounts
+User Accounts
+Security Context
+Pod Security
+Pod Security Standards
+Privileged Pods
+Capabilities
+Linux Security Context
+Seccomp
+AppArmor
+SELinux
+Network Policies
+Secret Security
+API Security
+Admission Controllers
+Validating Admission
+Mutating Admission
+Encryption at Rest
+🔴 LEVEL 18 — Autoscaling
+Kubernetes Autoscaling
+Horizontal Pod Autoscaler
+HPA
+CPU-Based Scaling
+Memory-Based Scaling
+Custom Metrics
+External Metrics
+Metrics Server
+Vertical Pod Autoscaler
+VPA
+VPA Update Modes
+Cluster Autoscaler
+Pod Autoscaling
+Node Autoscaling
+HPA vs VPA
+HPA vs Cluster Autoscaler
+
+🔴 LEVEL 19 — Kubernetes Observability
+Monitoring
+Kubernetes Monitoring
+Metrics
+Metrics Server
+Kubernetes Dashboard
+Resource Metrics
+Node Metrics
+Pod Metrics
+Container Metrics
+Logging
+Kubernetes Logging
+Container Logs
+Pod Logs
+Node Logs
+Centralized Logging
+Events
+Kubernetes Events
+Event Investigation
+Advanced Observability
+Prometheus
+Grafana
+Alertmanager
+OpenTelemetry
+Distributed Tracing
+Kubernetes Observability
+🔴 LEVEL 20 — Kubernetes Troubleshooting
+Cluster Troubleshooting
+Node Troubleshooting
+Pod Troubleshooting
+Container Troubleshooting
+Deployment Troubleshooting
+ReplicaSet Troubleshooting
+Service Troubleshooting
+DNS Troubleshooting
+Network Troubleshooting
+Storage Troubleshooting
+Scheduling Troubleshooting
+CrashLoopBackOff
+ImagePullBackOff
+ErrImagePull
+Pending Pods
+Evicted Pods
+OOMKilled
+ContainerNotReady
+NodeNotReady
+Failed Mount
+Failed Scheduling
+Kubernetes Events
+kubectl describe
+kubectl logs
+kubectl exec
+kubectl debug
+🔴 LEVEL 21 — Kubernetes API
+Kubernetes API
+REST API
+API Server
+API Resources
+API Groups
+API Versions
+Core API Group
+Named API Groups
+Resource Types
+API Discovery
+API Authentication
+API Authorization
+API Requests
+API Objects
+API Extensions
+Kubernetes Client Libraries
+🔴 LEVEL 22 — Custom Resources & Operators
+Custom Resource
+Custom Resource Definition
+CRD
+Custom API Resources
+Custom Controllers
+Controller Pattern
+Operator Pattern
+Kubernetes Operators
+Operator Lifecycle
+Operator SDK
+Reconciliation
+Finalizers
+Owner References
+Garbage Collection
+Admission Webhooks
+Mutating Webhook
+Validating Webhook
+🔴 LEVEL 23 — Helm
+Helm
+Helm Architecture
+Helm CLI
+Helm Charts
+Chart Structure
+Chart.yaml
+values.yaml
+Templates
+Template Functions
+Template Variables
+Helm Install
+Helm Upgrade
+Helm Rollback
+Helm Uninstall
+Helm Release
+Helm Repository
+Helm Dependencies
+Helm Hooks
+Helm Secrets
+Helm Chart Development
+Helm Chart Testing
+🔴 LEVEL 24 — Advanced Pod Patterns
+Multi-Container Pods
+Sidecar Containers
+Init Containers
+Sidecar Pattern
+Ambassador Pattern
+Adapter Pattern
+Init Container Lifecycle
+Container Lifecycle
+Ephemeral Containers
+Debug Containers
+Shared Volumes
+Shared Network Namespace
+🔴 LEVEL 25 — Kubernetes Advanced Networking
+CNI Architecture
+CNI Plugins
+NetworkPolicy
+Ingress Controllers
+Gateway API
+GatewayClass
+Gateway
+HTTPRoute
+TLSRoute
+Service Mesh
+Sidecar Proxy
+Istio
+Control Plane vs Data Plane
+Traffic Management
+Traffic Routing
+Load Balancing
+Service-to-Service Communication
+mTLS
+Circuit Breaking
+Traffic Splitting
+Canary Traffic
+Observability in Service Mesh
+🔴 LEVEL 26 — Kubernetes Deployment Strategies
+Rolling Deployment
+Recreate Deployment
+Blue-Green Deployment
+Canary Deployment
+A/B Deployment
+Progressive Delivery
+Traffic Splitting
+Rollback Strategy
+Zero-Downtime Deployment
+Deployment Verification
+🔴 LEVEL 27 — Kubernetes High Availability
+Highly Available Kubernetes Cluster
+Control Plane HA
+etcd HA
+Multiple Control Plane Nodes
+API Server HA
+Scheduler HA
+Controller Manager HA
+Worker Node HA
+Pod Availability
+Replica Management
+Pod Disruption Budget
+PDB
+Node Failure
+Control Plane Failure
+Disaster Recovery
+Backup & Restore
+etcd Backup
+Cluster Recovery
+🔴 LEVEL 28 — Kubernetes Production Concepts
+Production Cluster Architecture
+Cluster Security
+Cluster Networking
+Cluster Storage
+Cluster Scaling
+Cluster Upgrades
+Application Upgrades
+Node Maintenance
+Node Draining
+Node Cordon
+Node Uncordon
+Pod Disruption Budget
+Resource Management
+Capacity Planning
+Availability
+Reliability
+Disaster Recovery
+Backup Strategy
+Multi-Cluster Kubernetes
+Cluster Federation Concepts
+🔥 LEVEL 29 — GitOps & Kubernetes
+GitOps
+Declarative Kubernetes
+Git as Source of Truth
+Continuous Delivery
+Kubernetes GitOps
+Argo CD
+Flux
+GitOps Repository Structure
+Application Synchronization
+Automatic Sync
+Manual Sync
+Drift Detection
+GitOps Rollback
+Progressive Delivery
+
+🔥 LEVEL 30 — Kubernetes Advanced Ecosystem
+Kubernetes Operators
+CRDs
+Admission Controllers
+Admission Webhooks
+Service Mesh
+Gateway API
+CSI
+CNI
+Device Plugins
+Dynamic Resource Allocation
+Kubernetes Extensions
+Kubernetes Controllers
+Kubernetes Scheduler Extensions
+Kubernetes API Extensions
+Custom Controllers
+Custom Schedulers
