@@ -1,0 +1,195 @@
+
+🟡 6. Dockerfile & Images
+What is Dockerfile
+Dockerfile Syntax
+Docker Instructions (FROM, RUN, CMD, COPY, ENTRYPOINT)
+What is Docker Image
+Image Layers
+Build Image (docker build)
+Optimize Docker Image
+Multi-stage Build
+Build Web Server Dockerfile
+
+# Dockerfile & Images
+Docker me application ko container ke andar run karne ke liye hume Docker Image ki zaroorat hoti hai. Ye image ek blueprint ki tarah hoti hai jisme application, dependencies, libraries aur configuration sab kuch hota hai. Docker Image banane ke liye hum Dockerfile ka use karte hain.
+
+# 1. What is Dockerfile?
+Dockerfile ek text file hoti hai jisme instructions likhi hoti hain ki Docker Image kaise create karni hai.
+> Simple words me:
+👉 Dockerfile = Recipe
+👉 Docker Image = Prepared Food
+👉 Docker Container = Served Food
+
+Jab hum Dockerfile ko build karte hain, tab Docker usse Image banata hai aur Image se Container run hota hai.
+
+> Example Dockerfile
+FROM ubuntu
+RUN apt update
+CMD ["echo","Hello Docker"]
+> Is Dockerfile me:
+Ubuntu base image use ho rahi hai.
+Package update ho raha hai.
+Container start hone par "Hello Docker" print hoga.
+
+# 2. Dockerfile Syntax
+Dockerfile line-by-line instructions ka collection hota hai.
+> General Syntax:
+INSTRUCTION argument
+> Example:
+FROM node:20
+WORKDIR /app
+COPY . .
+RUN npm install
+CMD ["npm","start"]
+
+Docker upar se niche tak instructions execute karta hai.
+
+# 3. Important Docker Instructions
+> FROM
+FROM instruction base image specify karti hai.
+Har Dockerfile FROM se start hoti hai.
+
+Example:
+FROM ubuntu:22.04
+Ya
+FROM node:20-alpine
+> Q: Why is FROM mandatory?
+A: It specifies the base image on which the new image will be built.
+
+> RUN
+> COPY
+WORKDIR
+ADD
+RUN
+CMD
+ENTRYPOINT
+EXPOSE
+ENV
+
+
+# 4. What is Docker Image?
+Docker Image ek read-only template hai jisse containers create hote hain.
+
+> Image ke andar:
+Application Code
+Libraries
+Dependencies
+Runtime
+Environment Configurations
+
+> Store Location:
+Docker Hub
+Private Registry
+Local System
+
+Example:
+// docker pull nginx
+Ye nginx image download karega.
+
+Images dekhne ke liye:
+// docker images
+
+# 5. Image Layers
+Docker Image multiple layers se milkar banti hai.
+> Example:
+FROM ubuntu
+RUN apt update
+RUN apt install nginx
+COPY . .
+
+> Layers:
+Layer 1 → Ubuntu
+Layer 2 → apt update
+Layer 3 → nginx install
+Layer 4 → application files
+
+> Benefits
+✅ Faster Builds
+✅ Reusability
+✅ Less Storage
+✅ Caching
+
+# 6. Build Image (docker build)
+Dockerfile se Image create karne ke liye:
+// docker build -t myapp .
+
+Explanation:
+docker build → build image
+-t → image name
+myapp → image name
+. → current directory
+
+# 7. Optimize Docker Image
+Production me image size kam rakhna important hai.
+> Use Lightweight Images
+Bad:
+FROM ubuntu
+
+Good:
+FROM node:20-alpine
+
+Alpine image bahut chhoti hoti hai.
+
+# 8. Multi-stage Build
+Multi-stage build ka use image size kam karne ke liye hota hai.
+Pehle stage me application build hoti hai.
+Dusre stage me sirf required files copy hoti hain.
+
+
+# Multi-Stage Docker Builds
+ A Multi-Stage Docker Build is a Docker feature that allows multiple FROM statements in a single Dockerfile. It helps separate the build environment from the runtime environment, resulting in smaller and more secure images.
+
+
+# 9. Build Web Server Dockerfile
+
+
+
+
+
+
+> Why do we use Multi-Stage Builds?
+Answer:
+Reduce image size
+Improve security
+Remove unnecessary build tools
+Faster deployments
+Better performance
+
+> How does a Multi-Stage Build work?
+Answer:
+The first stage compiles/builds the application, and the final stage copies only the required artifacts into a clean runtime image.
+
+> What problem does Multi-Stage Build solve?
+Answer:
+It prevents build dependencies, source code, and temporary files from being included in the final production image.
+
+> What are the benefits of Multi-Stage Builds?
+Answer:
+Smaller image size
+Better security
+Faster image transfer
+Lower storage usage
+Cleaner Dockerfiles
+
+
+
+Q1. What is Dockerfile?
+A Dockerfile is a text file containing instructions to build a Docker Image.
+
+Q2. What is Docker Image?
+A Docker Image is a read-only template used to create containers.
+
+Q3. What is the purpose of RUN instruction?
+RUN executes commands during image build time.
+
+Q4. What is COPY instruction?
+COPY transfers files from the local machine into the Docker Image.
+
+Q5. Difference between CMD and ENTRYPOINT?
+CMD provides a default command, while ENTRYPOINT defines the main executable.
+
+Q6. What is Multi-stage Build?
+It is a technique to reduce image size by separating build and production stages.
+
+Q7. Why do we use Alpine images?
+Because they are lightweight, secure, and reduce image size.

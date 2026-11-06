@@ -1,0 +1,65 @@
+yaha pe interview me pucha huaa, intragram se, and find for interview Question milega and bad me "A firstAdin" me dal dena 
+
+
+# All this is interview asked
+
+Difference between Readiness, Liveness and Startup Probes.
+Explain the difference between Rolling, Blue-Green, and Canary Deployments.
+How would you implement a zero-downtime deployment? Explain with example.
+Explain REST APIs vs Webhooks with real-time use cases.
+Explain the role of Ingress Controller & Service Mesh.
+How do you store & manage secrets in DevOps?
+Explain Infrastructure as Code using Terraform / CloudFormation.
+What are DevOps best practices that you follow in real-world projects?
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# infosys interiew
+Tell Me about Yourself / Introduce Yourself.
+What is GLB, ALB, and NLB?
+What are the different types of EBS?
+What is local in Kubernetes?
+What is Local.tf in Terraform?
+What is the purpose of using terraform import and terraform refresh commands?
+How to install Kubernetes on a Linux machine?
+Tell me about Ansible and describe how to write a Playbook?
+What is AWS Lambda and what is the purpose of using Lambda?
+What is the difference between a Security Group and a NACL?
+What is the difference between Terraform and CloudFormation?
+What is an IGW? Explain the VPC architecture.
+How do you check CPU metrics in a Linux/Cloud environment?
+What is the difference between CloudTrail and CloudWatch?
+What is an Event Rule?
+What is S3 Versioning?
+What is a Snapshot and what is an AMI? Why are they used?
+What are PV (Persistent Volume) and PVC (Persistent Volume Claim) in Kubernetes?
+What are HPA (Horizontal Pod Autoscaler) and VPA (Vertical Pod Autoscaler)?
+What are the Data Analytics tools available in AWS?
+
+<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+
+Which AWS Services are you using in your project?
+Can you please explain the Architecture of the project?
+What is the role of NAT?
+NACL & Security Group difference?
+How do you troubleshoot an unhealthy ALB target?
+How does an application in a private subnet access AWS 
+Services?
+Have you used Terraform? What services have you deployed 
+using Terraform? Can you create a VPC for launching EC2?
+What is the terraform init command?
+Explain Kubernetes (K8s) Architecture.
+Deployments vs StatefulSets? How is it different from stateless and stateful applications?
+How did you troubleshoot a CrashLoopBackOff or image error?
+Your HPA is configured but Pods are not increasing. What will you check?
+
+<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>

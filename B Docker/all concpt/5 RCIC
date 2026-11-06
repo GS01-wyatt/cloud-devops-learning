@@ -1,0 +1,75 @@
+
+🟡 5. Running Commands Inside Container
+docker exec
+Interactive Mode (-it)
+Bash inside containez
+Running processes inside container
+
+
+# 5. Running Commands Inside Container
+When a Docker container is running, we often need to interact with it to check logs, troubleshoot issues, view files, install packages, or monitor running applications. Docker provides the docker exec command to execute commands inside a running container without stopping or restarting it.
+
+
+# 1. docker exec
+ docker exec runs a command inside an already running container.
+> Why is it used?
+Check files
+Install packages
+Debug applications
+View logs
+Execute Linux commands
+Access the container terminal
+
+Syntax
+// docker exec [OPTIONS] CONTAINER COMMAND
+Example
+// docker exec mycontainer ls
+This lists all files inside the mycontainer container.
+
+# 2. Interactive Mode (-it)
+Interactive mode allows users to directly access and interact with the container's terminal.
+
+> Options Used
+-i (Interactive): Keeps standard input open.
+-t (Terminal): Allocates a terminal session.
+Example
+// docker exec -it mycontainer bash
+This command opens an interactive Bash shell inside the container.
+
+> Benefits
+Execute Linux commands directly.
+Troubleshoot applications.
+Modify files temporarily.
+Verify installed software.
+
+# 3. Bash Inside a Container
+Most Linux-based Docker containers provide a shell environment such as Bash.
+> Accessing Bash
+// docker exec -it mycontainer bash
+After running the command, you enter the container shell:
+// root@container-id:/#
+Now you can run Linux commands such as:
+pwd
+ls
+cd
+cat
+ps
+
+> If Bash is Not Available
+Some lightweight images (like Alpine Linux) do not include Bash.
+> Use:
+docker exec -it mycontainer sh
+
+
+# 4. Running Processes Inside a Container
+A container runs one main process, but additional commands and processes can be executed inside it.
+> View Running Processes
+// docker exec mycontainer ps
+Displays currently running processes.
+
+Monitor Processes
+// docker exec -it mycontainer top
+Shows real-time CPU and memory usage.
+> Run a Specific Command
+// docker exec mycontainer date
+Displays the current date and time inside the container.

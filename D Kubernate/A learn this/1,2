@@ -1,0 +1,308 @@
+🟢 1. Kubernetes Fundamentals — MUST LEARN
+# Kubernetes Introduction
+Kubernetes ek Container Orchestration Platform hai jo containers ko automatically manage karta hai.
+
+> Simple language me:
+Docker ek container banata aur chalata hai. Kubernetes bahut saare Docker containers ko manage karta hai.
+
+Example: Agar tumhari website ke 1000 users aa jaye, to Kubernetes automatically aur containers start kar sakta hai.
+> Real-life Example
+Socho ek restaurant hai.
+Docker = Ek chef jo ek dish banata hai.
+Kubernetes = Restaurant manager jo decide karta hai kitne chef chahiye, kaun kaam karega, aur agar koi chef chala jaye to naya chef la deta hai.
+
+> Why Kubernetes?
+Agar sirf Docker use karo:
+Container crash ho sakta hai.
+Traffic badhne par manually naye containers chalane padenge.
+Multiple servers par manage karna difficult hai.
+
+Kubernetes ye sab automatically karta hai.
+> Kubernetes ki zarurat kyun padi?
+Sirf Docker use karne par problems:
+Bahut saare containers ko manually manage karna padta hai.
+Container crash ho gaya to khud restart karna padega.
+Traffic badhne par manually aur containers banana padta hai.
+Multiple servers par containers chalana difficult hai.
+> kya karta hai
+deployment-contain launch karta hai
+scaling-trafic badhe to aur container bana deta h
+self-Healing-crash container ko restart karta h
+load balancing- traffic ko distribute karta h
+Rolling updates-app update bina downtime ke
+Rollback - problem ho to purana version wapas.
+
+
+# Why Kubernetes?
+Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, networking, and management of containerized applications.
+
+> Why do we use Kubernetes?
+Automates application deployment.
+Scales applications based on traffic.
+Restarts failed containers automatically (Self-Healing).
+Distributes traffic using Load Balancing.
+Performs Rolling Updates with minimal downtime.
+Supports Rollback if a deployment fails.
+
+Manages applications across multiple servers.
+
+One-line interview answer: Kubernetes is used to efficiently manage Docker containers in production by providing automation, scalability, and high availability.
+
+
+# Kubernetes 
+Kubernetes (K8s) is an open-source container orchestration tool originally developed by Google and now maintained by the Cloud Native Computing Foundation (CNCF).
+
+> Main Components
+Control Plane: Manages the cluster.
+Worker Node: Runs applications.
+Pod: Smallest deployable unit containing one or more containers.
+Service: Provides network access to Pods.
+Deployment: Manages Pod creation, scaling, and updates.
+
+> Simple Flow
+Developer → kubectl → API Server → Scheduler → Worker Node → Pod → Container
+
+# Monolithic vs Microservices
+Monolithic: A single application where all features are built and deployed together.
+
+Microservices: An architecture where an application is divided into independent services that can be developed, deployed, and scaled separately.
+
+> Monolithic
+> Microservices
+Single large application
+Multiple small independent services
+One codebase
+Separate codebase for each service
+Single deployment
+Independent deployment
+Scaling the entire application
+Scale only the required service
+One technology stack
+Different technologies can be use
+Failure can affect the whole app
+Failure is isolated to one service
+> Example
+Monolithic: One application contains Login, Payment, Orders, and Profile together.
+Microservices: Login, Payment, Orders, and Profile run as separate services and communicate through APIs.
+
+# Kubernetes Architecture
+Kubernetes Architecture consists of Control Plane (Master Node) and Worker Nodes that work together to run containerized applications.
+> Working Flow
+Developer runs kubectl apply.
+API Server receives the request.
+Scheduler selects a Worker Node.
+Kubelet creates the Pod.
+Container Runtime starts the container.
+Kube Proxy routes traffic to the Pod.
+> Architecture Summary
+Control Plane: Manages the cluster.
+Worker Nodes: Run applications.
+Pods: Run containers.
+API Server: Accepts requests.
+Scheduler: Chooses where Pods run.
+etcd: Stores cluster data.
+Kubelet: Manages Pods.
+Kube Proxy: Handles networking.
+
+
+# Control Plane Components
+The Control Plane is the brain of the cluster. It manages the entire Kubernetes cluster.
+> Component
+> Purpose
+-API Server
+Entry point for all Kubernetes requests.
+-etcd
+Stores cluster configuration and state.
+-Scheduler
+Assigns Pods to the best Worker Node.
+-Controller Manager
+Ensures the desired state is maintained (restarts failed Pods, creates replicas).
+
+
+# Worker Node Components
+A Worker Node is the machine where Kubernetes actually runs your application inside Pods.
+> Components of a Worker Node
+> Component
+> Purpose
+Kubelet
+Communicates with the Control Plane and ensures Pods are running correctly.
+Container Runtime
+Pulls images and runs containers (containerd, CRI-O, Docker).
+Kube Proxy
+Manages networking and forwards traffic to the correct Pods.
+Pods
+The smallest deployable unit that contains one or more containers.
+
+> How They Work Together
+The Control Plane tells the Worker Node to run a Pod.
+Kubelet receives the instruction.
+The Container Runtime downloads the image and starts the container.
+Kube Proxy routes network traffic to the Pod.
+
+# kubectl — 
+kubectl is the command-line tool used to communicate with the Kubernetes cluster. It sends requests to the API Server to create, update, delete, and manage Kubernetes resources.
+> Common kubectl Command:
+Command
+Purpose
+kubectl get pods      -List all Pods
+kubectl get nodes     -List Worker Nodes
+kubectl get services
+List Services
+kubectl describe pod <name>
+View Pod details
+kubectl logs <pod-name>
+View Pod logs
+kubectl apply -f file.yaml
+Create or update resources
+kubectl delete -f file.yaml
+Delete resources
+kubectl exec -it <pod-name> -- bash
+Enter a Pod
+
+# Kubernetes YAML
+A YAML file is a configuration file used to define Kubernetes resources like Pods, Deployments, and Services.
+> Why YAML?
+Infrastructure as Code (IaC)
+Easy to version with Git
+Repeatable deployments
+
+# Cluster, Node & Pod 
+1. Cluster
+A Cluster is the complete Kubernetes environment consisting of one Control Plane and one or more Worker Nodes.
+Example: One company runs 5 servers managed as one Kubernetes Cluster.
+
+2. Node
+A Node is a physical or virtual machine inside the cluster where applications run.
+Types:
+Control Plane Node – Manages the cluster.
+
+Worker Node – Runs Pods.
+
+3. Pod
+A Pod is the smallest deployable unit in Kubernetes. It contains one or more containers that share the same network and storage.
+
+>Relationship
+A Cluster contains multiple Nodes.
+Each Node runs multiple Pods.
+Each Pod contains one or more Containers.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+🟢 2. Cluster Setup — MUST LEARN
+# KIND 
+— Local Kubernetes cluster using Docker
+KIND ek tool hai jo Docker containers ke andar Kubernetes Cluster banata hai.
+> Why use KIND?
+Lightweight
+Fast cluster creation
+Local practice
+CI/CD testing me bhi use hota hai
+
+> Installation
+winget install Docker.DockerDesktop
+winget install Kubernetes.kind
+>Create Cluster
+kind create cluster --name mycluster
+> Check
+kubectl get nodes
+> Delete Cluster
+kind delete cluster --name mycluster
+
+Interview Answer: KIND Docker containers ke andar Kubernetes cluster create karta hai aur local development aur testing ke liye use hota hai.
+
+
+
+# Minikube 
+— Local Kubernetes learning and testing cluster
+Minikube ek single-node local Kubernetes cluster hai jo learning aur practice ke liye banaya gaya hai.
+> Why use Minikube?
+Beginners ke liye easiest
+Dashboard milta hai
+Kubernetes commands practice kar sakte ho
+
+> Install
+Windows:
+Docker Desktop install karo.
+Minikube install karo.
+> Check version:
+// minikube version
+> Start Cluster
+// minikube start --driver=docker
+> Check Status
+minikube status
+> Open Dashboard
+minikube dashboard
+> Stop Cluster
+minikube stop
+> Delete Cluster
+minikube delete
+
+Interview Answer: Minikube local machine par single-node Kubernetes cluster create karta hai jo learning aur testing ke liye use hota hai.
+
+
+# Kubeadm 
+— Kubernetes cluster installation and initialization
+Kubeadm ek tool hai jo real Kubernetes cluster install aur initialize karta hai.
+> Kubeadm Flow
+Linux servers prepare karo.
+Container Runtime install karo.
+kubeadm init
+Worker Nodes ko kubeadm join se connect karo.
+
+Example:
+kubeadm init
+
+Worker join:
+kubeadm join <token>
+
+
+# AWS Setup 
+— Cloud environment for Kubernetes hands-on
+AWS par Kubernetes chalane ke liye pehle basic cloud environment ready karna padta hai.
+> Required AWS Services
+IAM
+VPC
+EC2
+Security Groups
+AWS CLI
+kubectl
+
+> Basic Flow
+AWS Account banao.
+IAM User create karo.
+AWS CLI configure karo.
+aws configure
+
+Interview Point: Kubernetes cloud me chalane ke liye networking aur permissions pehle configure karni padti hain.
+
+
+# Amazon EKS 
+— Managed Kubernetes service on AWS
+Amazon EKS AWS ka managed Kubernetes service hai.
+
+Matlab Kubernetes ka Control Plane AWS manage karta hai aur tum applications deploy karte ho.
+
+> Why EKS?
+AWS Control Plane manage karta hai.
+High Availability
+Automatic updates
+AWS services ke saath integration
+ 
+> EKS Architecture
+AWS Managed Control Plane
+Worker Nodes (EC2/Fargate)Pods
+Services
+
+>Create EKS Cluster (using eksctl)
+eksctl create cluster \
+--name dev-cluster \
+--region ap-south-1 \
+--nodes 2
+
+Check nodes:
+kubectl get nodes
+
+Delete:
+eksctl delete cluster --name dev-cluster
+
+Priority: Learn Minikube/KIND for practice and EKS for real-world DevOps. Kubeadm only needs basic understanding initially.

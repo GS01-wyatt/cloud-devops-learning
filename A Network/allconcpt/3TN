@@ -1,0 +1,185 @@
+✅ Types of Computer Networks – 
+🔹1. LAN – Local Area Network
+  A Local Area Network (LAN) connects computers and devices within a limited area, like a home, school, or office.
+
+🧠 Key Features:
+High-speed (100 Mbps to 10+ Gbps)
+Low latency and error rate
+Privately managed
+Ideal for internal file sharing, printing, and communication
+ 
+⚙️ Technical Details:
+Range: Up to 1 km
+Speed: 100 Mbps – 10+ Gbps
+Medium: Ethernet cables (Cat5e, Cat6), Wi-Fi
+Protocols: Ethernet (IEEE 802.3), Wi-Fi (802.11), TCP/IP
+
+✅ Use Cases:
+Office and home networks
+School computer labs
+Small business setups
+
+📌 Advantages:
+Fast data transfer
+Secure within local boundaries
+Easy troubleshooting and maintenance
+
+❌ Limitations:
+Limited range (within a building or campus)
+Physical cable setup (for Ethernet LAN)
+
+
+🔹2. WLAN – Wireless Local Area Network
+    A WLAN is a wireless variant of LAN where devices connect via radio waves instead of Ethernet cables.
+
+🧠 Key Features:
+No physical wiring
+Mobility within range of signal
+Operates in 2.4 GHz and 5 GHz frequency bands
+Uses SSIDs and encryption (WPA2/WPA3) for security
+
+⚙️ Technical Details:
+Range: ~100 meters indoors1
+Speed: 100 Mbps – 9.6 Gbps (Wi-Fi 6/6E)
+Standards: IEEE 802.11a/b/g/n/ac/ax
+Security: WPA3 (latest standard
+
+✅ Use Cases:
+Home Wi-Fi networks
+Cafes, airports, malls
+Enterprise wireless environments (BYOD)
+
+📌 Advantages:
+Easy to install and expand
+Enables device mobility
+No physical cable clutter
+
+❌ Limitations:
+Less secure (prone to attacks if open)
+Speed and reliability affected by interference
+
+🔹 3. PAN – Personal Area Network
+📘 Definition:
+A Personal Area Network (PAN) is a very small network used to connect personal devices over short distances (typically <10 meters).
+
+🧠 Key Features:
+Centered around a single user
+Used for short-range, low-data transmission
+Can be wired (USB) or wireless (Bluetooth, Infrared)
+
+🛠 Technologies:
+Bluetooth: For wireless device pairing
+Zigbee: Used in IoT devices
+Infrared: Older tech for line-of-sight connections
+
+✅ Use Cases:
+Smartwatch paired with smartphone
+Bluetooth headset
+File transfer between phone and laptop
+
+📌 Advantages:
+Ultra-low power consumption
+Simple to set up
+No external infrastructure needed
+
+❌ Limitations:
+Very limited range and speed
+
+Not suited for data-intensive or multi-user applications
+
+🔹 4. CAN – Campus Area Network
+📘 Definition:
+A Campus Area Network (CAN) connects multiple LANs across a campus-like environment — such as a university, military base, or large corporation.
+
+🧠 Key Features:
+Covers 1–10 km radius
+speed: 1 Gbps %E2%80%93 100 Gbps
+Managed by a single organization
+Supports high-speed and high-volume data transfer
+Usually has a fiber-optic backbone
+
+🛠 Technologies:
+Fiber Ethernet backbone
+Routers and switches for inter-building LAN connection
+VPN and firewall security solutions
+
+✅ Use Cases:
+College/university campuses (labs, hostels, libraries)
+Corporate headquarters with multiple departments
+Manufacturing plants or research facilities
+
+📌 Advantages:
+Centralized control
+High-speed intra-campus communication
+Scalable to connect thousands of devices
+
+❌ Limitations:
+High initial cost for installation
+Requires skilled network management
+
+🔹 5. MAN – Metropolitan Area Network
+  A Metropolitan Area Network (MAN) spans an entire city or large urban area, interconnecting multiple LANs and CANs.
+
+🧠 Key Features:
+Covers up to 50 km
+May be publicly or privately owned
+Uses high-speed data lines (fiber optic)
+
+Example:
+Ek city ke andar alag-alag college campuses ko connect karna.
+Cable TV network.
+Bank ki city ke andar different branches ko connect karna.
+
+⚙️ Technical Details:
+Range: Up to ~50 km
+Speed: 10 Mbps – 1 Gbps
+Technology: Metro Ethernet, FDDI, DSL
+Provider: Usually operated by ISPs or government
+
+✅ Use Cases:
+City-wide government networks
+University branches across a cit
+Corporate buildings in multiple city locations
+
+📌 Advantages:
+Facilitates centralized data centers
+High-speed communication over wide urban areas
+
+❌ Limitations:
+Expensive to build and maintain
+Performance varies with distance and load
+
+🔹 6. WAN – Wide Area Network
+A Wide Area Network (WAN) spans large geographic areas, connecting networks across countries or continents.
+
+🧠 Key Features:Features:
+Long distance communication provide karta hai.
+Multiple LANs aur MANs ko connect karta hai.
+Data transmission ke liye public ya private communication lines use karta hai.
+Setup aur maintenance cost zyada hoti hai.
+Large-scale organizations aur Internet me use hota hai.
+
+Example:
+Internet sabse bada WAN hai.
+Ek company ke Delhi, Mumbai aur Chennai offices ko connect karna WAN ka example hai.
+
+⚙️ Technical Details:
+Range: Unlimited (global)
+Speed: Varies – from Kbps to 100+ Gbps
+Mediums: Leased lines, fiber optics, satellite, undersea cables
+Protocols: MPLS, IPsec VPN, BGP, OSPF
+
+✅ Use Cases:
+The Internet
+Banking networks (ATM connectivity)
+Global enterprise communications
+Cloud services and SaaS platforms
+
+📌 Advantages:
+Enables global connectivity and communication
+Centralized access to remote resources
+
+❌ Limitations:
+High setup and operational cost
+Prone to latency, packet loss, and attacks
+

@@ -1,0 +1,36 @@
+# Project Related question & answer
+
+1. Tell me about Yourself and the Projects you have worked on:
+
+2. What are your daily responsibilities in your current project?
+Answer:
+ "My daily responsibilities include monitoring the application and infrastructure, checking CI/CD pipelines, troubleshooting deployment issues, managing Docker containers, checking Kubernetes workloads, and working with Git. I also monitor logs and system performance and automate repetitive tasks whenever possible."
+
+> Hindi me Question ka matlab:
+"Tum apne project me daily kya-kya kaam karte ho?"
+Interviewer ye check kar raha hai ki tumhe real DevOps daily workflow ka idea hai ya sirf tools ke naam yaad hain.
+> Yaad rakho:
+Monitor → Deploy → Troubleshoot → Automate
+
+Explain the technologies you used in your current project.
+Answer:
+ "In my project, I use Git and GitHub for source code management, Jenkins for CI/CD automation, Docker for containerization, Kubernetes for deploying and managing containers, Terraform for infrastructure provisioning, and AWS for cloud infrastructure. I also use monitoring and logging tools to check application health and performance."
+
+> Hindi me Question ka matlab:
+"Tumhare project me kaun-kaun si technologies use hui hain aur unka kya kaam hai?"
+Interviewer ye dekhna chahta hai ki tum tool ka naam hi nahi, uska purpose bhi jaante ho.
+
+> Simple mapping:
+Git → Code
+Jenkins → CI/CD
+Docker → Container
+Kubernetes → Container Management
+Terraform → Infrastructure
+AWS → Cloud
+Monitoring → Health Check
+
+1. Explain your CI/CD flow in your current project.
+
+
+https://gravitydevops.com/top-50-devops-engineer-interview-questions-answers/
+

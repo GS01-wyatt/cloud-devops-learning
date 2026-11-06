@@ -1,0 +1,214 @@
+
+🔵 11. Docker Registry
+What is Docker Registry
+Public Registry
+Private Registry
+Create Private Repository
+Push Image to Registry
+Use Public Repository
+
+🔵 12. Docker Volumes
+What is Docker Volumes
+Volume Creation
+Mount Volume
+Bind Mount
+Volume vs Bind Mount
+Share Data Between Containers
+Persistent Storage
+
+
+🔵 11. Docker Registry
+
+# What is Docker Registry?
+Docker Registry ek storage system hai jahan Docker Images ko store, manage aur distribute kiya jata hai. Jab bhi hume image ko save, share ya download karna hota hai, hum Docker Registry ka use karte hain.
+
+Docker Hub bhi ek Docker Registry ka example hai.
+
+Why Docker Registry is Used?
+Docker Images store karne ke liye
+Team ke saath images share karne ke liye
+CI/CD pipeline me images use karne ke liye
+Centralized image management ke liye
+
+# Public Registry
+
+Public Registry ek aisi registry hoti hai jahan stored images sabhi users ke liye accessible hoti hain.
+
+Why Public Registry is Used?
+Open-source projects share karne ke liye
+Ready-made images provide karne ke liye
+Fast application deployment ke liye
+Community collaboration ke liye
+Example:
+Docker Hub
+GitHub Container Registry (Public)
+
+# Private Registry
+
+Private Registry ek secure registry hoti hai jahan images sirf authorized users hi access kar sakte hain.
+
+Why Private Registry is Used?
+Company applications secure rakhne ke liye
+Internal projects store karne ke liye
+Sensitive images protect karne ke liye
+Access control maintain karne ke liye
+Example:
+Docker Hub Private Repository
+AWS ECR
+Azure Container Registry (ACR)
+Google Artifact Registry
+
+# Create Private Repository
+
+Private Repository create karne ka matlab hai ek secure image storage location banana jahan sirf selected users access kar sakte hain.
+
+Why Create a Private Repository?
+Application security ke liye
+Internal image sharing ke liye
+Production images store karne ke liye
+Organization data protection ke liye
+
+# Push Image to Registry
+
+Local system me bani Docker Image ko Registry me upload karne ki process ko Push kehte hain.
+
+Why Push Image?
+Backup maintain karne ke liye
+Team collaboration ke liye
+CI/CD deployment ke liye
+Multiple environments me image use karne ke liye
+
+# Use Public Repository
+
+Public Repository se images download aur use karna Docker ecosystem ka common practice hai.
+
+> Why Use Public Repository?
+Time save karne ke liye
+Ready-made software images use karne ke liye
+Development fast karne ke liye
+Standardized environments create karne ke liye
+Example Images:
+Ubuntu
+Nginx
+Redis
+MySQL
+MongoDB
+
+
+🔵 12. Docker Volumes
+What is Docker Volumes?
+
+Docker Volume ek special storage mechanism hai jo container data ko permanently store karne ke liye use hota hai.
+
+Normally agar container delete ho jaye to uska data bhi delete ho jata hai. Volume use karne par data container ke bahar store hota hai aur safe rehta hai.
+
+Why Docker Volumes are Used?
+Persistent data storage ke liye
+Database data save rakhne ke liye
+Backup aur recovery ke liye
+Container lifecycle se data ko separate rakhne ke liye
+
+# Volume Creation
+
+Volume Creation ka matlab hai Docker me dedicated storage area banana.
+
+Volume Docker dwara manage kiya jata hai aur host machine par store hota hai.
+
+Why Create Volumes?
+Data persistence ke liye
+Better storage management ke liye
+Secure data storage ke liye
+Shared storage provide karne ke liye
+
+# Mount Volume
+
+Volume ko container ke saath attach karne ki process ko Mount Volume kehte hain.
+
+Mount hone ke baad container volume ke data ko read aur write kar sakta hai.
+
+Why Mount Volume?
+Data access provide karne ke liye
+Persistent storage use karne ke liye
+Application data save karne ke liye
+Database storage maintain karne ke liye
+
+# Bind Mount
+
+Bind Mount host machine ke kisi specific folder ko directly container ke andar map karta hai.
+
+Container aur host dono same files access kar sakte hain.
+
+Why Bind Mount is Used?
+Development environment me code sync karne ke liye
+Configuration files share karne ke liye
+Host files direct access karne ke liye
+Real-time file updates ke liye
+
+# Volume vs Bind Mount
+> Docker Volume
+Docker manage karta hai.
+Portable aur secure hota hai.
+Production environments ke liye recommended hai.
+Docker storage location me store hota hai.
+
+> Bind Mount
+User host path specify karta hai.
+Direct host folder access deta hai.
+Development ke liye useful hai.
+Host file structure par depend karta hai.
+
+> Why Compare Them?
+Correct storage solution choose karne ke liye
+Production aur Development use cases samajhne ke liye
+
+
+# Share Data Between Containers
+
+Ek hi volume ko multiple containers ke saath attach karke data share kiya ja sakta hai.
+
+Why Share Data Between Containers?
+Application services ko same data provide karne ke liye
+Log sharing ke liye
+Backup containers use karne ke liye
+Multi-container applications ke liye
+Example:
+Web Container
+Backup Container
+
+Dono same volume use kar sakte hain.
+
+# Persistent Storage
+
+Persistent Storage ka matlab hai data container ke delete ya restart hone ke baad bhi available rahe.
+
+Why Persistent Storage is Important?
+Database data loss prevent karne ke liye
+User files safe rakhne ke liye
+Business-critical information store karne ke liye
+Long-term data retention ke liye
+Real-World Examples:
+MySQL Database Data
+MongoDB Data
+Application Logs
+User Uploaded Files
+
+
+# Interview Purpose (English)
+
+Q: What is a Docker Registry?
+A: Docker Registry is a storage and distribution system used to store and manage Docker images.
+
+Q: What is the difference between Public and Private Registry?
+A: Public Registry is accessible to everyone, whereas Private Registry is accessible only to authorized users.
+
+Q: What is a Docker Volume?
+A: Docker Volume is a persistent storage mechanism used to store container data outside the container lifecycle.
+
+Q: What is the difference between Volume and Bind Mount?
+A: Volumes are managed by Docker, while Bind Mounts directly map host directories into containers.
+
+Q: Why do we use Persistent Storage in Docker?
+A: Persistent Storage ensures that data remains available even if a container is stopped, restarted, or deleted.
+
+Q: How can containers share data?
+A: Multiple containers can share data by mounting the same Docker Volume.

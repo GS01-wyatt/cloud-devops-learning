@@ -1,0 +1,72 @@
+# 🔐 Cloud Security & Privacy:-
+
+📜 Standards & Frameworks
+ISO/IEC 27017
+ISO/IEC 27018
+NIST SP 800-53
+NIST SP 500-291
+Cloud Security Alliance (CSA)
+CSA Cloud Controls Matrix
+National Institute of Standards and Technology (NIST)
+🔐 Identity & Access
+AWS IAM
+Authentication
+Authorization
+🔒 Encryption & Communication Security
+Encryption
+SSL
+TLS
+🛡️ Data & Network Security
+Data Security
+Network Security
+📋 Compliance & Privacy
+Privacy and Compliance
+Cloud Compliance
+⚙️ Security Practices
+Security Best Practices
+
+
+
+# Cloud Security क्या है?
+👉 Cloud security का मतलब है:
+cloud में data, applications और systems को secure रखना
+
+✔ इसमें क्या-क्या secure करना होता है?
+Data (files, database)
+Applications
+Network
+Servers
+
+# 🔐 Cloud Security के Main Points
+🔹 1. Data Protection
+👉 Data को safe रखना
+✔ Encryption (data को code में बदलना)
+✔ Backup
+
+🔹 2. Identity & Access Management (IAM)
+👉 कौन access कर सकता है
+✔ Login / Password
+✔ Role-based access
+
+🔹 3. Network Security
+👉 Network को secure करना
+✔ Firewall
+✔ VPN
+
+🔹 4. Application Security
+👉 Apps को secure करना
+✔ Bugs fix
+✔ Secure coding
+
+🔹 5. Monitoring & Logging
+👉 System को continuously check करना
+✔ Suspicious activity detect करना
+
+🔒 Privacy के Important Points
+User data misuse नहीं होना चाहिए
+बिना permission data share नहीं होना चाहिए
+Data laws follow होने चाहिए (GDPR etc.)
+
+
+# ISO/IEC 27017
+

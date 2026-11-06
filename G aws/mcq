@@ -1,0 +1,11 @@
+
+Q1. Which AWS service helps monitor EC2?
+Answer: Amazon CloudWatch.
+
+Q2. Which service can automatically replace a failed EC2 instance?
+Answer: Auto Scaling Group (ASG).
+
+Q3. Where do you check Linux system logs?
+Answer:
+Amazon Linux/RHEL: /var/log/messages or journalctl
+Ubuntu: /var/log/syslog

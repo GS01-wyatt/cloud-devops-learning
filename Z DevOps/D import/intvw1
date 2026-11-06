@@ -1,0 +1,294 @@
+# cloud and devOps ?
+
+3. How do you handle failure in deployment?
+Answer:
+ "First, I check the pipeline logs and deployment status to identify the root cause. Then I check the application logs, configuration, Docker image, and Kubernetes resources. After fixing the issue, I redeploy and verify the application. If the new version is causing the problem, I rollback to the previous stable version."
+
+> Hindi me Question ka matlab:
+"Agar deployment fail ho jaye to tum kya karoge?"
+Interviewer tumhara troubleshooting approach check kar raha hai.
+> Formula:
+Check Logs
+   ↓
+Find Root Cause
+   ↓
+Fix
+   ↓
+Redeploy
+   ↓
+Verify
+   ↓
+Rollback if required
+
+4. In terms of development and infrastructure, mention core operations of DevOps.
+Answer:
+ "The core DevOps operations include source code management, continuous integration, automated testing, continuous delivery, deployment, infrastructure provisioning, configuration management, monitoring, logging, security, and continuous improvement."
+
+> Hindi me Question ka matlab:
+"Development aur infrastructure side se DevOps me main-main kaam kya hote hain?"
+Interviewer dekh raha hai ki tumhe complete DevOps lifecycle samajh me aata hai ya nahi.
+> Simple Flow:
+Code
+ ↓
+Build
+ ↓
+Test
+ ↓
+Deploy
+ ↓
+Infrastructure
+ ↓
+Monitor
+ ↓
+Improve
+
+6. Name three important DevOps KPIs.
+Answer:
+"Three important DevOps KPIs are Deployment Frequency, Lead Time for Changes, and Mean Time to Recovery, or MTTR."
+
+> Hindi me Question ka matlab:
+"DevOps team ki performance ko measure karne ke liye 3 important metrics batao."
+
+> Simple meaning:
+Deployment Frequency
+→ Kitni frequently deployment hoti hai.
+Lead Time for Changes
+→ Code change se deployment tak kitna time lagta hai.
+MTTR
+→ Failure ke baad system recover karne me kitna time lagta hai.
+
+> Interview Tip:
+Agar interviewer 4th pooche:
+Change Failure Rate → Kitni deployments failure cause karti hain.
+
+7. What duties are you performing with Git, Docker, Kubernetes, Ansible, Jenkins, GitLab, and Terraform?
+Answer:
+ "I use Git and GitLab for source code management and collaboration. Jenkins is used to automate the CI/CD pipeline. Docker is used to build and run application containers. Kubernetes is used to deploy, scale, and manage containers. Terraform is used for infrastructure provisioning. Ansible is used for configuration management and automation."
+
+> Hindi me Question ka matlab:
+"Har tool ke saath tum exactly kya kaam karte ho?"
+Interviewer hands-on knowledge check kar raha hai.
+
+> Yaad rakhne ka shortcut:
+Tool	Kaam
+Git	Version control
+GitLab	Code repository/CI
+Jenkins	CI/CD
+Docker	Containers
+Kubernetes	Container orchestration
+Ansible	Configuration
+Terraform	Infrastructure
+
+8. How do you define branching strategies in your organization?
+Answer:
+ "We use separate branches for different types of work. Developers work on feature branches, and after testing and code review, the changes are merged into the development or main branch. For production releases, we can maintain a release branch or use the main branch depending on the workflow."
+
+> Hindi me Question ka matlab:
+"Team me Git branches ko kaise organize karte ho?"
+
+Example:
+
+main
+  │
+  ├── develop
+  │
+  ├── feature/login
+  │
+  └── feature/payment
+Why?
+
+Taaki multiple developers ek saath kaam kar sakein aur production code safe rahe.
+
+9. Explain the pipeline of your project and its purpose.
+Answer:
+
+"In my project, the developer pushes code to Git. Jenkins triggers the pipeline and checks out the code. The application is built and tested, followed by code quality and security checks. Then a Docker image is created and pushed to the container registry. The updated deployment configuration is applied to Kubernetes, and finally we perform post-deployment validation and monitoring."
+
+Hindi me Question ka matlab:
+
+"Tumhare project me code developer ke laptop se production tak kaise jata hai?"
+
+Interviewer end-to-end CI/CD flow check kar raha hai.
+
+Simple Flow:
+Developer
+ ↓
+Git
+ ↓
+Jenkins
+ ↓
+Build
+ ↓
+Test
+ ↓
+Security/Quality Scan
+ ↓
+Docker Image
+ ↓
+Registry
+ ↓
+Kubernetes
+ ↓
+Monitoring
+Purpose:
+
+Manual work kam karna aur reliable, repeatable deployment karna.
+
+10. What kind of databases have you used in your project?
+Answer:
+
+Agar tumne actual project me MySQL use kiya hai:
+
+"I have used MySQL as a relational database in my project. I used it to store application data and perform CRUD operations. I have also learned the basics of MongoDB as a NoSQL database."
+
+Agar MongoDB bhi actual project me use kiya hai:
+
+"I have worked with MySQL and MongoDB. MySQL is useful for relational data and SQL queries, while MongoDB is useful for flexible document-based data."
+
+Hindi me Question ka matlab:
+
+"Tumne project me kaunsa database use kiya aur uska use kya tha?"
+
+Interviewer database ka practical use check kar raha hai.
+
+11. On a daily basis, what type of automation do you work on?
+Answer:
+
+"On a daily basis, I focus on automating repetitive tasks such as application builds, testing, deployments, server configuration, Docker image creation, and infrastructure provisioning. This helps reduce manual effort and human errors."
+
+Hindi me Question ka matlab:
+
+"Tum daily kaunse manual kaam ko automation se karte ho?"
+
+Interviewer ye check kar raha hai ki tum DevOps ka main concept — Automation samajhte ho ya nahi.
+
+Examples:
+Manual Build       → Jenkins
+Manual Deployment  → CI/CD
+Manual Server Setup → Ansible
+Manual Infrastructure → Terraform
+12. How would you create a new pipeline for a new customer?
+Answer:
+
+"First, I would understand the customer's application, environment, and deployment requirements. Then I would create or configure the Git repository, define the build and test stages, add security checks, create the Docker image, configure the container registry, and define the deployment stage. Finally, I would add monitoring, notifications, and test the complete pipeline."
+
+Hindi me Question ka matlab:
+
+"Agar ek new client/customer aata hai, to uske application ke liye CI/CD pipeline kaise banaoge?"
+
+Interviewer tumhari end-to-end planning ability check kar raha hai.
+
+Flow:
+Customer Requirement
+ ↓
+Git Repository
+ ↓
+Build
+ ↓
+Test
+ ↓
+Security Scan
+ ↓
+Docker
+ ↓
+Registry
+ ↓
+Deploy
+ ↓
+Monitor
+13. How many environments are you maintaining?
+Answer:
+
+Agar tumhare project me 3 environments hain:
+
+"We maintain three main environments: Development, Testing, and Production. Development is used for active development, Testing is used for validation, and Production is the live environment used by customers."
+
+Hindi me Question ka matlab:
+
+"Tumhare project me kitne alag environments hain aur unka purpose kya hai?"
+
+Simple:
+DEV
+ ↓
+TEST
+ ↓
+PROD
+
+Dev: Developer testing
+Test: QA/validation
+Prod: Real users
+
+Agar tumhare actual project me environments ki count different hai, to actual number hi bolo.
+
+14. What types of deployments do you follow in your project?
+Answer:
+
+"We mainly use Rolling Deployment because it allows us to update the application gradually without significant downtime. Depending on the requirement, Blue-Green or Canary deployment can also be used for safer releases."
+
+Hindi me Question ka matlab:
+
+"New version ko production me release karne ka method kya use karte ho?"
+
+Important strategies:
+
+Rolling Update
+
+Old Pod → New Pod
+Old Pod → New Pod
+
+Blue-Green
+
+Blue = Old
+Green = New
+
+Canary
+
+10% Users → New
+90% Users → Old
+
+
+15. What are the plugins you have used in your project?
+Answer:
+Agar Jenkins use karte ho, to example:
+"In Jenkins, I have worked with plugins such as Git, Pipeline, Docker-related plugins, Credentials Binding, and Kubernetes integration plugins depending on the pipeline requirements."
+
+> Hindi me Question ka matlab:
+"Jenkins ko different tools ke saath connect karne ke liye kaunse plugins use kiye?"
+> Example:
+Git Plugin
+→ GitHub/GitLab se code
+
+Pipeline Plugin
+→ Pipeline create
+
+Credentials Binding
+→ Secrets safely use
+
+Docker Plugin
+→ Docker integration
+
+Sirf wahi plugins bolo jo tumne actually use kiye hain.
+
+16. How many builds do you perform daily?
+Answer:
+Agar exact number fixed nahi hai:
+"The number of builds depends on the development activity. Usually, builds are triggered automatically whenever developers push changes. So, instead of having a fixed number, the build frequency depends on the number of code changes and deployments."
+
+> Hindi me Question ka matlab:
+"Ek din me tumhari CI/CD pipeline kitni baar run hoti hai?"
+Interviewer project ka scale aur CI/CD usage samajhna chahta hai.
+Agar actual number pata hai, directly bolo:
+"On average, we perform around 10 to 15 builds per day."
+Fake number mat bolo. Agar project personal/academic hai, honestly bolo:
+"Since this is a project environment, the number of builds varies depending on development activity."
+
+# DevOps Project ka complete answer
+> Agar interviewer bole "Tell me about your DevOps project", to short me:
+"In my project, developers push code to Git. Jenkins automatically triggers the CI/CD pipeline, builds and tests the application, and performs quality and security checks. Docker is used to containerize the application, and the image is pushed to a registry. Kubernetes is used for deployment and scaling. Terraform is used to provision infrastructure, while monitoring tools are used to track application health and performance."
+
+> Sabse important rule
+Interview me tool ka naam → uska kaam → tumne kahan use kiya.
+> Example:
+"I used Docker to containerize the application so that the application and its dependencies could run consistently across environments."
+
+

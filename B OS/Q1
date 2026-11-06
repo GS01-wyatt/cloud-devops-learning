@@ -1,0 +1,104 @@
+🔹 1. What is the difference between process and thread? Can you explain with real-world example?
+👉 Follow-up: Which one is faster and why?
+
+🔹 2. Why are threads called lightweight processes?
+👉 Follow-up: What resources are shared between threads?
+
+🔹 3. When would you use multithreading instead of multiprocessing?
+
+🔹 4. What problems can occur in multithreading? (like race condition)
+👉 Follow-up: How to solve them?
+
+🔹 5. What is thread synchronization and why is it important?
+
+🟡 2. IPC (Inter Process Communication) 
+
+🔹 6. How do processes communicate with each other in OS?
+👉 Follow-up: What are different IPC methods?
+
+🔹 7. What is shared memory vs message passing?
+👉 Follow-up: Which is faster and why?
+
+🔹 8. What is pipe and named pipe?
+
+🔹 9. What is socket programming in OS?
+👉 Follow-up: Where is it used?
+
+🔹 10. What is semaphore in IPC?
+👉 Follow-up: Binary vs counting semaphore?
+
+🟠 3. DEADLOCK (VERY FREQUENT 🔥🔥)
+
+🔹 11. What is deadlock? Can you give a real-life example?
+👉 Follow-up: Necessary conditions?
+
+🔹 12. What are the four conditions required for deadlock to occur?
+
+🔹 13. How does Banker's Algorithm work in avoiding deadlock?
+
+🔹 14. What is deadlock prevention vs avoidance vs detection?
+
+🔹 15. How do real systems handle deadlocks?
+
+🔴 4. MEMORY (VERY IMPORTANT 🔥🔥)
+
+🔹 16. What is virtual memory and why is it needed in modern systems?
+
+🔹 17. What is page replacement? Which algorithm is best and why?
+
+🔹 18. What is thrashing and how does it affect performance?
+
+🔹 19. What is TLB and why is it important?
+
+🔹 20. What is segmentation fault? How to debug it?
+
+🟣 5. FILE SYSTEM (IMPORTANT)
+
+🔹 21. How does OS store files on disk? Explain allocation methods
+
+🔹 22. What is inode structure in Linux?
+
+🔹 23. What is journaling and why is it used?
+
+🔹 24. What is disk scheduling? Why is it needed?
+
+🔹 25. What is RAID and why is it used in servers?
+
+☁️ 6. OS + CLOUD (VERY IMPORTANT 🔥🔥)
+
+🔹 26. How does OS support virtualization?
+👉 Follow-up: What is hypervisor?
+
+🔹 27. What is difference between virtual machine and container?
+
+🔹 28. How does OS manage resources in cloud systems?
+
+🔹 29. What is process isolation? Why important in cloud?
+
+🔹 30. What is load balancing and how OS helps in it?
+
+🔥 7. REAL INTERVIEW SCENARIOS (VERY IMPORTANT)
+
+🔹 31. Your system becomes very slow suddenly. How will you debug OS-level issue?
+
+🔹 32. A program is consuming too much memory. How will OS handle it?
+
+🔹 33. Multiple processes are waiting for CPU. How will scheduler decide execution?
+
+🔹 34. Two processes are stuck waiting forever. What could be the issue?
+👉 (Hint: Deadlock)
+
+🔹 35. How will you design OS for mobile devices (low memory + battery)?
+
+🧠 8. TRICKY + CONFUSION QUESTIONS (VERY ASKED)
+
+🔹 36. Is multithreading always faster than multiprocessing? Why or why not?
+
+🔹 37. Can deadlock occur with single process? Explain
+
+🔹 38. Is paging always better than segmentation?
+
+🔹 39. Why does context switching reduce performance?
+
+🔹 40. Can starvation occur without deadlock? Explain.
+

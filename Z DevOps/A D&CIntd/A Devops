@@ -1,0 +1,103 @@
+# DevOps self related Question&ans
+
+## Fresher Introduction – DevOps / Cloud
+Good morning, and thank you for giving me the opportunity to introduce myself.
+My name is Golu Kumar, and I am from Rohtas, Bihar. I am currently pursuing B.E. in CSD from ESEC, with a CGPA of 8.0, and my expected graduation year is 2027.
+
+I am interested in the Cloud and DevOps domain and have been actively learning technologies such as Linux, Git, GitHub, Docker, AWS, Kubernetes, and CI/CD.
+
+I have hands-on experience with Git and GitHub for version control and collaboration. I have also worked on Docker to containerize applications and understand how containers simplify application deployment. Additionally, I have basic knowledge of Kubernetes, including Pods, Deployments, Services, and cluster architecture.
+
+In cloud computing, I have learned AWS services such as EC2, S3, VPC, IAM, and Security Groups. I am also exploring CI/CD concepts and automation to understand how modern software is built, tested, and deployed efficiently.
+
+Apart from DevOps, I have a strong interest in Java, Full-Stack Development, and Data Structures & Algorithms, and I have solved 150+ DSA problems, which has improved my problem-solving skills.
+
+My strengths are my quick learning ability, dedication, problem-solving mindset, and willingness to continuously improve my technical skills.
+
+My goal is to start my career as a DevOps/Cloud Engineer, work on real-world projects, learn from experienced professionals, and contribute to the growth of the organization.
+
+Thank you. I would be happy to answer any questions. 🚀
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+1. Tell me about Yourself and the Projects you have worked on:
+ I am a Computer Science student interested in DevOps and Cloud. I have worked on projects involving AWS, Docker, Git, and CI/CD. I have experience creating CI/CD pipelines, deploying applications, and working with cloud services. I am currently improving my skills in Terraform, Kubernetes, and automation.
+
+2. Do you know any programming or scripting language:
+ Yes. I have basic knowledge of Python and Bash scripting. I use Python for automation and Bash for Linux-related tasks and DevOps operations.
+
+3. What are your favorite DevOps tools and why:
+ My favorite DevOps tools are Docker, Jenkins, Terraform, Kubernetes, and Prometheus.
+
+Docker – for containerizing applications.
+Jenkins – for CI/CD automation.
+Terraform – for infrastructure automation.
+Kubernetes – for managing containers.
+Prometheus – for monitoring applications and infrastructure.
+
+#  How do you stay up-to-date with the latest DevOps trends and technologies?
+
+I regularly follow DevOps blogs, watch technical videos, take online courses, and practice new tools through hands-on projects. I also follow DevOps communities to learn about new technologies and best practices.
+
+#  How Quickly can you learn?
+
+I am a quick learner. I can learn and understand new technologies within a few weeks by studying the concepts and practicing them through hands-on projects.
+
+#  If asked, can you architect an application and how quickly can you do it?
+ Yes, I can design a basic application architecture based on the project requirements. The time depends on the application's complexity. For a simple application, I can create the architecture within a few days.
+
+#  What are some problems that you have faced while working on a project?
+ One challenge I faced was configuring CI/CD and deployment properly. I also faced issues with Docker containers and environment variables. I solved these issues by checking logs, debugging step-by-step, and referring to documentation. This helped me improve my troubleshooting skills.
+
+# What kind of projects have you worked on in your organization?
+ "I have worked on cloud and web-based projects. One of my major projects is a Cloud Attendance System that automates attendance tracking and reporting. I have also worked on MERN stack applications and containerized applications using Docker. These projects helped me gain experience with Git, Linux, databases, and deployment processes."
+
+
+# Why do you want to work in Cloud & DevOps?
+ "I enjoy automation, problem-solving, and working with modern infrastructure technologies. Cloud and DevOps help organizations deliver applications faster, more reliably, and at scale. This combination of development, operations, automation, and continuous learning is what excites me about this field."
+
+
+# Why do you want to become a DevOps Engineer?
+ "I enjoy automation, cloud technologies, problem-solving, and system management. DevOps combines development, operations, cloud, and automation, allowing me to work across the complete software delivery lifecycle while continuously learning new technologies."
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<#>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Q: Explain DevOps in one minute.
+ "DevOps is a culture and set of practices that bring development and operations teams together to automate and streamline the software delivery process. It focuses on Continuous Integration, Continuous Deployment, automation, monitoring, and collaboration. The goal is to deliver high-quality software faster, reduce deployment failures, improve system reliability, and enhance customer satisfaction. In modern IT environments, DevOps plays a critical role in achieving faster and more efficient software delivery." 🚀
+
+
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+What is DevOps not?
+Who is considered a fresher in DevOps?
+What do companies look for in DevOps candidates?
+What are the key elements of a good DevOps resume?
+What is the future of Cloud and DevOps?
+What career advice would you give to beginners in DevOps?
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+5. What are the technical and business benefits of the DevOps work culture?
+Answer:
+"Technically, DevOps provides faster deployments, better automation, improved reliability, faster recovery, and fewer manual errors. From a business perspective, it helps deliver features faster, reduces downtime and operational costs, and improves customer satisfaction."
+
+> Hindi me Question ka matlab:
+"DevOps se technical team aur business ko kya fayda hota hai?"
+Interviewer sirf technology nahi, business impact bhi samajhna chahta hai.
+> Technical:
+Faster deployment
+Automation
+Reliability
+Less errors
+Business:
+Less downtime
+Lower cost
+Faster feature delivery
+Better customer experience

@@ -1,0 +1,177 @@
+
+🟡 7. Docker Hub
+What is Docker Hub
+Public Repositories
+Private Repositories
+Login to Docker Hub
+Pull Images
+Push Images
+Publish Image
+
+🟠 8. Docker Compose
+Introduction to Docker Compose
+docker-compose.yml Syntax
+Multi-container Applications
+docker-compose up
+docker-compose down
+Service Configuration
+
+
+# 7. Docker Hub
+Docker Hub ek cloud-based container registry hai jahan Docker Images ko store, manage aur share kiya jata hai. Ye Docker ka official repository platform hai. Jab bhi hume koi ready-made image (jaise Nginx, Ubuntu, MySQL, Node.js) chahiye hoti hai, hum Docker Hub se download kar sakte hain.
+
+> Why Docker Hub is Used?
+Images ko store karne ke liye
+Images ko share karne ke liye
+Team collaboration ke liye
+Application deployment ko easy banane ke liye
+Public aur private image management ke liye
+
+# What is Public Repository?
+Public Repository ek aisi repository hoti hai jise internet par koi bhi user access aur download kar sakta hai.
+> Use:
+Open-source projects share karne ke liye
+Community ke saath images distribute karne ke liye
+Common software images provide karne ke liye
+> Example:
+Ubuntu
+Nginx
+Redis
+MySQL
+
+# What is Private Repository?
+Private Repository ek secure repository hoti hai jise sirf authorized users hi access kar sakte hain.
+
+> Use:
+Company projects ke liye
+Sensitive applications ke liye
+Internal software distribution ke liye
+Security maintain karne ke liye
+
+# Login to Docker Hub
+
+Docker Hub account ko local Docker environment se connect karne ki process ko login kehte hain.
+
+Use:
+Images push karne ke liye
+Private repositories access karne ke liye
+User authentication ke liye
+
+
+# Pull Images
+Docker Hub se image download karne ki process ko pull kehte hain.
+
+Use:
+Ready-made images use karne ke liye
+Application deployment fast karne ke liye
+Time aur effort bachane ke liye
+
+Example:
+Ubuntu image download karna.
+
+# Push Images
+Local system me bani image ko Docker Hub par upload karne ki process ko push kehte hain.
+
+Use:
+Team members ke saath image share karne ke liye
+CI/CD pipelines me deployment ke liye
+Backup aur version management ke liye
+
+# Publish Image
+Jab image successfully Docker Hub par upload ho jati hai aur dusre users ke liye available ho jati hai, ise image publish karna kehte hain.
+
+Use:
+Software distribution
+Deployment automation
+Public sharing
+Collaboration
+
+
+🟠 8. Docker Compose
+Docker Compose ek tool hai jo multiple containers ko ek saath manage aur run karne ke liye use hota hai.
+
+Real-world applications me sirf ek container nahi hota. Ek application ke liye frontend, backend, database, cache etc. alag-alag containers hote hain. Docker Compose in sabko ek hi configuration file se manage karta hai.
+
+Why Docker Compose is Used?
+Multi-container applications run karne ke liye
+Configuration simplify karne ke liye
+Development environment setup fast karne ke liye
+Multiple services ko ek command se start/stop karne ke liye
+
+# docker-compose.yml Syntax
+Docker Compose ki configuration ek YAML file me likhi jati hai jise docker-compose.yml kehte hain.
+
+> Is file me define kiya jata hai:
+Kaunsi services run hongi
+Kaunsi image use hogi
+Kaunsa port expose hoga
+Volumes aur networks kya honge
+Environment variables kya honge
+
+> Use:
+Application infrastructure ko code ke form me define karne ke liye.
+
+# Multi-container Applications
+Aisi applications jisme multiple services milkar kaam karti hain unhe multi-container applications kehte hain.
+
+> Example:
+React Frontend
+Node.js Backend
+MongoDB Database
+
+Ye tino alag containers me run ho sakte hain aur ek dusre se communicate karte hain.
+
+> Use:
+Microservices architecture
+Scalable applications
+Better isolation and management
+
+# docker-compose up
+Ye command docker-compose.yml file me defined sabhi services ko create aur start karti hai.
+
+Use:
+Puri application ko start karne ke liye
+Development environment launch karne ke liye
+Multiple containers ek saath run karne ke liye
+
+# docker-compose down
+Ye command running services, containers aur networks ko stop aur remove karti hai.
+
+Use:
+Environment cleanup ke liye
+Resource release karne ke liye
+Application shutdown ke liye
+
+# Service Configuration
+Service Configuration ka matlab hai har service ke settings define karna.
+
+Isme define kiya jata hai:
+
+Image
+Container Name
+Ports
+Volumes
+Networks
+Environment Variables
+Dependencies
+Use:
+Consistent environment create karne ke liye
+Service communication manage karne ke liye
+Infrastructure automation ke liye
+
+
+
+Q: What is Docker Hub?
+A: Docker Hub is a cloud-based registry used to store, manage, and distribute Docker images.
+
+Q: What is the difference between Public and Private Repositories?
+A: Public repositories are accessible to everyone, while private repositories are accessible only to authorized users.
+
+Q: Why do we use Docker Compose?
+A: Docker Compose is used to manage and run multiple containers using a single configuration file.
+
+Q: What is a Multi-container Application?
+A: An application that consists of multiple services running in separate containers.
+
+Q: What is docker-compose.yml?
+A: It is a YAML configuration file used to define services, networks, volumes, and application settings for Docker Compos

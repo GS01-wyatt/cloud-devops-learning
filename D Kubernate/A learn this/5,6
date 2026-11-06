@@ -1,0 +1,150 @@
+🟢 5. Kubernetes Storage — MUST LEARN
+Kubernetes Storage — Persistent application data
+PersistentVolume (PV) — Cluster-level storage resource
+PersistentVolumeClaim (PVC) — Request for storage
+StorageClass — Storage type and dynamic provisioning
+Dynamic Provisioning — Automatically creating storage
+
+
+# Kubernetes Storage — Persistent Application Data
+Kubernetes Storage ka use application ka data save rakhne ke liye hota hai.
+Normally Pod delete hone par uska temporary data delete ho sakta hai.
+Example:
+MySQL Pod → Database data → Pod deleted ❌ → Data lost ❌
+Storage use karne par:
+MySQL Pod → Storage → Pod deleted ❌ → Data safe ✅
+
+2. PersistentVolume (PV)
+PV = Actual storage
+PV Kubernetes cluster mein available storage hota hai.
+Example:
+// PV = 10 GB Storage
+👉 Simple: PV matlab storage jo available hai.
+
+3. PersistentVolumeClaim (PVC)
+PVC = Storage ki request
+Application bolti hai:
+"Mujhe 5 GB storage chahiye."
+PVC ye request Kubernetes ko deta hai.
+PVC → "Mujhe 5 GB chahiye"
+PV  → "Mere paas 5 GB hai"
+👉 Simple: PVC matlab storage maangna.
+
+4. StorageClass
+StorageClass = Storage ka type/configuration
+Ye batata hai ki kis type ka storage use karna hai.
+Example:
+SSD Storage
+HDD Storage
+Fast Storage
+👉 Simple: StorageClass matlab storage ka type.
+
+5. Dynamic Provisioning
+Dynamic Provisioning = Storage automatically create hona
+
+Agar application PVC ke through storage maangti hai, Kubernetes StorageClass ki help se storage automatically create kar sakta hai.
+
+PVC
+ ↓
+StorageClass
+ ↓
+Storage automatically created
+ ↓
+PV
+
+👉 Simple: Dynamic Provisioning matlab manually PV banane ki zarurat nahi, Kubernetes automatically storage create kar deta hai.
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+🟢 6. Configuration & Secrets — MUST LEARN
+ ConfigMap is used to store non-sensitive configuration data, while Secret is used to store sensitive data like passwords, tokens, and API keys.
+
+# ConfigMaps — Non-sensitive application configuration
+ConfigMap Kubernetes ka object hai jo application ki non-sensitive configuration values ko store karta hai. Isse configuration ko application ke code/image se alag rakha ja sakta hai.
+
+Practical example:
+Maan lo application ko pata hona chahiye ki woh development environment mein run ho rahi hai aur backend server ka URL kya hai.
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  APP_ENV: development
+  SERVER_URL: http://backend:8080
+
+# Secrets — Passwords, tokens and sensitive configuration
+Secret Kubernetes ka object hai jo sensitive information ko store karne ke liye use hota hai, jaise passwords, API tokens aur credentials.
+
+Practical example:
+Maan lo application ko database se connect karne ke liye password chahiye:
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-secret
+type: Opaque
+stringData:
+  username: admin
+  password: mypassword
+
+> ConfigMap	         Secret
+Non-sensitive data	Sensitive data
+App settings	        Passwords
+URLs	               API tokens
+Environment values	Credentials
+> ConfigMap = "Application ko kaise run karna hai"
+> Secret = "Application ko access karne ke liye private information"
+
+
+# Environment Variables — Passing configuration to containers
+Environment Variables Kubernetes mein configuration values ko container ke andar pass karne ka ek simple way hai. Application in values ko directly read kar sakti hai.
+
+Practical example:
+
+containers:
+  - name: app
+    image: nginx
+    env:
+      - name: APP_ENV
+        value: "production"
+      - name: APP_PORT
+        value: "8080"
+
+Container ke andar:
+
+APP_ENV=production
+APP_PORT=8080
+
+Application in values ko use kar sakti hai.
+
+Environment Variables ko ConfigMap ya Secret se bhi provide kar sakte hain:
+
+ConfigMap → Environment Variable → Container
+Secret    → Environment Variable → Container
+
+
+# Annotations — Additional metadata and configuration
+Annotations Kubernetes objects ke saath additional information/metadata store karne ke liye use hoti hain. Ye information Kubernetes tools, controllers, monitoring systems, ya other applications use kar sakte hain.
+
+Practical example:
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app
+  annotations:
+    description: "My production application"
+    owner: "devops-team"
+spec:
+  containers:
+    - name: app
+      image: nginx
+
+Yahan:
+
+description → application ke baare mein extra information
+owner       → kis team/application ka hai
+
+Annotations ka common practical use Ingress controllers, monitoring tools, deployment tools etc. ke configuration mein hota hai.

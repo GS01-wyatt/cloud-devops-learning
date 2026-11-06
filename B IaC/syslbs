@@ -1,0 +1,13 @@
+# Infrastructure as APIs – Simple Explanation (Hindi)
+Kya hai?
+Infrastructure as APIs ka matlab hai ki Cloud resources (EC2, VPC, S3, Load Balancer, Database) ko manually create karne ki jagah API calls ya code ke through create aur manage kiya jata hai.
+
+"Companies now treat infrastructure like programmable APIs."
+Simple Hindi Meaning
+Pehle companies server manually banati aur configure karti thi.
+Ab companies code likhkar infrastructure create aur manage karti hain, bilkul waise hi jaise hum program likhte hain.
+
+Isliye kehte hain:
+Infrastructure ko bhi code ki tarah program kiya ja sakta hai.
+
+

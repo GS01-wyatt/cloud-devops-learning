@@ -1,0 +1,78 @@
+# What is the Application Layer?
+
+The Application Layer is the topmost (7th) layer of the OSI Model. It provides network services directly to end users and applications.
+
+It acts as an interface between the user and the network.
+
+Example
+
+When you open Google in a browser, send an email, or use WhatsApp, you are interacting with the Application Layer.
+
+> Why is the Application Layer Used?
+The Application Layer is used to provide network services to users and applications.
+
+Main Reasons
+To allow users to access network resources.
+To enable communication between applications.
+To provide services such as web browsing, email, and file transfer.
+Example
+
+When you enter "www.google.com" in Chrome, the Application Layer creates a request to access the website.
+
+> Where is the Application Layer Used?
+The Application Layer is used in all network applications that interact directly with users.
+
+Used In
+Web Browsers
+Email Applications
+File Transfer Applications
+Video Calling Applications
+Cloud Applications
+Example
+
+Gmail, YouTube, WhatsApp, and Google Chrome all use the Application Layer.
+
+> How Does the Application Layer Work?
+The Application Layer receives requests from users and provides access to network services.
+
+> Working Process
+User opens an application.
+The application generates a request.
+The request is sent through lower layers.
+The destination server processes the request.
+The response is returned to the user.
+
+Example
+When you search for "DevOps" on Google:
+
+Browser creates an HTTP request.
+Request is sent over the network.
+Google server processes it.
+Search results are returned to your browser.
+
+> Common Protocols
+HTTP (HyperText Transfer Protocol)
+
+Used for accessing websites.
+
+HTTPS (HyperText Transfer Protocol Secure)
+
+Used for secure web communication.
+
+FTP (File Transfer Protocol)
+
+Used for transferring files.
+
+SMTP (Simple Mail Transfer Protocol)
+
+Used for sending emails.
+
+DNS (Domain Name System)
+
+Converts domain names into IP addresses.
+
+> Importance of the Application Layer
+Provides direct interaction between users and the network.
+Enables web browsing, email, and file sharing.
+Supports various network applications.
+Makes network services accessible to users.

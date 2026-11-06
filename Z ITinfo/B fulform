@@ -1,0 +1,182 @@
+# full form and information of IT
+
+# Module 1: Computer Fundamentals
+Full Form	Meaning
+CPU	Central Processing Unit.
+ALU	Arithmetic Logic Unit
+CU	Control Unit
+RAM	Random Access Memory
+ROM	Read Only Memory
+HDD	Hard Disk Drive
+SSD	Solid State Drive
+USB	Universal Serial Bus
+BIOS	Basic Input Output System
+UEFI	Unified Extensible Firmware Interface
+PSU	Power Supply Unit
+GPU	Graphics Processing Unit
+UPS	Uninterruptible Power Supply
+SMPS	Switched Mode Power Supply
+POST	Power-On Self Test
+CMOS	Complementary Metal Oxide Semiconductor
+OS	Operating System
+GUI	Graphical User Interface
+CLI	Command Line Interface
+PC	Personal Computer
+
+# Module 2: Operating System
+Full Form	Meaning
+OS	Operating System
+GUI	Graphical User Interface
+CLI	Command Line Interface
+FIFO	First In First Out
+LIFO	Last In First Out
+IPC	Inter Process Communication
+PCB	Process Control Block
+TCB	Thread Control Block
+VM	Virtual Memory
+DMA	Direct Memory Access
+I/O	Input / Output
+Module 3: Networking
+Full Form	Meaning
+LAN	Local Area Network
+MAN	Metropolitan Area Network
+WAN	Wide Area Network
+PAN	Personal Area Network
+SAN	Storage Area Network
+VPN	Virtual Private Network
+IP	Internet Protocol
+IPv4	Internet Protocol Version 4
+IPv6	Internet Protocol Version 6
+MAC	Media Access Control
+DNS	Domain Name System
+DHCP	Dynamic Host Configuration Protocol
+NAT	Network Address Translation
+ISP	Internet Service Provider
+TCP	Transmission Control Protocol
+UDP	User Datagram Protocol
+HTTP	HyperText Transfer Protocol
+HTTPS	HyperText Transfer Protocol Secure
+FTP	File Transfer Protocol
+SFTP	Secure File Transfer Protocol
+SSH	Secure Shell
+SSL	Secure Socket Layer
+TLS	Transport Layer Security
+URL	Uniform Resource Locator
+URI	Uniform Resource Identifier
+ICMP	Internet Control Message Protocol
+ARP	Address Resolution Protocol
+MTU	Maximum Transmission Unit
+TTL	Time To Live
+CIDR	Classless Inter-Domain Routing
+Module 4: Database
+Full Form	Meaning
+DBMS	Database Management System
+RDBMS	Relational Database Management System
+SQL	Structured Query Language
+NoSQL	Not Only SQL
+CRUD	Create Read Update Delete
+ACID	Atomicity Consistency Isolation Durability
+DDL	Data Definition Language
+DML	Data Manipulation Language
+DCL	Data Control Language
+TCL	Transaction Control Language
+Module 5: Programming
+Full Form	Meaning
+JDK	Java Development Kit
+JRE	Java Runtime Environment
+JVM	Java Virtual Machine
+API	Application Programming Interface
+SDK	Software Development Kit
+IDE	Integrated Development Environment
+OOP	Object Oriented Programming
+JSON	JavaScript Object Notation
+XML	Extensible Markup Language
+YAML	YAML Ain't Markup Language
+CSV	Comma Separated Values
+Module 6: Git & DevOps
+Full Form	Meaning
+VCS	Version Control System
+SCM	Source Code Management
+CI	Continuous Integration
+CD	Continuous Delivery / Continuous Deployment
+IaC	Infrastructure as Code
+YAML	YAML Ain't Markup Language
+VM	Virtual Machine
+K8s	Kubernetes
+OCI	Open Container Initiative
+Module 7: Docker & Kubernetes
+Full Form	Meaning
+Docker	(Product Name)
+OCI	Open Container Initiative
+K8s	Kubernetes
+Pod	Smallest Deployable Unit
+PVC	Persistent Volume Claim
+PV	Persistent Volume
+HPA	Horizontal Pod Autoscaler
+CRI	Container Runtime Interface
+CSI	Container Storage Interface
+CNI	Container Network Interface
+Module 8: AWS
+Full Form	Meaning
+AWS	Amazon Web Services
+EC2	Elastic Compute Cloud
+S3	Simple Storage Service
+EBS	Elastic Block Store
+EFS	Elastic File System
+RDS	Relational Database Service
+IAM	Identity and Access Management
+VPC	Virtual Private Cloud
+ELB	Elastic Load Balancer
+ALB	Application Load Balancer
+NLB	Network Load Balancer
+ASG	Auto Scaling Group
+ECS	Elastic Container Service
+EKS	Elastic Kubernetes Service
+ECR	Elastic Container Registry
+SNS	Simple Notification Service
+SQS	Simple Queue Service
+SES	Simple Email Service
+ACM	AWS Certificate Manager
+KMS	Key Management Service
+WAF	Web Application Firewall
+IAM	Identity and Access Management
+CloudFront	Content Delivery Network
+Route 53	DNS Service
+CloudTrail	API Activity Logging
+CloudWatch	Monitoring Service
+AMI	Amazon Machine Image
+Module 9: Security
+Full Form	Meaning
+MFA	Multi-Factor Authentication
+OTP	One Time Password
+VPN	Virtual Private Network
+IDS	Intrusion Detection System
+IPS	Intrusion Prevention System
+DDoS	Distributed Denial of Service
+XSS	Cross Site Scripting
+CSRF	Cross Site Request Forgery
+SQL	Structured Query Language
+JWT	JSON Web Token
+OAuth	Open Authorization
+Module 10: Cloud
+Full Form	Meaning
+IaaS	Infrastructure as a Service
+PaaS	Platform as a Service
+SaaS	Software as a Service
+FaaS	Function as a Service
+CDN	Content Delivery Network
+DNS	Domain Name System
+SSL	Secure Socket Layer
+TLS	Transport Layer Security
+VM	Virtual Machine
+VDI	Virtual Desktop Infrastructure
+
+
+
+# IT & CSE info:
+
+> indian IT of father
+> first,second.. indian it company
+> total indian it company and work
+> first world it company and name,owner,where..
+> 

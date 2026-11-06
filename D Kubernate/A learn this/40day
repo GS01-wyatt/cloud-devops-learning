@@ -1,0 +1,207 @@
+# vedio-01
+
+# vedio-02
+
+# vedio-03
+
+
+# vedio-04
+1. What are the challenges of running Docker containers for large enterprises
+2. How Kubernetes solve these problems
+3. What are the benefits of using Kubernetes
+4. Why Kubernetes is not always the ideal choice to host your infra
+
+# vedio-05
+Kubernetes Architecture Explained 
+1. What is a control plane, master node, and worker nodes
+2. What are pods and containers in Kubernetes
+3. Control plane components such as ApiServer, Kube Scheduler, Controller Manager, ETCD, Kubelet, Kube-Proxy, etc
+4. What happens in the cluster when a user sends a request to the cluster using the Kubectl command
+5. How control plane components interact with each other in a Kubernetes Cluster
+
+# vedio-06
+1. What are the options we have to host a Kubernetes Cluster
+2. Kind Tutorial to setup a single node Kubernetes cluster
+3. Kind tutorial on setting up a multinode Kubernetes cluster
+4. Set the context to switch between multiple clusters
+5. Kubernetes documentation
+https://kind.sigs.k8s.io/
+
+
+# vedio-07
+1. What are Pods in Kubernetes.
+2. Imperative vs declarative way of interacting with cluster
+3. How to create pods using Imperative commands
+4. YAML tutorial for beginners
+5. How to create and manage pods using YAML
+
+# vedio-08
+> Kubernetes Deployment, Replication Controller and ReplicaSet Explained
+1. What is a replication controller in Kubernetes
+What is a ReplicaSet in Kubernetes
+What is a deployment in Kubernetes
+How to create a deployment and replica set in Kubernetes using Kubectl
+How to create a deployment and replica set in Kubernetes using YAML.
+
+# vedio-09
+What are Kubernetes Services
+How we use Kubernetes service to expose an application
+Different types of Kubernetes services ClusterIP vs NodePort vs Loadbalancer vs External
+Demo creating a Kubernetes service
+Imperative commands to create a service
+What are endpoints in Kubernetes
+Troubleshooting a Kubernetes service
+
+
+# vedio-10
+Kubernetes Namespace Explained:
+task:-showing the connectivity b/w multiple service when they are running in same spaces with respect to different name spaces
+
+
+# vedio-11
+Multi Container Pod Kubernetes - 
+Sidecar vs Init Container:
+Init Container is used for initialization tasks and runs before the main container starts. It stops after completing its job.
+
+Sidecar Container runs alongside the main application container throughout the Pod's lifecycle and provides supporting functionality such as logging, monitoring, or proxy services.
+
+
+# vedio-12
+Kubernetes Daemonset Explained - 
+Daemonsets, Job and Cronjob in Kubernetes
+> yaml code learn
+
+# vedio-13
+Static Pods, Manual Scheduling, Labels, and Selectors in Kubernetes
+
+# vedio-14
+Taints and Tolerations in Kubernetes
+What are taints in Kubernetes
+What are tolerations in Kubernetes
+Labels and selectors vs taints and tolerations
+Demo showing taints and tolerations in action
+
+# vedio-15
+> Kubernetes Node Affinity Explained | How Node Affinity Works
+What is Node affinity in Kubernetes
+Different types of properties in Node affinity
+Demo setting up node affinity
+
+
+# vedio-16
+What are Kubernetes requests and limits
+Why do we need requests and limits and Kubernetes
+Install metrics server to expose node metrics
+demo showing requests and limits
+
+# vedio-17
+
+
+# vedio-18
+What is a Probe
+What are health probes
+Liveness vs Readiness vs Startup Probes
+Demo showing health probes in Kubernetes
+
+# vedio-19
+explore config maps, secrets, and environment variables in Kubernetes.
+
+# vedio-20
+Why do we need HTTPS?
+Asymmetric v/s symmetric encryption
+How Public-Private key works in an SSH connection
+How SSL/TLS works
+
+# vedio-21  - see one more
+Manage TLS Certificates In a Kubernetes Cluster - Create Certificate Signing Request
+
+# vedio-22  - see once more
+Kubernetes Authentication and Authorization Simply Explained
+
+# vedio-23  - see one more
+explore Kubernetes RBAC (Role-based access control) and how to assign permissions to a user or group to perform specific actions on a Kubernetes object.
+We will also look into role and rolebindings.
+
+# vedio-24
+ Kubernetes RBAC Continued - Clusterrole and Clusterrole Binding
+
+# vedio-25
+Kubernetes Service Account - RBAC Continued
+What is a Kubernetes Service account
+Why do we need a service account
+Default service account in Kubernetes
+How to create a service account
+Create a role and rolebinding for the service account
+
+# vedio-26
+What is a Kubernetes network policy
+Why do we use a network policy in Kubernetes
+Create a cluster that supports network policy
+Install a network add-on such as Calico
+Create a network policy to restrict access to the pods
+
+
+# vedio-26
+# vedio-26
+# vedio-26
+# vedio-26
+# vedio-26
+# vedio-26
+# vedio-26
+# vedio-26
+# vedio-26
+# vedio-26
+# vedio-26
+
+
+
+
+
+
+
+2. “Secret Hacker” Challenge 🔐
+Ek application banao jisme:
+ConfigMap → APP_ENV
+Secret → DB_PASSWORD
+Pod → dono consume kare
+Phir check karo ki container ke andar values aa rahi hain ya nahi.
+
+3. Kubernetes Self-Healing Experiment 🤖
+Deployment banao:
+kubectl create deployment nginx --image=nginx --replicas=3
+
+Phir:
+kubectl get pods
+kubectl delete pod <pod-name>
+kubectl get pods --watch
+🔥 Observe karo Kubernetes automatically new Pod create karta hai.
+
+4. Mini Production Project 🚀
+Ek complete setup banao:
+
+        User
+         ↓
+      Service
+         ↓
+    Deployment
+      ↓ ↓ ↓
+    3 Pods
+      ↓
+   ConfigMap
+      +
+    Secret
+
+Isme tum Deployment + Service + ConfigMap + Secret + Environment Variables + Annotations sab ek saath practice kar loge.
+
+5. “Break My Kubernetes” 😈
+Ye sab jaan-bujhkar galat karo:
+Wrong image name
+Wrong container port
+Missing ConfigMap
+Missing Secret
+Wrong environment variable
+Pod replicas change
+Readiness probe fail
+Aur har problem ko kubectl describe, logs, get events se solve karo.
+
+

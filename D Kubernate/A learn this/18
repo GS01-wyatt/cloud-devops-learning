@@ -1,0 +1,21 @@
+# SSL/TLS Explained
+Why do we need HTTPS?
+Asymmetric v/s symmetric encryption
+How Public-Private key works in an SSH connection
+How SSL/TLS works
+
+# 🔴 LEVEL 17 — Kubernetes Security
+Kubernetes Security Architecture
+Authentication
+Authorization
+Admission Control
+Authentication vs Authorization
+
+
+Authentication = Who are you?
+Authorization = What can you do?
+RBAC = Controls permissions
+Role = Permissions inside a Namespace
+ClusterRole = Permissions at cluster level
+RoleBinding = Connects Role to user/ServiceAccount
+ClusterRoleBinding = Connects ClusterRole at cluster level

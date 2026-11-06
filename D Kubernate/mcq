@@ -1,0 +1,902 @@
+1. Which technology is Kubernetes primarily designed to manage?
+
+A. Virtual Machines
+B. Containers
+C. Databases
+D. Source Code
+
+✅ Answer: B. Containers
+
+2. Which command-line tool is used to communicate with a Kubernetes cluster?
+
+A. kube
+B. kubectl
+C. kubecli
+D. kadmin
+
+✅ Answer: B. kubectl
+
+3. What is the smallest deployable unit in Kubernetes?
+
+A. Container
+B. Node
+C. Pod
+D. Cluster
+
+✅ Answer: C. Pod
+
+4. Which component is responsible for running containers on a Kubernetes Node?
+
+A. kube-scheduler
+B. kubelet
+C. etcd
+D. kube-apiserver
+
+✅ Answer: B. kubelet
+
+5. Which command displays the Nodes in a Kubernetes cluster?
+
+A. kubectl show nodes
+B. kubectl list nodes
+C. kubectl get nodes
+D. kubectl nodes
+
+✅ Answer: C. kubectl get nodes
+
+6. Which command displays Pods?
+
+A. kubectl show pods
+B. kubectl get pods
+C. kubectl list pods
+D. kubectl pods
+
+✅ Answer: B. kubectl get pods
+
+7. Which file format is commonly used to define Kubernetes resources?
+
+A. XML
+B. YAML
+C. CSV
+D. INI
+
+✅ Answer: B. YAML
+
+8. Which Kubernetes component stores cluster state?
+
+A. kubelet
+B. kube-proxy
+C. etcd
+D. Scheduler
+
+✅ Answer: C. etcd
+
+9. Which component decides which Node should run a Pod?
+
+A. kubelet
+B. kube-scheduler
+C. kube-proxy
+D. etcd
+
+✅ Answer: B. kube-scheduler
+
+10. Which component exposes the Kubernetes API?
+
+A. kube-apiserver
+B. kubelet
+C. kube-proxy
+D. etcd
+
+✅ Answer: A. kube-apiserver
+
+11. What is a Kubernetes Node?
+
+A. A container image
+B. A machine that runs Pods
+C. A Kubernetes command
+D. A storage volume
+
+✅ Answer: B. A machine that runs Pods
+
+12. What is a Kubernetes Cluster?
+
+A. A single container
+B. A collection of Nodes managed by Kubernetes
+C. A Docker image
+D. A single Pod
+
+✅ Answer: B. A collection of Nodes managed by Kubernetes
+
+13. Which command creates or updates resources from a YAML file?
+
+A. kubectl start -f file.yaml
+B. kubectl apply -f file.yaml
+C. kubectl run -f file.yaml
+D. kubectl update -f file.yaml
+
+✅ Answer: B. kubectl apply -f file.yaml
+
+14. Which command removes a Kubernetes resource?
+
+A. kubectl remove
+B. kubectl destroy
+C. kubectl delete
+D. kubectl erase
+
+✅ Answer: C. kubectl delete
+
+15. Which command provides detailed information about a Pod?
+
+A. kubectl info pod
+B. kubectl describe pod
+C. kubectl details pod
+D. kubectl inspect pod
+
+✅ Answer: B. kubectl describe pod
+
+16. Which command is used to view container logs?
+
+A. kubectl logs
+B. kubectl history
+C. kubectl output
+D. kubectl print
+
+✅ Answer: A. kubectl logs
+
+17. Which command executes a command inside a running container?
+
+A. kubectl run
+B. kubectl exec
+C. kubectl enter
+D. kubectl shell
+
+✅ Answer: B. kubectl exec
+
+18. Which Kubernetes object is used to expose Pods through a stable network endpoint?
+
+A. Deployment
+B. Service
+C. ConfigMap
+D. Secret
+
+✅ Answer: B. Service
+
+19. What is the default Kubernetes Service type?
+
+A. NodePort
+B. LoadBalancer
+C. ClusterIP
+D. ExternalName
+
+✅ Answer: C. ClusterIP
+
+20. Which Service type exposes an application using a port on each Node?
+
+A. ClusterIP
+B. NodePort
+C. LoadBalancer
+D. ExternalName
+
+✅ Answer: B. NodePort
+
+21. Which Service type is commonly used to expose an application through an external cloud load balancer?
+
+A. ClusterIP
+B. NodePort
+C. LoadBalancer
+D. ExternalName
+
+✅ Answer: C. LoadBalancer
+
+22. Which object is used to store non-sensitive configuration data?
+
+A. Secret
+B. ConfigMap
+C. Volume
+D. Service
+
+✅ Answer: B. ConfigMap
+
+23. Which object is intended for sensitive configuration data?
+
+A. ConfigMap
+B. Secret
+C. Deployment
+D. Namespace
+
+✅ Answer: B. Secret
+
+24. Which Kubernetes object is used to manage replicated Pods?
+
+A. Deployment
+B. ConfigMap
+C. Service
+D. Namespace
+
+✅ Answer: A. Deployment
+
+25. Which object maintains a specified number of Pod replicas?
+
+A. ReplicaSet
+B. Service
+C. Secret
+D. Ingress
+
+✅ Answer: A. ReplicaSet
+
+🟡 Intermediate Level — 26–50
+26. Which object is normally created/managed by a Deployment to maintain Pod replicas?
+
+A. Service
+B. ReplicaSet
+C. ConfigMap
+D. Namespace
+
+✅ Answer: B. ReplicaSet
+
+27. What happens if a Pod managed by a ReplicaSet is deleted?
+
+A. Nothing happens
+B. A replacement Pod is created
+C. The Node is deleted
+D. The ReplicaSet is deleted
+
+✅ Answer: B. A replacement Pod is created
+
+28. Which Kubernetes feature allows applications to be updated gradually?
+
+A. Rolling Update
+B. Hard Update
+C. Static Update
+D. Manual Update
+
+✅ Answer: A. Rolling Update
+
+29. What is the default Deployment update strategy?
+
+A. Recreate
+B. RollingUpdate
+C. BlueGreen
+D. Canary
+
+✅ Answer: B. RollingUpdate
+
+30. Which command checks the status of a Deployment rollout?
+
+A. kubectl rollout status deployment/<name>
+B. kubectl deployment status <name>
+C. kubectl status deployment/<name>
+D. kubectl check deployment/<name>
+
+✅ Answer: A. kubectl rollout status deployment/<name>
+
+31. Which command is used to undo a Deployment rollout?
+
+A. kubectl rollback
+B. kubectl rollout undo
+C. kubectl deployment undo
+D. kubectl restore
+
+✅ Answer: B. kubectl rollout undo
+
+32. What is a Namespace used for?
+
+A. Container networking
+B. Logical isolation and organization of resources
+C. Container storage
+D. Image building
+
+✅ Answer: B. Logical isolation and organization of resources
+
+33. Which command lists Pods from all Namespaces?
+
+A. kubectl get pods --all
+B. kubectl get pods -A
+C. kubectl get all pods
+D. kubectl list pods -n all
+
+✅ Answer: B. kubectl get pods -A
+
+34. Which Kubernetes feature is used to identify and group objects?
+
+A. Labels
+B. Volumes
+C. Secrets
+D. Ports
+
+✅ Answer: A. Labels
+
+35. What is used by a Service to select the Pods receiving traffic?
+
+A. Volume
+B. Label selector
+C. Namespace
+D. Annotation
+
+✅ Answer: B. Label selector
+
+36. What is the purpose of an annotation?
+
+A. Store non-identifying metadata about an object
+B. Assign an IP address
+C. Create a Pod
+D. Schedule a Pod
+
+✅ Answer: A. Store non-identifying metadata about an object
+
+37. Which Kubernetes object is primarily used for HTTP/HTTPS routing to Services?
+
+A. Service
+B. Ingress
+C. ConfigMap
+D. ReplicaSet
+
+✅ Answer: B. Ingress
+
+38. What implements the rules defined by an Ingress resource?
+
+A. Ingress Controller
+B. kubelet
+C. etcd
+D. ReplicaSet
+
+✅ Answer: A. Ingress Controller
+
+39. Which DNS component is commonly deployed in Kubernetes clusters?
+
+A. BIND9
+B. CoreDNS
+C. DNSMasq
+D. Route53
+
+✅ Answer: B. CoreDNS
+
+40. What is the primary purpose of kube-proxy?
+
+A. Schedule Pods
+B. Implement networking rules for Services
+C. Store cluster state
+D. Build container images
+
+✅ Answer: B. Implement networking rules for Services
+
+41. Which object is used to request persistent storage?
+
+A. PV
+B. PVC
+C. ConfigMap
+D. Secret
+
+✅ Answer: B. PVC
+
+42. What does PV stand for?
+
+A. Pod Volume
+B. PersistentVolume
+C. Private Volume
+D. Pod Variable
+
+✅ Answer: B. PersistentVolume
+
+43. What does PVC stand for?
+
+A. PersistentVolumeClaim
+B. PodVolumeClaim
+C. PersistentVariableClaim
+D. PodVolumeConfiguration
+
+✅ Answer: A. PersistentVolumeClaim
+
+44. Which object defines how storage can be dynamically provisioned?
+
+A. StorageClass
+B. ConfigMap
+C. Deployment
+D. Namespace
+
+✅ Answer: A. StorageClass
+
+45. What is dynamic provisioning?
+
+A. Automatically creating storage when requested
+B. Automatically creating Nodes
+C. Automatically creating containers
+D. Automatically creating namespaces
+
+✅ Answer: A. Automatically creating storage when requested
+
+46. Which probe checks whether a container is alive?
+
+A. Readiness probe
+B. Liveness probe
+C. Startup probe
+D. Health probe
+
+✅ Answer: B. Liveness probe
+
+47. Which probe determines whether a Pod should receive traffic?
+
+A. Liveness probe
+B. Readiness probe
+C. Startup probe
+D. Network probe
+
+✅ Answer: B. Readiness probe
+
+48. Which probe is useful for applications that take a long time to start?
+
+A. Liveness probe
+B. Readiness probe
+C. Startup probe
+D. Network probe
+
+✅ Answer: C. Startup probe
+
+49. What usually happens when a liveness probe repeatedly fails?
+
+A. Pod receives more traffic
+B. Container may be restarted
+C. Node is automatically deleted
+D. Service is deleted
+
+✅ Answer: B. Container may be restarted
+
+50. What happens when a readiness probe fails?
+
+A. Container is necessarily killed
+B. Pod can be removed from Service endpoints
+C. Node is deleted
+D. Deployment is deleted
+
+✅ Answer: B. Pod can be removed from Service endpoints
+
+🟠 Intermediate–Advanced — 51–75
+51. What is a resource request in Kubernetes?
+
+A. Maximum resource usage
+B. Resource amount used for scheduling
+C. Number of replicas
+D. Storage class
+
+✅ Answer: B. Resource amount used for scheduling
+
+52. What is a resource limit?
+
+A. Minimum resource requirement
+B. Maximum resource usage allowed
+C. Number of Nodes
+D. Number of Pods
+
+✅ Answer: B. Maximum resource usage allowed
+
+53. Which resource is commonly specified using requests and limits?
+
+A. CPU and memory
+B. IP and DNS
+C. Username and password
+D. Labels and selectors
+
+✅ Answer: A. CPU and memory
+
+54. What can happen when a container exceeds its memory limit?
+
+A. OOMKilled
+B. NodePort
+C. Pending
+D. Completed
+
+✅ Answer: A. OOMKilled
+
+55. What does HPA stand for?
+
+A. Horizontal Pod Autoscaler
+B. High Pod Allocation
+C. Host Process Autoscaler
+D. Horizontal Process Allocation
+
+✅ Answer: A. Horizontal Pod Autoscaler
+
+56. What does HPA primarily scale?
+
+A. Number of Pod replicas
+B. Number of Nodes
+C. Disk size
+D. Container image size
+
+✅ Answer: A. Number of Pod replicas
+
+57. Which Kubernetes autoscaler adjusts the number of Nodes?
+
+A. HPA
+B. Cluster Autoscaler
+C. VPA
+D. ReplicaSet
+
+✅ Answer: B. Cluster Autoscaler
+
+58. What does VPA stand for?
+
+A. Vertical Pod Autoscaler
+B. Virtual Pod Allocation
+C. Variable Pod Autoscaler
+D. Vertical Process Allocation
+
+✅ Answer: A. Vertical Pod Autoscaler
+
+59. What does VPA primarily adjust?
+
+A. Pod resource requests
+B. Service ports
+C. Number of Namespaces
+D. Node IP addresses
+
+✅ Answer: A. Pod resource requests
+
+60. Which object ensures a Pod runs on every eligible Node?
+
+A. Deployment
+B. StatefulSet
+C. DaemonSet
+D. Job
+
+✅ Answer: C. DaemonSet
+
+61. Which workload is commonly used for log collection agents on Nodes?
+
+A. Job
+B. DaemonSet
+C. Service
+D. ConfigMap
+
+✅ Answer: B. DaemonSet
+
+62. Which Kubernetes object is designed for stateful applications?
+
+A. Deployment
+B. StatefulSet
+C. DaemonSet
+D. Job
+
+✅ Answer: B. StatefulSet
+
+63. Which object provides stable identities to Pods?
+
+A. StatefulSet
+B. ConfigMap
+C. ServiceAccount
+D. ReplicaSet
+
+✅ Answer: A. StatefulSet
+
+64. Which object is used to run a task until successful completion?
+
+A. Deployment
+B. Job
+C. DaemonSet
+D. Service
+
+✅ Answer: B. Job
+
+65. Which object creates Jobs according to a schedule?
+
+A. CronJob
+B. StatefulSet
+C. ReplicaSet
+D. DaemonSet
+
+✅ Answer: A. CronJob
+
+66. Which scheduling format is commonly used by Kubernetes CronJobs?
+
+A. Cron expression
+B. JSON expression
+C. YAML expression
+D. SQL expression
+
+✅ Answer: A. Cron expression
+
+67. Which Kubernetes object provides an identity for processes running in Pods?
+
+A. ServiceAccount
+B. ConfigMap
+C. ReplicaSet
+D. Namespace
+
+✅ Answer: A. ServiceAccount
+
+68. Which Kubernetes feature controls permissions to API resources?
+
+A. RBAC
+B. HPA
+C. DNS
+D. Ingress
+
+✅ Answer: A. RBAC
+
+69. What does RBAC stand for?
+
+A. Role-Based Access Control
+B. Resource-Based Application Control
+C. Role-Based Application Configuration
+D. Runtime-Based Access Control
+
+✅ Answer: A. Role-Based Access Control
+
+70. Which object defines permissions within RBAC?
+
+A. Role
+B. Pod
+C. Service
+D. ConfigMap
+
+✅ Answer: A. Role
+
+71. Which RBAC object can grant permissions across the entire cluster?
+
+A. Role
+B. ClusterRole
+C. Service
+D. Namespace
+
+✅ Answer: B. ClusterRole
+
+72. Which object binds a Role to users or ServiceAccounts within a Namespace?
+
+A. RoleBinding
+B. ClusterRole
+C. RolePolicy
+D. AccessBinding
+
+✅ Answer: A. RoleBinding
+
+73. Which object binds permissions at the cluster level?
+
+A. RoleBinding
+B. ClusterRoleBinding
+C. NamespaceBinding
+D. ServiceBinding
+
+✅ Answer: B. ClusterRoleBinding
+
+74. What is a NetworkPolicy used for?
+
+A. Controlling network traffic between Pods
+B. Managing CPU
+C. Managing storage
+D. Managing deployments
+
+✅ Answer: A. Controlling network traffic between Pods
+
+75. Which component is the main entry point for Kubernetes API requests?
+
+A. kubelet
+B. kube-apiserver
+C. kube-proxy
+D. kube-scheduler
+
+✅ Answer: B. kube-apiserver
+
+🔴 Advanced Level — 76–100
+76. Which Kubernetes control-plane component makes scheduling decisions?
+
+A. kubelet
+B. kube-scheduler
+C. kube-proxy
+D. etcd
+
+✅ Answer: B. kube-scheduler
+
+77. Which component continuously ensures the desired state matches the actual state?
+
+A. Controllers
+B. Docker
+C. CoreDNS
+D. kube-proxy
+
+✅ Answer: A. Controllers
+
+78. Which component stores Kubernetes objects as key-value data?
+
+A. etcd
+B. kubelet
+C. Scheduler
+D. CoreDNS
+
+✅ Answer: A. etcd
+
+79. Which Kubernetes component contains controllers such as Deployment and Node controllers?
+
+A. kube-controller-manager
+B. kubelet
+C. kube-proxy
+D. etcd
+
+✅ Answer: A. kube-controller-manager
+
+80. Which component manages cloud-provider-specific control-plane logic?
+
+A. cloud-controller-manager
+B. kube-proxy
+C. kubelet
+D. CoreDNS
+
+✅ Answer: A. cloud-controller-manager
+
+81. Which Kubernetes component runs on every worker Node?
+
+A. kubelet
+B. kube-apiserver
+C. kube-scheduler
+D. etcd
+
+✅ Answer: A. kubelet
+
+82. Which component provides container networking and Service routing?
+
+A. kube-proxy
+B. kube-scheduler
+C. etcd
+D. kube-controller-manager
+
+✅ Answer: A. kube-proxy
+
+83. Which component is responsible for maintaining cluster state storage?
+
+A. etcd
+B. kubelet
+C. CoreDNS
+D. Ingress Controller
+
+✅ Answer: A. etcd
+
+84. What is the desired state in Kubernetes?
+
+A. State specified by the user in Kubernetes resources
+B. Current CPU usage
+C. Current Node temperature
+D. Container image size
+
+✅ Answer: A. State specified by the user in Kubernetes resources
+
+85. What does Kubernetes use to compare desired state with actual state?
+
+A. Controllers
+B. Dockerfiles
+C. Git
+D. Jenkins
+
+✅ Answer: A. Controllers
+
+86. Which feature allows a Pod to be scheduled only on Nodes with specific labels?
+
+A. Node Selector
+B. ConfigMap
+C. Service
+D. Secret
+
+✅ Answer: A. Node Selector
+
+87. Which feature provides more expressive Pod-to-Node placement rules?
+
+A. Node Affinity
+B. ClusterIP
+C. ConfigMap
+D. Ingress
+
+✅ Answer: A. Node Affinity
+
+88. Which feature can prevent certain Pods from being scheduled onto particular Nodes?
+
+A. Taints and Tolerations
+B. ConfigMaps
+C. Services
+D. Secrets
+
+✅ Answer: A. Taints and Tolerations
+
+89. What allows a Pod to be scheduled onto a tainted Node?
+
+A. Label
+B. Toleration
+C. ConfigMap
+D. ReplicaSet
+
+✅ Answer: B. Toleration
+
+90. What is Pod Affinity used for?
+
+A. Placing Pods near other matching Pods
+B. Storing Pod data
+C. Exposing Pods externally
+D. Creating Secrets
+
+✅ Answer: A. Placing Pods near other matching Pods
+
+91. What is Pod Anti-Affinity used for?
+
+A. Separating Pods from matching Pods
+B. Creating Services
+C. Managing passwords
+D. Increasing CPU
+
+✅ Answer: A. Separating Pods from matching Pods
+
+92. Which Kubernetes object can limit the total resource consumption in a Namespace?
+
+A. ResourceQuota
+B. ConfigMap
+C. Service
+D. Ingress
+
+✅ Answer: A. ResourceQuota
+
+93. Which Kubernetes object can set default or maximum resource constraints for Pods/containers in a Namespace?
+
+A. LimitRange
+B. ResourceQuota
+C. Deployment
+D. StatefulSet
+
+✅ Answer: A. LimitRange
+
+94. What does CrashLoopBackOff generally indicate?
+
+A. Container repeatedly crashes and Kubernetes backs off restarting it
+B. Node has been permanently deleted
+C. Service has no IP
+D. Image was successfully deployed
+
+✅ Answer: A. Container repeatedly crashes and Kubernetes backs off restarting it
+
+95. What does ImagePullBackOff generally indicate?
+
+A. Kubernetes cannot successfully pull the container image and is backing off
+B. Pod has completed successfully
+C. Service is overloaded
+D. Node is running normally
+
+✅ Answer: A. Kubernetes cannot successfully pull the container image and is backing off
+
+96. What does Pending generally mean for a Pod?
+
+A. Pod has completed
+B. Pod has not yet been successfully scheduled/started
+C. Pod has been deleted
+D. Pod is always healthy
+
+✅ Answer: B. Pod has not yet been successfully scheduled/started
+
+97. Which command can display events useful for troubleshooting Kubernetes resources?
+
+A. kubectl get events
+B. kubectl show errors
+C. kubectl logs events
+D. kubectl troubleshoot
+
+✅ Answer: A. kubectl get events
+
+98. Which command can display the YAML representation of a Kubernetes resource?
+
+A. kubectl get <resource> -o yaml
+B. kubectl yaml <resource>
+C. kubectl show-yaml
+D. kubectl export-yaml
+
+✅ Answer: A. kubectl get <resource> -o yaml
+
+99. Which Kubernetes mechanism is commonly used to securely provide a Pod with an identity for API access?
+
+A. ServiceAccount
+B. NodePort
+C. ConfigMap
+D. ReplicaSet
+
+✅ Answer: A. ServiceAccount
+
+100. Which sequence correctly represents a common Kubernetes application architecture?
+
+A. Pod → Node → Dockerfile → Git
+B. Deployment → Pods → Service → Ingress
+C. Service → Dockerfile → Node → Pod
+D. Ingress → Dockerfile → Deployment → Git
+
+✅ Answer: B. Deployment → Pods → Service → Ingress

@@ -1,0 +1,270 @@
+<<<<<<<>>>>>>>
+# 1. What is it? → 2. How does it work? → 3. Real example → 4. Why is it important?
+
+HR-
+What are the most important technical skills your team expects from a fresher after joining?
+
+"With the rapid adoption of AI, automation, and cloud-native technologies, how is the company preparing its engineers for the next generation of DevOps practices?"
+
+"As a fresher, what can I do in my first 6–12 months to create the maximum value for the team and accelerate my growth within the organization?"
+
+"Looking at my profile and our discussion today, what skill would you recommend I focus on improving the most to be successful in this role?"
+
+<<<<<<>>>>>>
+
+
+Q. How Do You Secure Application on AWS?
+Q. Explain one Critical Production Issue You Handled?
+1. What is ArgoCD?
+2. What is FluxCD?
+Why did you use Docker?
+Why Kubernetes?
+Why EKS instead of EC2?
+What is a Pod?
+Deployment vs StatefulSet?
+How did you expose your application?
+Why did you use Load Balancer?
+What is Terraform?
+Why Terraform instead of manually creating AWS resources?
+How does Jenkins pipeline work?
+What happens when you push code to GitHub?
+How did you scan Docker images?
+What is SonarQube?
+What is ECR?
+How does ArgoCD work?
+How did you monitor the application?
+What does Prometheus collect?
+What does Grafana display?
+How did you handle secrets?
+What happens if a Pod crashes?
+How did you troubleshoot a failed deployment?
+
+<<<<<<<<<<<<<<<<>>>>>>>>
+
+🔹 Core Java & OOP Basics
+1. What is Java?
+2. What are the features of Java?
+3. What is the Java Virtual Machine (JVM)?
+4. What is the difference between JDK, JRE, and JVM?
+5. What is a class and an object in Java?
+6. What are the main principles of Object-Oriented Programming (OOP)?
+7. Explain inheritance in Java.
+8. What is polymorphism?
+9. What is encapsulation?
+10. What is abstraction?
+11. What are access modifiers in Java?
+12. What is the difference between method overloading and method overriding?
+13. What is the purpose of the 'this' keyword in Java?
+14. What is a constructor in Java?
+15. What is the difference between a default constructor and a parameterized constructor?
+16. Can you explain the concept of static variables and methods?
+17. What is the purpose of the 'final' keyword in Java?
+18. What are the different types of inner classes in Java?
+19. What is the difference between an abstract class and an interface?
+20. Why is Java not considered a pure object-oriented language? 
+---
+🔹 Exception Handling
+21. What is exception handling in Java?
+22. What is the difference between checked and unchecked exceptions?
+23. What are the keywords used in exception handling?
+24. What is the purpose of the 'finally' block?
+25. Can you create custom exceptions in Java?
+26. What is the difference between 'throw' and 'throws'?
+27. How does the try-with-resources statement work?
+28. What is the difference between 'Error' and 'Exception' classes?
+29. What are some common runtime exceptions in Java?
+30. How do you handle multiple exceptions in a single catch block? 
+---
+🔹 Java Collections Framework
+31. What is the Java Collections Framework?
+32. What is the difference between List, Set, and Map interfaces?
+33. What is the difference between ArrayList and LinkedList?
+34. How does HashSet work internally?
+35. What is the difference between HashMap and TreeMap?
+36. What is the difference between HashMap and Hashtable?
+37. What is the purpose of the 'equals()' and 'hashCode()' methods?
+38. What is the difference between Iterator and ListIterator?
+39. What is the difference between fail-fast and fail-safe iterators?
+40. How do you synchronize a collection in Java?
+41. What is the difference between Comparable and Comparator interfaces?
+42. How do you sort a collection in Java?
+43. What is the difference between PriorityQueue and TreeSet?
+44. What are the differences between Stack and Queue?
+45. What is the Deque interface?
+46. What is the difference between ArrayDeque and LinkedList?
+47. What is the purpose of the Collections utility class?
+48. How do you make a collection read-only?
+49. What is the difference between shallow copy and deep copy?
+50. How do you convert an array to a list in Java? 
+---
+🔹 Multithreading & Concurrency
+51. What is a thread in Java?
+52. How do you create a thread in Java?
+53. What is the difference between 'Runnable' and 'Callable' interfaces?
+54. What is the lifecycle of a thread?
+55. What is synchronization in Java?
+56. What is the difference between synchronized method and synchronized block?
+57. What is the purpose of the 'volatile' keyword?
+58. What is the difference between 'wait()', 'notify()', and 'notifyAll()' methods?
+59. What is a deadlock? How can it be prevented?
+60. What is the Executor framework in Java?
+61. What is the difference between 'submit()' and 'execute()' methods in ExecutorService?
+62. What is the purpose of the 'Future' interface?
+63. What is the difference between 'sleep()' and 'wait()' methods?
+64. What is a thread pool?
+65. What are concurrent collections in Java?
+66. What is the difference between 'ConcurrentHashMap' and 'Collections.synchronizedMap()'?
+67. What is the Fork/Join framework?
+68. What is the difference between 'Lock' and 'synchronized' keyword?
+69. What is the purpose of the 'ReentrantLock' class?
+70. What is the difference between 'CyclicBarrier' and 'CountDownLatch'? 
+---
+🔹 Java 8 and Beyond
+71. What are the new features introduced in Java 8?
+72. What is a lambda expression?
+73. What are functional interfaces?
+74. What is the Stream API?
+75. What is the difference between intermediate and terminal operations in streams?
+76. What are default methods in interfaces?
+77. What are method references?
+78. What is the Optional class?
+79. What is the difference between 'map()' and 'flatMap()' methods in streams?
+80. What are the new Date and Time APIs in Java 8?
+81. What is the purpose of the 'forEach()' method?
+82. What is the difference between 'findFirst()' and 'findAny()' methods?
+83. What are the Collectors in Java 8?
+84. What is the purpose of the 'peek()' method in streams?
+85. What is the difference between 'limit()' and 'skip()' methods?
+86. What are the improvements in the concurrency API in Java 8?
+87. What is the purpose of the 'CompletableFuture' class?
+88. What are the enhancements in the 'java.util.function' package?
+89. What is the purpose of the 'Predicate' interface?
+90. What is the difference between 'Function' and 'Consumer' interfaces? 
+---
+🔹 Miscellaneous
+91. What is the difference between '== operator' and 'equals()' method?
+92. What is the purpose of the 'hashCode()' method?
+93. What is the difference between 'String', 'StringBuilder', and 'StringBuffer'?
+94. What is autoboxing and unboxing in Java?
+95. What is the difference between 'Array' and 'ArrayList'?
+96. How do you handle memory leaks in Java?
+97. What is garbage collection in Java?
+98. What are the different types of class loaders in Java?
+99. What is the purpose of the 'transient' keyword?
+100. What is the difference between 'Serializable' and 'Externalizable' interfaces? 
+---
+ 
+Java?
+2. What are the features of Java?
+3. What is the Java Virtual Machine (JVM)?
+4. What is the difference between JDK, JRE, and JVM?
+5. What is a class and an object in Java?
+6. What are the main principles of Object-Oriented Programming (OOP)?
+7. Explain inheritance in Java.
+8. What is polymorphism?
+9. What is encapsulation?
+10. What is abstraction?
+11. What are access modifiers in Java?
+12. What is the difference between method overloading and method overriding?
+13. What is the purpose of the 'this' keyword in Java?
+14. What is a constructor in Java?
+15. What is the difference between a default constructor and a parameterized constructor?
+16. Can you explain the concept of static variables and methods?
+17. What is the purpose of the 'final' keyword in Java?
+18. What are the different types of inner classes in Java?
+19. What is the difference between an abstract class and an interface?
+20. Why is Java not considered a pure object-oriented language? 
+---
+🔹 Exception Handling
+21. What is exception handling in Java?
+22. What is the difference between checked and unchecked exceptions?
+23. What are the keywords used in exception handling?
+24. What is the purpose of the 'finally' block?
+25. Can you create custom exceptions in Java?
+26. What is the difference between 'throw' and 'throws'?
+27. How does the try-with-resources statement work?
+28. What is the difference between 'Error' and 'Exception' classes?
+29. What are some common runtime exceptions in Java?
+30. How do you handle multiple exceptions in a single catch block? 
+---
+🔹 Java Collections Framework
+31. What is the Java Collections Framework?
+32. What is the difference between List, Set, and Map interfaces?
+33. What is the difference between ArrayList and LinkedList?
+34. How does HashSet work internally?
+35. What is the difference between HashMap and TreeMap?
+36. What is the difference between HashMap and Hashtable?
+37. What is the purpose of the 'equals()' and 'hashCode()' methods?
+38. What is the difference between Iterator and ListIterator?
+39. What is the difference between fail-fast and fail-safe iterators?
+40. How do you synchronize a collection in Java?
+41. What is the difference between Comparable and Comparator interfaces?
+42. How do you sort a collection in Java?
+43. What is the difference between PriorityQueue and TreeSet?
+44. What are the differences between Stack and Queue?
+45. What is the Deque interface?
+46. What is the difference between ArrayDeque and LinkedList?
+47. What is the purpose of the Collections utility class?
+48. How do you make a collection read-only?
+49. What is the difference between shallow copy and deep copy?
+50. How do you convert an array to a list in Java? 
+---
+🔹 Multithreading & Concurrency
+51. What is a thread in Java?
+52. How do you create a thread in Java?
+53. What is the difference between 'Runnable' and 'Callable' interfaces?
+54. What is the lifecycle of a thread?
+55. What is synchronization in Java?
+56. What is the difference between synchronized method and synchronized block?
+57. What is the purpose of the 'volatile' keyword?
+58. What is the difference between 'wait()', 'notify()', and 'notifyAll()' methods?
+59. What is a deadlock? How can it be prevented?
+60. What is the Executor framework in Java?
+61. What is the difference between 'submit()' and 'execute()' methods in ExecutorService?
+62. What is the purpose of the 'Future' interface?
+63. What is the difference between 'sleep()' and 'wait()' methods?
+64. What is a thread pool?
+65. What are concurrent collections in Java?
+66. What is the difference between 'ConcurrentHashMap' and 'Collections.synchronizedMap()'?
+67. What is the Fork/Join framework?
+68. What is the difference between 'Lock' and 'synchronized' keyword?
+69. What is the purpose of the 'ReentrantLock' class?
+70. What is the difference between 'CyclicBarrier' and 'CountDownLatch'? 
+---
+🔹 Java 8 and Beyond
+71. What are the new features introduced in Java 8?
+72. What is a lambda expression?
+73. What are functional interfaces?
+74. What is the Stream API?
+75. What is the difference between intermediate and terminal operations in streams?
+76. What are default methods in interfaces?
+77. What are method references?
+78. What is the Optional class?
+79. What is the difference between 'map()' and 'flatMap()' methods in streams?
+80. What are the new Date and Time APIs in Java 8?
+81. What is the purpose of the 'forEach()' method?
+82. What is the difference between 'findFirst()' and 'findAny()' methods?
+83. What are the Collectors in Java 8?
+84. What is the purpose of the 'peek()' method in streams?
+85. What is the difference between 'limit()' and 'skip()' methods?
+86. What are the improvements in the concurrency API in Java 8?
+87. What is the purpose of the 'CompletableFuture' class?
+88. What are the enhancements in the 'java.util.function' package?
+89. What is the purpose of the 'Predicate' interface?
+90. What is the difference between 'Function' and 'Consumer' interfaces? 
+---
+🔹 Miscellaneous
+91. What is the difference between '== operator' and 'equals()' method?
+92. What is the purpose of the 'hashCode()' method?
+93. What is the difference between 'String', 'StringBuilder', and 'StringBuffer'?
+94. What is autoboxing and unboxing in Java?
+95. What is the difference between 'Array' and 'ArrayList'?
+96. How do you handle memory leaks in Java?
+97. What is garbage collection in Java?
+98. What are the different types of class loaders in Java?
+99. What is the purpose of the 'transient' keyword?
+100. What is the difference between 'Serializable' and 'Externalizable' interfaces? 
+---
+
+
+

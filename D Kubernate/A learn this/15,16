@@ -1,0 +1,91 @@
+
+🟢 15. AWS EKS — MUST LEARN FOR CLOUD/DEVOPS
+EKS Architecture — Managed Kubernetes on AWS
+EKS Node Groups — Managing worker nodes
+IAM + EKS — AWS permissions and Kubernetes access
+VPC + EKS — Networking for Kubernetes
+Load Balancer + EKS — External application access
+ECR + EKS — Container image deployment
+EKS Application Deployment — Deploying a complete application
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+🟡 16. Advanced Kubernetes — LEARN AFTER BASICS
+Init Containers — Initialization before main containers
+Sidecar Containers — Supporting containers inside a Pod
+CRDs — Creating custom Kubernetes resources
+Operators — Automating application management
+Kubernetes API — Programmatic cluster interaction
+Service Mesh — Managing microservice communication
+Istio — Traffic management, security and observability
+
+# 1. Init Container Kya Hai?
+Init Container main application container start hone se pehle run hota hai.
+Pehle Init Container complete hoga.
+Uske baad hi main container start hoga.
+Agar Init Container fail ho gaya to Pod start nahi hoga.
+> Use Case
+Maan lo application ko database ready hone ke baad hi start karna hai.
+
+Init Container
+   ↓
+Check Database Ready
+   ↓
+Main Application Start
+
+Eample:
+initContainers:
+- name: wait-for-db
+  image: busybox
+  command: ['sh', '-c', 'until nslookup mysql; do sleep 2; done']
+
+Kyo Use Karte Hai?
+✅ Database ready hai ya nahi check karna
+✅ Configuration download karna
+✅ Files create karna
+✅ Dependencies verify karna
+
+Real Example
+E-commerce Application:
+MySQL start hone me 30 sec lag rahe hain.
+Java App turant start ho jata hai aur DB connection fail ho jata hai.
+
+Solution:
+Init Container DB ready hone ka wait karega.
+
+# 2. Sidecar Container Kya Hai?
+Sidecar Container main container ke saath-saath run karta hai.
+Pod jab tak chalega Sidecar bhi chalega.
+> Use Case
+Main application ke extra kaam Sidecar karta hai.
+Main Application
+       +
+Sidecar Container
+> Example
+Application logs generate kar raha hai.
+
+App Container
+   ↓
+/logs/app.log
+   ↓
+Sidecar Reads Logs
+   ↓
+Send to ELK/Splunk
+> Kyo Use Karte Hai?
+✅ Log collection
+✅ Monitoring
+✅ Security
+✅ Proxy
+✅ Data synchronization
+
+> Real World Example
+Sidecar for Logging
+Container 1:
+// nginx
+Container 2:
+// fluentd
+
+Nginx logs banata hai.
+Fluentd logs collect karke ELK Stack me bhejta hai.
