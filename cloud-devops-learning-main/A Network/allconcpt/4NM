@@ -1,0 +1,223 @@
+
+✅ 4. Network Models
+OSI Model (7 Layers): 
+TCP/IP Model (4 Layers): 
+
+
+# Network Models
+      OSI Model (7 Layers): Conceptual model to understand network communication.
+
+# OSI Model (Open Systems Interconnection Model)
+  The OSI Model is a conceptual framework that standardizes the functions of a telecommunication or computing system into 7 abstraction layers. 
+  
+  It helps in understanding how data travels from one device to another over a network.
+
+🚧 PURPOSE OF OSI MODEL:
+> Defines how network communication should occur.
+> Helps troubleshoot network issues by isolating layers.
+> Promotes interoperability between different systems and vendors.
+
+🎯 Why is OSI Model Important?
+   - Helps design networks clearly.
+
+>Supports troubleshooting by isolating issues to a specific layer.
+>Encourages standardization across hardware and software vendors.
+>Helps in certifications (like CCNA, Network+).
+
+
+
+🧱 The 7 Layers of OSI Model (Bottom to Top):
+
+1️⃣ Physical Layer (Layer 1) – "Hardware Layer"
+
+> Deals with the physical medium for transmitting bits (0s and 1s).
+> Includes cables, voltages, pins, connectors, hubs.
+> No understanding of the meaning of bits.
+
+-> Electrical signals or Wi-Fi signals sent through the network
+
+Example: Ethernet cables, Fiber optics, USB, Bluetooth, Wi-Fi signals.
+
+2️⃣ Data Link Layer (Layer 2) – "Node-to-node delivery"
+ > Responsible for framing, MAC addressing, and error detection.
+
+ > Ensures data transfer is error-free between two directly connected nodes.
+
+->   Frames are formed with MAC addresses, sent over local network
+
+💡 Example: Switches, MAC addresses, Ethernet, ARP, PPP.
+
+
+3️⃣ Network Layer (Layer 3) – "Routing Layer"
+
+ > Provides logical addressing (IP) and routing of packets across multiple networks.
+
+ > Determines best path from source to destination.
+
+-> Each segment gets IP addresses (sender/receiver) and routed through Internet
+
+💡 Example: Routers, IP Address, ICMP, OSPF, RIP.
+
+4️⃣ Transport Layer (Layer 4) – "End-to-End Delivery"
+ > Ensures reliable transmission, error recovery, and flow control.
+
+ >Two main protocols:
+  TCP (Transmission Control Protocol) – reliable.
+  UDP (User Datagram Protocol) – faster but not reliable.
+
+-> Message split into TCP segments and sent.
+
+💡 Example: TCP (used in web browsing), UDP (used in video streaming, VoIP).
+
+5️⃣ Session Layer (Layer 5) – "Session Management"
+ > Establishes, manages, and terminates sessions between two devices.
+ > Synchronizes communication and manages dialog control.
+
+-> Session between sender and recipient is managed
+
+💡 Example: Logging into websites, Remote procedure calls (RPC), SQL sessions.
+
+6️⃣ Presentation Layer (Layer 6) – "Translator Layer"
+ > Translates data between application and network formats.
+
+ > Handles data encryption/decryption, compression/decompression, and data conversion.
+
+-> Message is encrypted using end-to-end encryption
+
+💡 Example: SSL/TLS (for HTTPS), JPEG, MP3, GIF formats.
+
+7️⃣ Application Layer (Layer 7) – "User Interface Layer"
+ > Closest to the end-user.
+ > Provides network services to applications like email, file transfer, and web browsing.
+
+->   User types the message in WhatsApp app
+
+💡 Example: HTTP (web), SMTP (email), FTP (file transfer), DNS.
+
+
+
+# What is TCP/IP Model?
+TCP/IP (Transmission Control Protocol/Internet Protocol) is a networking model that defines how data is sent, received, and communicated over the Internet and computer networks.
+
+It provides a set of rules and protocols that allow different devices such as computers, servers, mobile phones, and routers to communicate with each other.
+
+In simple words, TCP/IP is the language that devices use to talk to each other on a network.
+
+Example
+When you open Google, send a WhatsApp message, watch YouTube, or download a file, TCP/IP is working behind the scenes.
+
+# Why is TCP/IP Model Used?
+
+TCP/IP is used to establish communication between devices connected to a network.
+
+Without TCP/IP, devices would not know how to send, receive, or understand data.
+
+Main Reasons
+To enable communication between devices.
+To transfer data reliably.
+To identify devices using IP addresses.
+To route data from source to destination.
+To support Internet communication.
+
+Example
+A Windows laptop can communicate with a Linux server because both use TCP/IP protocols.
+
+# Where is TCP/IP Model Used?
+TCP/IP is used in almost every type of network.
+
+> Used In
+Internet
+Cloud Computing
+Data Centers
+Corporate Networks
+Home Wi-Fi Networks
+Mobile Networks
+Example
+When you access a website hosted on AWS, TCP/IP is used to transfer data between your device and the server.
+
+# When is TCP/IP Model Used?
+TCP/IP is used whenever data needs to travel from one device to another.
+
+Situations
+Browsing websites
+Sending emails
+Video calling
+File downloading
+Online gaming
+Cloud services
+Example
+When you search "DevOps Roadmap" on Google, TCP/IP is used to send your request and receive the results.
+
+# How Does TCP/IP Model Work?
+TCP/IP works using four layers. Each layer performs a specific task before passing data to the next layer.
+
+Step 1: Application Layer
+The user interacts with an application.
+
+Example:
+You open Chrome and type "www.google.com".
+The browser creates an HTTP request.
+
+Step 2: Transport Layer
+The data is divided into smaller pieces called segments.
+
+> TCP ensures:
+Reliable delivery
+Error checking
+Correct order of data
+
+Example:
+If a file is being downloaded and one part is lost, TCP requests that part again.
+
+Step 3: Internet Layer
+This layer adds source and destination IP addresses.
+It decides the best route for the data.
+
+Example:
+Source IP:
+192.168.1.10
+
+Destination IP:
+142.250.xxx.xxx (Google Server)
+
+The router uses these IP addresses to forward packets.
+
+Step 4: Network Access Layer
+This layer sends data through the physical network.
+Data travels through:
+Wi-Fi
+Ethernet Cable
+Fiber Optic Cable
+
+The data is converted into signals and transmitted.
+
+# 1. Application Layer
+Creates a request for the YouTube webpage.
+
+2. Transport Layer
+Breaks the request into segments and ensures reliability using TCP.
+
+3. Internet Layer
+Adds IP addresses and finds the route to the YouTube server.
+
+4. Network Access Layer
+Sends the data through Wi-Fi or cable.
+
+Result
+The YouTube server receives the request and sends the webpage back using the same process in reverse order.
+
+
+# Advantages of TCP/IP Model
+Standard networking model.
+Used worldwide on the Internet.
+Reliable communication.
+Supports different operating systems.
+Scalable and flexible.
+Allows communication between different types of devices.
+
+# Key Points
+TCP/IP is the foundation of the Internet.
+It contains 4 layers.
+TCP provides reliable communication.
+IP provides addressing and routing.
+Every website, cloud service, and online application uses TCP/IP.

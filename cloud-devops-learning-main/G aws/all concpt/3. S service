@@ -1,0 +1,133 @@
+# Storage Services
+S3 (Simple Storage Service)
+EBS (Elastic Block Store)
+EFS (Elastic File System)
+Glacier
+
+
+⭐ S3 (Simple Storage Service)
+ Amazon S3 stands for "Simple Storage Service". 
+ It is an object storage service provided by AWS. 
+ We use S3 to store files such as images, videos, documents, backups, and website files. S3 provides high durability, scalability, and security.
+
+📌 Simple Example
+Suppose you have a website 🖥️ and users upload profile photos 📸.
+Instead of storing photos on your computer or server:
+User → Upload Photo → S3 Bucket → Photo Stored ☁️
+
+🔑 Important S3 Terms
+Bucket → Container where files are stored.
+Object → Actual file like image, video, PDF.
+Key → Unique name/path of an object.
+Region → AWS location where the bucket is created.
+Storage Class → Defines storage cost and access type.
+
+>> key point
+Storage Type: Object Storage
+Maximum Object Size: 50 TB (actual limit about 48.8 TiB)
+Console Upload Maximum: 160 GB
+Maximum Bucket Size: No limit
+Objects in Bucket: No limit
+Durability: 99.999999999% (11 9's)
+File in S3: Called Object
+Object Storage Place: Called Bucket
+Large File Upload: Multipart Upload
+Multipart Maximum Parts: 10,000
+Security: IAM, Bucket Policy, Encryption
+
+>> Host static website:
+>> S3 versioning
+>> s3 Replication
+>> AWS S3 Bucket
+>> S3 Bucket Policy:
+>> s3 storage Classes
+>> S3 Bucket Lifecycle
+>> s3 snow family
+>> amazon s3 storage Gateway
+
+
+
+⭐ EBS (Elastic Block Store) 
+“Amazon EBS stands for Elastic Block Store. It is a block storage service provided by AWS. It is mainly used as a storage disk for EC2 instances.”
+
+📌 Simple Example
+EC2 = Computer 🖥️
+EBS = Hard Disk 💾
+
+>> use case:
+EC2 Storage → Used as a hard disk for EC2
+Operating System → Store Windows or Linux OS
+Application Data → Store application files
+Database Storage → Store database data
+Backup → Create EBS Snapshots
+Extra Storage → Add more storage to EC2
+
+
+>> key point:
+Storage Type: Block Storage
+→ Data ko small blocks me store karta hai.
+
+Use: Store OS, Apps, and Data
+→ EBS me Operating System, applications aur files/data store kar sakte hain.
+
+Maximum Volume Size: Up to 64 TiB
+→ Ek EBS volume ka size volume type ke according 64 TiB tak ho sakta hai.
+
+Location: Availability Zone (AZ)
+→ EBS volume ek specific Availability Zone me create hota hai.
+
+Backup: EBS Snapshot
+→ EBS data ka backup Snapshot ke through liya jata hai.
+
+Security: Supports Encryption 🔐
+→ EBS data ko encryption se secure kar sakte hain.
+
+Size: Can Increase Volume Size
+→ Zarurat padne par EBS storage size ko increase kar sakte hain.
+
+Types: gp3, gp2, io1, io2, st1, sc1
+→ EBS ke different volume types hain, jo performance aur use-case ke according select hote hain.
+
+
+
+>> Termination on delete
+>> create EBS and attaching to EC2 intstace.
+>> modify size EBS volume after detach and delete.
+>> Snapshot of EBS.
+>> How to copy EBS to another AZ
+>> Unmount EBS
+>> EBS snapshot - copy to other region
+>> EBS Encryption 
+>> Amazon Data Lifecycle manager
+
+
+
+⭐ EFS (Elastic File System)
+Amazon EFS is a file storage service used to share files between multiple EC2 instances.
+
+🎤 Simple Interview Answer
+“Amazon EFS stands for Elastic File System. It is a file storage service provided by AWS. Multiple EC2 instances can access the same EFS storage at the same time.”
+
+>> Use Cases
+Shared File Storage
+Multiple EC2 instances access same files
+Web applications
+Content management systems
+Application shared data
+Automatic storage scaling
+
+⭐ Glacier
+Amazon S3 Glacier is a low-cost storage service used to store data for a long time.
+
+🎤 Simple Interview Answer
+“Amazon S3 Glacier is an archive storage service provided by AWS. It is used to store data that is not accessed frequently for long-term backup at a low cost.”
+
+>> Use Cases
+Long-term data storage
+Data backup
+Old files storage
+Company records
+Financial records
+Archive data
+
+

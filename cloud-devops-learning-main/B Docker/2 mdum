@@ -1,0 +1,109 @@
+
+# Real Interview Scenarios
+1. Your container exits immediately after starting. How will you troubleshoot?
+
+2. The application works on your laptop but fails inside Docker. What will you check?
+
+3. Docker build is taking 20 minutes. How do you optimize it?
+A container cannot connect to the database. How do you debug it?
+4. Your website is not accessible after publishing port 8080. What will you check?
+
+5. The container is consuming 100% CPU. What steps will you take?
+
+6. The container is running, but users get a 502 Bad Gateway. How do you investigate?
+
+7. You accidentally deleted a running container. How do you recover?
+
+8. Disk space on the Docker host is full. What commands will you use?
+
+9. One container cannot communicate with another. How do you troubleshoot?
+
+10. After deploying a new image, the application crashes. What is your rollback plan?
+
+11. A developer forgot to include environment variables. How will you fix it?
+
+12. Sensitive credentials are inside the Docker image. What should be done?
+
+13. A container keeps restarting every few seconds. How do you identify the cause?
+
+14. You need zero-downtime deployment for a Dockerized application. How would you achieve it?
+
+15. Your Docker host suddenly runs out of memory. What do you check first?
+
+16. Users report slow response times after container deployment. How do you investigate?
+
+17. You need to run multiple versions of the same application simultaneously. How would you design it?
+
+18. A production container was modified manually. How would you restore the correct state?
+
+19. Your company wants to migrate from VMs to Docker. What would be your migration approach?
+
+20. How does an image get node/python without me installing it.
+
+
+
+
+# Cloud + DevOps Important Performance Questions
+How do you optimize Docker containers running on AWS EC2?
+
+How do you optimize Docker performance in Kubernetes?
+
+What is the difference between Docker CPU limits and Kubernetes CPU limits?
+
+What is the difference between Kubernetes requests and limits?
+
+What happens when a Kubernetes container exceeds its memory limit?
+
+How do you troubleshoot a pod consuming high CPU?
+
+How do you troubleshoot a pod consuming high memory?
+
+How do you monitor Docker/Kubernetes resource usage?
+
+How does container resource allocation affect cloud cost?
+
+How do you optimize container workloads to reduce cloud costs?
+
+How do you choose the appropriate CPU and memory for a container?
+
+What is horizontal scaling and how does it improve application performance?
+
+What is vertical scaling and when would you use it?
+
+What is the difference between horizontal and vertical scaling?
+
+How do Docker containers handle high traffic?
+
+How would you scale a containerized application in production?
+
+How do load balancers improve containerized application performance?
+
+How do you troubleshoot a slow application running inside a container?
+
+What metrics do you monitor for container performance?
+
+How would you optimize a Dockerized application for production?
+
+
+
+⭐ Scenario-Based Questions
+Your Docker container is using 100% CPU. How would you troubleshoot it?
+
+Your container is continuously getting killed. What could be the reason?
+
+A Docker build takes 10 minutes. How would you reduce the build time?
+
+Your Docker image is 2 GB. How would you reduce its size?
+A container takes 60 seconds to start. How would you 
+troubleshoot it?
+
+One container is consuming all available memory and affecting other containers. What would you do?
+
+Your application works fast locally but is slow inside Docker. How would you investigate?
+
+Your application works in Docker but becomes slow after deployment to Kubernetes. What would you check?
+
+A Kubernetes pod is repeatedly getting OOMKilled. What does it mean and how would you fix it?
+
+Your production containers are running out of resources during peak traffic. What solution would you implement?
+

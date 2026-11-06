@@ -1,0 +1,89 @@
+# project
+1. Static Website Hosting using S3
+EC2 Web Server
+RDS + EC2 Application
+S3 File Upload
+Intermediate
+WordPress on EC2
+Auto Scaling + Load Balancer
+Lambda + API Gateway
+VPC with Public & Private Subnets
+CloudFront + S3
+1. cloud Resume challenge.
+2. Automated image processing
+3. image processing system
+
+
+
+
+1
+Project Name:
+Professional-Level Cloud Web Application
+What is it (short):
+It is a full-stack cloud-based application architecture that includes all major components needed to run a modern web app:
+Frontend → User interface (what users see)
+Backend API → Handles logic & requests
+Database → Stores data
+Load Balancer → Distributes traffic
+Networking → Connects services securely
+Infrastructure (Infra) → Cloud resources (servers, storage, etc.)
+
+2.
+Project Name:
+Smart Serverless Automation Pipeline
+What is it (short):
+It is a serverless cloud workflow where tasks are automated without managing servers.
+
+Flow:
+S3 / Blob Storage → Stores files/data
+Lambda / Azure Functions → Runs code automatically (no server needed)
+Data Processing → Processes uploaded data
+DynamoDB / Cosmos DB → Stores processed data
+CloudWatch / Azure Monitor → Tracks system & sends alerts
+
+3.
+Project Name:
+Enterprise-Grade Kubernetes Deployment
+What is it (short):
+It is a production-level deployment system where applications are run using containers and managed automatically at scale.
+Main Components:
+Docker → Packages app into containers
+Kubernetes → Manages and runs containers
+Terraform → Creates infrastructure using code
+Auto-scaling → Automatically increases/decreases resources
+
+
+
+
+
+
+
+
+1. Production-Grade Disaster Recovery Platform ✅
+Build a disaster recovery solution that automatically backs up critical infrastructure and application data, with a defined RPO/RTO strategy and the ability to restore services during a regional or infrastructure failure.
+
+Tech: AWS, Terraform, S3, EBS Snapshots, Route53, RDS, CloudWatch, Lambda
+
+2. Zero-Downtime Blue/Green Deployment Platform✅
+
+Build a deployment platform that maintains two production environments and allows you to safely release new application versions with instant traffic switching and rollback capabilities.
+
+Tech: AWS ALB, EC2/ECS/EKS, Terraform, Docker, GitHub Actions, Route53
+
+3. Canary Deployment Platform✅
+
+Implement progressive application deployments where a small percentage of users receive the new version first, allowing you to monitor performance and gradually increase traffic before a full rollout.
+
+Tech: Kubernetes, Istio, Argo Rollouts, Prometheus, Grafana, ArgoCD, Helm
+
+4. Centralized Logging & Observability Platform✅
+
+Build a centralized logging platform that collects logs from applications, containers, and Kubernetes workloads, making it easy to search, analyze, and troubleshoot production issues.
+
+Tech: Kubernetes, Fluent Bit, Elasticsearch/OpenSearch, Kibana/OpenSearch Dashboards, Prometheus, Grafana
+
+5. Multi-Region High Availability Infrastructure✅
+
+Build a multi-region AWS infrastructure capable of handling regional failures with automated traffic routing, replicated data, health checks, and failover mechanisms.
+
+Tech: AWS, Terraform, Route53, CloudFront, S3, RDS, ALB, Auto Scaling, IAM

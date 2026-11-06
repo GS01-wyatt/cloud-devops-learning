@@ -1,0 +1,135 @@
+Part 1: Terraform Basics (1–15)
+# 1. What is Terraform, and what is its primary purpose?
+ Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It allows us to create, manage, and modify infrastructure automatically using configuration files written in HCL (HashiCorp Configuration Language).
+ 
+ Its primary purpose is to automate infrastructure provisioning, reduce manual work, maintain consistency, and manage infrastructure efficiently.
+
+Example: We can use Terraform to create AWS resources such as EC2 instances, S3 buckets, and VPCs without creating them manually through the AWS Console.
+
+> Key Benefits:
+- Automation of infrastructure
+- Reduced human errors
+- Reusable configuration files
+- Supports multiple cloud providers
+
+
+2. What is Infrastructure as Code (IaC), and what are its benefits?
+3. Explain the history of Terraform.
+4. What is the difference between declarative and imperative IaC?
+5. How is Terraform different from Ansible?
+6. Why is Terraform called a cloud-agnostic tool?
+7. What are the main alternatives to Terraform?
+8. What are the main components of Terraform architecture?
+9. What are Terraform providers and resources?
+10. What is HCL (HashiCorp Configuration Language)?
+11. Explain the basic structure of a Terraform configuration file.
+12. What is the difference between Terraform and AWS CloudFormation?
+13. What are the advantages and limitations of Terraform?
+14. What is the difference between Terraform and manually creating resources in the AWS Console?
+15. Explain the Write–Plan–Apply workflow of Terraform.
+Part 2: Terraform Commands (16–25)
+16. What is the purpose of terraform init?
+17. What does terraform plan do?
+18. What is the difference between terraform apply and terraform apply tfplan?
+19. What are terraform validate and terraform fmt used for?
+20. What is the purpose of terraform destroy?
+21. What is the difference between terraform show and terraform output?
+22. What are terraform console and terraform graph used for?
+23. What is the purpose of terraform refresh or refresh-only planning?
+24. How do you enable debug logging in Terraform?
+25. What happens when you run terraform init -upgrade?
+
+
+
+
+Part 3: Terraform State Management (26–35)
+26. What is the purpose of the Terraform state file?
+27. What is the difference between local state and remote state?
+28. Why should Terraform state be stored remotely?
+29. What is state locking, and why is it important?
+30. How do you recover from a stuck state lock?
+31. How do you secure sensitive information stored in the Terraform state file?
+32. What happens if you manually edit the terraform.tfstate file?
+33. What is infrastructure drift, and how do you detect it?
+34. What is the difference between terraform import and an import block?
+35. How do you recover a corrupted or accidentally deleted Terraform state file?
+
+
+Part 4: Variables, Outputs and Modules (36–45)
+36. What is the difference between input variables and local values (locals)?
+37. What is a .tfvars file, and how is it used?
+38. What are the different ways to pass variable values in Terraform?
+39. What are output values, and why are they used?
+40. How do you mark variables and outputs as sensitive?
+41. What is a Terraform module, and why do we use it?
+42. What is the difference between a root module and a child module?
+43. What is the typical file structure of a Terraform project?
+44. How do you reuse the same Terraform module across multiple projects?
+45. Why should provider and module versions be pinned?
+
+
+Part 5: Resources and Advanced Concepts (46–60)
+46. What is the difference between a resource and a data source?
+47. What is the difference between count and for_each?
+48. What is the purpose of the depends_on meta-argument?
+49. How does Terraform handle dependencies between resources?
+50. What is a lifecycle block in Terraform?
+51. Explain create_before_destroy, prevent_destroy, and ignore_changes.
+52. What are dynamic blocks in Terraform?
+53. What is provider aliasing, and when is it useful?
+54. What are Terraform built-in functions? Give some examples.
+55. What are Terraform provisioners, and why should they be used as a last resort?
+56. What is the difference between implicit and explicit dependencies?
+57. What is the purpose of the .terraform.lock.hcl file?
+58. What is the difference between terraform state mv and a moved block?
+59. What is the purpose of the removed block?
+60. What is the difference between null_resource and terraform_data?
+
+
+Part 6: Environments, Security and Team Collaboration (61–75)
+61. What are Terraform workspaces, and how do they differ from modules?
+62. How do you manage dev, staging and production environments using Terraform?
+63. What is Terraform Cloud?
+64. What is the difference between Terraform Cloud and Terraform Enterprise?
+65. What is OpenTofu, and how is it related to Terraform?
+66. What is Terragrunt, and why do teams use it?
+67. What is Policy as Code, and how do Sentinel and OPA help?
+68. What is Terraform's native testing framework?
+69. How can you estimate infrastructure costs before deployment?
+70. What is Atlantis, and how does it support GitOps workflows?
+71. What are the best practices for structuring a Terraform project?
+72. How do you manage secrets such as database passwords securely?
+73. How do you integrate Terraform with GitHub Actions or Jenkins?
+74. How do you manage Terraform state when multiple engineers work on the same project?
+75. How do you troubleshoot Terraform configuration errors?
+
+
+Part 7: AWS and Terraform Practical Questions (76–85)
+76. How do you create an EC2 instance using Terraform?
+77. How do you create an S3 bucket using Terraform?
+78. How do you create a VPC, public subnet and private subnet using Terraform?
+79. How do you attach a security group to an EC2 instance?
+80. How do you create an IAM role and attach policies using Terraform?
+81. How do you create an AWS RDS database using Terraform?
+82. How do you create multiple EC2 instances using count or for_each?
+83. How do you configure an AWS provider and select a region?
+84. How do you configure an S3 backend for remote state storage?
+85. How do you deploy AWS infrastructure automatically through a CI/CD pipeline?
+
+
+Part 8: Real-World Scenario-Based Questions (86–100)
+86. Your Terraform configuration creates an EC2 instance, but the deployment fails. How would you troubleshoot it?
+87. Someone manually changes an EC2 instance type in the AWS Console. How would you detect and fix the drift?
+88. Your Terraform plan shows that an important S3 bucket will be destroyed. How would you prevent accidental deletion?
+89. Two engineers run terraform apply simultaneously. How would you prevent state conflicts?
+90. Your Terraform state file is corrupted. How would you recover the infrastructure state?
+91. You need to deploy identical infrastructure in three AWS regions. How would you design the Terraform configuration?
+92. Your configuration needs database credentials. How would you store and retrieve secrets securely?
+93. An EC2 instance is created before its required security group. How would you fix the dependency problem?
+94. Terraform wants to destroy and recreate an RDS instance after a configuration change. How would you investigate and minimize downtime?
+95. Your team manages hundreds of resources in one Terraform state file, and deployments are becoming slow and risky. How would you improve the architecture?
+96. You accidentally delete a resource block from your Terraform code, but the actual resource must continue running. What would you do?
+97. You need to import an existing EC2 instance created manually in AWS into Terraform management. What steps would you follow?
+98. You need to replace an EC2 instance behind a load balancer without causing downtime. How would you approach the replacement?
+99. Your Terraform deployment works locally but fails in Jenkins or GitHub Actions. How would you troubleshoot the issue?
+100. You are asked to design a production-ready Terraform project for AWS with reusable modules, remote state, security, multiple environments and CI/CD. How would you design it?

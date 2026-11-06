@@ -1,0 +1,37 @@
+Q1. What is a CI/CD pipeline, and what are its stages?
+
+Q2. Explain the complete workflow from code commit to production deployment.
+
+Q3. What is Jenkins, and how does it work?
+
+Q4. What is the difference between Jenkins Freestyle and Pipeline jobs?
+
+Q5. What is a Jenkinsfile?
+
+Q6. What is the difference between Declarative and Scripted Pipelines?
+
+Q7. What are Jenkins agents and controllers?
+
+Q8. How do you manage credentials in Jenkins?
+
+Q9. How do you trigger a Jenkins pipeline automatically?
+
+Q10. How do you handle pipeline failures?
+
+Q11. How do you implement automated testing in CI/CD?
+
+Q12. How do you roll back a failed deployment?
+
+Q13. How do you integrate Docker with Jenkins?
+
+Q14. How do you implement zero-downtime deployments?
+
+Q15. How would you optimize a slow CI/CD pipeline?
+Scenario-Based Questions
+Q16. A Jenkins pipeline worked yesterday but is failing today. How will you investigate?
+
+Q17. A Jenkins job works on the controller but fails on an agent. What will you check?
+
+Q18. Your pipeline successfully builds a Docker image but fails to push it to Docker Hub or ECR. How will you troubleshoot it?
+
+Q19. How will you implement automatic deployment to Kubernetes after a successful build?

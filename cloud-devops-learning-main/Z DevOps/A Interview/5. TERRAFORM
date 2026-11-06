@@ -1,0 +1,28 @@
+
+
+# 6. Terraform & Infrastructure as Code (76–90)
+76. What is Terraform, and why is it used?
+77. What is the difference between Terraform and Ansible?
+78. What are Terraform providers, resources, and data sources?
+79. What is the purpose of terraform init, plan, apply, and destroy?
+80. What is Terraform state, and why is it important?
+81. What is the difference between local and remote state?
+82. How do you manage Terraform state locking?
+83. What are Terraform modules, and why are they useful?
+84. What is the difference between count and for_each?
+85. What are Terraform variables, outputs, and locals?
+86. What is the difference between terraform.tfvars and variables.tf?
+87. What happens when someone manually changes a resource created by Terraform?
+88. What is a Terraform lifecycle block?
+89. How do you manage secrets in Terraform?
+90. How would you create an EC2 instance and an S3 bucket using Terraform?
+
+1. Your local terraform.tfstate file is deleted. What will you do?
+2. Terraform says a resource already exists, but it is not in the state file. How will you fix it?
+3. Your team is getting state-lock errors. How will you troubleshoot them?
+4. Someone manually deleted an AWS resource. How will Terraform handle it during the next plan/apply?
+1. You created an EC2 instance manually. How will you bring it under Terraform management?
+2. Your Terraform apply failed halfway. How will you recover safely?
+3. Two developers run Terraform apply simultaneously. What can go wrong?
+4. You changed an EC2 instance type in Terraform. How will you know whether it will update or recreate the instance?
+

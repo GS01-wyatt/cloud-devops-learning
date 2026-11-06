@@ -1,0 +1,42 @@
+# SSL/TLS Explained
+k apply -f pod.yaml
+k get po
+k exec -it myapp-pod -- sh
+ echo $FIRSTNAME
+ exit
+k create cm app-cm -- from-literal=firstname=Golu \
+ --from-literal=lastname=Kumar
+k get cm
+k describe cm/app-cm 
+k apply --force -f pod.yaml
+k get pod
+k describe pod/myapp-pod
+k create cm app-cm --force-file=app.config
+
+# Kubernetes Authentication and Authorization
+kubectl get Pods
+kubectl get pods --server --client-Certificate
+k get pod --kubeconfig config
+ls -lrt
+vi config
+ps -ef|grep control-plane
+docker ps |grep control
+docker exec -it cka-cluster2-control-plane bash
+
+# Kubernetes RBAC Explained
+k auth can-i get pod
+k auth whoami
+k auth can-i get pod --as "user name"
+k apply -f role.yaml
+k get roles
+k describe role pod-reader
+k apply -f binding.yaml
+k get rolebinding
+k describe rolebinding read-pods
+k auth can-i get pod --as adam
+k get roles -A
+k get roles -A --no-headers | wc -l
+k config set-crendentials adam \
+>
+k config set-context adam --cluster=kind-cka-cluster2 \
+k config get-contexts

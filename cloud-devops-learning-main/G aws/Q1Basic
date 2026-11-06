@@ -1,0 +1,21 @@
+1. Public subnet vs Private subnet?
+2. Security Group vs NACL?
+3. Internet Gateway vs NAT Gateway?
+4. ALB vs NLB?
+
+Security Group vs NACL
+IAM User vs IAM Role
+ALB vs NLB
+Multi-AZ vs Multi-Region
+S3 vs EBS vs EFS
+RDS Multi-AZ vs Read Replica
+SQS vs SNS
+CloudFront vs Route 53
+EC2 vs Lambda
+ECS vs EKS
+On-Demand vs Spot vs Reserved
+RDS vs DynamoDB
+S3 Standard vs IA vs Glacier
+NAT Gateway vs VPC Endpoint
+
+

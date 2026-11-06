@@ -1,0 +1,75 @@
+> What is the difference between hard links and soft links?
+>How do you mount and unmount filesystems in Linux?
+> How do you troubleshoot network connectivity issues in Linux?
+> How do you list all the processes running in Linux?
+> How do you set a file to be read-only for all users using the symbolic method?
+> What is the difference between a process and a thread?
+> How do you find the process ID (PID) of a running process?
+
+> What is the find command, and how do you use it?
+
+>  How do you secure a Linux server?
+There are multiple methods to secure the Linux server and protect it from data breaches, security threats, and unauthorized access. Here are some of these methods:
+
+Create a strong password
+Update the server and apply security patches.
+Use secured protocols like SSH and configure it to use key-based authentication for higher security.
+
+> How do you optimize Linux system performance?
+You can optimize the Linux performance through various strategies to improve resource usage and efficiency. So some of the strategies are:
+
+Updates the system as per the latest one available.
+Optimize the disk, enable the caching, and optimize the access pattern.
+Manage memory and CPU usage.
+Disable the necessary services and use lightweight alternatives of the tools.
+
+
+> What is the Linux Booting Sequence?
+The Linux booting sequence refers to the step-by-step process the system follows from powering on the machine to getting a usable Linux operating system.
+
+Stages of Linux Booting Sequence
+
+BIOS/UEFI: initialize hardware, run POST, find boot loader.
+Boot loader (GRUB/LILO/systemd-boot): load kernel, offer boot choices, pass kernel args.
+Kernel: decompresses, initializes drivers, mounts root (initramfs).
+Init / systemd: start first process, bring up services and daemons.
+Runlevel / target: enter multi-user or graphical target (e.g., multi-user.target / graphical.target).
+
+> What are the most important Linux commands?
+There are a ton of useful commands in Linux, and here are some of the commonly used commands:
+
+ls: Display directory contents such as folders and files.
+mkdir: Used to create a new directory.
+pwd: Shows the current directory.
+top: Display system running processes and resource usage.
+grep: Search a specific pattern in a file.
+cat: Through this command, users can add multiple files and also display the content of the files.
+tar: Archives directories and files into a tarball.
+wget: Download files from the browser or web.
+free: Shows memory usage.
+df: Shows disk space usage.
+man: Gives a manual page for a specific command that displays instructions and details.
+
+
+> How to connect another computer using SSH protocol.
+>How do you schedule recurring tasks in Linux?
+>What is the difference between a process and a daemon in Linux?
+> How do you troubleshoot a Linux OS that fails to boot?
+> How iptables use for network filtering?
+> How do you check system uptime and interpret the output?
+> 
+>How to find and kill a process in Linux?What is the  
+>purpose of the SSH protocol in Linux, and how do you securely connect to a remote server using SSH?
+>How do you change the ownership of a file or directory in Linux using the chown command?
+>What is the purpose of the ping command in Linux, and how do you test network connectivity to a remote host?
+>How do you test network connectivity to a remote host?
+
+>What is the purpose of the netstat command in Linux?
+The netstat command in Linux is used to display active network connections, routing tables, and listening ports. To view network connections and listening ports, use the netstat command with appropriate options. 
+
+For example: If we want to display all listening TCP ports, we can use the following command.
+//netstat -tuln
+
+> How do you set up a static IP address in Linux using the command-line interface?
+
+> How do you find the single IP with the most current connections (TCP+UDP, IPv4/IPv6)?

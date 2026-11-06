@@ -1,0 +1,52 @@
+# Infrastructure as Code
+Terraform, CloudFormation, Ansible — automate provisioning and configuration management.
+
+1. Terraform Definition & History
+2. Current Trends & News in Terraform
+3. Infrastructure as Code (IaC)
+4. Terraform vs Ansible
+5. Terraform vs CloudFormation
+6. Terraform Setup on AWS EC2 & Local Machine
+7. Terraform HCL
+8. HCL Basic Syntax
+9. Types of Blocks
+10. Expressions & Functions
+11. Providers
+12. Resources
+13. Variables
+14. Outputs
+15. Modules
+16. String Interpolation
+17. Loops (for_each, count)
+18. Conditional Expressions
+19. Terraform Workflow
+20. Terraform CLI & Commands
+21. AWS Provider
+22. Advanced Terraform Commands
+23. Terraform Debugging
+24. Input Variables
+25. Output Variables
+26. Local Variables
+27. Dynamic Blocks
+28. Terraform State Management
+29. Secure State Management
+30. Remote State Backends
+31. AWS S3 Remote Backend
+32. State Locking with DynamoDB
+33. Terraform Provisioners
+34. AWS EC2 User Data
+35. Terraform Workspaces
+36. Environment Management
+37. Terraform Modules
+38. Terraform Registry Modules
+39. Custom Modules
+40. Module Structure & Best Practices
+41. EKS with Terraform
+42. VPC, Subnets & Route Tables
+43. Security Groups & IAM Roles
+44. EKS Cluster Deployment
+45. Terraform with CI/CD
+46. Terraform with Ansible
+
+
+https://www.youtube.com/watch?v=4JYtAf4M88Y&list=LL&index=11

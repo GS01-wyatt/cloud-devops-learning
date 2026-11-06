@@ -1,0 +1,135 @@
+# 1. Physical Layer
+  The Physical Layer is the first and lowest layer of the OSI (Open Systems Interconnection) model.
+
+  It is responsible for the actual transmission of raw binary data (0s and 1s) over a physical communication medium such as cables or wireless signals.
+
+🔸 1. Network Topologies
+Definition (English):
+A network topology refers to the physical or logical layout of connected devices (nodes) in a network.
+
+Types:
+
+a. Star Topology
+All devices are connected to a central hub/switch.
+If one device fails, others continue working.
+But if the hub fails, the whole network goes down.
+
+Hindi:
+Star topology में सभी डिवाइसेस एक सेंट्रल डिवाइस (हब या स्विच) से जुड़ी होती हैं।
+अगर कोई एक डिवाइस खराब हो जाए, तो नेटवर्क चलता रहता है। लेकिन हब खराब हो जाए तो पूरा नेटवर्क बंद हो जाता है।
+
+b. Bus Topology
+All devices are connected to a single central cable (backbone).
+Easy to install but difficult to troubleshoot.
+If the main cable fails, the whole network stops.
+
+Hindi:
+Bus topology में सभी डिवाइस एक एकल लाइन या केबल से जुड़ी होती हैं।
+यह आसान होती है लेकिन यदि केबल टूट जाए तो पूरा नेटवर्क बंद हो जाता है।
+
+c. Ring Topology
+Each device is connected to two other devices, forming a circle.
+Data flows in one direction.
+Failure in one device can break the whole ring.
+
+Hindi:
+Ring topology में डिवाइस एक घेरा (रिंग) बनाते हैं और एक-दूसरे से जुड़े होते हैं।
+डेटा एक ही दिशा में चलता है, और अगर एक डिवाइस फेल हो जाए तो पूरा नेटवर्क रुक सकता है।
+
+
+d. Mesh Topology
+Every device is connected to every other device directly.
+High cost but very reliable and fast.
+Used in military and mission-critical systems.
+
+Hindi:
+Mesh topology में हर डिवाइस बाकी सभी से जुड़ी होती है।
+यह बहुत महंगी होती है लेकिन सबसे भरोसेमंद (reliable) भी होती है।
+
+
+🔸2. Transmission Modes
+     Transmission mode defines how data flows between devices in a network.
+
+Types:
+a. Simplex Mode
+One-way communication only.
+
+Example: Keyboard to computer.
+
+Hindi:
+सिर्फ एक दिशा में डेटा भेजा जा सकता है।
+जैसे – कीबोर्ड से कंप्यूटर।
+
+b. Half-Duplex Mode
+Two-way communication, but one at a time.
+
+Example: Walkie-talkie.
+
+Hindi:
+दोनों दिशा में डेटा जा सकता है, लेकिन एक समय में एक ही दिशा में।
+जैसे – वॉकी-टॉकी।
+
+c. Full-Duplex Mode
+Two-way communication simultaneously.
+
+Example: Phone call.
+
+Hindi:
+डेटा दोनों ओर एक साथ भेजा और प्राप्त किया जा सकता है।
+जैसे – मोबाइल कॉल।
+
+🔸 3. Transmission Media
+Definition (English):
+Transmission media is the path used to carry data from one device to another.
+
+A. Wired Media (Guided)
+a. Twisted Pair Cable
+Two wires twisted together to reduce noise.
+Common in LAN (Ethernet) cables.
+Low cost, short distance.
+
+Hindi:
+दो तारों को आपस में घुमाया जाता है ताकि सिग्नल में बाधा ना हो।
+कम दूरी और कम लागत में उपयोगी।
+
+b. Coaxial Cable
+One central copper wire with insulation and shielding.
+Used in cable TV and broadband.
+
+Hindi:
+एक सेंट्रल वायर होती है जिसके चारों ओर इंसुलेशन होता है।
+केबल टीवी और इंटरनेट में उपयोग होता है।
+
+c. Fiber Optic Cable
+Uses light signals to transmit data.
+Very high speed and long distance.
+Expensive but reliable.
+
+Hindi:
+डेटा को लाइट के ज़रिए भेजा जाता है।
+बहुत तेज़ और लंबी दूरी के लिए उपयुक्त।
+
+B. Wireless Media (Unguided)
+
+a. Radio Waves
+> Used in Wi-Fi, FM radio, mobile networks.
+> Can travel long distances.
+
+Hindi:
+रेडियो वेव्स का उपयोग Wi-Fi, FM रेडियो, और मोबाइल नेटवर्क में होता है।
+
+b. Microwaves
+> Used in satellites and mobile towers.
+> Needs line-of-sight (no obstruction).
+
+Hindi:
+सैटेलाइट और मोबाइल टावर में उपयोग होता है।
+सीधी लाइन में सिग्नल भेजना होता है।
+
+c. Infrared
+
+> Short-distance communication.
+> Used in TV remotes and IR sensors.
+
+Hindi:
+छोटी दूरी के लिए, जैसे टीवी रिमोट में उपयोग होता है।

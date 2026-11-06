@@ -1,0 +1,147 @@
+# 5. Session Layer 
+
+The Session Layer is the 5th layer in the OSI model, sitting between the Transport Layer and the Presentation Layer.
+
+It is responsible for establishing, managing, and terminating communication sessions between applications.
+
+A session is a conversation between two devices or applications.
+
+> Why is the Session Layer Used?
+The Session Layer is used to manage communication sessions between devices.
+
+Main Reasons
+To establish a connection between devices.
+
+To maintain communication during data transfer.
+
+To synchronize data exchange.
+
+To terminate the connection after communication ends.
+
+Example
+While attending a Zoom meeting, the Session Layer helps maintain the communication session between participants.
+
+> Where is the Session Layer Used?
+The Session Layer is used in applications where continuous communication is required.
+
+Used In
+Video Conferencing
+
+Online Meetings
+
+Remote Login
+
+Database Connections
+
+Web Sessions
+
+Example
+When you log in to Gmail, the session remains active until you log out or the session expires.
+
+> How Does the Session Layer Work?
+The Session Layer works in three stages:
+
+1. Session Establishment
+A connection is created between sender and receiver.
+
+Example
+You open WhatsApp and start a voice call.
+
+The Session Layer establishes a session between both users.
+
+2. Session Maintenance
+The session remains active while data is exchanged.
+
+Example
+During a video call, both users continuously send and receive audio/video data.
+
+The Session Layer manages this communication.
+
+3. Session Termination
+The session is closed when communication ends.
+
+Example
+When the video call ends, the Session Layer terminates the session.
+
+Functions of the Session Layer
+1. Session Establishment
+Creates a communication session.
+
+Example
+Starting a video meeting.
+
+2. Session Maintenance
+Keeps the connection active.
+
+Example
+Maintaining an active login session on a website.
+
+3. Session Termination
+Closes the session after communication.
+
+Example
+Logging out from an online account.
+
+4. Synchronization
+Adds checkpoints during communication.
+
+Example
+While downloading a large file, if the connection breaks at 80%, the download can resume from the checkpoint instead of starting again.
+
+5. Dialog Control
+Controls which device can send data and when.
+
+Example
+In a voice call, both users take turns speaking and listening.
+
+> Real-Life Example
+Imagine a phone call.
+
+Session Establishment
+You dial a number and the call connects.
+
+Session Maintenance
+Both people talk to each other.
+
+Session Termination
+One person hangs up and the call ends.
+
+This is exactly how the Session Layer works in networking.
+
+Protocols Associated with the Session Layer
+Some protocols and services related to session management include:
+NetBIOS
+RPC (Remote Procedure Call)
+PPTP
+SIP (Session Initiation Protocol)
+
+Example
+SIP is commonly used to establish and manage VoIP calls.
+
+Importance of the Session Layer
+Manages communication sessions.
+
+Keeps connections active.
+
+Provides synchronization and recovery.
+
+Supports long-duration communications.
+
+Helps applications communicate efficiently.
+
+
+Interview Questions
+Q1. What is the main purpose of the Session Layer?
+Answer: To establish, maintain, and terminate communication sessions between devices.
+
+Q2. Which OSI layer manages sessions?
+Answer: Session Layer (Layer 5).
+
+Q3. What are the three main functions of the Session Layer?
+Answer:
+
+Session Establishment
+
+Session Maintenance
+
+Session Termination

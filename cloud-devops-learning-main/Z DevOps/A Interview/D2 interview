@@ -1,0 +1,35 @@
+# 1. Basic Level (1–15)
+
+1. What is DevOps, and why is it needed?
+2. What are the key principles of DevOps?
+3. What is the DevOps lifecycle?
+4. What is the difference between Agile and DevOps?
+5. What is CI/CD, and how does it work?
+6. What is the difference between Continuous Integration, Continuous Delivery, and Continuous Deployment?
+7. What is Version Control, and why is Git used?
+8. What is the difference between Git and GitHub?
+9. What is Infrastructure as Code (IaC)?
+10. What is the difference between a Virtual Machine and a Container?
+11. What is Docker, and why is it used?
+12. What is Kubernetes, and why is it needed?
+13. What is configuration management?
+14. What are the most commonly used DevOps tools and their purposes?
+15. What is the difference between monitoring and logging?
+
+
+
+111. How would you troubleshoot a production application that is suddenly slow?
+112. A server is running out of disk space. How would you identify and fix the issue?
+113. A CI/CD pipeline passes all tests, but the deployment fails. How would you investigate?
+114. An application works locally but fails inside a container. What would you check?
+115. A Kubernetes Pod is running, but the application is inaccessible. How would you troubleshoot it?
+116. How would you investigate an HTTP 502 or 504 error?
+117. How would you handle a sudden spike in CPU or memory usage?
+118. How would you securely manage secrets across development, staging, and production?
+119. How would you design a disaster recovery strategy?
+120. What are blue-green, canary, and rolling deployments?
+121. What is the difference between horizontal and vertical scaling?
+122. How do you implement centralized logging and monitoring?
+123. What are SLI, SLO, and SLA?
+124. What is GitOps, and how does it differ from traditional deployment?
+125. Design a complete DevOps workflow using Git, Jenkins, Docker, Kubernetes, AWS, and Terraform.

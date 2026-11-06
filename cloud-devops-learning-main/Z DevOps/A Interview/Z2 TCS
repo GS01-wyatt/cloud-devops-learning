@@ -1,0 +1,36 @@
+# first round technical interview
+
+Tell me about Yourself (Introduction Round)
+
+Have you worked on Git? If yes, what branching strategy do you follow?
+
+Are you familiar with GitHub Actions?
+
+Docker Question: What is a multi-stage build Dockerfile?
+
+Explain the architecture of Docker.
+
+What is a Docker Volume, and where is it used?
+
+What is the difference between on-premises and working in the cloud?
+
+What is your rollback strategy for deployment if any failure/error occurs in CI/CD pipelines?
+
+9. How to shift traffic with zero downtime from V1 to V2, even in Blue-Green deployment?
+10. DB Rollback deployment strategy and DB rollback deployment, which is better and why?
+11. DB CloudFormation and Terraform — which situation should be used for what?
+12. Some troubleshooting questions on deployments and their strategies.
+
+
+
+
+
+
+
+Q1: What is the use of the output block in Terraform?
+Q2: If you created a VM using a Terraform script that generates a terraform.tfstate file, and then modified the VM Terraform script with different names:
+- What will happen to the Terraform state file?
+- Will a new VM get created or not?
+- What will happen to the already-created VM (old VM)?
+Q3: Explain the use of modules in Terraform and write a sample folder structure to create a Resource Group.
+Q4: Write a YAML script to create resources in Azure.

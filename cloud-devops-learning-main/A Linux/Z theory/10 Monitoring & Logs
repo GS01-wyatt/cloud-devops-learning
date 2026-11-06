@@ -1,0 +1,92 @@
+10. System Monitoring & Logs
+System Monitoring Basics
+
+CPU Usage (top)
+
+Memory Usage (free)
+
+Disk Usage Monitoring
+
+Load Average
+
+System Logs Overview
+
+Log Files Location (/var/log)
+
+View Logs (less, tail)
+
+Live Logs (tail -f)
+
+Journal Logs (journalctl)
+
+Service Logs
+
+Error Logs
+
+Log Rotation
+
+Analyze Logs
+
+Troubleshooting Basics
+
+1. What is System Monitoring, and why is it important in Linux and DevOps?
+2. How do you check CPU, Memory, and Disk utilization on a Linux server?
+3. What are the most commonly used Linux monitoring commands (top, htop, vmstat, iostat, free, df)?
+4. A production server becomes very slow. How would you troubleshoot the issue?
+5. What is a log file, and why are logs important for troubleshooting?
+6. Where are system logs stored in Linux?
+7. What is the difference between /var/log/messages, /var/log/syslog, and /var/log/secure?
+8. How do you view and analyze large log files efficiently?
+9. An application is failing in production. How would you use logs to identify the root cause?
+10. What is Log Rotation, and why is it important on production servers?
+Most Asked Scenario-Based Questions
+1.
+
+A production server's CPU usage suddenly reaches 100%. How would you identify the root cause?
+
+2.
+
+Users report that the application is very slow. What monitoring checks would you perform first?
+
+3.
+
+A Linux server runs out of memory frequently. How would you investigate the issue?
+
+4.
+
+A service is down, and users cannot access the application. How would you troubleshoot using logs?
+
+5.
+
+The disk usage on a server has reached 95%. How would you identify what is consuming the space?
+
+6.
+
+An application crashed at midnight. How would you find the exact error from the logs?
+
+7.
+
+You suspect that a server rebooted unexpectedly. Which logs would you check and why?
+
+8.
+
+A website is inaccessible even though the server is running. What logs and monitoring tools would you use?
+
+9.
+
+How would you monitor a Linux server continuously in a Cloud/DevOps environment?
+
+10.
+
+How do monitoring tools like Prometheus, Grafana, CloudWatch, and Nagios help in DevOps?
+
+What is the difference between Monitoring and Logging?
+What is the purpose of the top command?
+How do you check memory usage in Linux?
+What is Log Rotation (logrotate)?
+How do you check real-time logs of a running application?
+What is the difference between proactive monitoring and reactive monitoring?
+Which Linux commands do you use most often for troubleshooting production issues?
+What metrics would you monitor for a production application server?
+How would you investigate a sudden increase in response time for an application?
+What monitoring and logging tools have you used in Cloud/DevOps projects

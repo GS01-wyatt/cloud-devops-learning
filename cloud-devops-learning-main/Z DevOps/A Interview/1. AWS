@@ -1,0 +1,31 @@
+# AWS & Cloud Computing 
+
+# 1. What is cloud computing, and what are its service models?
+
+# 2. What is the difference between AWS EC2, ECS, EKS, and Lambda?
+
+# 3. What is the difference between an AWS Region and an Availability Zone?
+
+# 4. What is the difference between a public subnet and a private subnet?
+
+# 5. What is the difference between an Internet Gateway and a NAT Gateway?
+
+# 6. What is an IAM role, and how is it different from an IAM user?
+
+# 7. What is the difference between Amazon S3 and EBS?
+
+# 8. What is a VPC, and how does it work?
+
+# 9. What is the difference between a Security Group and a Network ACL?
+
+# 10. What is an Application Load Balancer?
+
+# 11. How does Auto Scaling work in AWS?
+
+# 12. How do you securely connect to an EC2 instance?
+
+# 13. How do you monitor AWS resources using CloudWatch?
+
+# 14. How do you reduce AWS infrastructure costs?
+
+# 15. How would you design a highly available application on AWS?

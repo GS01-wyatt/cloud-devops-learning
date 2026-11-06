@@ -1,0 +1,81 @@
+
+# AWS Load Balancing & Scaling
+Elastic Load Balancer (ELB)
+Auto Scaling Group (ASG)
+Scaling Concepts
+Global Deployment
+
+
+⭐ AWS LB and S
+
+
+
+
+
+
+>> Load Balancing kaise kaam karta hai?
+Load Balancer users ki requests ko alag-alag servers par bhejta hai, taaki ek server par zyada load na aaye.
+🔥 Simple Flow
+Users 👨‍💻👩‍💻 → Load Balancer 🚦 → EC2 Servers 🖥️🖥️🖥️
+
+- User website par request bhejta hai.
+- Request Load Balancer ke paas aati hai.
+- Load Balancer servers ka health check karta hai.
+- Load Balancer request ko healthy EC2 instance par bhejta hai.
+- Server request process karke user ko response deta hai.
+
+Example: Maan lo 1000 users website use kar rahe hain aur hamare paas 3 EC2 instances hain.
+Load Balancer: 1000 Users → EC2-1 + EC2-2 + EC2-3
+
+Agar EC2-1 down ❌ ho jaye, Load Balancer traffic ko EC2-2 aur EC2-3 par send karega ✅.
+
+>> AWS LB type
+Image me AWS Elastic Load Balancing (ELB) ke 3 types dikhaye gaye hain.
+⭐ ALB — Application Load Balancer
+HTTP aur HTTPS traffic ko distribute karta hai.
+👉 Websites aur web applications ke liye.
+Example: User → ALB → Web Servers
+Works on: Layer 7 — Application Layer
+Protocols: HTTP, HTTPS
+
+⭐ NLB — Network Load Balancer
+Bahut fast aur heavy network traffic handle karta hai.
+👉 High performance applications ke liye.
+Example: Millions of Requests → NLB → Servers
+
+⭐ GWLB — Gateway Load Balancer
+Network security ke liye use hota hai.
+👉 Firewall aur security appliances ke saath.
+Example: Traffic → GWLB → Firewall → Application
+
+
+
+
+
+⭐ AWS ELB 
+
+
+
+
+>> creating ELB
+1. Create EC2 Instances — 2 ya usse zyada EC2 instances banao aur web server install karo.
+2. Configure Security Group — HTTP aur SSH traffic allow karo.
+3. Create Load Balancer — Application Load Balancer (ALB) create karo.
+4. Register Targets — EC2 instances ko Target Group me add karo aur health check set karo.
+5. Test Load Balancer — ALB ka DNS name browser me open karke check karo.
+6. Result — Load Balancer traffic ko multiple EC2 instances me distribute karega.
+
+
+⭐ ASG 
+AWS ASG (Auto Scaling Group) is a service that automatically adds or removes EC2 instances based on demand to keep your application always available.
+
+It scales up when traffic is high and scales down when traffic is low, helping to save costs and maintain the right number of servers.
+
+>> Function
+>> step to create ASG
+
+⭐ SC 
+
+
+⭐ GD 
+

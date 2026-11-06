@@ -1,0 +1,69 @@
+Q. How to install terraform in AWS EC2
+
+# 1. What is Terraform?
+“Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It is used to create, manage, and provision infrastructure such as virtual machines, networks, and databases using configuration files.
+It supports multiple cloud providers, including AWS, Azure, and Google Cloud. Terraform helps automate infrastructure management, maintain consistency, and reduce manual errors.”
+>Example: 
+We can use Terraform to automatically create an EC2 instance, an S3 bucket, and a VPC in AWS.
+> Key Benefits:
+1. Automation: Creates infrastructure automatically.
+2. Consistency: Uses repeatable configuration files.
+3. Scalability: Makes it easy to manage multiple resources.
+4. Version Control: Tracks infrastructure changes using Git.
+
+# 1. Definition of Terraform
+Terraform ek Infrastructure as Code (IaC) tool hai, jise HashiCorp ne develop kiya hai.
+Simple words mein, Terraform ki help se hum code likhkar AWS par EC2 instance, S3 bucket, VPC aur other cloud resources automatically create, update aur delete kar sakte hain.
+Example: Agar humein AWS par 10 EC2 instances banane hain, toh manually banane ke bajay Terraform code se bana sakte hain.
+# 2. History of Terraform
+- 2014: HashiCorp ne Terraform introduce kiya.
+- 2014: Terraform ka first open-source version release hua.
+- 2021: HashiCorp ne Terraform 1.0 release kiya.
+- Today: Terraform ka use AWS, Azure, Google Cloud aur other platforms par infrastructure manage karne ke liye hota hai.
+
+# 5. AWS User Setup
+# 6. AWS CLI Setup - Windows
+8. AWS CLI USER ACCESS Configure on VSCode
+9. AWS EC2 Manually
+10. First Terraform Config To Create EC2 Instance
+11. Terraform INIT, PLAN, APPLY, DESTROY
+12. Terraform - Resource Modify
+13. Terraform - Resource Delete
+14. Terraform Config and State Overview
+15. Terraform Variables & Outputs
+16. AWS S3 Overview
+17. Terraform - S3 Bucket Create and Upload Files
+18. Terraform - Random Provider
+19. Terraform Backend - Remote State Management with S3
+20. Project - Host Static Website Using Terraform
+21. Understand AWS VPC
+22. AWS VPC Manually
+23. AWS VPC Using Terraform
+24. AWS EC2 + VPC
+25. Project - EC2 + VPC + NGINX + HTTP Access
+26. Terraform Data Source
+27. VPC & SG with Data Source
+28. Task: Create EC2 using Existing VPC
+29. Terraform Variables - Types, Validation, ENV, tfvars, auto.tfvars
+30. Terraform Operators & Expressions - List, Map, Object, Loops
+31. Terraform Functions
+32. Multiple Resources - COUNT
+33. Multiple Resources - FOR_EACH
+34. Project - AWS IAM Management
+35. Terraform Modules
+36. AWS EC2 using Public Terraform Module
+
+37. Creating Our Own Terraform Module
+38. Terraform Registry - Publish our module
+39. Terraform Resources Dependency
+40. Terraform Resources Lifecycle
+41. Terraform Validations
+42. Terraform State Modifications
+43. Terraform Import Command
+44. Terraform Workspace
+45. Terraform Cloud with GitHub
+
+
+
+
+

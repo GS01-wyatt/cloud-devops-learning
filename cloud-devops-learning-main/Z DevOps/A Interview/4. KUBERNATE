@@ -1,0 +1,28 @@
+
+# 7. Kubernetes (91–110)
+91. What is Kubernetes, and why is it used?
+91. What problem does Kubernetes solve?
+92. Explain Kubernetes architecture.
+93. What is the difference between a Pod, ReplicaSet, and Deployment?
+94. What is the difference between a Deployment and a StatefulSet?
+95. What is a Kubernetes Service, and what are its types?
+96. What is the difference between ClusterIP, NodePort, and LoadBalancer?
+97. What is the difference between Ingress and a Service?
+98. What is the role of kubectl and kubelet?
+99. What is the difference between ConfigMaps and Secrets?
+100. What are readiness, liveness, and startup probes?
+101. What is the difference between requests and limits in Kubernetes?
+102. What happens when a Pod enters CrashLoopBackOff?
+103. How do you troubleshoot a Pod stuck in Pending?
+104. What are PersistentVolumes and PersistentVolumeClaims?
+105. What is a StorageClass?
+106. What are taints, tolerations, labels, and selectors?
+107. What is the difference between a DaemonSet and a Job?
+108. How does Kubernetes perform rolling updates and rollbacks?
+109. How does Horizontal Pod Autoscaling work?
+110. How would you deploy and expose an application using Kubernetes?
+
+1. Your Pod is stuck in Pending. What will you check?
+2. Your Pod is in CrashLoopBackOff. Explain your debugging steps.
+3. Your Deployment has three replicas, but only two Pods are running. How will you troubleshoot it?
+4. Your application is running inside a Pod, but users cannot access it. How will you debug the complete traffic path?

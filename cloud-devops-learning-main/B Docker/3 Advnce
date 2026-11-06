@@ -1,0 +1,95 @@
+# Q1. What is Docker, and why is it used?
+Docker is a platform for building, packaging, distributing, and running applications in containers. It allows developers to package an application with its required dependencies and filesystem components into a Docker image.
+
+That image can then be used to run containers across compatible environments, reducing differences between development, testing, and production. Docker is widely used in DevOps because it supports consistent deployments, application isolation, and automated CI/CD workflows.
+
+For example, instead of manually installing Python and its libraries on every server, a team can package a Python application into a Docker image and run it wherever a compatible container runtime is available.
+
+
+Q2. What is the difference between Docker and a virtual machine?
+A virtual machine (VM) runs a guest operating system on virtualized hardware, while a container shares the host operating system's kernel and isolates application processes.
+
+Because containers don't each require a separate guest OS, they generally use fewer resources and start faster than full VMs. Virtual machines provide a separate OS environment and can offer a stronger isolation boundary.
+
+For example, a team might run several containers on one Linux server to host different microservices. VMs might be used to isolate workloads that need different operating systems or stronger separation.
+
+
+# Q3. What is the difference between a Docker image and a Docker container?
+A Docker image is a packaged, largely immutable template used to create containers. It contains the application's filesystem, dependencies, and image configuration.
+
+A container is an instance created from an image, with its own runtime configuration, processes, and writable layer. Multiple containers can be created from the same image.
+
+For example, a team could build myapp:1.0 once and use it to start separate development, testing, and production containers with different runtime configurations. Changes inside a container's writable layer don't change the original image.
+
+# 5 How do you troubleshoot a container that is running but the application is inaccessible?
+
+
+# Advanced Docker Interview Questions and Answers
+
+Q1. How would you optimize a Docker image for production?
+
+
+Q2. How do you secure Docker images and containers in production?
+
+
+
+Q3. How would you troubleshoot a Docker container that consumes excessive CPU or memory?
+
+
+Q4. What is the difference between a container's writable layer and a Docker volume?
+
+
+# Q5. Explain Docker's bridge, host, and overlay networking drivers.
+
+Q6. What is Docker Swarm, and how does it differ from Kubernetes?
+
+Q7. How do you manage secrets securely in Docker?
+
+
+Q8. What is the difference between Docker image tags and image digests?
+
+
+Q11. What happens when a container's main process exits?
+Answer:
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Part 4: Scenario-Based Docker Interview Questions 
+
+Q1. A Docker container starts and immediately exits. How would you troubleshoot it?
+Situation
+
+Q2. The application works on a developer's laptop but fails inside Docker. What would you do?
+
+
+Q3. The container is running, but users cannot access the application. How would you investigate?
+
+Q4. A Docker container is consuming excessive CPU or memory. What would you do?
+Situation
+
+
+Q5. A container cannot connect to another container, such as a database. How would you troubleshoot it?
+
+
+Q6. A container was removed, and the application data disappeared. How would you prevent this?
+
+Q7. A new Docker image works in testing but fails after production deployment. What would you do?
+
+Q8. Your Docker image has become very large, making builds and deployments slow. How would you optimize it?
+
+
+
+Q9. A Docker container is repeatedly restarting. How would you investigate it?
+
+Q10. A secret such as an API key was accidentally included in a Docker image. What would you do?
+Situation
+
+
+Q11. A deployment introduces a faulty Docker image. How would you roll back safely?
+Situation
+
+
+Q12. Your CI/CD pipeline builds a Docker image successfully, but the deployment fails. How would you troubleshoot it?

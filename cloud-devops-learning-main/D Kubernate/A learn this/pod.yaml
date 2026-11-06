@@ -1,0 +1,158 @@
+Q. Why use an Init Container?
+An Init Container performs setup tasks before the main application starts, such as:
+Waiting for a Service or Database
+Downloading configuration files
+Setting permissions
+Initializing data
+
+
+apiVersion: v1
+kind: pod
+metadata:
+  name: myapp
+  labels:
+    name: myapp-pod
+
+  spec:
+   containers:
+  - name: mtapp-container
+    image: myapp-container
+    command: ['sh', '-c', 'echo the app is running && sleep 3600']
+    env:
+    - name: FIRSTNAME
+      value:"Golu"
+  initContainers:
+  - name: initmyservice
+    image: busybox:1.28
+    command: ['sh', '-c']
+    args: ['until nslookup myservice.default.svc.cluster.local; do echo waiting for service to be up;sleep 2; done']
+
+# vedio-19
+# configmap and secret
+apiVersion: v1
+data:
+  firstname: piyush
+  lastname: sachdeva
+kind: ConfigMap
+metadata:
+  name: app-cm
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    app.kubernetes.io/name: MyApp
+spec:
+  containers:
+  - name: myapp-container
+    image: busybox:1.28
+    env:
+    - name: FIRSTNAME
+      valueFrom:
+        configMapKeyRef:
+          name: app-cm
+          key: firstname
+    command: ['sh', '-c', 'echo The app is running! && sleep 3600']
+
+
+# vedio-20
+# SSL/TLS Explained Simply
+# 1. TLS Secret
+apiVersion: v1
+kind: Secret
+metadata:
+  name: tls-secret
+type: kubernetes.io/tls
+data:
+  tls.crt: <BASE64_CERTIFICATE>
+  tls.key: <BASE64_PRIVATE_KEY>
+
+tls.crt = SSL/TLS certificate
+tls.key = Private key
+
+# 2. Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - port: 80
+      targetPort: 8080
+# 3. Ingress with HTTPS
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+spec:
+  tls:
+    - hosts:
+        - example.com
+      secretName: tls-secret
+
+  rules:
+    - host: example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app-service
+                port:
+                  number: 80
+
+# vedio-21
+
+
+
+
+# vedio-22
+# 1. ServiceAccount - "Ye kaun hai?"
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: dev-user
+  namespace: default
+# 2. Role — Permissions -  "Isko kya permission hai?"
+
+This gives dev-user permission to get, list, and watch Pods.
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: pod-reader
+  namespace: default
+
+rules:
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get", "list", "watch"]
+# 3. RoleBinding — Connect User to Role - "Ye permission kis user ko deni hai?"
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: pod-reader-binding
+  namespace: default
+
+subjects:
+  - kind: ServiceAccount
+    name: dev-user
+    namespace: default
+
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
+
+# Verb	         Meaning
+get-	Ek Pod ki information dekh sakta hai
+list-	Pods ki list dekh sakta hai
+watch-	Pods mein changes dekh sakta hai
+
+# vedio-23
+
+
+# vedio-24

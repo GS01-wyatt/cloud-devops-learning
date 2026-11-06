@@ -1,0 +1,380 @@
+2. cloud service
+Cloud Service Models (IaaS, PaaS, SaaS, FaaS)
+Cloud Architecture(virtualization, datac.,Vir.machine)
+On demand service
+Resource pooling
+Rapid elasticity
+
+
+# cloud service
+Cloud Service Models (IaaS, PaaS, SaaS, DaaS, FaaS)
+Cloud Architecture(virtualization, datac.,Vir.machine)
+
+
+# Cloud service Model
+Cloud service models describe how cloud services are provided to users.
+There are three main cloud service models.
+1. IaaS (Infrastructure as a Service)
+IaaS provides basic computing infrastructure such as:
+
+Virtual machines
+Storage
+Networking
+
+The cloud provider manages the hardware and infrastructure, while the user manages the operating system and applications.
+Example:
+Amazon EC2
+Microsoft Azure Virtual Machines
+
+Simple meaning:
+You get a virtual computer on the internet.
+
+2. PaaS (Platform as a Service)
+PaaS provides a platform for developers to build, test, and deploy applications.
+The cloud provider manages:
+Hardware
+Operating system
+Runtime environment
+auto scaling
+
+The user only manages the application and data.
+Example:
+Google App Engine
+Heroku
+
+Simple meaning:
+You get a ready platform to develop applications.
+
+3. SaaS (Software as a Service)
+SaaS provides complete software applications over the internet.
+like a ready to use software, no instalation, no maintance.
+
+Users only need a web browser to use the software.
+Example:
+Gmail
+Zoom
+Microsoft Office 365
+
+Simple meaning:
+You directly use software online without installing it.
+
+✅ Short Summary
+IaaS → Infrastructure (servers, storage)
+PaaS → Platform for application development
+SaaS → Ready-to-use software over the internet.
+
+4. Daas
+5. Faas
+
+# ☁️ SaaS vs PaaS vs IaaS
+🔹 1. Application
+👉 Application = jo software user use karta hai
+
+SaaS:
+✔ Provider manage karta hai
+👉 Tum bas use karte ho (no coding)
+👉 Kyon?
+→ SaaS ready-made software hota hai, isliye user ko kuch banane ki zarurat nahi
+
+PaaS:
+✔ User manage karta hai
+👉 Tum apna app develop karte ho
+👉 Kyon?
+→ Platform diya jata hai app banane ke liye
+
+IaaS:
+✔ User manage karta hai
+👉 Tum app install + control karte ho
+👉 Kyon?
+→ Yaha full control hota hai, isliye sab tumhe karna padta hai
+
+🔹 2. Data
+👉 Data = user ki files / database
+
+SaaS:
+✔ Provider manage karta hai
+👉 Tum direct control nahi karte
+👉 Kyon?
+→ SaaS me pura system company ka hota hai
+
+PaaS:
+✔ User manage karta hai
+👉 Tum database handle karte ho
+👉 Kyon?
+→ Tum apna app bana rahe ho, to data bhi tumhara
+
+IaaS:
+✔ User manage karta hai
+👉 Full control (store, backup, security)
+👉 Kyon?
+→ Infrastructure mila hai, data bhi tumhe hi manage karna hoga
+
+🔹 3. Runtime
+👉 Runtime = jahan code run hota hai (Java, Python etc.)
+
+SaaS:
+✔ Provider
+👉 Tumhe runtime ki tension nahi
+👉 Kyon?
+→ Tum sirf app use karte ho
+
+PaaS:
+✔ Provider
+👉 Ready environment milta hai
+👉 Kyon?
+→ Focus sirf coding par hota hai
+
+IaaS:
+✔ User
+👉 Tum khud runtime install karte ho
+👉 Kyon?
+→ Full control = sab setup tumhe karna padega
+
+
+🔹 4. Middleware
+👉 Middleware = app aur OS ke beech ka software
+
+SaaS:
+✔ Provider
+👉 Tum use bhi nahi dekhte
+👉 Kyon?
+→ Everything hidden hota hai
+
+PaaS:
+✔ Provider
+👉 Automatically manage hota hai
+👉 Kyon?
+→ Developer ko easy banane ke liye
+
+IaaS:
+✔ User
+👉 Tum install + manage karte ho
+👉 Kyon?
+→ Infrastructure mila hai, baaki sab tumhara
+
+
+🔹 5. Operating System
+👉 OS = Windows / Linux
+
+SaaS:
+✔ Provider
+👉 Tumhe pata bhi nahi hota kaunsa OS hai
+👉 Kyon?
+→ Fully managed service
+
+PaaS:
+✔ Provider
+👉 OS ka tension nahi
+👉 Kyon?
+→ Tum sirf app bana rahe ho
+
+IaaS:
+✔ User
+👉 Tum OS install + update karte ho
+👉 Kyon?
+→ Full system control tumhare paas
+
+🔹 6. Virtualization
+👉 Virtual machine banane ki technology
+
+SaaS: ✔ Provider
+PaaS: ✔ Provider
+IaaS: ✔ Provider
+
+👉 Kyon?
+→ Ye backend technology hai, user ko direct access nahi diya jata
+
+🔹 7. Servers
+👉 Physical machines
+
+SaaS: ✔ Provider
+PaaS: ✔ Provider
+IaaS: ✔ Provider
+
+👉 Kyon?
+→ Real hardware company ke paas hota hai
+
+🔹 8. Storage
+👉 Data store karne ki jagah
+
+SaaS: ✔ Provider
+PaaS: ✔ Provider
+IaaS: ✔ Provider
+
+👉 Kyon?
+→ Storage infrastructure cloud company deti hai
+
+🔹 9. Networking
+👉 Internet, routing, connectivity
+
+SaaS: ✔ Provider
+PaaS: ✔ Provider
+IaaS: ✔ Provider
+
+👉 Kyon?
+→ Networking setup complex hota hai, isliye provider manage karta hai
+
+
+# Key Cloud Providers and Their Services
+A cloud provider id a third pary app that deliver cloud based infrastructure.
+>1️⃣ Amazon Web Services (AWS)
+ Definition:
+AWS is a cloud computing platform provided by Amazon that offers many services like computing power, storage, and databases through the internet.
+
+> Common Services:
+EC2 (Elastic Compute Cloud) – Virtual servers to run applications
+S3 (Simple Storage Service) – Cloud storage for files and data
+RDS – Managed database service
+Lambda → Serverless computing
+VPC → Networking
+Highly scalable and flexible
+
+Real Example:
+A startup stores its website images in S3 and runs its web application on EC2 instead of buying physical servers.
+
+>2️⃣ Microsoft Azure
+Definition:
+Microsoft Azure is a cloud platform from Microsoft that provides services for building, deploying, and managing applications through Microsoft data centers.
+
+>Common Services
+Strong integration with Microsoft products
+Virtual Machines → Compute services
+Azure Virtual Machines – Cloud-based virtual servers
+Azure Blob Storage – Cloud storage for large files
+Azure SQL Database – Managed database service
+
+Real Example:
+A company runs its online business application on Azure Virtual Machines and stores customer data in Azure SQL Database.
+
+>3️⃣ Google Cloud Platform (GCP)
+Definition:
+Google Cloud Platform is a cloud service provided by Google that offers computing, storage, machine learning, and networking services.
+
+>Common Services
+Compute Engine – Virtual machines for running applications
+Google Cloud Storage –  Storage for files and backups
+BigQuery –  Data analytics service
+Kubernetes Engine (GKE) → Container management
+
+Real Example:
+A company analyzes large data using BigQuery and stores backup data in Google Cloud Storage.
+
+>4️⃣ IBM Cloud
+Definition:
+IBM Cloud is a cloud computing platform that provides infrastructure, AI, and blockchain services for businesses.
+
+>Common Services
+IBM Virtual Servers – Cloud-based computing resources
+IBM Cloud Object Storage – Storage for large data
+IBM Watson AI – Artificial intelligence services
+
+Real Example:
+A hospital uses IBM Watson AI to analyze patient data and store medical records in IBM Cloud Object Storage.
+
+> 5. Oracle Cloud
+Best for database-heavy applications
+Oracle Autonomous Database → Self-managing DB
+Compute Services → Virtual machines
+Object Storage → Storage
+High performance for enterprise apps
+
+
+# ☁️ 1. On-Demand Service
+
+On-demand service ek aisa model hai jisme user bina kisi human interaction ke automatically computing resources (server, storage, database) le sakta hai whenever needed.
+
+🎯 Purpose (Kyon use hota hai)
+Instant resource availability
+Manual process remove karna
+Fast development & deployment
+Developer productivity increase
+
+⚙️ Setup (Kaise hota hai)
+Cloud provider apne data centers me resources ready rakhta hai
+User:
+-Web console / dashboard
+-API / CLI tools
+-use karke resource request karta hai
+System automatically resource allocate kar deta hai
+Example using Amazon Web Services:
+-EC2 instance launch → few clicks → server ready
+
+🔥 Use (Real Use Case)
+Developer ko testing ke liye server chahiye
+Turant create karta hai → kaam complete → delete
+
+
+# ☁️ 2. Resource Pooling
+
+Resource pooling ek concept hai jisme cloud provider apne computing resources (servers, storage, network) ko ek shared pool me organize karta hai aur multiple users ko serve karta hai (multi-tenant model).
+
+🎯 Purpose (Kyon use hota hai)
+Cost efficiency (shared resources)
+Better utilization of hardware
+Multiple users ko support
+Scalability improve karna
+
+⚙️ Setup (Kaise hota hai)
+Large data centers me thousands of servers
+Virtualization technology (Hypervisor) use hota hai
+Physical resources ko virtual machines me divide kiya jata hai
+Har user ko logically isolated environment milta hai
+
+🔥 Use (Real Use Case)
+Ek hi physical server par multiple users ke VMs run karte hain
+Har user ko lagta hai ki uska dedicated server hai
+
+👉 Example:
+Ek building me alag-alag flats (shared building, private rooms)
+
+# ☁️ 3. Rapid Elasticity
+
+Rapid elasticity ka matlab hai ki system automatically resources ko increase (scale up) ya decrease (scale down) kar sakta hai demand ke according.
+
+🎯 Purpose (Kyon use hota hai)
+High traffic handle karna
+Cost optimize karna
+Performance maintain karna
+Dynamic workloads support karna
+
+⚙️ Setup (Kaise hota hai)
+Auto-scaling tools configure kiye jate hain
+Rules define hote hain:
+CPU usage
+Network traffic
+System automatically:
+Instances add karta hai
+Ya remove karta hai
+Example in Amazon Web Services:
+Auto Scaling Group
+Load Balancer
+
+🔥 Use (Real Use Case)
+E-commerce website pe sale chal rahi hai
+Traffic suddenly increase hota hai
+Servers automatically:
+ 2 → 20
+
+
+Cloud computing enables users to access shared resources on-demand and dynamically scale them based on workload requirements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cloud Architecture
+Cloud vs Traditional IT Infrastructure
+Important Concepts
+Data centers
+Virtual machines
+Remote servers

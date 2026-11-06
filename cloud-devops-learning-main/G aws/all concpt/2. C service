@@ -1,0 +1,293 @@
+# Compute Services (1:20)
+EC2 (Elastic Compute Cloud)
+AMI (Amazon Machine Image)
+Elastic Beanstalk
+AWS Lambda
+
+⭐ EC2 (Elastic Compute Cloud)
+EC2 (Elastic Compute Cloud) is a web service provided by Amazon Web Services that allows to create and manage virtual servers in the cloud. 
+We can choose the operating system, CPU, RAM, storage, and networking based on our application requirements.
+
+> These are the main configurations used when launching an EC2 instance in AWS:
+
+1. Instance Type — Selects the hardware capacity of the virtual machine, such as CPU and RAM (memory). Example: t2.micro, t3.micro.
+2. AMI (Amazon Machine Image) — A template used to choose the Operating System and pre-installed software for an EC2 instance. 
+Example: Linux, Ubuntu, Windows.
+3. Storage — Defines the type and size of disk space attached to the EC2 instance. 
+Example: EBS (Elastic Block Store) volume — 8 GB, 20 GB, 50 GB.
+4. Security Group — A virtual firewall that controls inbound and outbound traffic for an EC2 instance. 
+Example: allow SSH on port 22, HTTP on port 80, and HTTPS on port 443.
+5. Key Pair — A set of public and private keys used to securely connect to a Linux EC2 instance using SSH (Secure Shell).
+
+>> Why do we use EC2?
+We use EC2 to:
+Host websites and web applications
+Run backend APIs
+Deploy databases
+Run batch processing jobs
+Scale applications based on user traffic
+
+>> Suppose your company wants to host a Java application. How would you use EC2?
+1. Launch an EC2 instance (Ubuntu/Linux).
+2 Choose the required instance type (for example, t2.micro for testing).
+3 Configure the Security Group to allow HTTP (80), HTTPS (443), and SSH (22).
+4 Connect to the instance using SSH.
+5 Install Java and the application server (such as Tomcat).
+6 Upload the application (JAR or WAR file).
+7 Start the application and access it using the EC2 public IP or domain name.
+
+>> What happens if your EC2 instance stops?
+The data stored in EBS remains safe.
+The public IP may change unless an Elastic IP is attached.
+We can start the instance again and continue using it.
+
+>> How do you connect to an EC2 instance?
+Linux: Use SSH with a key pair (.pem file).
+Windows: Use RDP with a password.
+Example:
+ssh -i mykey.pem ubuntu@<public-ip>
+
+>> What is the difference between EC2 and a Virtual Machine?
+A Virtual Machine (VM) is a virtual computer that runs on physical hardware.
+EC2 is AWS's cloud service that provides virtual machines on demand.
+
+>> How can you increase the performance of an EC2 instance?
+Change to a larger instance type (vertical scaling).
+Add more EC2 instances behind a Load Balancer (horizontal scaling).
+Use Auto Scaling to automatically add or remove instances based on traffic.
+
+>> Your e-commerce website receives very high traffic during a festival sale. What would you do?
+
+Host the application on EC2 instances.
+Place an Application Load Balancer (ALB) in front of the EC2 instances.
+Configure an Auto Scaling Group to automatically launch additional EC2 instances when CPU usage or traffic increases.
+Store static files in S3.
+Use CloudWatch to monitor CPU, memory, and network usage.
+
+>> security rule of ec2.
+>> Accessing our EC2 Instance.
+>> How to SSH into EC2 instance.
+>> SSH EC2 from window.
+>> SSH EC2 from MAC
+>> EC2 intance type. 
+>> EC2 image Builder
+
+
+⭐ AMI (Amazon Machine Image)
+AMI (Amazon Machine Image) is a pre-configured template used to launch an EC2 instance. 
+It contains the operating system, application software, and configuration required to create a virtual server.
+it includes:
+-operating system(ex. Linux, window)
+-Application server(eg:apachi, nginx)
+-pre-installed and configuration
+
+
+>> What are the types of AMIs?
+1. Public AMIs: Available to all AWS users. Useful for basic use cases like popular operating systems (e.g., Ubuntu, CentOS).
+2. Private AMIs: Created by a user and only available within that account or shared with specific accounts.
+3. Paid AMIs/Marketplace AMIs: 
+Provided by third parties through AWS Marketplace, offering software like databases, web servers, or pre-configured environments.
+
+>> Why do we use an AMI?
+We use an AMI to launch EC2 instances quickly without installing the operating system and software every time.
+
+>> What does an AMI contain?
+An AMI contains:
+Operating System (Linux/Windows)
+Application software
+Configuration settings
+EBS snapshot (storage)
+
+>> Suppose you have installed Java, Tomcat, and your application on an EC2 instance. You need to create 10 identical servers. What will you do?
+
+I will create an AMI from the configured EC2 instance. Then I can launch multiple EC2 instances from that AMI. Each new instance will have the same OS, software, and configuration.
+
+>> Can we create our own AMI?
+Yes. After configuring an EC2 instance with the required software and settings, we can create a custom AMI and reuse it whenever needed.
+
+
+>> What is the difference between an AMI and an EC2 instance?
+AMI is a template.
+EC2 is a running virtual server created from an AMI.
+Example:
+AMI = Blueprint of a house 🏠
+EC2 = Actual house built from the blueprint.
+
+>> Can one AMI be used to launch multiple EC2 instances?
+Yes. A single AMI can be used to launch any number of EC2 instances.
+
+>> If you update your application on one EC2 instance, will the AMI update automatically?
+
+No. An AMI does not update automatically. If changes are made to an EC2 instance, we must create a new AMI to include those changes.
+
+Interviewer: Your company needs 50 web servers with the same configuration. How will you deploy them quickly?
+
+Configure one EC2 instance with the required OS, Java, Tomcat, and application.
+Create a custom AMI from that instance.
+Launch 50 EC2 instances using the custom AMI.
+Optionally, use an Auto Scaling Group to manage the instances automatically.
+
+>> 
+>>
+
+
+⭐ Elastic Beanstalk
+Elastic Beanstalk is a Platform as a Service (PaaS) offered by Amazon Web Services. It allows developers to deploy and manage applications without worrying about the underlying infrastructure. AWS automatically handles provisioning, load balancing, auto scaling, and monitoring.
+
+>> Why do we use Elastic Beanstalk?
+We use Elastic Beanstalk because it:
+Makes application deployment easy.
+Automatically manages infrastructure.
+Supports Auto Scaling and Load Balancing.
+Reduces server management effort.
+
+>> Which programming languages does Elastic Beanstalk support?
+PHP
+.NET
+Ruby
+Go
+Docker applications
+
+>> Suppose you developed a Spring Boot application. How will you deploy it using Elastic Beanstalk?
+
+-Build the Spring Boot JAR file.
+-Open the AWS Management Console.
+-Create a new Elastic Beanstalk application.
+-Select the Java platform.
+-Upload the JAR file.
+-AWS automatically creates the EC2 instance, Load Balancer, Security Groups, and Auto Scaling Group.
+-Access the application using the generated URL.
+
+>> Does Elastic Beanstalk create EC2 instances?
+Yes. Elastic Beanstalk automatically creates and manages EC2 instances, Load Balancers, Auto Scaling Groups, and other required AWS resources.
+
+>> Can we access the EC2 instance created by Elastic Beanstalk?
+Yes. Since Elastic Beanstalk uses EC2 in the background, we can SSH into the EC2 instance if needed.
+
+>> Can we scale applications in Elastic Beanstalk?
+Yes. Elastic Beanstalk supports Auto Scaling. It can automatically add or remove EC2 instances based on traffic or CPU usage.
+
+>> What AWS services does Elastic Beanstalk use internally?
+Elastic Beanstalk commonly uses:
+EC2
+Auto Scaling
+Elastic Load Balancer (ELB)
+CloudWatch
+
+>> Your company developed a Java web application. The developers don't want to manage servers. What AWS service would you recommend?
+
+I would recommend Elastic Beanstalk. Developers only need to upload the application. AWS automatically provisions the infrastructure, deploys the application, configures load balancing and auto scaling, and monitors the environment. This lets the team focus on writing code instead of managing servers.
+
+
+# ☁️ AWS Lambda
+AWS Lambda is a serverless computing service provided by Amazon Web Services. 
+It allows us to run code without provisioning or managing servers. 
+We simply upload our code, and Lambda executes it when triggered by an event.
+
+>> Why do we use AWS Lambda?
+We use AWS Lambda because
+No server management is required.
+We pay only for the execution time.
+It scales automatically.
+It is event-driven.
+
+>> What can trigger a Lambda function?
+A Lambda function can be triggered by:
+S3 (file upload)
+API Gateway (HTTP request)
+DynamoDB
+CloudWatch Events/EventBridge
+
+>> Suppose a user uploads an image to an S3 bucket. How will Lambda help?
+I will configure an S3 event trigger. Whenever a user uploads an image:
+
+-S3 triggers the Lambda function.
+-Lambda processes the image (for example, resizes or -compresses it).
+Lambda stores the processed image back in S3.
+
+This process is automatic and requires no server management.
+
+>> Event-driven execution
+>> when to use lemda
+
+>> Do we need to manage servers in Lambda?
+No. AWS manages the servers, scaling, and infrastructure automatically. We only write and deploy the code.
+
+>> How is Lambda pricing calculated?
+Lambda charges based on:
+- Number of requests
+- Execution duration (milliseconds)
+- Memory allocated
+
+>> What is the maximum execution time of a Lambda function?
+A Lambda function can run for a maximum of 15 minutes per invocation.
+
+>> Your company receives thousands of invoices every day. Whenever a PDF is uploaded to S3, customer details should be extracted automatically. Which AWS service would you use?
+I would use AWS Lambda.
+
+Customer uploads the PDF to S3.
+S3 triggers the Lambda function.
+Lambda extracts the required information (or calls another service for extraction).
+Lambda stores the processed data in a database such as DynamoDB or RDS.
+
+>> Your website has a Contact Us form. When a user submits it, an email should be sent automatically. How would you implement this?
+
+Candidate:
+The website sends the request to API Gateway.
+API Gateway invokes a Lambda function.
+Lambda validates the data and sends the email (for example, using Amazon SES).
+Lambda returns a success response to the website.
+
+
+
+⭐ AWS ELB service
+ELB stands for "Elastic Load Balancing".
+It is an AWS service that automatically distributes incoming traffic across multiple EC2 instances or other targets.
+
+Simple Example:
+Suppose my website gets 10,000 users at the same time. ELB distributes the users across different servers so that one server does not become overloaded.
+
+I
+⭐ AWS ASG service
+ASG stands for "Auto Scaling Group".
+It is an AWS feature that automatically increases or decreases the number of EC2 instances based on traffic or demand.
+
+Simple Example:
+If website traffic increases 📈, ASG automatically adds EC2 instances. If traffic decreases 📉, ASG automatically removes extra EC2 instances.
+
+ELB + ASG Together
+ELB = Distributes traffic 🚦
+ASG = Adds or removes servers
+Interview line:
+“ELB distributes incoming traffic, while ASG automatically adjusts the number of EC2 instances based on demand.”
+
+
+
+⭐ Vertical Scalability (Scaling Up)
+Vertical Scalability means adding more power like CPU and RAM to the existing server.
+Example: t2.micro → m5.large
+
+Simple Hindi: Ek hi server ko zyada powerful banana.
+
+⭐ Horizontal Scalability (Scaling Out)
+Horizontal Scalability means adding more servers or EC2 instances to distribute the load.
+Example: 1 EC2 Instance → 3 EC2 Instances
+
+Simple Hindi: Ek server ko powerful banane ke bajay aur servers add karna.
+
+Example: CPU/RAM increase = Vertical | EC2 instances increase = Horizontal
+
+
+⭐ High Availability (HA)
+High Availability means keeping your application or service running with minimum downtime, so users can access it anytime.
+Example: Running resources in multiple Availability Zones (AZs).
+
+Simple Hindi: Application ko hamesha available rakhna aur downtime ko minimum karna.
+
+⭐ Elasticity
+Elasticity means automatically increasing or decreasing resources based on demand or traffic.
+Example: ASG (Auto Scaling Group) in AWS.
+
+Simple Hindi: Demand ke according resources ko automatically add ya remove karna.
+
+Simple Example: Website par traffic increase 📈 → more EC2 instances add. Traffic decrease 📉 → extra EC2 instances remove.

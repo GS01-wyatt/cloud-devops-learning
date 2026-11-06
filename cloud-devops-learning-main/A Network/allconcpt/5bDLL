@@ -1,0 +1,100 @@
+# 2 Data Link Layer 
+
+  The Data Link Layer is the 2nd layer in the OSI model, sitting between the Physical Layer and the Network Layer.
+
+  It is responsible for node-to-node delivery, meaning it sends data from one directly connected device to another without errors.
+
+  It converts raw bits from the Physical Layer into structured frames and ensures they are delivered in the right order without corruption.
+
+
+📌 Two Sublayers
+LLC (Logical Link Control)
+
+Identifies the protocol being used (IP, ARP, etc.).
+Controls frame synchronization and flow.
+
+MAC (Media Access Control)
+
+Controls how devices access the shared medium.
+Uses MAC addresses for identification.
+Example: Ethernet MAC.
+
+
+📌 Main Responsibilities
+Framing – Breaks bits into frames with header/trailer.
+
+Physical Addressing – Adds MAC address to identify sender and receiver.
+
+Error Detection & Correction – Uses Parity, CRC, Hamming.
+
+Flow Control – Prevents data overflow.
+
+Access Control – Decides which device can transmit when multiple share the same link.
+
+Reliable Delivery – Ensures frames are delivered without corruption.
+
+
+📌 Key Topics in Detail
+1. Switching Techniques
+Circuit Switching – Dedicated path for entire communication (telephone systems).
+
+Packet Switching – Data split into packets, each routed independently (internet).
+
+Message Switching – Entire message sent and stored at each hop before forwarding (store-and-forward).
+
+2. VLAN (Virtual LAN)
+Creates separate logical networks inside a single physical network.
+
+Improves security and reduces congestion.
+
+3. Link Aggregation
+Combines multiple physical connections into one logical link.
+Benefits: Higher speed, redundancy.
+
+4. Framing
+Data is packaged into frames with:
+Header → Source & destination MAC, control info.
+Payload → Actual data.
+Trailer → Error-checking bits (CRC).
+
+5. Error Detection/Correction
+Parity Bit – Detects single-bit errors.
+CRC – Detects burst errors.
+Hamming Code – Detects & corrects errors.
+
+6. Flow Control
+Stop-and-Wait – Send 1 frame at a time, wait for ACK.
+Sliding Window – Send multiple frames before waiting.
+Go-Back-N – Resend from error frame onwards.
+Selective Repeat – Resend only erroneous frame.
+
+7. Piggybacking
+ACK is sent along with outgoing data instead of separately.
+
+
+📌 Protocols in Data Link Layer
+Ethernet
+PPP (Point-to-Point Protocol)
+HDLC (High-Level Data Link Control)
+Frame Relay
+ATM (Asynchronous Transfer Mode)
+
+
+📌 Advantages
+Reliable node-to-node delivery.
+Detects and corrects transmission errors.
+Controls congestion with flow control.
+Organizes data for easier transmission.
+
+
+📌 Disadvantages
+Adds extra overhead (headers, trailers).
+Limited to directly connected devices.
+Cannot handle routing (done in Network Layer).
+
+
+📌 Real-Life Examples
+Switches → Operate at Data Link Layer.
+
+NIC (Network Interface Card) → Uses MAC address for communication.
+

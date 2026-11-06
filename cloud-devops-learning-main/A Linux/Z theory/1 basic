@@ -1,0 +1,484 @@
+# Introduction to Linux OS
+Linux is an Operating System (OS) like Windows OS and macOS
+It is free, open-source, and widely used in servers, cloud, and DevOps
+Popular distribution: Ubuntu
+
+💡 Key Points
+Works mainly using terminal (command line)
+Case-sensitive system
+Everything in Linux is treated as a file
+Uses a hierarchical file system starting from / (root)
+
+❓ Use Cases
+Web servers (hosting websites) 🌐
+Cloud platforms (AWS, Azure, GCP) ☁️
+DevOps (CI/CD, automation) 🔄
+Cybersecurity & hacking 🔍
+Software development 💻
+
+❓ When to use Linux?
+When working in Cloud / DevOps
+When you need automation & scripting
+When building or managing servers
+When performance & security matter
+
+# Introduction to Linux
+Linux is a free, open-source operating system based on the Unix architecture. It was first created in 1991 by Linus Torvalds and has since grown into one of the most widely used operating systems in the world.
+🔑 Key Features
+Open Source: Anyone can view, modify, and distribute the source code
+Multiuser & Multitasking: Multiple users and processes can run at the same time
+Security: Strong permissions and user roles
+Stability: Rare crashes; widely used in servers
+Portability: Runs on everything from phones to supercomputers
+🌍Where Linux is Used
+Servers (most of the internet runs on Linux)
+Cloud computing platforms
+Android devices (based on Linux kernel)
+Embedded systems (smart TVs, routers)
+Supercomputers
+🚀 Why Learn Linux?
+Essential for careers in IT, cybersecurity, and software development
+Gives full control over your system
+Widely used in cloud platforms like AWS and Azure
+Powerful for automation and scripting
+🖥️ Basic Components
+Kernel – the core of Linux that manages hardware and processes
+Shell – interface to interact with the system (e.g., terminal)
+File System – hierarchical structure (/, /home, /etc, etc.)
+Utilities – tools and commands (like ls, cp, mv)
+
+# History of Linux
+-In the beginning, there was an operating system called Unix created in 1969 at Bell Labs.
+-Unix became popular because it was fast, stable, and could support many users.
+-In 1983, Richard Stallman started the GNU Project to make free software for everyone.
+-In 1991, a student named Linus Torvalds created the Linux kernel as a small personal project.
+-He shared Linux on the internet for free, and many programmers started improving it.
+- Over time, Linux became very popular and different versions called distributions were created, such as:
+Ubuntu
+Debian
+Fedora
+- Today, Linux is used in:
+Servers
+Computers
+Smartphones through Android
+Supercomputers
+Cloud systems
+
+# Linux Distributions (Distros)
+Linux comes in different versions called distributions, each tailored for specific use cases:
+Ubuntu – beginner-friendly, popular desktop OS
+Debian – stable and reliable
+Fedora – cutting-edge features
+Kali Linux – security and penetration testing
+Arch Linux – advanced, customizable
+
+
+# Installation of Linux OS
+
+# Linux File System Structure
+The Linux file system is organized in a tree-like structure.
+Everything starts from the root directory represented by /.
+
+🌳 Basic Structure
+/
+├── bin
+├── boot
+├── dev
+├── etc
+├── home
+├── lib
+├── media
+├── mnt
+├── opt
+├── proc
+├── root
+├── sbin
+├── tmp
+├── usr
+└── var
+
+📁 Important Directories
+🔹 / (Root Directory)
+Main directory of Linux
+All files and folders start from here
+Example:
+/
+🔹 /home
+Stores personal files of users
+Each user gets a separate folder
+Example:
+/home/user1
+🔹 /bin
+Contains basic commands and executable files
+Examples:
+ls
+cp
+mv
+🔹 /etc
+Stores system configuration files
+Examples:
+network settings
+user settings
+🔹 /boot
+Contains boot loader files
+Helps Linux start during booting
+🔹 /dev
+Contains device files
+Represents hardware devices
+Examples:
+USB
+hard disk
+keyboard
+🔹 /tmp
+Stores temporary files
+Files may be deleted automatically after restart
+🔹 /usr
+Contains software and user applications
+Large directory in Linux
+🔹 /var
+Stores variable data like:
+logs
+mail
+cache
+🔹 /root
+Home directory of the root (administrator) user
+📌 Features of Linux File System
+Hierarchical structure
+Everything is treated as a file
+Supports permissions and security
+Multiuser support
+Organized data storage
+
+# Basic Linux Commands
+
+# Terminal / Shell Basics
+
+
+# Types of Shells
+ “Shell” in computing usually refers to a command-line interpreter that lets users interact with an operating system. There are several types of shells, mainly classified by their features and origins.
+
+1. Bash Shell
+Most common in Linux
+Easy and powerful
+Used for scripting and commands
+2. Sh Shell
+Old Unix shell
+Basic shell for simple commands
+3. C Shell (csh)
+Syntax similar to C language
+Used by programmers
+4. Korn Shell (ksh)
+Improved version of sh
+Faster scripting features
+5. Z Shell (zsh)
+Advanced version of bash
+Supports themes and plugins
+6. PowerShell
+Used in Windows
+Made by Microsoft
+Good for automation
+7. CMD
+Basic Windows command shell
+Simple command execution
+In One Line
+> Shell = Interface between User and Operating System.
+
+# File and Directory Management
+File and Directory Management ka matlab hota hai:
+
+Files ko create, delete, copy, move karna.
+Folders (Directories) ko manage karna.
+Linux system me data ko organize karna.
+
+Example:
+File → notes.txt
+Directory/Folder → Documents
+
+-Linux me sab kuch files aur directories ke through manage hota hai.
+> command
+ls, cd, pwd, mkdir, rm, cp, mv, find, grep, cat, tail, nano
+
+
+# File Permissions & Ownership
+File Permissions and Ownership are very important concepts in Linux.
+They control:
+
+Who can access a file
+Who can modify a file
+Who can execute a file
+Who owns the file
+
+These features provide security and access control in Linux systems.
+
+1. What are File Permissions?
+Every file and directory in Linux has permissions attached to it.
+
+Permissions decide what actions users can perform on a file or directory.
+There are 3 types of permissions:
+
+Permission	   Symbol             	Meaning
+Read          	 r	           View file content
+Write	w	Modify   or            edit file
+Execute	        x	      Run the file as a program/script
+
+> File permissions are used for:
+Server security
+Script execution
+Application deployment
+User management
+Docker and Kubernetes
+SSH key protection
+
+# Users and Groups Management
+User and group management is the process of controlling who can access a system and what they are allowed to do.
+Users:-
+A user is an individual account that can log into a system.
+
+Typical user operations:
+Create users
+Modify user details
+Disable or delete users
+
+Example:
+sudo useradd john
+sudo passwd john
+
+Groups:-
+A group is a collection of users with shared permissions.
+Benefits:
+Easier permission management
+Role-based access control
+Shared access to files/resources
+Example:
+sudo groupadd developers
+sudo usermod -aG developers john
+
+Interview Questions
+Q1. Root User Kya Hota Hai?
+Ans: Root Linux ka superuser hota hai jiske paas sabhi permissions hoti hain.
+Q2. User Add Karne Ka Command?
+useradd username
+Q3. Group Create Karne Ka Command?
+groupadd groupname
+Q4. User Ko Group Me Kaise Add Karte Hain?
+usermod -aG groupname username
+Q5. Current User Kaise Check Karte Hain?
+whoami
+
+# Package Management (APT, YUM, DNF)
+Package Management is the process of installing, updating, upgrading and removing software packages in Linux using package managers like APT, YUM and DNF.
+
+>Package Kya Hota Hai?
+Package ek compressed file hoti hai jisme:
+Software program
+Configuration files
+Libraries
+Documentation
+
+
+>Package Management Ke Fayde
+Software installation easy hota hai.
+Dependencies automatically install ho jati hain.
+Software update aur upgrade karna simple hota hai.
+System secure aur updated rehta hai.
+Package removal clean way me hota hai.
+
+> APT (Advanced Package Tool)
+Definition-
+APT (Advanced Package Tool) is a package manager used in Debian-based distributions such as Ubuntu and Debian to manage .deb packages.
+
+Features
+Fast package installation
+Automatic dependency management
+Repository support
+Easy software updates
+Important Commands
+
+Update Package List:
+sudo apt update
+
+Install Package:
+sudo apt install nginx
+
+Remove Package:
+sudo apt remove nginx
+
+> YUM (Yellowdog Updater Modified)
+Definition-
+YUM Red Hat-based Linux systems (CentOS 7, RHEL 7) ka package manager hai jo .rpm packages ko manage karta hai.
+
+Features
+Dependency resolution
+Repository management
+Package updates
+Easy software installation
+Important Commands
+
+Install Package:
+sudo yum install httpd
+
+Update Packages:
+sudo yum update
+
+Remove Package:
+sudo yum remove httpd
+
+> DNF (Dandified YUM)
+Definition-
+DNF YUM ka improved version hai jo Fedora, RHEL 8+, CentOS 8+, Rocky Linux aur AlmaLinux me use hota hai.
+
+Features
+Faster performance
+Better dependency management
+Less memory usage
+Improved security
+Important Commands
+
+Install Package:
+sudo dnf install nginx
+
+Update Packages:
+sudo dnf update
+
+Remove Package:
+sudo dnf remove nginx
+
+Example
+Ubuntu (APT)-
+Install Nginx:
+sudo apt update          // terminal
+sudo apt install nginx   // terminal
+
+CentOS 7 (YUM)-
+Install Apache:
+sudo yum install httpd
+
+RHEL 8 (DNF)-
+Install Nginx:
+sudo dnf install nginx   // for terminal
+
+
+# Process Management
+Process Management is the activity of creating, scheduling, monitoring, controlling, and terminating processes in an operating system. It helps the CPU execute multiple programs efficiently.
+
+A process is a program that is currently running in memory.
+
+Key Functions of Process Management
+1. Process Creation
+The operating system creates a new process when a program is executed.
+Example: Opening Google Chrome creates a new process.
+
+2. Process Scheduling
+The CPU decides which process should run next.
+Example: While listening to music and browsing the web, the OS allocates CPU time to both applications.
+
+3. Process Synchronization
+Coordinates multiple processes to avoid conflicts when accessing shared resources.
+Example: Multiple users accessing the same database.
+
+4. Process Communication
+Processes exchange information with each other.
+Example: A browser communicating with a web server.
+
+5. Process Termination
+The OS removes a process after it completes execution or is stopped.
+Example: Closing Microsoft Word terminates its process.
+
+Process States
+New – Process is being created.
+Ready – Waiting for CPU allocation.
+Running – Currently executing.
+Waiting/Blocked – Waiting for I/O operation.
+Terminated – Execution completed.
+
+Example (Linux)
+see from the gpt and get knowladge---
+
+
+# System Monitoring Basics
+System Monitoring ka matlab hai computer ya server ki health aur performance ko check karna, taaki pata chale sab kuch sahi se kaam kar raha hai ya nahi.
+
+Kya Check Kiya Jata Hai?
+1. CPU Usage
+Processor kitna kaam kar raha hai.
+Example: CPU Usage = 80%
+
+2. Memory (RAM) Usage
+RAM kitni use ho rahi hai.
+Example: 8 GB RAM me se 5 GB use ho rahi hai.
+
+3. Disk Usage
+Storage me kitni space bachi hai.
+Example: 100 GB me se 90 GB use ho chuki hai.
+
+4. Network Usage
+Internet se kitna data send aur receive ho raha hai.
+
+5. Running Processes
+Kaun-kaun se programs chal rahe hain.
+Example: Chrome, VS Code, MySQL.
+
+Linux Commands
+top
+-CPU aur processes dekhne ke liye.
+
+free -h
+-RAM check karne ke liye.
+
+df -h
+Disk space check karne ke liye.
+
+ps aux
+Running processes dekhne ke liye.
+
+# Environment Variables
+Environment Variables aise variables hote hain jo operating system me system aur applications ki settings store karte hain. Ye programs ko batate hain ki files, folders ya configurations kahan milengi.
+
+Simple Example
+Agar aap terminal me java command likhte ho, to system PATH environment variable ki help se Java ka location dhundhta hai.
+
+Common Environment Variables
+1. PATH
+Programs ke executable files ka location store karta hai.
+Example:
+PATH=/usr/bin:/bin:/usr/local/bin
+
+2. HOME
+User ka home directory batata hai.
+Example:
+HOME=/home/golu
+
+3. USER
+Current logged-in user ka naam.
+Example:
+USER=golu
+
+4. JAVA_HOME
+Java installation ka path.
+Example:
+JAVA_HOME=/usr/lib/jvm/java-17
+
+Linux Commands:
+Sab Environment Variables Dekhne Ke Liye
+printenv
+
+Kisi Ek Variable Ko Dekhne Ke Liye
+echo $PATH
+
+Naya Variable Banane Ke Liye
+export MYNAME=Golu
+
+Variable Ki Value Dekhne Ke Liye
+echo $MYNAME
+
+# Basic Networking Commands
+
+search gpt and see
+
+# Disk Management Basics
+
+# Compression & Archiving (tar, zip)
+
+# Text Editors (vi, nano)
+
+# Help Commands (man, info, --help)
