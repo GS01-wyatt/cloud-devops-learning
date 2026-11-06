@@ -1,415 +1,290 @@
 # 🚀 Cloud & DevOps Learning Journey
 
-Welcome to my **Cloud & DevOps Learning Journey** repository! 👋
+Welcome to my **Cloud & DevOps Learning Journey**! 👋
 
-This repository contains my notes, commands, concepts, interview questions, MCQs, hands-on practice, and learning resources collected while learning **Cloud Computing and DevOps**.
+This repository contains my learning notes, commands, concepts, interview questions, MCQs, hands-on practice, and useful resources collected while learning **Cloud Computing and DevOps**.
 
-I am continuously learning and improving my skills by studying concepts and practicing them through hands-on work.
+I am continuously improving my knowledge through practical exercises, documentation, revision, and real-world project development.
 
----
+## 🛠️ Technologies & Tools
+
+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Code%20Hosting-181717?logo=github&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Operating%20System-FCC624?logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-Infrastructure%20as%20Code-844FBA?logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-Cloud%20Computing-FF9900?logo=amazonaws&logoColor=white)
 
 ## 📚 Learning Roadmap
 
 ```text
-                    ☁️ CLOUD & DEVOPS
-                           |
-        ┌──────────────────┼──────────────────┐
-        |                  |                  |
-     Fundamentals       DevOps Tools       Cloud
-        |                  |                  |
-     Linux              Git/GitHub          AWS
-     Networking         Docker             Cloud Concepts
-     OS                 Kubernetes
-                        Terraform
-                        CI/CD
-                        Monitoring
+                 ☁️ CLOUD & DEVOPS
+                         |
+       ┌─────────────────┼─────────────────┐
+       |                 |                 |
+  Fundamentals       DevOps Tools         Cloud
+       |                 |                 |
+     Linux           Git / GitHub          AWS
+  Networking           Docker         Cloud Concepts
+      OS             Kubernetes
+                     Terraform
+                       CI/CD
+                    Monitoring
 ```
-
----
 
 ## 🗂️ Repository Structure
 
-### 🐙 A GitHub
+### 🐙 A GitHub — Git & GitHub
+
+- Git fundamentals and commands
+- GitHub repositories and management
+- Branching and merging
+- Commits, push and pull
+- Pull requests and Git workflows
+
+### 🐧 A Linux — Linux Fundamentals
+
+- Linux basics and file systems
+- Users and permissions
+- Process management
+- Networking commands
+- Shell commands
+- System administration
+
+### 🌐 A Network — Networking Fundamentals
+
+- IP addressing and TCP/IP
+- DNS and HTTP/HTTPS
+- Ports and protocols
+- OSI model
+- Networking concepts
+- Troubleshooting
+
+### 🐳 B Docker — Containerization
+
+- Docker fundamentals
+- Images and containers
+- Dockerfile and Docker commands
+- Volumes and networks
+- Docker Compose
+- Containerization concepts
+- Interview questions and MCQs
+
+### 🏗️ B IaC — Infrastructure as Code
+
+- Infrastructure as Code fundamentals
+- Infrastructure provisioning
+- Automation concepts
+- Configuration management concepts
+
+### 💻 B OS — Operating Systems
+
+- Operating system fundamentals
+- Processes and threads
+- Memory management
+- CPU and scheduling
+- File systems
+- Interview preparation
+
+### ☸️ D Kubernetes — Container Orchestration
+
+- Kubernetes architecture
+- Pods and Deployments
+- Services and ReplicaSets
+- ConfigMaps and Secrets
+- Namespaces and volumes
+- Networking and YAML manifests
+- Kubernetes commands and administration
+- Interview questions and MCQs
+
+### 🏗️ E Terraform — Infrastructure Automation
+
+- Terraform fundamentals
+- Providers and resources
+- Variables and outputs
+- State management and modules
+- Terraform commands
+- AWS infrastructure provisioning
+- Hands-on practice and interview questions
+
+### 📊 F Monitoring — Monitoring & Observability
+
+- Monitoring fundamentals
+- Metrics and logs
+- Alerts and application monitoring
+- Infrastructure monitoring
+- DevOps monitoring concepts
+
+### ☁️ G AWS — Amazon Web Services
+
+- AWS fundamentals
+- IAM and security
+- EC2 and S3
+- VPC and networking
+- Load Balancing and Auto Scaling
+- ECR, ECS and EKS
+- CloudWatch and AWS CLI
+- AWS interview questions and MCQs
+
+### ⌨️ H Command — Quick Command Reference
+
+- Linux commands
+- Git commands
+- Docker commands
+- Kubernetes commands
+- Terraform commands
+- AWS CLI commands
+- DevOps commands
 
-Git and GitHub learning:
+### 🔄 W CICD — Continuous Integration & Delivery
 
-* Git basics
-* Git commands
-* GitHub
-* Repository management
-* Branching
-* Commit & push
-* Pull requests
-* Git workflows
+- CI/CD fundamentals
+- Continuous Integration
+- Continuous Delivery
+- Continuous Deployment
+- Pipeline concepts
+- Build, test and deploy
+- Automation and DevOps workflows
 
----
+### ☁️ Z Cloud — Cloud Computing
 
-### 🐧 A Linux
+- Cloud computing fundamentals
+- IaaS, PaaS and SaaS
+- Public, private and hybrid clouds
+- Cloud architecture
+- Cloud interview preparation
 
-Linux fundamentals and commands:
+### ⚙️ Z DevOps — DevOps Concepts & Interview Preparation
 
-* Linux basics
-* File system
-* Users & permissions
-* Processes
-* Networking commands
-* Shell commands
-* System administration
-
----
+- DevOps fundamentals and lifecycle
+- CI/CD and automation
+- Docker and Kubernetes
+- Terraform and AWS
+- Cloud and DevOps projects
+- Interview questions
+- Practical and scenario-based questions
 
-### 🌐 A Network
+### 💡 Z ITinfo — IT Knowledge & Resources
 
-Networking fundamentals:
+- IT fundamentals
+- Developer information
+- Technology concepts and terminology
+- Important full forms
+- Useful learning resources
+- Interview preparation
 
-* IP address
-* TCP/IP
-* DNS
-* HTTP/HTTPS
-* Ports
-* OSI Model
-* Networking concepts
-* Troubleshooting
-
----
+### 📝 100D — Daily Learning & Practice
 
-### 🐳 B Docker
+Daily learning notes, practice material, and revision resources.
 
-Docker concepts and practical learning:
+### 📚 Total — Combined Learning Material
 
-* Docker fundamentals
-* Images
-* Containers
-* Dockerfile
-* Docker commands
-* Volumes
-* Networks
-* Docker Compose
-* Containerization
-* Docker interview questions
-* MCQs
-
----
-
-### 🏗️ B IaC
-
-Infrastructure as Code concepts:
-
-* Infrastructure as Code
-* Automation
-* Infrastructure provisioning
-* Configuration concepts
-
----
-
-### 💻 B OS
-
-Operating System concepts:
-
-* OS fundamentals
-* Processes
-* Threads
-* Memory
-* CPU
-* File systems
-* Scheduling
-* Interview preparation
-
----
-
-### ☸️ D Kubernetes
-
-Kubernetes learning and hands-on practice:
-
-* Kubernetes architecture
-* Pods
-* Deployments
-* Services
-* ConfigMaps
-* Secrets
-* Namespaces
-* ReplicaSets
-* Volumes
-* Networking
-* Kubernetes commands
-* YAML manifests
-* Administration
-* Interview questions
-* MCQs
-
----
-
-### 🏗️ E Terraform
-
-Terraform / Infrastructure as Code:
-
-* Terraform fundamentals
-* Providers
-* Resources
-* Variables
-* Outputs
-* State
-* Modules
-* Terraform commands
-* AWS infrastructure
-* Hands-on practice
-* Interview questions
-
----
-
-### 📊 F Monitoring
-
-Monitoring and observability:
-
-* Monitoring fundamentals
-* Metrics
-* Logs
-* Alerts
-* Application monitoring
-* Infrastructure monitoring
-* DevOps monitoring concepts
-
----
-
-### ☁️ G AWS
-
-AWS Cloud learning:
-
-* AWS fundamentals
-* IAM
-* EC2
-* S3
-* VPC
-* Load Balancer
-* Auto Scaling
-* ECR
-* ECS
-* EKS
-* CloudWatch
-* AWS CLI
-* Networking
-* Security
-* AWS interview questions
-* MCQs
+A reference section for combined notes, questions, and learning resources.
 
----
+### 🕉️ Personal Learning & Reference
 
-### ⌨️ H Command
+A personal learning and reference section.
 
-Important commands and quick references:
+## 🎯 Learning Goals
 
-* Linux commands
-* Git commands
-* Docker commands
-* Kubernetes commands
-* Terraform commands
-* AWS CLI commands
-* DevOps commands
+My goal is to develop strong theoretical and practical knowledge in:
 
----
+- ☁️ Cloud Computing
+- ⚙️ DevOps Engineering
+- 🐳 Docker and Containerization
+- ☸️ Kubernetes and Orchestration
+- 🏗️ Terraform and Infrastructure as Code
+- ☁️ AWS Cloud Services
+- 🔄 CI/CD Pipelines
+- 🐧 Linux Administration
+- 🌐 Networking Fundamentals
+- 📊 Monitoring and Observability
+- 🐙 Git and GitHub
 
-### 🔄 W CICD
+## 🧪 My Learning Approach
 
-CI/CD learning:
-
-* CI/CD fundamentals
-* Continuous Integration
-* Continuous Delivery
-* Continuous Deployment
-* Pipeline concepts
-* Build
-* Test
-* Deploy
-* Automation
-* DevOps workflows
-
----
-
-### ☁️ Z Cloud
-
-General Cloud Computing concepts:
-
-* Cloud fundamentals
-* IaaS
-* PaaS
-* SaaS
-* Public Cloud
-* Private Cloud
-* Hybrid Cloud
-* Cloud architecture
-* Cloud interview preparation
-
----
-
-### ⚙️ Z DevOps
-
-DevOps concepts and interview preparation:
-
-* DevOps fundamentals
-* DevOps lifecycle
-* CI/CD
-* Docker
-* Kubernetes
-* Terraform
-* AWS
-* Automation
-* Cloud
-* Projects
-* Interview questions
-* Practical scenarios
-
----
-
-### 💡 Z ITinfo
-
-General IT knowledge and reference material:
-
-* IT fundamentals
-* Developer information
-* Technology concepts
-* Important terms
-* Full forms
-* Useful resources
-* Interview preparation
-
----
-
-### 📝 100D
-
-Daily learning / practice material and notes.
-
----
-
-### 📚 Total
-
-Combined notes, questions, references and learning material.
-
----
-
-### 🕉️ 🕉️
-
-Personal learning and reference section.
-
----
-
-# 🛠️ Technologies & Tools
-
-| Category               | Technologies               |
-| ---------------------- | -------------------------- |
-| Version Control        | Git, GitHub                |
-| Operating System       | Linux, Windows             |
-| Containerization       | Docker                     |
-| Orchestration          | Kubernetes                 |
-| Infrastructure as Code | Terraform                  |
-| Cloud                  | AWS                        |
-| CI/CD                  | CI/CD Tools                |
-| Monitoring             | Monitoring & Observability |
-| Networking             | TCP/IP, DNS, HTTP/HTTPS    |
-| Scripting              | Shell / PowerShell         |
-
----
-
-# 🎯 Learning Goals
-
-My goal is to build strong practical knowledge in:
-
-* ☁️ Cloud Computing
-* ⚙️ DevOps
-* 🐳 Docker
-* ☸️ Kubernetes
-* 🏗️ Terraform
-* ☁️ AWS
-* 🔄 CI/CD
-* 🐧 Linux
-* 🌐 Networking
-* 📊 Monitoring
-* 🐙 Git & GitHub
-
----
-
-# 🧪 Learning Approach
-
-I follow a **Learn → Practice → Document → Revise** approach.
+I follow a simple and consistent learning process:
 
 ```text
-📖 Learn Concept
-      ↓
-💻 Hands-on Practice
-      ↓
-📝 Create Notes
-      ↓
-🔄 Revise
-      ↓
-🎯 Interview Preparation
-      ↓
-🚀 Build Projects
+       📖 Learn Concepts
+              ↓
+       💻 Hands-on Practice
+              ↓
+       📝 Document Notes
+              ↓
+          🔄 Revise
+              ↓
+    🎯 Interview Preparation
+              ↓
+       🚀 Build Projects
 ```
 
+**Learn → Practice → Document → Revise → Build**
+
+## 📈 Learning Progress
+
+The following areas represent my learning roadmap and ongoing goals:
+
+- [x] Git & GitHub Fundamentals
+- [x] Linux Fundamentals
+- [x] Networking Fundamentals
+- [x] Docker Fundamentals
+- [x] Kubernetes Fundamentals
+- [x] Terraform Fundamentals
+- [x] AWS Fundamentals
+- [x] CI/CD Concepts
+- [x] Cloud Fundamentals
+- [ ] Advanced Kubernetes
+- [ ] Advanced AWS
+- [ ] Advanced Terraform
+- [ ] Production-grade CI/CD
+- [ ] Advanced Monitoring
+- [ ] Real-world DevOps Projects
+
+*The checklist reflects my learning roadmap; I update it as I complete and practice each topic.*
+
+## 🚀 Practical Projects
+
+I am using this repository to document my hands-on journey and gradually develop real-world Cloud & DevOps projects.
+
+Planned project areas include:
+
+- Dockerized applications
+- Kubernetes deployments
+- AWS infrastructure provisioning
+- Terraform automation
+- CI/CD pipelines
+- Monitoring and alerting solutions
+- End-to-end DevOps projects
+
+## 📖 Interview Preparation
+
+This repository also includes learning resources for interview preparation:
+
+- 💡 Interview Questions
+- 📝 Multiple-Choice Questions (MCQs)
+- ⚡ Quick Revision Notes
+- 💻 Important Commands
+- 🧩 Scenario-Based Questions
+- 🎯 Cloud & DevOps Concepts
+
+## 🌱 Continuous Learning
+
+> "Learn every day. Practice every day. Improve every day."
+
+This repository represents my ongoing journey from Cloud & DevOps fundamentals to practical implementation and real-world engineering projects.
+
+I will continue updating it as I learn new concepts, solve problems, and build projects.
+
+## ⭐ Support
+
+If you find these notes and learning resources useful, feel free to **star ⭐ this repository**.
+
+Every suggestion and contribution that helps improve the learning resources is welcome.
+
 ---
 
-# 📈 Progress
-
-* [x] Git & GitHub Fundamentals
-* [x] Linux Fundamentals
-* [x] Networking Fundamentals
-* [x] Docker Fundamentals
-* [x] Kubernetes Fundamentals
-* [x] Terraform Fundamentals
-* [x] AWS Fundamentals
-* [x] CI/CD Concepts
-* [x] Cloud Fundamentals
-* [ ] Advanced Kubernetes
-* [ ] Advanced AWS
-* [ ] Advanced Terraform
-* [ ] Production-grade CI/CD
-* [ ] Advanced Monitoring
-* [ ] Real-world DevOps Projects
-
-> This repository is continuously updated as I learn new concepts and build more practical projects.
-
----
-
-# 🚀 Practical Projects
-
-I am using this repository to document my hands-on journey and gradually build real-world Cloud & DevOps projects.
-
-Future projects will include:
-
-* Dockerized applications
-* Kubernetes deployments
-* AWS infrastructure
-* Terraform automation
-* CI/CD pipelines
-* Monitoring solutions
-* End-to-end DevOps projects
-
----
-
-# 📖 Interview Preparation
-
-This repository also contains:
-
-* 💡 Interview Questions
-* 📝 MCQs
-* ⚡ Quick Revision Notes
-* 💻 Commands
-* 🧩 Scenario-based Questions
-* 🎯 Cloud & DevOps Concepts
-
----
-
-# 🌱 Continuous Learning
-
-> **"Learn every day. Practice every day. Improve every day."**
-
-This repository represents my ongoing journey from **Cloud & DevOps fundamentals to real-world implementation**.
-
----
-
-## ⭐ Repository
-
-If you find these notes useful, feel free to ⭐ star the repository.
-
-**Keep Learning. Keep Building. Keep Improving. 🚀**
+**Keep Learning. Keep Building. Keep Improving.** 🚀
 
 #Cloud #DevOps #AWS #Docker #Kubernetes #Terraform #Git #GitHub #Linux #CICD #CloudComputing
