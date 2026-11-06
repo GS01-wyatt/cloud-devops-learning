@@ -30,7 +30,76 @@ AWS → Cloud
 Monitoring → Health Check
 
 1. Explain your CI/CD flow in your current project.
+Explain the pipeline of your project and its purpose.
+Answer:
 
+"In my project, the developer pushes code to Git. Jenkins triggers the pipeline and checks out the code. The application is built and tested, followed by code quality and security checks. Then a Docker image is created and pushed to the container registry. The updated deployment configuration is applied to Kubernetes, and finally we perform post-deployment validation and monitoring."
+
+Hindi me Question ka matlab:
+
+"Tumhare project me code developer ke laptop se production tak kaise jata hai?"
+
+Interviewer end-to-end CI/CD flow check kar raha hai.
+
+Simple Flow:
+Developer
+ ↓
+Git
+ ↓
+Jenkins
+ ↓
+Build
+ ↓
+Test
+ ↓
+Security/Quality Scan
+ ↓
+Docker Image
+ ↓
+Registry
+ ↓
+Kubernetes
+ ↓
+Monitoring
+Purpose:
+
+Manual work kam karna aur reliable, repeatable deployment karna.
+
+
+Q. Explain the pipeline of your project and its purpose.
+Answer:
+
+"In my project, the developer pushes code to Git. Jenkins triggers the pipeline and checks out the code. The application is built and tested, followed by code quality and security checks. Then a Docker image is created and pushed to the container registry. The updated deployment configuration is applied to Kubernetes, and finally we perform post-deployment validation and monitoring."
+
+Hindi me Question ka matlab:
+
+"Tumhare project me code developer ke laptop se production tak kaise jata hai?"
+
+Interviewer end-to-end CI/CD flow check kar raha hai.
+
+Simple Flow:
+Developer
+ ↓
+Git
+ ↓
+Jenkins
+ ↓
+Build
+ ↓
+Test
+ ↓
+Security/Quality Scan
+ ↓
+Docker Image
+ ↓
+Registry
+ ↓
+Kubernetes
+ ↓
+Monitoring
+Purpose:
+
+Manual work kam karna aur reliable, repeatable deployment karna.
 
 https://gravitydevops.com/top-50-devops-engineer-interview-questions-answers/
 

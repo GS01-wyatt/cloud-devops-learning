@@ -1,9 +1,5 @@
 # 🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉
-✅ Do your homework.
-✅ Use learning resources.
 
-
-https://escbash.com
 # Recommended Learning Order
 1. Linux
 2. Networking
@@ -22,8 +18,7 @@ https://escbash.com
 15. Real-world Projects
 16. Interview Preparation
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # DevOps Roadmap Content
 1. DevOps Mindset & Roles
 2. Foundations
@@ -53,12 +48,6 @@ monatering
 scaling
 Rolling Updation
 Self Healing chacking
-
-
-Nehasri V
-Kukatikonda Mallikarjuna
-Rashim Duggal
-
 
 
 
@@ -233,7 +222,6 @@ Reduced errors
 Increased productivity
 
 
-
 # DevOps Engineer
 > Responsibilities
 Build and maintain CI/CD pipelines
@@ -243,11 +231,6 @@ Monitor applications and infrastructure
 Implement Infrastructure as Code (Terraform, Ansible)
 Improve system reliability and uptime
 
-> Best if you enjoy:
-Automation
-Coding and scripting
-Solving deployment problems
-Working with developers
 
 # Cloud Engineer
 > Responsibilities
@@ -257,80 +240,34 @@ Manage cloud security and IAM
 Optimize cloud costs
 Migrate applications to the cloud
 Ensure high availability and disaster recovery
-> Best if you enjoy:
-Cloud architecture
-Networking
-Security
-Infrastructure design
-
-
-
-# Skills Comparison
-> DevOps
-Linux
-Git
-Docker
-Kubernetes
-Jenkins/GitHub Actions/GitLab CI
-Terraform
-Bash/Python
-Monitoring (Prometheus, Grafana)
-> Cloud
-AWS/Azure/GCP
-VPC/VNet
-IAM
-EC2/VMs
-Storage (S3, Blob Storage)
-Load Balancers
-Terraform
-Cloud security
-
-
-# Career Path
-> Cloud Engineer
-IT Support
-      ↓
-System Administrator
-      ↓
-Cloud Engineer
-      ↓
-Cloud Architect
-
-> DevOps Engineer
-Developer / System Administrator
-            ↓
-DevOps Engineer
-            ↓
-Senior DevOps Engineer
-            ↓
-Platform Engineer / Site Reliability Engineer (SRE)
-
-
-# Which should you choose?
-> Choose Cloud Engineering if you:
-Enjoy infrastructure, networking, and cloud platforms.
-Want to specialize in AWS, Azure, or Google Cloud.
-Are interested in cloud architecture and security.
-
-> Choose DevOps Engineering if you:
-Enjoy automation and scripting.
-Like improving development and deployment workflows.
-Want to work with Docker, Kubernetes, CI/CD, and Infrastructure as Code.
 
 
 
 
-Docker Limitation       	Kubernetes Solution
-Manual Scaling → Containers manually badhane padte hain.	
-Auto Scaling → Pods automatically scale ho jate hain.
-No Self-Healing → Container crash ho jaye to khud restart nahi hota.	
-Self-Healing → Kubernetes automatically restart kar deta hai.
-No Load Balancing → Traffic manually manage karna padta hai.	
-Built-in Load Balancer (Service) → Traffic automatically distribute hota hai.
-Manual Deployment → Deploy manually karna padta hai.	YAML Deployment → YAML file se deployment automate hota hai.
-No Secrets Management → Passwords/keys manage karna difficult hota hai.	
-Secrets & ConfigMaps → Passwords aur configs securely store hote hain.
-Difficult Networking → Container networking complex hoti hai.	
-Built-in Networking → Easy communication between Pods.
-No Rolling Updates → Update ke time downtime ho sakta hai.	
-Rolling Updates & Rollback → Zero downtime update aur old version par wapas ja sakte hain.
+
+^	Caret
+~	Tilde
+*	Asterisk
+|	Vertical Bar
+
+
+1. Understand Their Daily Work
+- What does your typical day actually look like?
+- How much of your day is spent on CI/CD pipelines, meetings, and production firefighting?
+- What kind of work do you spend the most time on?
+
+2. CI/CD Pipeline
+- Can you walk me through your CI/CD pipeline from start to finish?
+- Why is your pipeline designed this way?
+
+3. Git & Branching Strategy
+- Which Git branching strategy does your project use?
+- Which branching strategy does your project use?
+- Why did your team choose that branching strategy?
+
+4. Release Management
+- How does a production deployment happen in your project?
+- Who approves a production release?
+- What happens when it fails?
+- How do they roll back?
+

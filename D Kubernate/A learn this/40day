@@ -141,17 +141,191 @@ Install a network add-on such as Calico
 Create a network policy to restrict access to the pods
 
 
-# vedio-26
-# vedio-26
-# vedio-26
-# vedio-26
-# vedio-26
-# vedio-26
-# vedio-26
-# vedio-26
-# vedio-26
-# vedio-26
-# vedio-26
+# vedio-27
+Use Kubeadm to install a Kubernetes cluster
+
+Provision underlying infrastructure to deploy a Kubernetes cluster
+Setup Master Node to deploy Kubernetes components
+Setup multiple worker nodes and join the master node
+
+# vedio-28
+Docker storage fundamentals
+
+Why do we need storage in docker containers
+persistent docker storage
+
+# vedio-29
+Storage in Kubernetes
+How storage works in Kubernetes
+hostpath volumes in Kubernetes
+Persistent volumes and Persistent volume claims
+Volume modes, Access modes, and reclaim policies for volumes
+Storage classes and provisions
+
+# vedio-30
+How does DNS work?
+What happens when you type a website address in your browser
+different components involved in DNS
+End-to-end flow
+Important files and resources
+
+# vedio-31
+How DNS works in Kubernetes
+Core-DNS
+
+# vedio-32
+Kubernetes Networking Explained | Container Network Interface (CNI)
+
+OCI (Open Container Initiative) is a standard that defines how container images and containers should work.
+
+Docker कैसे काम करता है?
+Docker application को container के अंदर run करता है। पहले application की Docker Image बनाई या डाउनलोड की जाती है। फिर Docker उस image से container बनाता है और उसमें application को run करता है।
+
+
+> task
+If you do not already have a Kubernetes cluster, you can create a local Kubernetes cluster by following Day06 Video Also, could you do the port binding at the cluster level if you are using KIND? The Day9 video has the details on how to do that.
+
+Task details
+Perform the steps as per the video demo.
+Share your learnings: Document your key takeaways and insights in a blog post and social media update
+Make it public: Share what you learn publicly on LinkedIn or Twitter.
+Tag us and use the hashtag: Include the following in your post:
+Tag @PiyushSachdeva and @CloudOps Community (on both platforms)
+Use the hashtag #40daysofkubernetes
+Embed the video: Enhance your blog post by embedding the video lesson from the Kubernetes series. This will give you visual context and reinforce your written explanations.
+
+> When we create a Pod:
+API Server receives the request.
+Scheduler selects a node.
+Kubelet creates the Pod on that node.
+Container starts inside the Pod.
+Pod gets an IP address and becomes Running.
+
+# vedio-33
+> Ingress controller and Ingress resources
+> why this.
+
+
+> task
+In this exercise, you will create an Ingress with a simple rule that routes traffic to a Service.
+
+Important
+Kubernetes requires running an Ingress Controller to evaluate Ingress rules. Make sure your cluster employs an Ingress Controller. You can find installation guidance in the Day33 video.
+
+Verify that the Ingress Controller is running.
+Create a new Deployment named web that controls a single replica running the image username/nodejs-hello-world:1.0.0 on port 3000.
+Expose the Deployment with a Service named web of type ClusterIP. The Service routes traffic to the Pods controlled by the Deployment web.
+Make a request to the endpoint of the application on the context path /. You should see the message "Hello World".
+Create an Ingress that exposes the path / for the host hello-world.exposed. The traffic should be routed to the Service created earlier.
+List the Ingress object.
+Add an entry in /etc/hosts that maps the virtual node IP address to the host hello-world.exposed.
+Make a request to http://hello-world.exposed. You should see the message "Hello World".
+
+
+
+# vedio-34
+Upgrade a Multi Node Kubernetes Cluster With Kubeadm
+
+Task details
+Login to your cluster and make sure it is healthy
+
+Perform the cluster upgrade to a higher version by following the readme.md file in this folder
+
+Make sure to upgrade worker nodes, control plane node, and components such as kubelet, kubectl and kubeadm.
+
+After the cluster upgrade make sure your nodes are healthy and all the components are upgraded to the newer version.
+
+Share your learnings: Document your key takeaways and insights in a blog post and social media update
+
+Make it public: Share what you learn publicly on LinkedIn or Twitter.
+
+Tag us and use the hashtag: Include the following in your post:
+Tag @PiyushSachdeva and @CloudOps Community (on both platforms)
+Use the hashtag #40daysofkubernetes
+Embed the video: Enhance your blog post by embedding the video lesson from the Kubernetes series. This will give you visual context and reinforce your written explanations.
+
+
+# vedio-35
+Kubernetes ETCD Backup And Restore Explained
+
+Task details
+Login to your control plane node
+
+Ensure all the nodes are in ready status
+
+Find out version of etcd
+
+Create an nginx deployment with 2 pods
+
+Identify endpoint url, server certs and ca certs
+
+Set the ETCDCTL_API=3 as the env variable
+
+Run etcdctl snapshot command to view different option
+
+Using the above help, take the backup of etcd cluster to /opt/etcd-snapshot.db directory
+
+Delete the deployment
+
+Restore the original state of the cluster from backup file at /opt/etcd-snapshot.db to the directory /var/lib/etcd-from-backup
+
+Point ETCD to the new directory with the restored backup
+
+Restart etcd pod
+
+Check the deployment using kubectl get deploy , make sure that it is available as you have restored the backup prior to deleting the deployment
+
+Share your learnings: Document your key takeaways and insights in a blog post and social media update
+
+Make it public: Share what you learn publicly on LinkedIn or Twitter.
+
+Tag us and use the hashtag: Include the following in your post:
+Tag @PiyushSachdeva and @CloudOps Community (on both platforms)
+Use the hashtag #40daysofkubernetes
+Embed the video: Enhance your blog post by embedding the video lesson from the Kubernetes series. This will give you visual context and reinforce your written explanations.
+
+# vedio-36
+Monitoring, Logging and Alerting
+
+> 
+Monitor Cluster components, Evaluate cluster and node logging
+Understand how to monitor applications, metric server
+Manage container stdout & stderr logs
+
+# vedio-37
+Troubleshoot application failure
+
+# vedio-38
+Troubleshoot cluster component failure
+
+# vedio-39
+Network Troubleshooting
+> 
+Worker node failure
+cordon, uncordon and drain (maintenance)
+
+# vedio-40
+>JSONPath, advance kubectl commands
+JSON for beginners
+JSON v/s YAML
+JSONPATH basics
+Multiple JSONPATH queries to fetch details
+
+
+# vedio-41
+> Mission CKA
+Exam Pattern
+Pre-requisites
+Last-minute preparation
+Tips and Tricks
+Sample questions
+
+# vedio-42
+> Realtime project: Host your own container registry on Kubernetes
+This project will include multiple Kubernetes topics with real-time implementation.
+# vedio-37
+
+
 
 
 

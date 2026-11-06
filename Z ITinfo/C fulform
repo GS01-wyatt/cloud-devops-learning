@@ -57,15 +57,6 @@ CAPEX (Capital Expenditure) — Money spent on purchasing physical infrastructur
 OPEX (Operational Expenditure) — Money spent on ongoing operational services.
 TCO (Total Cost of Ownership) — Total cost of owning and operating a system.
 
-🌐 CLOUD DEPLOYMENT MODELS
-Public Cloud — Cloud infrastructure shared by multiple customers.
-Private Cloud — Cloud infrastructure dedicated to one organization.
-Hybrid Cloud — Combination of public and private cloud.
-Multi-Cloud — Using services from multiple cloud providers.
-On-Prem (On-Premises) — Infrastructure hosted inside an organization's own location.
-
-Major CSPs include AWS, Microsoft Azure, and Google Cloud.
-
 🟠 AWS FULL FORMS – BASIC TO ADVANCED
 AWS (Amazon Web Services) — A cloud computing platform that provides servers, storage, databases, networking, and other services.
 EC2 (Elastic Compute Cloud) — Provides virtual servers in AWS.
