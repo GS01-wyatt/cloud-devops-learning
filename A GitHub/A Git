@@ -1,0 +1,91 @@
+# Basic Git Concepts
+
+# 1. What is Git, and why is it used in DevOps?
+“Git is a distributed version control system used to track and manage changes in source code.
+
+In DevOps, Git is mainly used to maintain code history, collaborate with team members, manage different versions of code using branches, and roll back changes when needed.
+
+Git also integrates with CI/CD tools like Jenkins to automate the build, testing, and deployment process.
+
+For example, when a developer pushes code to GitHub, Jenkins can automatically trigger a pipeline to build and test the application.”
+
+
+# 2. What is the difference between Git and GitHub?
+“Git is a version control system used to track changes in source code, while GitHub is a cloud-based platform used to host Git repositories and collaborate with other developers.
+
+Git works locally on our computer, whereas GitHub allows us to store and share our code online.
+
+For example, I use Git to commit changes to my code and GitHub to push my code to a remote repository and collaborate with my team.”
+
+Remember: Git = Version Control System | GitHub = Code Hosting and Collaboration Platform.
+
+
+# 3. What is the difference between a local repository and a remote repository?
+“A local repository is a Git repository stored on our local computer, where we can create, modify, and commit code changes.
+
+A remote repository is stored on a remote server or platform like GitHub, where developers can share code and collaborate with their team.
+
+For example, I make changes and commit them in my local repository, then use git push to upload those changes to the remote repository on GitHub. Similarly, I use git pull to get the latest changes from the remote repository.”
+
+Remember:
+- Local repository: Stored on your computer.
+- Remote repository: Stored on GitHub or another remote server.
+
+
+# 4. Explain the Git workflow: Working Directory, Staging Area, and Repository.
+“In Git, the workflow consists of three main areas: Working Directory, Staging Area, and Repository.
+1. Working Directory: This is where we create or modify files in our project.
+2. Staging Area: This is where we prepare the changes that we want to include in the next commit.
+3. Repository: This is where Git permanently records the staged changes as commits, maintaining the project’s history.
+For example, when I modify a file, I use git add to move the changes to the staging area and git commit to save them in the repository.
+
+This workflow helps us manage code changes in a structured way.”
+
+# 5. What is the difference between git fetch and git pull?
+“Both git fetch and git pull are used to get updates from a remote repository, but they work differently.
+
+git fetch downloads the latest changes from the remote repository without merging them into my current branch. This allows me to review the changes before integrating them.
+
+On the other hand, git pull downloads the latest changes and integrates them into my current branch, usually through a merge or rebase, depending on the configuration.
+
+For example, I use git fetch when I want to check updates first, and git pull when I want to download and integrate those updates into my local branch.”
+
+
+
+# Practical Git Commands
+# 6. What is the difference between git add and git commit?
+
+# 7. How do you push your local code to GitHub?
+
+
+# 8. What is the difference between git merge and git rebase?
+
+
+# 9. What is a Git branch, and why do we use branching strategies?
+
+
+# 10. How do you undo a commit using git revert or git reset?
+
+
+
+## Troubleshooting Questions
+
+# 11. How do you resolve a merge conflict in Git?
+
+
+# 12. What would you do if git push failed with a non-fast-forward error?
+
+# 13. How do you recover deleted or accidentally modified files in Git?
+
+# 14. What is .gitignore, and why is it important?
+
+
+# 15. How do you handle Git authentication issues when connecting to GitHub?
+
+
+# Git in Cloud & DevOps
+16. How do you integrate Git with Jenkins to create a CI/CD pipeline?
+17. How does GitHub Actions work with Git repositories?
+18. How do you manage secrets and sensitive files in Git?
+19. How do you use Git to manage Dockerfiles, Kubernetes YAML files, and Terraform code?
+20. Scenario: A developer pushes code to GitHub. Explain how a CI/CD pipeline can automatically test, build a Docker image, push it to a registry, and deploy it to Kubernetes.

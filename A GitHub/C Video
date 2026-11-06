@@ -1,0 +1,87 @@
+https://www.youtube.com/watch?v=AB3J8ufDYHQ&t=408s
+
+# 1. Git Fundamentals
+1. What is Git?
+2. Why Do We Use Git?
+3. History of Git
+4. Centralized vs Distributed Version Control
+5. Git vs GitHub
+6. Installing Git
+7. Configuring Git
+
+# 2. Git Basics
+8. How Git Works
+9. Git Architecture
+10. Working Directory, Staging Area and Repository
+11. git init
+12. git status
+13. git add
+14. git commit
+15. git log
+16. git diff
+17. git show
+
+# 3. Git Branching and Merging
+18. What Is a Branch?
+19. Creating and Switching Branches
+20. Renaming and Deleting Branches
+21. Merging Branches
+22. Merge Conflicts and Resolution
+23. Fast-Forward vs Three-Way Merge
+
+# 4. Undoing and Managing Changes
+24. git restore
+25. git reset
+26. git revert
+27. git stash
+28. git cherry-pick
+29. git rebase
+30. Git Tags
+31. .gitignore
+32. Tracking Empty Directories
+
+# 5. GitHub Fundamentals
+33. What Is GitHub?
+34. Creating a GitHub Repository
+35. Local vs Remote Repository
+36. git remote
+37. git clone
+38. git push
+39. git fetch
+40. git pull
+41. GitHub Authentication (HTTPS and SSH)
+
+# 6. Team Collaboration
+42. Forking a Repository
+43. Pull Requests (PR)
+44. Code Reviews
+45. Resolving Pull Request Conflicts
+46. Multi-User Git Workflow
+47. Feature Branch Workflow
+48. Git Flow Workflow
+49. GitHub Issues and Discussions
+50. Branch Protection Rules
+
+# 7. Git Tools
+51. Git in VS Code
+52. GitHub Desktop
+53. Git Aliases
+54. Git Configuration Files
+
+# 8. Git for Cloud & DevOps
+55. Git in Jenkins CI/CD
+56. GitHub Actions Basics
+57. Git with Docker
+58. Git with Kubernetes
+59. Git with Terraform (IaC)
+60. GitOps Fundamentals
+61. Secrets Management in Git
+62. Git Best Practices
+
+# 9. Practical Projects
+63. Create a Local Git Repository
+64. Upload a Project to GitHub
+65. Practice Branching and Merge Conflicts
+66. Collaborate Using Pull Requests
+67. Build a Git + Jenkins CI/CD Pipeline
+68. Store Docker, Kubernetes and Terraform Files in Git
